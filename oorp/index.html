@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<meta charset="utf-8" />
+<script>
+
+	if( window.parent === window ) document.location = '//eigenmethod.github.io/mol/app/slides/#bench=' + encodeURIComponent( location.href )
+
+	function content( message ) {
+		var request = new XMLHttpRequest
+		request.open( 'get' , 'readme.md' , false )
+		request.send()
+		done( request.responseText )
+	}
+
+	function done( result ) {
+		if( parent === window ) console.log( result )
+		else parent.postMessage( [ 'done' , result ] , '*' )
+	}
+
+	window.addEventListener( 'message' , function( event ) {
+		window[ event.data[0] ].apply( null , event.data.slice( 1 ) )
+	} )
+	
+</script>
