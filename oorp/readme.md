@@ -186,7 +186,7 @@ greeting() {
 
 ```typescript
 @ $mol_mem()
-tasks_all( next? : $my_task[] ) {
+tasks_all( next? ) {
 	return next || []
 }
 
@@ -197,8 +197,8 @@ tasks_filtered() {
 }
 
 @ $mol_mem()
-filter( next? : ( task : $my_task )=> boolean ) {
-	return next || ()=> true
+filter( next? ) {
+	return next || task => true
 }
 ```
 
@@ -211,9 +211,9 @@ tasks_sorted() {
 }
 
 @ $mol_mem()
-sorter( next? : ( a : $my_task , b : $my_task )=> number ) {
+sorter( next? ) {
 	return next || ( a , b )=> {
-		return $my_text_compare( a.title() , b.title() )
+		return b.created() - a.created()
 	}
 }
 
