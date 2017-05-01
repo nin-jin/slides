@@ -184,6 +184,46 @@ greeting() {
 
 ## Покажите мне код!
 
+```typescript
+@ $mol_mem()
+tasks_all( next? : $my_task[] ) {
+	return next || []
+}
+
+@ $mol_mem()
+tasks_filtered() {
+	return this.tasks_all()
+	.filter( this.filter() )
+}
+
+@ $mol_mem()
+filter( next? : ( task : $my_task )=> boolean ) {
+	return next || ()=> true
+}
+```
+
+```typescript
+@ $mol_mem()
+tasks_sorted() {
+	return this.tasks_filtered()
+	.slice()
+	.sort( this.sorter() )
+}
+
+@ $mol_mem()
+sorter( next? : ( a : $my_task , b : $my_task )=> number ) {
+	return next || ( a , b )=> {
+		return $my_text_compare( a.title() , b.title() )
+	}
+}
+
+@ $mol_mem()
+tasks_visible() {
+	return this.tasks_sorted()
+	.slice( ... this.view_window() )
+}
+```
+
 > *Пример ООРП кода с использованием библиотеки $mol_mem c объяснением его работы.*
 
 ## А если исключительная ситуация?
