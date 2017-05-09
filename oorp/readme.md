@@ -1,9 +1,8 @@
-# Объектно Ориентированное Реактивное Программирование
+# Объектное Реактивное Программирование
 
-- Докладчик: **[Дмитрий Карловский](https://github.com/nin-jin/)**
-- Дата: **2017-05-02**
-- Конференция: **[HolyJS](https://holyjs.ru/)**
-- Слайды: **[//nin-jin.github.io/slides/oorp/](https://nin-jin.github.io/slides/oorp/)**
+**[Дмитрий Карловский](https://github.com/nin-jin/)** @ **[HolyJS'17](https://holyjs-piter.ru)**
+
+**[//nin-jin.github.io/slides/orp/](https://nin-jin.github.io/slides/orp/)**
 
 > Привет всем землянам, меня зовут Дмитрий Карловский и я.. не буду строить из себя успешного разработчика и, прикрываясь крупной фирмой за плечами, продавать вам модную технологию, которая решит одни пробелемы, создав при этом ворох других. Доклад мой будет о незаслуженно непопулярной, но весьма элегантной парадигме и её удивительных возможностях.
 
@@ -402,7 +401,7 @@ class Greeter extends $mol_view {
 
 > *Элегантное связывание свойств через переопределение. Двустороннее замещает свойство вложенного компонента свойством владельца (измерение одного приводит к естесственному изменению другого и наоборот). Левостороннее - только значением свойства владельца (вложенный компонент изменить значение не может). Правостороннее - свойство владельца вычисляется из свойства вложенного компонента (владелец изменить значение не может).*
 
-## Коммуникация
+## Прямая коммуникация
 
 ```
 class Input extends $mol_view {
@@ -429,6 +428,29 @@ class Output extends $mol_view {
 class Greeter extends $mol_view {
 	
 	@ $mol_mem()
+	Name() {
+		return new Input
+	}
+	
+	@ $mol_mem()
+	Message() {
+		const next = new Output
+		next.text = ()=> {
+			return `Hello, ${ this.Name().value() }`
+		}
+		return next
+	}
+	
+	// ...
+}
+```
+
+## Управляемая коммуникация
+
+```
+class Greeter extends $mol_view {
+	
+	@ $mol_mem()
 	name( next ) {
 		return next || 'Annon'
 	}
@@ -436,14 +458,18 @@ class Greeter extends $mol_view {
 	@ $mol_mem()
 	Name() {
 		const next = new Input
-		next.value = next => this.value( value )
+		next.value = next => this.name( value )
 		return next
+	}
+	
+	message() {
+		return `Hello, ${ this.name() }`
 	}
 	
 	@ $mol_mem()
 	Message() {
 		const next = new Output
-		next.text = ()=> this.value()
+		next.text = ()=> this.message()
 		return next
 	}
 	
