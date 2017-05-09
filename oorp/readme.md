@@ -216,7 +216,7 @@ tasks_sorted() {
 	.sort( this.sorter() )
 }
 
-@observable
+@ $mol_mem()
 sorter( next = ( a , b )=> {
 	return b.due() - a.due()
 } ) {
