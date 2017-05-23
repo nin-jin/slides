@@ -109,7 +109,7 @@
 
 ![Тормозящий виртуальный DOM](http://nin-jin.github.io/react-fiber-vs-stack-demo/stack.html)
 
-# Треугольник серпинского на $mol_view
+# Треугольник серпинского на ОРП
 
 ![Точесное обновление DOM в реальном времени](http://mol.js.org/perf/serp/)
 
