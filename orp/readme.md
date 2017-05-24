@@ -1,6 +1,6 @@
 # Объектное Реактивное Программирование
 
-**[Дмитрий Карловский](https://github.com/nin-jin/)** из **SAPRUN** представляет...
+**[Дмитрий Карловский](https://github.com/nin-jin/)** из **[SAPRUN](http://www.saprun.com)** представляет...
 
 ![FrontendConf 2017](fc.png)
 
