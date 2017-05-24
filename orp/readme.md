@@ -599,6 +599,6 @@ increment() {
 
 # Вопросы?
 
-![Получившийся интернет-магазин](http://toys.hyoo.ru)
+**[//toys.hyoo.ru](http://toys.hyoo.ru)**
 
-[//toys.hyoo.ru](http://toys.hyoo.ru)
+![Получившийся интернет-магазин](http://toys.hyoo.ru)
