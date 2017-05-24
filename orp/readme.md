@@ -177,15 +177,19 @@ class $my_toys {
 > Далее у нас идёт отсортированный список товаров, зависящий от функции сортировки, которая по умолчанию сортирует по цене, а значит при изменении цены какой-либо игрушки из отфильтрованного списка, сортировка будет произведена вновь.
 
 ```typescript
-@ $moL-mem()
+@ $mol_mem()
 toys_sorted() {
-	return this.toys_filtered().slice().sort( this.sorter() )
+	return this.toys_filtered()
+	.slice()
+	.sort( this.sorter() )
 }
 ```
 
 ```typescript
 @ $mol_mem()
-sorter( next = ( a , b )=> b.price() - a.price() ) { return next }
+sorter( next = ( a , b )=> {
+	return b.price() - a.price()
+} ) { return next }
 ```
 
 # Отображаем лишь видимое
@@ -195,7 +199,8 @@ sorter( next = ( a , b )=> b.price() - a.price() ) { return next }
 ```
 @ $mol_mem()
 toys_visible() {
-	return this.toys_sorted().slice( ... this.view_window() )
+	return this.toys_sorted()
+	.slice( ... this.view_window() )
 }
 
 sub_components() {
@@ -232,13 +237,13 @@ try {
 
 	patch_node( node , this.attrs() , this.sub_components().map( comp => comp.render() ) )
 
-	patch_node( node , { my_error : null } )
+	patch_node( node , { mol_view_error : null } )
 
 } catch( error ) {
 
 	console.error( error )
 
-	patch_node( node , { my_error : error.name } )
+	patch_node( node , { mol_view_error : error.name } )
 }
 ```
 
@@ -247,14 +252,13 @@ try {
 > *Временное отсутствие данных, пока они не загружены, - такая же исключительная ситуация, а раз мы не боимся исключаений, а умеем восстанавливать работу после устранения их причины, то это можно использовать для индикации ожидания данных.*
 
 ```
-[my_error] {
+[mol_view_error] {
 	background: red;
 	color: white;
 }
 
-[my_error="$mol_atom_wait"] {
+[mol_view_error="$mol_atom_wait"] {
 	animation: my_waiting .25s steps(6) infinite;
-
 }
 ```
 
