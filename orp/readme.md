@@ -231,6 +231,7 @@ render() {
 	}
 	
 	apply_children( node , this.children().map( comp => comp.render() ) )
+
 	apply_attributes( node , this.attrs() )
 
 	return node
@@ -247,10 +248,15 @@ render() {
 
 ```
 try {
+
 	apply_children( node , this.children().map( comp => comp.render() ) )
+
 	apply_attributes( node , { mol_view_error : null , ... this.attrs() } )
+
 } catch( error ) {
+
 	console.error( error )
+
 	apply_attributes( node , { mol_view_error : error.name } )
 }
 ```
