@@ -114,7 +114,7 @@
 
 > Но на это у меня есть простое соображение. Для обеспечения плавности работы вашему приложению необходимо работать со скоростью в 60 кадров в секунду, что даёт всего 16 миллисекунд на все операции начиная с подготовки данных, и заканчивая пересылкой отрисованных областей в видеопамять. И превысить эти 16 миллисекунд очень просто даже в довольно простом приложении на довольно мощном компьютере.
 
-![Тормозящий виртуальный DOM](http://nin-jin.github.io/react-fiber-vs-stack-demo/stack.html)
+[![Тормозящий виртуальный DOM](http://nin-jin.github.io/react-fiber-vs-stack-demo/stack.html)](http://nin-jin.github.io/react-fiber-vs-stack-demo/stack.html)
 
 > Перед вами демо созданное ребятами из Facebook, демонстрирующее, как сильно виртуальный DOM сказывается на плавности анимации в достаточно сложном приложении. Они это сейчас пытаются решить размазывая вычисления по кадрам, но фундаментальная проблема остаётся неизменной - виртуальный DOM требует кучи вычислений на каждый чих.
 
@@ -122,7 +122,7 @@
 
 > ОРП, напротив, позволяет минимизировать объём вычислений, оптимизируя потоки данных от их источника до потребителя.
 
-![Точечное обновление DOM в реальном времени](http://mol.js.org/perf/serp/)
+[![Точечное обновление DOM в реальном времени](http://mol.js.org/perf/serp/)](http://mol.js.org/perf/serp/)
 
 > Как вы можете видеть, даже без размазывания вычислений по фреймам, нам удаётся показывать гораздо большую отзывчивость приложения. И всё это благодаря прямым реактивным связям между исходными данными и зависящих от них DOM-узлами.
 
@@ -211,7 +211,7 @@ toys_visible() {
 	.slice( ... this.view_window() )
 }
 
-sub_components() {
+children() {
 	return this.toys_visible()
 }
 ```
@@ -230,7 +230,8 @@ render() {
 		node.id = this.id()
 	}
 	
-	patch_node( node , this.attrs() , this.sub_components().map( comp => comp.render() ) )
+	apply_children( node , this.children().map( comp => comp.render() ) )
+	apply_attributes( node , this.attrs() )
 
 	return node
 }
@@ -246,16 +247,11 @@ render() {
 
 ```
 try {
-
-	patch_node( node , this.attrs() , this.sub_components().map( comp => comp.render() ) )
-
-	patch_node( node , { mol_view_error : null } )
-
+	apply_children( node , this.children().map( comp => comp.render() ) )
+	apply_attributes( node , { mol_view_error : null , ... this.attrs() } )
 } catch( error ) {
-
 	console.error( error )
-
-	patch_node( node , { mol_view_error : error.name } )
+	apply_attributes( node , { mol_view_error : error.name } )
 }
 ```
 
@@ -267,10 +263,6 @@ try {
 [mol_view_error] {
 	background: red;
 	color: white;
-}
-
-[mol_view_error="$mol_atom_wait"] {
-	animation: my_waiting .25s steps(6) infinite;
 }
 ```
 
@@ -379,6 +371,14 @@ toys() {
 ```
 
 > Как видите, нам не потребовалось менять интерфейс метода - мы просто взяли содержимое файла, как если бы оно было у нас локально, и обработали его.
+
+# Индикация загрузки
+
+```
+[mol_view_error="$mol_atom_wait"] {
+	animation: my_waiting .25s steps(6) infinite;
+}
+```
 
 # Движение данных
 
