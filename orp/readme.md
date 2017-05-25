@@ -550,7 +550,7 @@ class Greeter extends $mol_view {
 ```
 
 ```
-
+	
 	message() {
 		return `Hello, ${ this.name() }`
 	}
