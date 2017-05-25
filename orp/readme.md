@@ -1,10 +1,8 @@
 # Объектное Реактивное Программирование
 
-**[Дмитрий Карловский](https://github.com/nin-jin/)** из **[SAPRUN](http://www.saprun.com)** представляет... м...
+**[Дмитрий Карловский](https://github.com/nin-jin/)** из **[SAPRUN](http://www.saprun.com)** представляет... м... **[nin-jin.github.io/slides/orp](https://nin-jin.github.io/slides/orp/)**
 
 ![FrontendConf 2017](fc.png)
-
-**[//nin-jin.github.io/slides/orp/](https://nin-jin.github.io/slides/orp/)**
 
 # Рекламная пауза
 
