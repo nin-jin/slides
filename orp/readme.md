@@ -345,7 +345,7 @@ async namesakes_message() {
 	/// **Parallel**
 	const [ count, texts ] = await Promise.all([
 		
-		/// *Serial**
+		/// **Serial**
 		( async () => {
 			const user = await this.user()
 			return await this.name_count( user.name )
@@ -368,8 +368,12 @@ async namesakes_message() {
 ```typescript
 @ $mol_mem()
 namesakes_message() {
+
+	/// **Parallel**
 	const texts = this.texts()
 	const user = this.user()
+
+	/// **Serial**
 	const count = this.namesakes_count( user.name )
 	
 	return texts.namesakes_message
@@ -500,20 +504,18 @@ Name.value = ( next = name )=> {
 class $my_hello extends $mol_view {
 	
 	@ $mol_mem()
-	name( next = 'Annon' ) { return next }
-	
-	@ $mol_mem()
-	name_hint( next = 'User name' ) { return next }
-	
-	@ $mol_mem()
 	Name() {
 		const next = new $mol_string
-		next.value = next => this.name( value ) /// **Two way binding**
-		next.hint = ()=> this.name_hint() /// **One way binding**
+
+		/// **Two way binding**
+		next.value = next => this.name( value )
+
+		/// **One way binding**
+		next.hint = ()=> this.name_hint()
+
 		return next
 	}
 	
-	// ...
 }
 ```
 
@@ -572,16 +574,20 @@ increment() {
 
 > Как правило исходное значение у нас уже есть, поэтому мы можем прочитать его в нереактивном окружении, а для записи уже использовать возможности реактивного программирования.
 
+```typescript
 increment() {
 
 	const next = this.value() + 1
 
 	$mol_atom_task( `${ this }.increment()` , ()=> {
+		
 		const actual = this.value( next )
 		alert( `Value from server is ${ actual }` )
+		
 	}
 
 }
+```
 
 > Когда вам нужно изменить значение от которого вы зависите. Например - увеличить на 1. Красивого решения тут нет.
 
@@ -589,10 +595,13 @@ increment() {
 
 ```typescript
 increment() {
+	
 	$mol_atom_task( `${ this }.increment()` )
+	
 	.then( ()=> {
 		return this.value() + 1
 	} )
+	
 	.then( next => {
 		this.value( next )
 	} )
