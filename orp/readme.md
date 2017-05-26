@@ -224,10 +224,8 @@ render() {
 		node.id = this.id()
 	}
 	
-//	apply_children( node , this.children().map( comp => comp.render() ) )
-
-//	apply_attributes( node , this.attrs() )
-
+	/// **Update node**
+	
 	return node
 }
 ```
@@ -239,21 +237,19 @@ render() {
 > А теперь добавляем рендеринг вложенных компонент, добавление их внутрь нашего узла и обновление атрибутов. При изменении любых свойств, любых объектов, от которых зависит состояние этого дом узла - рендеринг будет перезапущен и состояние этого узла будет обновлено. Но обновление вложегных узлов не будет приводить к обновлениию нашего, так как свойство ```render```всегда возвращает одно и то же значение.
 
 ```
-@ $mol_mem()
-render() {
-	let node = document.getElementById( this.id() )
-
-	if( !node ) {
-		node = document.createElement( 'div' )
-		node.id = this.id()
+	/// **Update node**
+	
+	const child_nodes = this.children().map( comp => comp.render() )
+	const attrs = this.attrs()
+	
+	node.innerHTML = ''
+	for( let node of child_nodes ) {
+		node.appendChild( node )
 	}
 	
-	apply_children( node , this.children().map( comp => comp.render() ) )
-
-	apply_attributes( node , this.attrs() )
-
-	return node
-}
+	for( let name in attrs ) {
+		node.setAttribute( name , attrs[ name ] )
+	}
 ```
 
 > При изменении имени игрушки, перезапущен будет лишь рендеринг названия этой игрушки, а при изменении позиции скроллинга, появившиеся карточки будут отрендерины, а ушедшие из области видимости - по тихому уничтожены. Эта простая схема позволяет точечно обновлять DOM не производя никаких лишних вычислений.
@@ -265,15 +261,15 @@ render() {
 ```
 try {
 
-	apply_children( node , this.children().map( comp => comp.render() ) )
+	/// **Update node**
 
-	apply_attributes( node , { mol_view_error : null , ... this.attrs() } )
+	node.removeAttribute( 'mol_view_error' )
 
 } catch( error ) {
 
 	console.error( error )
 
-	apply_attributes( node , { mol_view_error : error.name } )
+	node.setAttribute( 'mol_view_error' , error.name )
 }
 ```
 
