@@ -204,7 +204,9 @@ toys_visible() {
 	return this.toys_sorted()
 	.slice( ... this.view_window() )
 }
+```
 
+```typescript
 children() {
 	return this.toys_visible()
 }
@@ -291,6 +293,7 @@ try {
 > Давайте поговорим о загрузке данных. Взгляните на пример кода, который вычисляет сообщение о числе тёзок текущего пользователя. 
 
 ```typescript
+/// **Serial**
 namesakes_message() {
 	const user = this.user()
 	const count = this.name_count( user.name )
@@ -505,11 +508,11 @@ Name.value = ( next = name )=> {
 	Name() {
 		const next = new $mol_string
 
-		/// **Two way binding**
-		next.value = next => this.name( value )
-
 		/// **One way binding**
 		next.hint = ()=> this.name_hint()
+
+		/// **Two way binding**
+		next.value = next => this.name( value )
 
 		return next
 	}
@@ -601,6 +604,7 @@ increment() {
 	.then( next => {
 		this.value( next )
 	} )
+	
 }
 ```
 
