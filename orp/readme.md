@@ -348,8 +348,7 @@ namesakes_message() {
 	
 	])
 	.then( ([ count , texts ])=> {
-		return texts.namesakes_message
-		.replace( /\{count\}/g , count )
+		return texts.namesakes_message.replace( /\{count\}/g , count )
 	} )
 	
 }
@@ -374,8 +373,7 @@ async namesakes_message() {
 		this.texts() ,
 	])
 	
-	return texts.namesakes_message
-	.replace( /\{count\}/g , count )
+	return texts.namesakes_message.replace( /\{count\}/g , count )
 }
 ```
 
@@ -396,8 +394,7 @@ namesakes_message() {
 	/// **Serial**
 	const count = this.namesakes_count( user.name )
 	
-	return texts.namesakes_message
-	.replace( /\{count\}/g , count )
+	return texts.namesakes_message.replace( /\{count\}/g , count )
 }
 ```
 
