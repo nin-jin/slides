@@ -632,7 +632,8 @@ increment() {
 
 # Вопросы?
 
-* Реализации ОРП: [$mol_mem](https://github.com/eigenmethod/mol/tree/master/mem), [VueJS](http://vuejs.org), [MobX](https://mobx.js.org), [CellX](https://github.com/Riim/cellx), [KnockOut](http://knockoutjs.com)
-* Получившийся магазин: **[toys.hyoo.ru](http://toys.hyoo.ru)**
-* Исходники магазина: **[github.com/nin-jin/toys.hyoo.ru](http://github.com/nin-jin/toys.hyoo.ru)**
-* Слайды: **[nin-jin.github.io/slides/orp](https://nin-jin.github.io/slides/orp/)**
+Реализации ОРП: **[$mol_mem](https://github.com/eigenmethod/mol/tree/master/mem)**, [VueJS](http://vuejs.org), [MobX](https://mobx.js.org), [CellX](https://github.com/Riim/cellx), [KnockOut](http://knockoutjs.com)
+Получившийся магазин: **[toys.hyoo.ru](http://toys.hyoo.ru)**
+
+Исходники магазина: **[github.com/nin-jin/toys.hyoo.ru](http://github.com/nin-jin/toys.hyoo.ru)**
+Слайды: **[nin-jin.github.io/slides/orp](https://nin-jin.github.io/slides/orp/)**
