@@ -250,7 +250,7 @@ render() {
 		node.id = this.id()
 	}
 	
-	/// Node updating here
+	/// **Node updating here**
 	
 	return node
 }
@@ -287,7 +287,7 @@ render() {
 ```typescript
 try {
 
-	/// Node updating here
+	/// **Node updating here**
 
 	node.removeAttribute( 'mol_view_error' )
 
@@ -317,7 +317,6 @@ try {
 > Давайте поговорим о загрузке данных. Взгляните на пример кода, который вычисляет сообщение о числе тёзок текущего пользователя. 
 
 ```typescript
-/// **Serial**
 namesakes_message() {
 	const user = this.user()
 	const count = this.name_count( user.name )
@@ -338,11 +337,9 @@ namesakes_message() {
 ```typescript
 namesakes_message() {
 	
-	/// **Parallel**
-	return Promise.all([
+	return Promise.all([ /// **Parallel**
 		
-		/// **Serial**
-		this.user()
+		this.user() /// **Serial**
 		.then( user => {
 			return this.name_count( user.name )
 		} ) ,
@@ -351,10 +348,8 @@ namesakes_message() {
 	
 	])
 	.then( ([ count , texts ])=> {
-		
 		return texts.namesakes_message
 		.replace( /\{count\}/g , count )
-	
 	} )
 	
 }
@@ -369,11 +364,9 @@ namesakes_message() {
 ```typescript
 async namesakes_message() {
 	
-	/// **Parallel**
-	const [ count, texts ] = await Promise.all([
+	const [ count, texts ] = await Promise.all([ /// **Parallel**
 		
-		/// **Serial**
-		( async () => {
+		( async () => { /// **Serial**
 			const user = await this.user()
 			return await this.name_count( user.name )
 		} ) () ,
@@ -420,9 +413,8 @@ namesakes_message() {
 /// **Before**
 @ $mol_mem()
 toys(){ return [] }
-```
 
-```
+
 /// **After**
 @ $mol_mem()
 toys() {
@@ -544,11 +536,8 @@ Name.value = ( next = name )=> {
 	Name() {
 		const next = new $mol_string
 
-		/// **One way binding**
-		next.hint = ()=> this.name_hint()
-
-		/// **Two way binding**
-		next.value = next => this.name( value )
+		next.hint = ()=> this.name_hint() /// **One way binding**
+		next.value = next => this.name( value ) /// **Two way binding**
 
 		return next
 	}
@@ -567,7 +556,9 @@ Name.value = ( next = name )=> {
 	name( next ) {
 		return next || 'Annon'
 	}
-	
+```
+
+```typescript
 	@ $mol_mem()
 	Name() {
 		const next = new $mol_string
@@ -576,12 +567,13 @@ Name.value = ( next = name )=> {
 	}
 ```
 
-```
-	
+```typescript
 	message() {
 		return `Hello, ${ this.name() }`
 	}
-	
+```
+
+```typescript
 	@ $mol_mem()
 	Message() {
 		const next = new $mol_string
@@ -643,7 +635,11 @@ increment() {
 # Вопросы?
 
 Реализации ОРП: **[$mol_mem](https://github.com/eigenmethod/mol/tree/master/mem)**, **[VueJS](http://vuejs.org)**, **[MobX](https://mobx.js.org)**, **[CellX](https://github.com/Riim/cellx)**, **[KnockOut](http://knockoutjs.com)**
+
 Получившийся магазин: **[toys.hyoo.ru](http://toys.hyoo.ru)**
+
 Исходники магазина: **[github.com/nin-jin/toys.hyoo.ru](http://github.com/nin-jin/toys.hyoo.ru)**
+
 Слайды: **[nin-jin.github.io/slides/orp](https://nin-jin.github.i/slides/orp/)**
+
 Исходники слайдов: **[github.com/nin-jin/slides/tree/master/orp](https://github.com/nin-jin/slides/tree/master/orp)**
