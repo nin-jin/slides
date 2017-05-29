@@ -556,9 +556,7 @@ Name.value = ( next = name )=> {
 	name( next ) {
 		return next || 'Annon'
 	}
-```
 
-```typescript
 	@ $mol_mem()
 	Name() {
 		const next = new $mol_string
@@ -571,9 +569,7 @@ Name.value = ( next = name )=> {
 	message() {
 		return `Hello, ${ this.name() }`
 	}
-```
 
-```typescript
 	@ $mol_mem()
 	Message() {
 		const next = new $mol_string
