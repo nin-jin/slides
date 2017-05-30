@@ -640,12 +640,12 @@ increment() {
 
 > На этом у меня всё, если у вас возникли какие-либо вопросы, я с радостью на них отвечу.
 
-Реализации ОРП: **[$mol_mem](https://github.com/eigenmethod/mol/tree/master/mem)**, **[VueJS](http://vuejs.org)**, **[MobX](https://mobx.js.org)**, **[CellX](https://github.com/Riim/cellx)**, **[KnockOut](http://knockoutjs.com)**
+Реализации ОРП: [$mol_mem](https://github.com/eigenmethod/mol/tree/master/mem), [VueJS](http://vuejs.org), [MobX](https://mobx.js.org), [CellX](https://github.com/Riim/cellx), [KnockOut](http://knockoutjs.com)
 
-Получившийся магазин: **[toys.hyoo.ru](http://toys.hyoo.ru)**
+Получившийся магазин: [toys.hyoo.ru](http://toys.hyoo.ru)
 
-Исходники магазина: **[github.com/nin-jin/toys.hyoo.ru](http://github.com/nin-jin/toys.hyoo.ru)**
+Исходники магазина: [github.com/nin-jin/toys.hyoo.ru](http://github.com/nin-jin/toys.hyoo.ru)
 
-Эти слайды: **[nin-jin.github.io/slides/orp](https://nin-jin.github.io/slides/orp/)**
+Эти слайды: [nin-jin.github.io/slides/orp](https://nin-jin.github.io/slides/orp/)
 
 Треугольники Срепинского: [github.com/nin-jin/sierpinski](https://github.com/nin-jin/sierpinski)
