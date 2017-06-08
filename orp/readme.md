@@ -35,7 +35,7 @@
 
 > Давайте представим, что мы решили открыть интернет-магазин по продаже игрушек. Причём сделать мы хотим всё не абы как, а стильно, модно, молодёжно, быстро, гибко и надёжно..
 
-![[Интернет-магазин](http://nin-jin.github.io/slides/orp/toys.hyoo.ru.png)](http://toys.hyoo.ru)
+[![[Интернет-магазин](http://nin-jin.github.io/slides/orp/toys.hyoo.ru.png)](http://toys.hyoo.ru)](http://toys.hyoo.ru)
 
 # Каталог товаров
 
