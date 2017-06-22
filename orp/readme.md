@@ -2,7 +2,7 @@
 
 [Дмитрий Карловский](https://github.com/nin-jin/) из [SAPRUN](http://www.saprun.com) представляет... ммм...
 
-> Это - текстовая версия одноимённого выступления на [FrontendConf'17](http://frontendconf.ru/2017). Вы можете [читать её как статью](https://github.com/nin-jin/slides/blob/master/orp/readme.md), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/orp/).
+> Это - текстовая версия одноимённого выступления на [FrontendConf'17](http://frontendconf.ru/2017). Вы можете [читать её как статью](https://github.com/nin-jin/slides/blob/master/orp/readme.md), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/orp/), либо [посмотреть видео](https://www.youtube.com/watch?v=DS6B_W9Lzgg).
 
 | Надоело.. | Чем поможет ОРП? |
 |-----------|------------------|
