@@ -91,18 +91,16 @@ function Names( props ) {
 <a class="ecma-user-link" href="{{ link }}">
     {{#if isAdmin}}
         <span class="ecma-icon-crown"></span>
-    {{else}}
-        <span class="ecma-icon-person"></span>
     {{/if}}
-    <span class="ecma-user-name">
-        {{ name }}
-    </span>
+    <span class="ecma-user-name">{{ name }}</span>
 </div>
 ```
 
+> В простых случаях это ещё работает.
+
 # А если сложная логика?
 
-> В простых случаях это работает, но по мере усложнения шаблона мы теряем возможность видеть результат, так как нам приходится в уме вычислять все условные выражения, чтобы понять, каков реально будет результат.
+> Но по мере усложнения шаблона мы теряем возможность видеть результат, так как нам приходится в уме вычислять все условные выражения, чтобы понять, каков реально будет результат.
 
 ```
 <a class="ecma-user-link" href="{{ link }}">
@@ -111,8 +109,33 @@ function Names( props ) {
     {{else}}
         <span class="ecma-icon-person"></span>
     {{/if}}
-    <span class="ecma-user-name">
-        {{ name }}
-    </span>
+    <span class="ecma-user-name">{{ name }}</span>
 </div>
+```
+
+# А что если вообще без логики?
+
+```
+<a id="link" href="{{ link }}">
+    <span id="icon_admin" class="ecma-icon-crown"></span>
+    <span id="icon_member" class="ecma-icon-person"></span>
+    <span id="name">{{ name }}</span>
+</div>
+```
+
+> Казалось бы, мы сделали шаг назад и потеряли всю динамику. Однако, обратите внимание на то, что каждому блоку мы присвоили уникальный идентификатор.
+
+# А как же логика?
+
+> А для описания логики есть специально предназначенные языки:
+
+```
+class Ecma_user_link extends Component {
+    link_children() {
+        return [
+            this.props.isAdmin ? this.icon_admin() : this.icon_member() ,
+            this.name() ,
+        ]
+    }
+}
 ```
