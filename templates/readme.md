@@ -3,20 +3,26 @@
 > Что выбрать? Подход Angular с [бананами в ящике](https://www.bennadel.com/blog/3008-two-way-data-binding-is-just-a-box-of-bananas-in-angular-2-beta-1.htm)? 
 
 ```html
-<div ng-repeat="name in names | orderBy:'length' track by $index">
-    {{name}}
-</div>
+<ul class="ecma-user-list">
+    <li class="ecma-user-name"
+        ng-repeat="name in names | orderBy:'length' track by $index"
+        >
+        {{name}}
+    </li>
+</ul>
 ```
 
 > Или React c винегретом из двух языков
 
 ```jsx
 function Names( props ) {
-    return ( <div>{
+    return ( <ul class="ecma-user-list">{
         props.names.slice()
             .sort( ( a , b )=> a.length < b.length )
-            .map( name => <div>{ name }</div> )
-    }</div> )
+            .map( name => (
+                <li class="ecma-user-name">{ name }</li>
+            ) )
+    }</ul> )
 }
 ```
 
