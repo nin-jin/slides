@@ -1,6 +1,8 @@
-# Скрипты в шаблонах или шаблоны в скриптах или?
+# Скрипты в шаблонах или теги в скриптах или?
 
-> Что выбрать? Подход Angular с [бананами в ящике](https://www.bennadel.com/blog/3008-two-way-data-binding-is-just-a-box-of-bananas-in-angular-2-beta-1.htm)? 
+# Скрипты в шаблонах?
+
+> Что выбрать? Подход Angular с оживлением вёрстки с помощью директив? 
 
 ```html
 <ul class="ecma-user-list">
@@ -12,17 +14,21 @@
 </ul>
 ```
 
-> Или React c винегретом из двух языков
+# Теги в скриптах
+
+> Или подход React c винегретом из двух языков?
 
 ```jsx
 function Names( props ) {
-    return ( <ul class="ecma-user-list">{
-        props.names.slice()
-            .sort( ( a , b )=> a.length < b.length )
-            .map( name => (
-                <li class="ecma-user-name">{ name }</li>
-            ) )
-    }</ul> )
+    return (
+        <ul class="ecma-user-list">{
+            props.names.slice()
+                .sort( ( a , b )=> a.length < b.length )
+                .map( name => (
+                    <li class="ecma-user-name">{ name }</li>
+                ) )
+        }</ul>
+    )
 }
 ```
 
@@ -67,3 +73,42 @@ function Names( props ) {
 
 > Шаблон буквально позволяет видеть результат, опуская вариативные детали.
 
+# Но как добиться динамики?
+
+> Некоторые части шаблона могут быть опциональными и зависять о входящих данных.
+
+# По шаблону на вариант?
+
+> Будет много шалонов с копипастой. Будет комбинаторный взрыв числа шаблонов.
+
+# Помечать опциональные части?
+
+```
+<a class="ecma-user-link" href="{{ link }}">
+    {{#if isAdmin}}
+        <span class="ecma-icon-crown"></span>
+    {{else}}
+        <span class="ecma-icon-person"></span>
+    {{/if}}
+    <span class="ecma-user-name">
+        {{ name }}
+    </span>
+</div>
+```
+
+# А если сложная логика?
+
+> В простых случаях это работает, но по мере усложнения шаблона мы теряем возможность видеть результат, так как нам приходится в уме вычислять все условные выражения, чтобы понять, каков реально будет результат.
+
+```
+<a class="ecma-user-link" href="{{ link }}">
+    {{#if isAdmin}}
+        <span class="ecma-icon-crown"></span>
+    {{else}}
+        <span class="ecma-icon-person"></span>
+    {{/if}}
+    <span class="ecma-user-name">
+        {{ name }}
+    </span>
+</div>
+```
