@@ -130,14 +130,13 @@ function Names( props ) {
 > А для описания логики есть специально предназначенные языки:
 
 ```
-class Ecma_user_link extends Component {
-
-    link_() {
-        return [
-            this.props.isAdmin ? this.icon_admin() : this.icon_member() ,
-            this.name() ,
-        ]
+function Ecma_user_link( dom ) {
+    return {
+        ... dom ,
+        link_ : props => [
+            props.isAdmin ? dom.icon_admin : dom.icon_member ,
+            dom.name ,
+        ] ,
     }
-
 }
 ```
