@@ -131,11 +131,13 @@ function Names( props ) {
 
 ```
 class Ecma_user_link extends Component {
-    link_children() {
+
+    link_() {
         return [
             this.props.isAdmin ? this.icon_admin() : this.icon_member() ,
             this.name() ,
         ]
     }
+
 }
 ```
