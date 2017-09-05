@@ -1,5 +1,27 @@
 # Скрипты в шаблонах или шаблоны в скриптах или?
 
+> Что выбрать? Подход Angular с [бананами в ящике](https://www.bennadel.com/blog/3008-two-way-data-binding-is-just-a-box-of-bananas-in-angular-2-beta-1.htm)? 
+
+```html
+<div ng-repeat="name in names | orderBy:'length' track by $index">
+    {{name}}
+</div>
+```
+
+> Или React c винегретом из двух языков
+
+```jsx
+function Names( props ) {
+    return ( <div>{
+        props.names.slice()
+            .sort( ( a , b )=> a.length < b.length )
+            .map( name => <div>{ name }</div> )
+    }</div> )
+}
+```
+
+> Или...
+
 # Что такое шаблон?
 
 > Пример с подстановкой текста в строку
