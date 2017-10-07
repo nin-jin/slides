@@ -193,17 +193,17 @@ const ToysFiltered = Filter
 ```typescript
 class $my_toys {
 
-	@ $mol_mem()
+	@ $mol_mem
 	filter( next ) {
 		if( next === undefined ) return toy => toy.count() > 0
 	
 		return next
 	}
 	
-	@ $mol_mem()
+	@ $mol_mem
 	toys( next = [] ){ return next }
 	
-	@ $mol_mem()
+	@ $mol_mem
 	toys_filtered() {
 		if( !this.filter() ) return this.toys()
 		
@@ -221,14 +221,14 @@ class $my_toys {
 > Аналогичным образом мы можем добавить и отсортированный список товаров, зависящий от функции сортировки и отфильтрованного списка.
 
 ```typescript
-@ $mol_mem()
+@ $mol_mem
 sorter( next ) {
 	if( next === undefined ) return ( a , b )=> b.price() - a.price()
 	
 	return next
 }
 
-@ $mol_mem()
+@ $mol_mem
 toys_sorted() {
 	if( !this.sorter() ) return this.toys_filtered()
 	
@@ -243,7 +243,7 @@ toys_sorted() {
 > Ну и под конец, мы вырезаем лишь видимые сейчас на экране товары. При этом перемещение скроллинга будет приводить лишь к незначительному по времени повторному вырезанию видимых задач, без бессмысленных перефильтраций и пересоровок.
 
 ```typescript
-@ $mol_mem()
+@ $mol_mem
 toys_visible() {
 	return this.toys_sorted().slice( ... this.view_window() )
 }
@@ -262,7 +262,7 @@ children() {
 > Простейший обобщённый рендеринг компонента может производиться в рамках вычисления свойства ```render```, знакомого всем реактоводам.
 
 ```typescript
-@ $mol_mem()
+@ $mol_mem
 render() {
 	let node = document.getElementById( this.id() )
 	
@@ -396,7 +396,7 @@ async namesakes_message() {
 > А что если я скажу вам, что следующий код не смотря на всю свою синхронность может быть не только неблокирующим, но и грузить информацию о пользователе и тексты параллельно? 
 
 ```typescript
-@ $mol_mem()
+@ $mol_mem
 namesakes_message() {
 
 	/// Parallel
@@ -419,7 +419,7 @@ namesakes_message() {
 > В данном примере, первое прерывание произойдёт лишь при доступе к ```user.name```, а значит загрузка текстов и информации о пользователе пойдёт параллельно.
 
 ```typescript
-@ $mol_mem()
+@ $mol_mem
 namesakes_message() {
 
 	/// Parallel
@@ -439,7 +439,7 @@ namesakes_message() {
 
 ```typescript
 /// Before
-@ $mol_mem()
+@ $mol_mem
 toys(){ return [] }
 
 
@@ -448,7 +448,7 @@ toys_data() {
 	return $mol_http.resource( '/toys.json' ).json()
 }
 
-@ $mol_mem()
+@ $mol_mem
 toys() {
 	return Object.keys( this.toys_data() ).map( id => this.toy( id ) )
 }
@@ -555,7 +555,7 @@ class $mol_string {
 	
 	hint() { return '' }
 	
-	@ $mol_mem()
+	@ $mol_mem
 	value( next = '' ) { return next }
 	
 	// ...
@@ -605,7 +605,7 @@ Name.value = ( next = name )=> {
 > Лучше, конечно, не создавать объекты в воздухе и не разбрасываться локальными переменными, а хранить все объекты в свойствах других объектов. Например, мы можем создать локальную фабрику, которая единожды создаёт и настраивает объект.
 
 ```typescript
-	@ $mol_mem()
+	@ $mol_mem
 	Name() {
 		const Name = new $mol_string
 
