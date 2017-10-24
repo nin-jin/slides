@@ -212,16 +212,13 @@ result() {
 > $mol пронизан инкапсуляцией с ног до головы. Но изоляции в нём нет. Вообще. Никакой. Даже в скриптах. Зато в $mol есть глобальные уникальные человекопонятные имена и единые правила стилизации, что своих, что сторонних компонент.
 
 ```css
-/* Base styles from $mol_calendar component */
-/* that contains $mol_view's as "Day" name */
+/* ( $mol_view as "Day" ) from $mol_calendar */
 [mol_calendar_day] { ... }
 
-/* Overrided styles from $mol_date component */
-/* that contains $mol_calendar as "Calendar" name */
+/* Day from ( $mol_calendar as "Calendar" ) from $mol_date */
 [mol_date_calendar_day] { ... }
 
-/* Custom styles for $my_date component */
-/* that extends $mol_date */
+/* Day from Calendar from $my_date that inherits $mol_date */
 [my_date_calendar_day] { ... }
 ```
 
@@ -255,7 +252,7 @@ result() {
 
 ```html
 <h1>{{title}}</h1>
-<!-- <h2>My Heroes</h2> -->
+
 <ul class="heroes">
 	<li *ngFor="let hero of heroes"
 	[class.selected]="hero === selectedHero"
@@ -315,14 +312,14 @@ $my_heroes $mol_view
 # Удаляем подзаголовок во view.tree
 
 ```tree
-$my_heroes_custom1 $my_heroes
+$my_top_heroes $my_heroes
 	<= SubTitle null
 ```
 
 # Добавляем описание во view.tree
 
 ```tree
-$my_heroes_custom2 $my_heroes
+$my_new_heroes $my_heroes
 	sub /
 		<= Title -
 		<= SubTitle -
@@ -332,7 +329,7 @@ $my_heroes_custom2 $my_heroes
 # Меняем местами во view.tree
 
 ```tree
-$my_heroes_custom3 $my_heroes
+$my_reflect_heroes $my_heroes
 	item_content!id /
 		<= hero_name!id -
 		<= Badge -
