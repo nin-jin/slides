@@ -330,6 +330,7 @@ $my_new_heroes $my_heroes
 		<= Title_sub -
 		<= Description $mol_text
 			text <= description \
+		<= Rows -
 ```
 
 # Меняем местами во view.tree
@@ -347,9 +348,9 @@ $my_reflect_heroes $my_heroes
 - [Yandex](https://yandex.ru/): свой BEM, чуть ли не всё уже перевели на его
 - [Facebook](https://www.facebook.com/): местами свой React, местами что попало
 - [VKontakte](https://vk.com/): полный бардак в коде, но работает шустро
-- [Tinkoff](https://www.tinkoff.ru/): на React - [огромный и тормозной](https://habrahabr.ru/company/tinkoff/blog/303580/)
-- [Raiffeisen](https://www.raiffeisen.ru/): статика + jQuery
-- [AlphaBank](https://alfabank.ru/): статика + jQuery и где-то есть React
+- [Tinkoff](https://www.tinkoff.ru/): на React - [получился огромный и тормозной](https://habrahabr.ru/company/tinkoff/blog/303580/), ещё где-то есть Angular
+- [Raiffeisen](https://www.raiffeisen.ru/): на Angular, [но трудно найти толковых специалистов, а от ExtJS исплевались](https://habrahabr.ru/company/raiffeisenbank/blog/340510/)
+- [AlphaBank](https://alfabank.ru/): на jQuery, где-то есть React, но это не точно
 
 # Продолжение следует
 
