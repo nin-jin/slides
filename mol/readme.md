@@ -300,20 +300,25 @@ result() {
 ```tree
 $my_heroes $mol_view
 	sub /
-		<= Title $mol_view sub / <= title -
-		<= SubTitle $mol_view sub / <= subtitle @ \My Heroes
-		<= List $mol_list rows /
+		<= Title $mol_view sub /
+			<= title -
+		<= Title_sub $mol_view sub /
+			<= title_sub @ \My Heroes
+		<= Rows $mol_list
+			rows <= rows /
 	-
-	Item!id $mol_row sub <= item_content!id /
-		<= Badge $my_badge title <= hero_id!id \
-		<= hero_name!id \
+	Item!id $mol_row
+		sub <= item_content!id /
+			<= Badge $my_badge
+				title <= hero_id!id \
+			<= hero_name!id \
 ```
 
 # Удаляем подзаголовок во view.tree
 
 ```tree
 $my_top_heroes $my_heroes
-	<= SubTitle null
+	<= Title_sub null
 ```
 
 # Добавляем описание во view.tree
@@ -322,8 +327,9 @@ $my_top_heroes $my_heroes
 $my_new_heroes $my_heroes
 	sub /
 		<= Title -
-		<= SubTitle -
-		<= Description $mol_text text <= description \
+		<= Title_sub -
+		<= Description $mol_text
+			text <= description \
 ```
 
 # Меняем местами во view.tree
