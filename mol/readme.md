@@ -352,9 +352,7 @@ $my_heroes $mol_view
 $my_heroes $mol_view
 	sub /
 		<= Title $mol_view
-
 		<= Title_sub $mol_view
-
 		<= Rows $mol_list
 ```
 
