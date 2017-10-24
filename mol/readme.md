@@ -341,6 +341,16 @@ $my_reflect_heroes $my_heroes
 		<= Badge -
 ```
 
+# Опыт крупных игроков
+
+- [Google](https://www.google.ru/): свой GWT забросили, пилят Polymer и Angular, сервисы на чём попало
+- [Yandex](https://yandex.ru/): свой BEM, чуть ли не всё уже перевели на его
+- [Facebook](https://www.facebook.com/): местами свой React, местами что попало
+- [VKontakte](https://vk.com/): полный бардак в коде, но работает шустро
+- [Tinkoff](https://www.tinkoff.ru/): на React - [огромный и тормозной](https://habrahabr.ru/company/tinkoff/blog/303580/)
+- [Raiffeisen](https://www.raiffeisen.ru/): статика + jQuery
+- [AlphaBank](https://alfabank.ru/): статика + jQuery и где-то есть React
+
 # Продолжение следует
 
 > Надеюсь мне удалось заразить вас идеями $mol. Предлагайте свои. Или просто расскажите о своей боли, а вместе мы что-нибудь придумаем, чтобы её не стало.
