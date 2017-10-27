@@ -245,7 +245,7 @@ result() {
 
 ```html
 <mol_view my_date_calendar_day mol_date_calendar_day mol_calendar_day mol_view>
-	01
+	03
 </mol_view>
 ```
 
