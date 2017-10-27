@@ -479,22 +479,18 @@ $my_reflect_heroes $my_heroes
 > Но иногда ведь нужна нетривиальная логика для вычисления свойств. А логику лучше всего описывать на языке для этого предназначенном. Поэтому мы просто наследуемся от автоматически сгенерированного из view.tree класс и переопределяем его свойства, реализуя любую хитрость.
 
 ```
-namespace $.$$ {
+export $my_heroes extends $.$my_heroes {
 
-	export $my_heroes extends $.$my_heroes {
+	heroes() {
+		return $mol_http.resource( '/heroes' ).json()
+	}
 
-		heroes() {
-			return $mol_http.resource( '/heroes' ).json()
-		}
+	rows() {
+		return Object.keys( this.heroes() ).map( index => this.Row( index ) )
+	}
 
-		rows() {
-			return Object.keys( this.heroes() ).map( index => this.Row( index ) )
-		}
-
-		hero_name( id : string ) {
-			return this.heroes()[ id ].name
-		}
-
+	hero_name( id : string ) {
+		return this.heroes()[ id ].name
 	}
 
 }
