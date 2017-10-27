@@ -244,7 +244,7 @@ result() {
 > Cамое приятное в стилизации $mol компонент - программисту не надо вручную прописывать портянку классов каждому дом-элементу - они генерируются автоматически исходя из сформированного дерева компонент.
 
 ```html
-<mol_view my_date_calendar_day mol_date_calendar_day mol_calendar_day>
+<mol_view my_date_calendar_day mol_date_calendar_day mol_calendar_day mol_view>
 	01
 </mol_view>
 ```
