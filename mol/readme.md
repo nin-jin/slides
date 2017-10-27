@@ -410,12 +410,14 @@ $my_heroes $mol_view
 
 > Зашивать тексты в коде, конечно, просто и быстро, но что насчёт локализации? Просто добавляем собачку и текст после неё будет вынесен в отдельный файл с переводами, а в сгенерированном из view.tree TypeScript классе будет лишь обращение по человекопонятному ключу.
 
+**web.locale=en.json**
 ```json
 {
 	"$my_heroes_title_sub" : "My Heroes"
 }
 ```
 
+**heroes.view.tree.ts**
 ```json
 /// title_sub @ \My Heroes
 title_sub() {
