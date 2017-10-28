@@ -4,7 +4,7 @@
 
 ![Я причиню вам боль](http://nin-jin.github.io/slides/mol/pain.jpg)
 
-> Далее вашему представляется текстовая расшифровка одноимённого выступления c [IT Global Meetup #1](http://nin-jin.github.io/slides/mol/http://piter-united.ru/itgm11/). Вы можете [читать её как статью](http://nin-jin.github.io/slides/mol/https://github.com/nin-jin/slides/blob/master/mol/) или же открыть в [интерфейсе проведения презентаций](http://nin-jin.github.io/slides/mol/https://nin-jin.github.io/slides/mol/). Приятного чтения.
+> Далее вашему представляется текстовая расшифровка одноимённого выступления c [IT Global Meetup #1](http://piter-united.ru/itgm11/). Вы можете [читать её как статью](https://github.com/nin-jin/slides/blob/master/mol/) или же открыть в [интерфейсе проведения презентаций](https://nin-jin.github.io/slides/mol/). Приятного чтения.
 
 # Высокоуровневые фреймворки
 
