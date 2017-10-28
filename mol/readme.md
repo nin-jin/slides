@@ -490,7 +490,7 @@ $my_reflect_heroes $my_heroes
 > Но иногда ведь нужна нетривиальная логика для вычисления свойств. А логику лучше всего описывать на языке для этого предназначенном. Поэтому мы просто наследуемся от автоматически сгенерированного из view.tree класса и переопределяем его свойства, реализуя любую хитрость.
 
 ```
-export $my_heroes extends $.$my_heroes {
+export class $my_heroes extends $.$my_heroes {
 
 	heroes() {
 		return $mol_http.resource( '/heroes' ).json()
