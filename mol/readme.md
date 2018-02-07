@@ -441,11 +441,11 @@ title_sub() {
 ```tree
 $my_heroes $mol_view
 	- ...
-	Row!index $mol_row
-		sub <= item_content!index /
-			<= Badge!index $my_badge
-				title <= hero_id!index \
-			<= hero_name!index \
+	Row!id $mol_row
+		sub <= item_content!id /
+			<= Badge!id $my_badge
+				title <= hero_id!id \
+			<= hero_name!id \
 ```
 
 > В данном случае ключом для строк героев и всего, что в них находится у нас будет их порядковый индекс.
@@ -483,9 +483,9 @@ $my_new_heroes $my_heroes
 
 ```tree
 $my_reflect_heroes $my_heroes
-	item_content!index /
-		<= hero_name!index -
-		<= Badge!index -
+	item_content!id /
+		<= hero_name!id -
+		<= Badge!id -
 ```
 
 > Язык view.tree настолько удобен для описания компонент, что его так и тянет использовать для описания вообще любых классов. И это на самом деле возможно, но только осторожно.
@@ -502,7 +502,7 @@ export class $my_heroes extends $.$my_heroes {
 	}
 
 	rows() {
-		return Object.keys( this.heroes() ).map( index => this.Row( index ) )
+		return Object.keys( this.heroes() ).map( id => this.Row( id ) )
 	}
 
 	hero_name( id : string ) {
