@@ -194,11 +194,7 @@ const ToysFiltered = Filter
 class $my_toys {
 
 	@mem
-	filter( next ) {
-		if( next === undefined ) return toy => toy.count() > 0
-	
-		return next
-	}
+	filter( next = toy => toy.count() > 0 ) { return next }
 	
 	@mem
 	toys( next = [] ){ return next }
@@ -222,11 +218,7 @@ class $my_toys {
 
 ```typescript
 @mem
-sorter( next ) {
-	if( next === undefined ) return ( a , b )=> b.price() - a.price()
-	
-	return next
-}
+sorter( next = ( a , b )=> b.price() - a.price() ) { return next }
 
 @mem
 toys_sorted() {
@@ -330,8 +322,7 @@ namesakes_message() {
 	const user = this.user()
 	const count = this.name_count( user.name )
 	
-	return this.texts().namesakes_message
-	.replace( /\{count\}/g , count )
+	return this.texts().namesakes_message.replace( /\{count\}/g , count )
 }
 ```
 
@@ -404,7 +395,7 @@ namesakes_message() {
 	const user = this.user()
 
 	/// Serial
-	const count = this.namesakes_count( user.name )
+	const count = this.namesakes_count( user.name )                    
 	
 	return texts.namesakes_message.replace( /\{count\}/g , count )
 }
@@ -440,17 +431,19 @@ namesakes_message() {
 ```typescript
 /// Before
 @mem
-toys(){ return [] }
+toys(){
+	return []
+}
 
 
 /// After
-toys_data() {
-	return this.$.$mol_http.resource( '/toys.json' ).json()
-}
-
 @mem
 toys() {
 	return Object.keys( this.toys_data() ).map( id => this.toy( id ) )
+}
+
+toys_data() {
+	return this.$.$mol_http.resource( '/toys.json' ).json()
 }
 ```
 
