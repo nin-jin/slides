@@ -165,19 +165,20 @@
 
 ```typescript
 const FilterSource = new Rx.BehaviorSubject( toy => toy.count > 0 )
-const Filter = FilterSource.distinctUntilChanged().debounce( 0 )
+const Filter = FilterSource.pipe( distinctUntilChanged() , debounce(0) , shareReplay(1) )
 
 const ToysSource = new Rx.BehaviorSubject( [] )
-const Toys = ToysSource.distinctUntilChanged().debounce( 0 )
+const Toys = ToysSource.pipe( distinctUntilChanged() , debounce(0) , shareReplay(1) )
 
-const ToysFiltered = Filter
-.select( filter => {
-	if( !filter ) return Toys
-	return Toys.map( toys => toys.filter( filter ) )
-} )
-.switch()
-.distinctUntilChanged()
-.debounce( 0 )
+const ToysFiltered = Filter.pipe(
+	switchMap( filter => {
+		if( !filter ) return Toys
+		return Toys.pipe( map( toys => toys.filter( filter ) ) )
+	} ) ,
+	distinctUntilChanged() ,
+	debounce(0) ,
+	shareReplay(1) ,
+)
 ```
 
 > Посмотрите на этот ФРП-ребус и попробуйте сходу сказать, что и зачем он делает. А делает он простую штуку: создаёт стрим для товаров, стрим для критерия фильтрации и получает из них стрим отфильтрованного списка товаров.
