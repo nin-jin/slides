@@ -145,13 +145,14 @@
 > В Angular ставку сделали на концепцию стримов, где вы статически настраиваете потоки событий и реакции на них. К сожалению, любое нетривиальное приложение имеет много динамики, а значит составить для него эффективную конфигурацию потоков - настоящая головоломка. Посмотрите только как на стримах выглядит правильное условное ветвление по двум переменным.
 
 ```typescript
-const Result = Rx.Observable.combineLatest( Pos , Start )
-.select( ([ pos , start ])=> {
-	return pos < start ? Left : Rx.Observable.of( null )
-} )
-.switch()
-.distinctUntilChanged()
-.debounce( 0 )
+const Result = combineLatest( Pos , Start ).pipe(
+	switchMap( ([ pos , start ])=> {
+		return pos < start ? Left : of( null )
+	} ) ,
+	distinctUntilChanged() ,
+	debounce( 0 ) ,
+	shareReplay( 1 ) ,
+)
 ```
 
 > И это ещё довольно простой пример. 
