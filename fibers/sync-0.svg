@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="840" height="340" viewBox="0 -40 840 300">
+
+<style>
+	* {
+		white-space: pre;
+		font-family: monospace;
+	}
+
+	.header {
+		fill: gray;
+	}
+
+	.cache rect {
+		fill: lightgray;
+		stroke: lightgray;
+		stroke-width: 8px;
+	}
+
+	.cache rect.l {
+		fill: steelblue;
+		stroke: steelblue;
+	}
+
+	.cache text {
+		fill: white;
+	}
+
+	.row {
+		fill: yellow;
+		stroke: yellow;
+		stroke-width: 8px;
+	}
+
+	.token {
+		fill: blue;
+	}
+
+	.string {
+		fill: green;
+	}
+
+	.comment {
+		fill: gray;
+	}
+
+	.bad {
+		fill: red;
+	}
+
+</style>
+
+	<text class="header" x="40" y="-20">Code</text>
+
+	<text x="40" y="20"><tspan class="token">const</tspan> step = name => {</text>
+	<text x="40" y="40">    console.log( name , <tspan class="string">'begin'</tspan> )</text>
+	<text x="40" y="60">    <tspan class="comment">// 10 ms of work</tspan></text>
+	<text x="40" y="80">    <tspan class="token">return</tspan> name</text>
+	<text x="40" y="100">}</text>
+
+	<text x="40" y="140"><tspan class="token">const</tspan> walk = ()=> {</text>
+	<text x="40" y="160">    console.log( <tspan class="string">'start'</tspan> )</text>
+	<text x="40" y="180">    console.log( step( <tspan class="string">'first'</tspan> ) , <tspan class="string">'done'</tspan> )</text>
+	<text x="40" y="200">    console.log( step( <tspan class="string">'second'</tspan> ) , <tspan class="string">'done'</tspan> )</text>
+	<text x="40" y="220">    console.log( <tspan class="string">'finish'</tspan> )</text>
+	<text x="40" y="240">}</text>
+
+	<text class="header" x="440" y="-20">Console</text>
+
+	<rect class="row" x="440" y="10" width="100" height="110" />
+
+	<text x="440" y="20">start</text>
+	<text x="440" y="40">first begin</text>
+	<text x="440" y="60">first done</text>
+	<text x="440" y="80">second begin</text>
+	<text x="440" y="100">second done</text>
+	<text x="440" y="120">finish</text>
+
+	<text class="header" x="640" y="-20">Cache</text>
+
+	<g class="cache">
+		<rect x="640" y="10" width="60" height="10" />
+		<text x="640" y="20">walk</text>
+	</g>
+
+	<g class="cache">
+		<rect x="660" y="30" width="60" height="10">
+		</rect>
+		<text x="660" y="40">0: step</text>
+	</g>
+	
+	<g class="cache">
+		<rect x="660" y="50" width="60" height="10">
+		</rect>
+		<text x="660" y="60">1: step</text>
+	</g>
+
+</svg>
