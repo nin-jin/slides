@@ -52,7 +52,7 @@
 	<text class="header" x="40" y="-20">Code</text>
 
 	<rect class="row" x="40" width="320" height="10">
-		<animate values="130;150;170;10;30;70;170;190;10;30;70;190;210;230;230" attributeName="y" dur="10s" calcMode="discrete" repeatCount="indefinite" />
+		<animate values="130;150;170;10;30;70;170;190;10;30;70;190;210;230;230" attributeName="y" dur="15s" calcMode="discrete" repeatCount="indefinite" />
 	</rect>
 
 	<text x="40" y="20"><tspan class="token">const</tspan> step = name => {</text>
@@ -71,7 +71,7 @@
 	<text class="header" x="440" y="-20">Console</text>
 
 	<rect class="row" x="440" y="10" width="100" height="0">
-		<animate values="0;10;10;10;30;30;50;50;50;70;70;90;110;110;110" attributeName="height" dur="10s" calcMode="discrete" repeatCount="indefinite" />
+		<animate values="0;10;10;10;30;30;50;50;50;70;70;90;110;110;110" attributeName="height" dur="15s" calcMode="discrete" repeatCount="indefinite" />
 	</rect>
 
 	<text x="440" y="20">start</text>
