@@ -60,6 +60,7 @@ Future.task( one ).detach()
 const one = ()=> two() + 1
 const two = ()=> three() + 1
 const three = ()=> four() + 1
+
 const four = ()=> new Future( future => setTimeout( future.return )
 ```
 
@@ -74,6 +75,7 @@ one()
 const one = async ()=> ( await two() ) + 1
 const two = async ()=> ( await three() ) + 1
 const three = async ()=> ( await four() ) + 1
+
 const four = ()=> new Promise( done => setTimeout( done ) )
 ```
 
@@ -88,6 +90,7 @@ $mol_fiber_start( one )
 const one = ()=> two() + 1
 const two = ()=> three() + 1
 const three = ()=> four() + 1
+
 const four = ()=> $mol_fiber_async( back => setTimeout( back ) )
 ```
 
@@ -140,14 +143,14 @@ throw new Promise( done => {
 
 ```typescript
 function foo() {
-	throw new Error( 'Something wrong' ) // 1?
+	throw new Error( 'Something wrong' ) // [1]
 }
 
 try {
 	foo()
 } catch( error ) {
 	handle( error )
-	throw error // 2?
+	throw error // [2]
 } 
 ```
 
@@ -160,8 +163,6 @@ function foo() {
 
 window.addEventListener( 'error' , event => handle( event.error ) )
 window.addEventListener( 'unhandledRejection' , event => handle( event.reason ) )
-
-process.on( 'uncaughtException' , error => handle( error ) )
 
 foo()
 ```
@@ -243,9 +244,7 @@ export class Mover {
 import { $mol_fiber_async as async } from 'mol_fiber/web'
 
 function getData( uri : string ) : XMLHttpRequest {
-	
 	return async( back => {
-
 		const xhr = new XMLHttpRequest()
 
 		xhr.onload = back( event => {
@@ -257,9 +256,7 @@ function getData( uri : string ) : XMLHttpRequest {
 		xhr.send()
 		
 		return ()=> xhr.abort()
-
 	} )
-	
 }
 ```
 
