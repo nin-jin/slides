@@ -49,8 +49,7 @@ Dmitriy Karlovskiy @ HolyJS 2018 Piter
 
 # Solution: quantization
 
-![Долгая задача без квантизации](flame-sync.png)
-![Долгая задача с квантизацией](flame-quant.png)
+![flame charts](flame-chart.png)
 
 # Concurrency: fibers – stackfull coroutines
 
