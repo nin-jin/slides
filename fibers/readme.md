@@ -282,8 +282,7 @@ app.get( '/hash/:data/:count' , middle_fiber( ( req , res ) => {
 
 # $mol_fiber: concurrency
 
-![Нет конкуренции](server-sync.png)
-![Есть конкуренция](server-quant.png)
+![Быстрые и медленные запросы](server-chart.png)
 
 # $mol_fiber: properties
 
