@@ -52,37 +52,48 @@ Dmitriy Karlovskiy @ HolyJS 2018 Piter
 ![Долгая задача без квантизации](flame-sync.png)
 ![Долгая задача с квантизацией](flame-quant.png)
 
-# Concurrency: FSM – stackless coroutines
-
-Properties:
-- Async/await virus
-
-Examples:
-- C#
-- Python
-- JavaScript
-
 # Concurrency: fibers – stackfull coroutines
 
-Properties:
-- Runtime support required
+```typescript
+Future.task( one ).detach()
 
-Examples:
-- node-fibers
-- Python
-- Go
-- D
+const one = ()=> two() + 1
+const two = ()=> three() + 1
+const three = ()=> four() + 1
+const four = ()=> new Future( future => setTimeout( future.return )
+```
+
+> Properties: Runtime support required
+> Examples: node-fibers, Python, Go, D
+
+# Concurrency: FSM – stackless coroutines
+
+```typescript
+one()
+
+const one = async ()=> ( await two() ) + 1
+const two = async ()=> ( await three() ) + 1
+const three = async ()=> ( await four() ) + 1
+const four = ()=> new Promise( done => setTimeout( done ) )
+```
+
+> Properties: Async/await virus
+> Examples: C#, Python, JavaScript
 
 # Concurrency: semi-fibers - restarts
 
-Properties:
-- Idempotent calculations
-- Runtime support is not required
+```typescript
+$mol_fiber_start( one )
 
-Examples:
-- Future-fetcher
-- $mol_atom
-- $mol_fiber
+const one = ()=> two() + 1
+const two = ()=> three() + 1
+const three = ()=> four() + 1
+const four = ()=> $mol_fiber_async( back => setTimeout( back ) )
+```
+
+> Properties: Idempotent calculations, Runtime support is not required
+
+> Examples: Future-fetcher, $mol_atom, $mol_fiber
 
 # Figures
 
