@@ -26,21 +26,29 @@
 	}
 
 	.row {
-		fill: yellow;
-		stroke: yellow;
+		fill: linen;
+		stroke: linen;
 		stroke-width: 8px;
 	}
 
 	.token {
-		fill: blue;
+		fill: #E06252;
 	}
 
 	.string {
-		fill: green;
+		fill: #98C363;
 	}
 
 	.comment {
 		fill: gray;
+	}
+
+	.func {
+		fill: #C678DD;
+	}
+
+	.glob {
+		fill: #61AFEF
 	}
 
 	.bad {
@@ -55,17 +63,17 @@
 		<animate values="150;170;190;10;30;70;190;210;230;230" attributeName="y" dur="10s" calcMode="discrete" repeatCount="indefinite" />
 	</rect>
 
-	<text x="40" y="20"><tspan class="token">const</tspan> step = $mol_fiber_func( name => {</text>
-	<text x="40" y="40">    console.log( name , <tspan class="string">'begin'</tspan> )</text>
+	<text x="40" y="20"><tspan class="token">const</tspan> step = <tspan class="glob">$mol_fiber_func</tspan>( name => {</text>
+	<text x="40" y="40">    console<tspan class="func">.log</tspan>( name , <tspan class="string">'begin'</tspan> )</text>
 	<text x="40" y="60">    <tspan class="comment">// 10 ms of work</tspan></text>
 	<text x="40" y="80">    <tspan class="token">return</tspan> name</text>
 	<text x="40" y="100">} )</text>
 
-	<text x="40" y="140"><tspan class="token">const</tspan> walk = $mol_fiber_func( ()=> {</text>
-	<text x="40" y="160">    console.log( <tspan class="string">'start'</tspan> )</text>
-	<text x="40" y="180">    console.log( step( <tspan class="string">'first'</tspan> ) , <tspan class="string">'done'</tspan> )</text>
-	<text x="40" y="200">    console.log( step( <tspan class="string">'second'</tspan> ) , <tspan class="string">'done'</tspan> )</text>
-	<text x="40" y="220">    console.log( <tspan class="string">'finish'</tspan> )</text>
+	<text x="40" y="140"><tspan class="token">const</tspan> walk = <tspan class="glob">$mol_fiber_func</tspan>( ()=> {</text>
+	<text x="40" y="160">    console<tspan class="func">.log</tspan>( <tspan class="string">'start'</tspan> )</text>
+	<text x="40" y="180">    console<tspan class="func">.log</tspan>( <tspan class="func">step</tspan>( <tspan class="string">'first'</tspan> ) , <tspan class="string">'done'</tspan> )</text>
+	<text x="40" y="200">    console<tspan class="func">.log</tspan>( <tspan class="func">step</tspan>( <tspan class="string">'second'</tspan> ) , <tspan class="string">'done'</tspan> )</text>
+	<text x="40" y="220">    console<tspan class="func">.log</tspan>( <tspan class="string">'finish'</tspan> )</text>
 	<text x="40" y="240">} )</text>
 
 	<text class="header" x="440" y="-20">Console</text>

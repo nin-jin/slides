@@ -4,6 +4,8 @@ Dmitriy Karlovskiy @ HolyJS 2018 Piter
 
 # Issue: Low responsiveness
 
+1 s / 60 fps ~= 16.(6) ms
+
 ![Низкая отзывчивость](low-fps.gif)
 
 # Issue: No escape
@@ -18,12 +20,21 @@ Dmitriy Karlovskiy @ HolyJS 2018 Piter
 
 ![Хитрая логика React Fiber](react-logic.png)
 
-# React Fiber: Issues
+# React Fiber: React required
 
-- React required
-- Only rendering
-- Quantization is disabled by default
-- Debug is pain
+![React Everywere!](react-everywhere.jpg)
+
+# React Fiber: Only rendering
+
+![Не так быстро!](react-only.gif)
+
+# React Fiber: Quantization is disabled
+
+![Маркетинговая ловушка](react-trap.jpg)
+
+# React Fiber: Debug is pain
+
+![Вся боль отладки](react-debug.jpg)
 
 # Solution: Workers
 
@@ -31,7 +42,7 @@ Dmitriy Karlovskiy @ HolyJS 2018 Piter
 
 # Workers: Issues
 
-- (De)Serialization 
+- (De)Serialization
 - Asynchronous
 - Limited API’s
 - Can’t cancel
@@ -97,6 +108,23 @@ Examples:
 
 ![Реиспользование идемпотентных кешей](idemp-2.svg)
 
+# $mol_fiber: break
+
+```typescript
+const now = date.now()
+if( now <= $mol_fiber.deadline ) return
+
+if( !$mol_fiber.current && $mol_fiber.queue.length === 0 ) {
+	$mol_fiber.deadline = now + $mol_fiber.quant
+	return
+}
+
+throw new Promise( done => {
+	$mol_fiber.queue.push( done )
+	$mol_fiber.schedule()
+} )
+```
+
 # Debug: try/catch
 
 ```typescript
@@ -141,12 +169,27 @@ new Promise( ()=> {
 
 # Stack trace: React Fiber
 
-![Бессодержательный стектрейс](react-debug.png)
+![Бессодержательный стектрейс](react-stack.png)
 
 # Stack trace: $mol_fiber
 
-![Содержательный стектрейс](fiber-debug.png)
+![Содержательный стектрейс](fiber-stack.png)
 
+# $mol_fiber: handle 
+
+```typescript
+if( error instanceof Promise ) {
+
+	const self = this
+	
+	const listener = function $mol_fiber_listener() {
+		return self.start()
+	}
+	
+	return error.then( listener , listener )
+
+}
+```
 
 # $mol_fiber: functions
 
@@ -166,10 +209,6 @@ export const main = fiber( ()=> {
 import { $mol_fiber_sync as sync } from 'mol_fiber/web'
 
 export const getData = sync( fetch )
-
-export const getData = sync( async( ... args )=> {
-	return ( await fetch( url ) ).data
-} ) 
 ```
 
 # $mol_fiber: methods
@@ -192,21 +231,25 @@ export class Mover {
 ```typescript
 import { $mol_fiber_async as async } from 'mol_fiber/web'
 
-function getData( uri : string ) : XMLHttpRequest { return async( back => {
-
-	const xhr = new XMLHttpRequest()
-	xhr.open( 'GET', uri )
-
-	xhr.onload = back( event => {
-		if( Math.floor( xhr.status / 100 ) === 2 ) return xhr
-		throw new Error( xhr.statusText )
-	} )
-	xhr.onerror = back( event => { throw new Error( xhr.statusText ) } )
-
-	xhr.send()
+function getData( uri : string ) : XMLHttpRequest {
 	
-	return ()=> xhr.abort()
-} ) }
+	return async( back => {
+
+		const xhr = new XMLHttpRequest()
+
+		xhr.onload = back( event => {
+			if( Math.floor( xhr.status / 100 ) === 2 ) return xhr
+			throw new Error( xhr.statusText )
+		} )
+
+		xhr.open( 'GET', uri )
+		xhr.send()
+		
+		return ()=> xhr.abort()
+
+	} )
+	
+}
 ```
 
 # $mol_fiber: cancel response

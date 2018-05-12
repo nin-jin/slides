@@ -26,25 +26,37 @@
 	}
 
 	.row {
-		fill: yellow;
-		stroke: yellow;
+		fill: linen;
+		stroke: linen;
 		stroke-width: 8px;
 	}
 
 	.token {
-		fill: blue;
+		fill: #E06252;
 	}
 
 	.string {
-		fill: green;
+		fill: #98C363;
 	}
 
 	.comment {
 		fill: gray;
 	}
 
+	.func {
+		fill: #C678DD;
+	}
+
+	.glob {
+		fill: #61AFEF
+	}
+
 	.bad {
 		fill: red;
+	}
+
+	.h {
+		display: none;
 	}
 
 </style>
@@ -52,18 +64,26 @@
 	<text class="header" x="40" y="-20">Code</text>
 
 	<text x="40" y="20"><tspan class="token">const</tspan> step = name => {</text>
-	<text x="40" y="40">    console.log( name , <tspan class="string">'begin'</tspan> )</text>
+	<text x="40" y="40">    console<tspan class="func">.log</tspan>( name , <tspan class="string">'begin'</tspan> )</text>
 	<text x="40" y="60">    <tspan class="comment">// 10 ms of work</tspan></text>
 	<text x="40" y="80">    <tspan class="token">return</tspan> name</text>
 	<text x="40" y="100">}</text>
 
+<g>
+	<animate values="h;v;v;v" attributeName="class" dur="15s" calcMode="discrete" />
+
 	<text x="40" y="140"><tspan class="token">const</tspan> walk = ()=> {</text>
-	<text x="40" y="160">    console.log( <tspan class="string">'start'</tspan> )</text>
-	<text x="40" y="180">    console.log( step( <tspan class="string">'first'</tspan> ) , <tspan class="string">'done'</tspan> )</text>
-	<text x="40" y="200">    console.log( step( <tspan class="string">'second'</tspan> ) , <tspan class="string">'done'</tspan> )</text>
-	<text x="40" y="220">    console.log( <tspan class="string">'finish'</tspan> )</text>
+	<text x="40" y="160">    console<tspan class="func">.log</tspan>( <tspan class="string">'start'</tspan> )</text>
+	<text x="40" y="180">    console<tspan class="func">.log</tspan>( <tspan class="func">step</tspan>( <tspan class="string">'first'</tspan> ) , <tspan class="string">'done'</tspan> )</text>
+	<text x="40" y="200">    console<tspan class="func">.log</tspan>( <tspan class="func">step</tspan>( <tspan class="string">'second'</tspan> ) , <tspan class="string">'done'</tspan> )</text>
+	<text x="40" y="220">    console<tspan class="func">.log</tspan>( <tspan class="string">'finish'</tspan> )</text>
 	<text x="40" y="240">}</text>
 
+</g>
+
+<g>
+	<animate values="h;h;v;v" attributeName="class" dur="15s" calcMode="discrete" />
+	
 	<text class="header" x="440" y="-20">Console</text>
 
 	<rect class="row" x="440" y="10" width="100" height="110" />
@@ -74,6 +94,11 @@
 	<text x="440" y="80">second begin</text>
 	<text x="440" y="100">second done</text>
 	<text x="440" y="120">finish</text>
+
+</g>
+
+<g>
+	<animate values="h;h;h;v" attributeName="class" dur="15s" calcMode="discrete" />
 
 	<text class="header" x="640" y="-20">Cache</text>
 
@@ -93,5 +118,7 @@
 		</rect>
 		<text x="660" y="60">1: step</text>
 	</g>
+
+</g>
 
 </svg>
