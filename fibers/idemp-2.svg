@@ -65,7 +65,7 @@
 
 	<text x="40" y="20"><tspan class="token">const</tspan> step = <tspan class="glob">$mol_fiber_func</tspan>( name => {</text>
 	<text x="40" y="40">	console<tspan class="func">.log</tspan>( name , <tspan class="string">'begin'</tspan> )</text>
-	<text x="40" y="60">    <tspan class="comment">// 10 ms of work</tspan></text>
+	<text x="40" y="60">    <tspan class="comment">// 20 ms of work</tspan></text>
 	<text x="40" y="80">    <tspan class="token">return</tspan> name</text>
 	<text x="40" y="100">} )</text>
 
