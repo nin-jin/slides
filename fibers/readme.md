@@ -366,6 +366,8 @@ export const main = fiberize( ()=> {
 
 # $mol_fiber: error handling
 
+Но как реагировать на исключительные ситуации, если мы не хотим использовать `try-catch`? Тогда мы можем зарегистрировать обработчик ошибки посредством `$mol_fiber_catch`... 
+
 ```typescript
 import { $mol_fiber_func as fiberize , $mol_fiber_catch as onError } from 'mol_fiber'
 
@@ -377,6 +379,8 @@ const getConfig = fiberize( ()=> {
 
 } )
 ```
+
+Если мы вернём в нём что-то отличное от ошибки, то оно станет результатом работы текущего файбера. В данном примере в случае невозможности загрузить конфиг с сервера функция `getConfig` вернёт конфиг по умолчанию.
 
 # $mol_fiber: methods
 
