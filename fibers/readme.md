@@ -4,8 +4,6 @@
 
 ![Кванты!](https://nin-jin.github.io/slides/fibers/quants.gif)
 
-> [Dmitriy Karlovskiy](http://github.com/nin-jin/) @ [HolyJS 2018 Piter](https://holyjs-piter.ru/)
-
 Это - текстовая версия одноимённого выступления на HolyJS 2018 Piter. Вы можете [читать её как статью](https://github.com/nin-jin/slides/blob/master/fibers/readme.md), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/fibers/), либо [посмотреть видео запись](https://www.youtube.com/watch?v=2BJu_6OsO08).
 
 <cut/>
