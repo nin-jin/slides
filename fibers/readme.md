@@ -4,7 +4,7 @@
 
 ![Кванты!](https://nin-jin.github.io/slides/fibers/quants.gif)
 
-Это - текстовая версия одноимённого выступления на [HolyJS 2018 Piter](https://holyjs-piter.ru/). Вы можете [читать её как статью](https://github.com/nin-jin/slides/blob/master/fibers/readme.md), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/fibers/), либо [посмотреть видео запись](https://www.youtube.com/watch?v=2BJu_6OsO08).
+Это - текстовая версия одноимённого выступления на [HolyJS 2018 Piter](https://holyjs-piter.ru/). Вы можете либо [читать её как статью](https://github.com/nin-jin/slides/blob/master/fibers/readme.md), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/fibers/), либо [посмотреть видеозапись](https://www.youtube.com/watch?v=2BJu_6OsO08).
 
 <cut/>
 
