@@ -411,32 +411,25 @@ import { $mol_fiber_sync as sync } from 'mol_fiber/web'
 export const getData = sync( fetch )
 ```
 
-Всем хороша эта реализация, да вот не поддерживает отмену запроса при разрушении дерева файберов, поэтому нам нужно воспользоваться более замороченным `API`..
+Всем хороша эта реализация, да вот не поддерживает отмену запроса при разрушении дерева файберов, поэтому усложним код..
 
 # $mol_fiber: cancel request
 
 ```typescript
-import { $mol_fiber_async as async } from 'mol_fiber/web'
+import { $mol_fiber_sync as sync } from 'mol_fiber/web'
 
-function getData( uri : string ) : Response {
+export const getData = sync( ( input : RequestInfo , init : RequestInit = {} )=> {
 
-	return async( back => {
-
-		var controller = new AbortController();
+	var controller = new AbortController()
+	$mol_fiber.current.abort = controller.abort.bind( controller )
+	init.signal = controller.signal
 		
-		fetch( uri , { signal : controller.signal } ).then(
-			back( res => res ) ,
-			back( error => { throw error } ) ,
-		)
-		
-		return ()=> controller.abort()
-
-	} )
+	return fetch( input , init )
 
 }
 ```
 
-Функция передаваемая в обёртку `async` вызывается лишь один раз и ей передаётся обёртка `back` в которую нужно заворачивать колбэки. Соответственно в колбэках этих нужно либо вернуть значение, либо бросить исключение. Каким бы ни был результат работы колбэка - он станет и результатом файбера. Обратите внимание, что в конце мы возвращаем функцию, которая будет вызывана в случае преждевременного уничтожения файбера.
+Тут у нас обычная асинхронная функция, но с особенностью - текущему файберу мы передаём колбэк `abort`, который будет автоматически вызван при разрушении файбера.
 
 # $mol_fiber: cancel response
 
