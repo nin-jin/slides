@@ -1,6 +1,6 @@
 # $mol_app_slides
 
-![Пример презентации](https://nin-jin.github.io/slides/fibers/)
+![Пример презентации](https://mol.js.org/app/slides/#slides=https%3A%2F%2Fnin-jin.github.io%2Fslides%2Ffibers%2F)
 
 Это - веб приложение для проведения презентаций.
 
@@ -8,7 +8,7 @@
 
 Можно рамещать любой текст в формате MarkDown, если оформить его цитатой.
 
-> Привет, мир!
+> Привет, **мир**!
 
 # Исходные коды
 
