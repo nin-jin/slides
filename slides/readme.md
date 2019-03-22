@@ -2,7 +2,7 @@
 
 ![Пример презентации](https://mol.js.org/app/slides/#slides=https%3A%2F%2Fnin-jin.github.io%2Fslides%2Ffibers%2F)
 
-[Это](https://nin-jin.github.io/slides/slides/) - презентация о веб приложении для проведения презентаций.
+Это - [презентация о веб приложении для проведения презентаций](https://nin-jin.github.io/slides/slides/).
 
 # Главное - контент
 
