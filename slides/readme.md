@@ -36,7 +36,7 @@
 ```html
 const hello = ()=>
 <body>
-  Hello, {world}!
+  Hello, "world"!
 </body>
 ```
 
