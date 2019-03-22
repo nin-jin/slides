@@ -1,3 +1,3 @@
 # $mol_app_slides
 
-![youtube](https://youtu.be/frddLjdkKpA)
+![youtube](https://www.youtube.com/embed/frddLjdkKpA)
