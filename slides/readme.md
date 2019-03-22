@@ -61,3 +61,7 @@ const hello = ()=>
 Копнуть глубже можно в презентации посвящённой ОРП.
 
 > [Объектное Реактивное Программирование](https://nin-jin.github.io/slides/orp/)
+
+А приподнять завесу грядущего можно в презентации о квантовании вычислений.
+
+> [Quantum Mechanics of Calculations](https://nin-jin.github.io/slides/fibers/)
