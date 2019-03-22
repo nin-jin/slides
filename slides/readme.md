@@ -35,9 +35,9 @@
 
 ```html
 const hello = ()=>
-  <body>
-    Hello, World!
-  </body>
+<body>
+  Hello, {world}!
+</body>
 ```
 
 # Видео
