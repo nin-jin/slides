@@ -56,12 +56,10 @@ const hello = ()=>
 
 Подробнее о фреймворке можно узнать на отдельной презентации.
 
-> [$mol - лучшее средство от геморроя](https://nin-jin.github.io/slides/mol/)
-
 Копнуть глубже можно в презентации посвящённой ОРП.
-
-> [Объектное Реактивное Программирование](https://nin-jin.github.io/slides/orp/)
 
 А приподнять завесу грядущего можно в презентации о квантовании вычислений.
 
-> [Quantum Mechanics of Calculations](https://nin-jin.github.io/slides/fibers/)
+- [$mol - лучшее средство от геморроя](https://nin-jin.github.io/slides/mol/)
+- [Объектное Реактивное Программирование](https://nin-jin.github.io/slides/orp/)
+- [Quantum Mechanics of Calculations](https://nin-jin.github.io/slides/fibers/)
