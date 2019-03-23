@@ -1,4 +1,4 @@
-# $mol_app_slides
+# $hyoo_slides
 
 ![Пример презентации](https://mol.js.org/app/slides/#slides=https%3A%2F%2Fnin-jin.github.io%2Fslides%2Ffibers%2F)
 
