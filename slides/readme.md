@@ -76,7 +76,7 @@ const hello = ()=>
 
 # Изображения
 
-![](https://habrastorage.org/webt/jc/ma/gm/jcmagmkltxjlrkal9rhhuo4eevy.png)
+![](https://habrastorage.org/webt/k-/om/dx/k-omdxqgrzv9zxbrbutn4qnebtq.png)
 
 # Видео
 
