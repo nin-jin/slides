@@ -82,7 +82,7 @@ const hello = ()=>
   ![Видеорассказ про $hyoo_slides](https://www.youtube.com/embed/jcV-OS6OvLY)
 ```
 
-![Видеорассказ про $hyoo_slides](https://www.youtube.com/embed/jcV-OS6OvLY)
+![Видеорассказ про $hyoo_slides](https://leonardo.osnova.io/721e39be-ca76-f87d-d9a7-5f837bb68660/-/format/mp4/)
 
 # Кликер сломался
 
