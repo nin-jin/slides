@@ -87,11 +87,11 @@ const hello = ()=>
 
 # Таблицы
 
-|                           | **Gzipped Size** |
-|---------------------------|------------------|
-| **@angular/core**         |            86 KB |
-| **React + ReactDOM**      |            36 KB |
-| **slides.hyoo.ru/web.js** |            29 KB |
+|                       | Gzipped Size |
+|-----------------------|--------------|
+| @angular/core         |    **86** KB |
+| ReactDOM              |    **34** KB |
+| slides.hyoo.ru/web.js |    **29** KB |
 
 # Изображения
 
