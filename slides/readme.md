@@ -87,7 +87,7 @@ const hello = ()=>
 
 # Таблицы
 
-|                       | Gzipped Size |
+|                       | GZipped Size |
 |-----------------------|--------------|
 | @angular/core         |    **86** KB |
 | ReactDOM              |    **34** KB |
