@@ -85,6 +85,14 @@ const hello = ()=>
 </body>
 ```
 
+# Таблицы
+
+|                           | **Gzipped Size** |
+|---------------------------|------------------|
+| **@angular/core**         |            86 KB |
+| **React + ReactDOM**      |            36 KB |
+| **slides.hyoo.ru/web.js** |            29 KB |
+
 # Изображения
 
 ```markdown
