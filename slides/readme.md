@@ -4,6 +4,8 @@
 
 ![Пример презентации](https://slides.hyoo.ru/#slides=https%3A%2F%2Fnin-jin.github.io%2Fslides%2Forp%2F/slide=2)
 
+[Видеорассказ про $hyoo_slides](https://www.youtube.com/embed/jcV-OS6OvLY).
+
 Слева в окне ведущего отображаются слайды. А справа - заметки докладчика.
 
 # Интерфейс слушателя
@@ -87,10 +89,10 @@ const hello = ()=>
 Можно размещать видео, веб страницы и любой другой внешний контент, используя тот же MarkDown синтаксис, что и для вставки картинок. Например, можете посмотреть видео с данным выступлением.
 
 ```
-  ![Видеорассказ про $hyoo_slides](https://www.youtube.com/embed/jcV-OS6OvLY)
+  ![Целевая аудитория](https://www.youtube.com/embed/exfBX2pb7AQ)
 ```
 
-![Видеорассказ про $hyoo_slides](https://www.youtube.com/embed/jcV-OS6OvLY)
+![Целевая аудитория](https://www.youtube.com/embed/exfBX2pb7AQ)
 
 # Кликер сломался
 
