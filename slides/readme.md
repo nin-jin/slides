@@ -76,9 +76,9 @@ const hello = ()=>
 
 # Изображения
 
-![](https://2ch.hk//w/src/393062/15408872899750.gif)
+![Котейка](./cat.gif)
 
-![](https://habrastorage.org/webt/em/ja/1u/emja1uoajh0qxsr_9y85hwoxyrs.gif)
+![Котейка](./cat.gif)
 
 # Видео
 
