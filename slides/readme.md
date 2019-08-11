@@ -78,9 +78,9 @@ const hello = ()=>
 
 Можно размещать видео, веб страницы и любой другой внешний контент, используя тот же MarkDown синтаксис, что и для вставки картинок. Например, можете посмотреть видео с данным выступлением.
 
-```markdown
+```
   ![youtube](https://www.youtube.com/embed/jcV-OS6OvLY)
-``` 
+```
 
 ![youtube](https://www.youtube.com/embed/jcV-OS6OvLY)
 
