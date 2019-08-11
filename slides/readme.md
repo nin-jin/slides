@@ -76,7 +76,7 @@ const hello = ()=>
 
 # Изображения
 
-![](http://lurkmore.so/images/f/fe/Ceilingcat.png)
+![](https://habrastorage.org/webt/jc/ma/gm/jcmagmkltxjlrkal9rhhuo4eevy.png)
 
 # Видео
 
