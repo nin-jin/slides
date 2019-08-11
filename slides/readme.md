@@ -126,6 +126,6 @@ const hello = ()=>
 - [$mol - лучшее средство от геморроя](https://github.com/nin-jin/slides/edit/master/mol/)
 - [Объектное Реактивное Программирование](https://github.com/nin-jin/slides/edit/master/orp/)
 - [Quantum Mechanics of Calculations](https://github.com/nin-jin/slides/edit/master/fibers/)
-- [$hyoo_slides](https://github.com/nin-jin/slides/edit/master/slides/)
+- [slides.hyoo.ru](https://slides.hyoo.ru/)
 
 Все они используют $hyoo_slides для отображения. Надеюсь вскоре таких презентаций станет больше. Спасибо за внимание!
