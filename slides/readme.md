@@ -127,7 +127,170 @@ const hello = ()=>
 
 Да, слайдами можно полностью управлять голосом, оставляя свои руки свободными для жестикуляций. 
 
-# Хочу
+# Структура приложения
+
+```tree
+$hyoo_slides $mol_view sub /
+    <= Loader
+    <= Listener
+    <= Speaker
+```
+
+# Структура загрузчика
+
+```tree
+Loader $mol_view
+    dom_name \iframe
+    attr *
+        src <= uri_slides
+    event *
+        load?event <=> load?event
+```
+
+# Роутинг
+
+```typescript
+uri_slides() {
+    return this.$.$mol_state_arg.value( 'slides' )
+}
+```
+
+# Структура интерфейса слушателя
+
+```tree
+Listener $mol_page
+    title <= slide_current_title
+    tools /
+        <= Slide_switcher
+    body /
+        <= Listener_content
+        <= Progress
+```
+
+# Структура переключателя страниц
+
+```tree
+Slide_switcher $mol_paginator
+    value?val <=> slide?val
+```
+
+# Структура содержмого слайда
+
+```tree
+Listener_content $mol_text
+    uri_base <= uri_base \
+    text <= listener_content
+```
+
+# Структура индикатора прогресса
+
+```tree
+Progress $mol_portion
+	portion <= progress 0
+```
+
+# Структура интерфейса докладчика
+
+```tree
+Speaker $mol_page
+    head /
+        <= Speech_toggle
+        <= Speech_text
+        <= Listener_open
+    body /
+        <= Speaker_content
+```
+
+# Структура переключателя голосового управления
+
+```tree
+Speech_toggle $mol_check_icon
+    Icon <= Speech_toggle_icon $mol_icon_microphone
+    checked?flag <=> speech_enabled?flag
+```
+
+# Структура кнопки открытия ведомого окна
+
+```tree
+Listener_open $mol_link
+    target \_blank
+    arg *
+        role \listener
+        slide null
+    sub /
+        <= Listener_open_icon $mol_icon_external
+```
+
+# Переключение раскладки срраницы
+
+```tree
+sub() {
+
+    if( !this.contents() ) return [ this.Loader() ]
+    
+    const role = this.role()
+
+    return [
+        ... ( role === 'speaker' ) ? [] : [ this.Listener() ] ,
+        ... ( role === 'listener' ) ? [] : [ this.Speaker() ] ,
+    ]
+
+}
+```
+
+# Плагины
+
+```tree
+plugins /
+    <= Nav
+    <= Touch
+    <= Speech_next
+```
+
+# Клавиатурная навигация
+
+```tree
+Nav $mol_nav
+    keys_y <= slide_keys
+    keys_x <= slide_keys
+    current_y?val <=> slide?val
+    current_x?val <=> slide?val
+```
+
+# Жесты пальцем
+
+```tree
+Touch $mol_touch
+    swipe_to_left?event <=> go_next?event
+    swipe_to_right?event <=> go_prev?event
+```
+
+```typescript
+go_next( event? : Event ) {
+    this.slide( this.slide() + 1 )
+}
+```
+
+# Голосовое упраление
+
+```
+Sing $mol_speech
+    event_catch?val <=> sing?val
+    patterns <= sing_patterns /
+        \sing( \S+?)*
+        \спой( \S+?)*
+```
+
+# Автоматическое переключение слайдов
+
+```
+Speech_next_auto $mol_speech
+    event_catch?val <=> go_next?val
+    suffix \
+    patterns <= speech_next_auto_patterns
+```
+
+# Как создать презентацию
 
 Попробовать в деле $hyoo_slides можно очень просто. Вам потребуется `readme` с вашим контентом и картинки. Так же рядом нужно будет скопипастить `index.html`, который редиректнет на веб приложение и откровет вашу презентацию в нём. 
 
@@ -138,7 +301,7 @@ const hello = ()=>
 
 Имейте ввиду, что этот `index.html` будет выдавать приложению любые файлы, доcтупные с того домена, куда вы всё это дело выложите. GitHub Pages - вполне удобный и безопасный вариант. Сам его использую.
 
-# Дайте две
+# Другие приложения
 
 Если вам понравилось это приложение, то можете глянуть и другие интересные приложения, реализованные на фреймворке $mol. Они настолько легковесные, что даже несколько десятков их не страшно загрузить разом на одном слайде.
 
@@ -146,7 +309,7 @@ const hello = ()=>
 
 Но о них в другой раз... 
 
-# Примеры
+# Примеры презентаций
 
 Подробнее о фреймворке можно узнать на отдельной презентации. Копнуть глубже можно в презентации посвящённой ОРП. А приподнять завесу грядущего можно в презентации о квантовании вычислений.
 
