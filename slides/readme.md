@@ -211,9 +211,12 @@ role() : 'speaker' | 'listener' {
 
 ```tree
 Listener $mol_page
+
     title <= slide_current_title
+
     tools /
         <= Slide_switcher
+
     body /
         <= Listener_content
         <= Progress
@@ -223,6 +226,7 @@ Listener $mol_page
 
 ```tree
 Slide_switcher $mol_paginator
+
     value?val <=> slide?val
 ```
 
@@ -230,7 +234,9 @@ Slide_switcher $mol_paginator
 
 ```tree
 Listener_content $mol_text
+
     uri_base <= uri_base \
+
     text <= listener_content
 ```
 
@@ -238,6 +244,7 @@ Listener_content $mol_text
 
 ```tree
 Progress $mol_portion
+
 	portion <= progress 0
 ```
 
@@ -245,10 +252,12 @@ Progress $mol_portion
 
 ```tree
 Speaker $mol_page
+
     head /
         <= Speech_toggle
         <= Speech_text
         <= Listener_open
+
     body /
         <= Speaker_content
 ```
@@ -257,7 +266,9 @@ Speaker $mol_page
 
 ```tree
 Speech_toggle $mol_check_icon
+
     Icon <= Speech_toggle_icon $mol_icon_microphone
+
     checked?flag <=> speech_enabled?flag
 ```
 
@@ -265,10 +276,13 @@ Speech_toggle $mol_check_icon
 
 ```tree
 Listener_open $mol_link
+
     target \_blank
+
     arg *
         role \listener
         slide null
+
     sub /
         <= Listener_open_icon $mol_icon_external
 ```
@@ -286,8 +300,10 @@ plugins /
 
 ```tree
 Nav $mol_nav
+
     keys_y <= slide_keys
     keys_x <= slide_keys
+
     current_y?val <=> slide?val
     current_x?val <=> slide?val
 ```
@@ -296,6 +312,7 @@ Nav $mol_nav
 
 ```tree
 Touch $mol_touch
+
     swipe_to_left?event <=> go_next?event
     swipe_to_right?event <=> go_prev?event
 ```
@@ -310,8 +327,10 @@ go_next( event? : Event ) {
 
 ```
 Sing $mol_speech
+
     event_catch?val <=> sing?val
-    patterns <= sing_patterns /
+
+    patterns /
         \sing( \S+?)*
         \спой( \S+?)*
 ```
@@ -320,8 +339,11 @@ Sing $mol_speech
 
 ```
 Speech_next_auto $mol_speech
+
     event_catch?val <=> go_next?val
+
     suffix \
+
     patterns <= speech_next_auto_patterns
 ```
 
