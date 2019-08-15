@@ -408,11 +408,11 @@ Speech_next_auto $mol_speech
 
 # Оффлайн
 
-> /hyoo/slides/slides.meta.tree
-
-```tree
-include \/mol/offline/install
-```
+> **/hyoo/slides/slides.meta.tree**
+>
+> ```tree
+> include \/mol/offline/install
+> ```
 
 # Печать в PDF
 
