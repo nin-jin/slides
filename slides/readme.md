@@ -396,7 +396,17 @@ Speech_next_auto $mol_speech
     patterns <= speech_next_auto_patterns
 ```
 
+# Запуск приложения
+
+```html
+<body mol_view_root="$hyoo_slides">
+    <script src="web.js" charset="utf-8"></script>
+</body>
+```
+
 # Оффлайн
+
+> /hyoo/slides/slides.meta.tree
 
 ```tree
 include \/mol/offline/install
