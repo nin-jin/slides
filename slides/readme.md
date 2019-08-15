@@ -274,15 +274,12 @@ $hyoo_slides $mol_view
 	Page!index $hyoo_slides_page
         - ...
 
-	attr *
-		^
-		hyoo_slides_role <= role \
-		mol_theme <= theme \$mol_theme_light
-	
 	plugins /
+
         <= Nav
         <= Touch
         <= Speech_next
+        
         - ...
 ```
 
@@ -346,6 +343,7 @@ plugins /
     <= Speech_prev
     <= Speech_start
     <= Speech_end
+
     - ...
 ```
 
