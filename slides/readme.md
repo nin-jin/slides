@@ -309,14 +309,6 @@ Speech_toggle $mol_check_icon
     checked?flag <=> speech_enabled?flag
 ```
 
-```typescript
-speech_enabled( next? : boolean ) {
-
-    return this.$.$mol_speech.hearing( next )
-
-}
-```
-
 # Структура кнопки открытия ведомого окна
 
 ```tree
