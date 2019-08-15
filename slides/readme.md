@@ -142,7 +142,7 @@ const hello = ()=>
 - **Повтори**, пожалуйста.
 - **Помолчи**, будь любезна.
 - **Продолжай**, пожалуйста.
-- **выключи свет**, будь любезна.
+- **Выключи свет**, будь любезна.
 
 Повтори, пожалуйста. *Голос свыше повторяет последнюю фразу.*
 
@@ -153,7 +153,7 @@ const hello = ()=>
 Давайте приоткроем капот и посмотрим, как устроено приложение, и что ещё оно умеет, чего не видно с первого взгляда.
 
 ```tree
-$hyoo_slides $mol_view
+$hyoo_slides_page $mol_view
 
     sub /
         <= Listener
@@ -161,7 +161,7 @@ $hyoo_slides $mol_view
 ```
 
 ```tree
-export class $hyoo_slides extends $mol_view {
+export class $hyoo_slides_page extends $mol_view {
     
     sub() { return [
         this.Listener() ,
@@ -171,7 +171,7 @@ export class $hyoo_slides extends $mol_view {
 }
 ```
 
-Перед вами верхнеуровневое описание приложения на языке [view.tree](https://github.com/eigenmethod/mol/tree/master/view#viewtree) и эквивалентный код на TypeScript. Тут мы объявляем компонент `$hyoo_slides`, который расширяет базовый компонент `$mol_view`. У этого компонента есть свойство `sub`. Всё, что возвращает это свойство, будет отрендерено внутри компонента. Поэтому мы переопределяем его, передавая в качестве значения массив из двух элементов: `Listener` - компонент вывода слайдов слушателям и `Speaker` - компонент дополнительной панели докладчика.
+Перед вами верхнеуровневое описание одного экрана на языке [view.tree](https://github.com/eigenmethod/mol/tree/master/view#viewtree) и эквивалентный код на TypeScript. Тут мы объявляем компонент `$hyoo_slides_page`, который расширяет базовый компонент `$mol_view`. У этого компонента есть свойство `sub`. Всё, что возвращает это свойство, будет отрендерено внутри компонента. Поэтому мы переопределяем его, передавая в качестве значения массив из двух элементов: `Listener` - компонент вывода слайда слушателям и `Speaker` - компонент дополнительной панели докладчика.
 
 # Переключение раскладки страницы
 
@@ -190,8 +190,7 @@ sub() {
 }
 ```
 
-Тут может быть любая, сколь угодно сложная логика, зависящая от самых разных условий. Но у нас она будет простая:
- слайды для слушаетелей выводим всегда, а вот панель докладчика показываем только, если текущая роль - `speaker`. Если роль изменится, то и раскладка приложения тоже изменится благодаря магии объектного реактивного программирования.
+Тут логика у нас простая: слайды для слушаетелей выводим всегда, а вот панель докладчика показываем только, если текущая роль - `speaker`. Если роль изменится, то и раскладка приложения тоже изменится благодаря магии объектного реактивного программирования.
 
 # Роутинг
 
@@ -214,7 +213,7 @@ role() : 'speaker' | 'listener' {
 ```tree
 Listener $mol_page
 
-    title <= slide_current_title
+    title <= title
 
     tools /
         <= Slide_switcher
@@ -224,7 +223,7 @@ Listener $mol_page
         <= Progress
 ```
 
-Он использует стандартный компонент `$mol_page` который рисует типичную страниицу с шапкой и телом. В шапке есть область, куда выводится название страницы. С помощью через свойство `title` можно указывать, что туда выводить. Что мы и сделали, связав его свойство `title` с нашим свойсnвом `slides_current_title`. Теперь, меняя наше свойство, мы полностью контролируем, что будет выводиться на странице в качестве заголовка.
+Он использует стандартный компонент `$mol_page` который рисует типичную страницу с шапкой и телом. В шапке есть область, куда выводится название страницы. Через свойство `title` можно указывать, что туда выводить. Что мы и сделали, связав его свойство `title` с нашим одноимённым свойством. Теперь, меняя наше свойство, мы полностью контролируем, что будет выводиться на странице в качестве заголовка.
 
 Справа в шапке, есть область вывода доволнительных инструментов - `tools`. В неё мы выводим `Slides_switcher` - компонент для отображения номера слайда и передключения между соседними слайдами.
 
@@ -243,7 +242,7 @@ Slide_switcher $mol_paginator
 ```tree
 Listener_content $mol_text
 
-    uri_base <= uri_base \
+    uri_base <= uri_base
 
     text <= listener_content
 ```
@@ -253,7 +252,7 @@ Listener_content $mol_text
 ```tree
 Progress $mol_portion
 
-	portion <= progress 0
+	portion <= progress
 ```
 
 # Структура интерфейса докладчика
@@ -261,13 +260,48 @@ Progress $mol_portion
 ```tree
 Speaker $mol_page
 
-    head /
-        <= Speech_toggle
-        <= Speech_text
-        <= Listener_open
+    head <= speaker_tools /
 
     body /
         <= Speaker_content
+```
+
+# Структура приложения
+
+```tree
+$hyoo_slides $mol_view
+
+	Page!index $hyoo_slides_page
+        - ...
+
+	attr *
+		^
+		hyoo_slides_role <= role \
+		mol_theme <= theme \$mol_theme_light
+	
+	plugins /
+        <= Nav
+        <= Touch
+        <= Speech_next
+        - ...
+```
+
+# Настройка страницы извне
+
+```tree
+Page!index $hyoo_slides_page
+
+    role <= role
+    
+    slide?val <=> page_slide!index?val
+
+	progress <= page_progress!index 0
+    
+    speaker_tools /
+
+        <= Speech_toggle
+        <= Speech_text
+        <= Open_listener
 ```
 
 # Структура переключателя голосового управления
@@ -278,6 +312,12 @@ Speech_toggle $mol_check_icon
     Icon <= Speech_toggle_icon $mol_icon_microphone
 
     checked?flag <=> speech_enabled?flag
+```
+
+```typescript
+speech_enabled( next? : boolean ) {
+    return this.$.$mol_speech.hearing( next )
+}
 ```
 
 # Структура кнопки открытия ведомого окна
@@ -299,9 +339,14 @@ Listener_open $mol_link
 
 ```tree
 plugins /
+
     <= Nav
     <= Touch
     <= Speech_next
+    <= Speech_prev
+    <= Speech_start
+    <= Speech_end
+    - ...
 ```
 
 # Клавиатурная навигация
@@ -314,6 +359,12 @@ Nav $mol_nav
 
     current_y?val <=> slide?val
     current_x?val <=> slide?val
+```
+
+```
+keys: [ 0 , 1 , 2 , 3 , ... , 30 ]
+          ^
+current --|
 ```
 
 # Жесты пальцем
@@ -359,6 +410,28 @@ Speech_next_auto $mol_speech
 
 ```tree
 include \/mol/offline/install
+```
+
+# Печать в PDF
+
+```
+sub() {
+
+    if( !this.$.$mol_print.active() ) {
+
+        return [ this.Page( this.slide() ) ]
+
+    }
+
+    return $mol_range2(
+
+        index => this.Page( index ) ,
+        
+        ()=> this.slide_keys().length ,
+        
+    )
+
+}
 ```
 
 # Как создать презентацию
