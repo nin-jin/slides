@@ -363,8 +363,8 @@ Nav $mol_nav
 
 ```
 keys: [ 0 , 1 , 2 , 3 , ... , 30 ]
-          ^
-current --|
+                ^
+             current
 ```
 
 # Жесты пальцем
@@ -428,7 +428,7 @@ sub() {
         index => this.Page( index ) ,
         
         ()=> this.slide_keys().length ,
-        
+
     )
 
 }
