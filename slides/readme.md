@@ -70,18 +70,20 @@
 Блоки исходного кода, разумеется, тоже поддерживаются, и раскрашиваются во все цвета радуги. Прям как вы любите.
 
 ```markdown
-  ```javascript
-  const hello = ()=>
-  <body>
-    Hello, "world"!
-  </body>
-  ```
+
+    ```javascript
+    const hello = ()=>
+    <body>
+        Hello, "world"!
+    </body>
+    ```
+
 ```
 
-```html
+```javascript
 const hello = ()=>
 <body>
-  Hello, "world"!
+    Hello, "world"!
 </body>
 ```
 
