@@ -279,7 +279,7 @@ $hyoo_slides $mol_view
         <= Nav
         <= Touch
         <= Speech_next
-        
+
         - ...
 ```
 
@@ -292,8 +292,6 @@ Page!index $hyoo_slides_page
     
     slide?val <=> page_slide!index?val
 
-	progress <= page_progress!index 0
-    
     speaker_tools /
 
         <= Speech_toggle
@@ -313,7 +311,9 @@ Speech_toggle $mol_check_icon
 
 ```typescript
 speech_enabled( next? : boolean ) {
+
     return this.$.$mol_speech.hearing( next )
+
 }
 ```
 
