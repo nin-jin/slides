@@ -89,7 +89,7 @@ const hello = ()=>
 
 # Таблицы
 
-Сравнивать различные штуки вам помогут таблицы. Например, давайте посмотрим, чем `$hyoo_slides` лучше ближайших конкурентов - [shwr.me](https://shwr.me) и (google slides)[https://docs.google.com/presentation/].
+Сравнивать различные штуки вам помогут таблицы. Например, давайте посмотрим, чем `$hyoo_slides` лучше ближайших конкурентов - [shwr.me](https://shwr.me) и [google slides](https://docs.google.com/presentation/)
 
 ```markdown
     |                          | shwr.me | google slides | slides.hyoo.ru |
