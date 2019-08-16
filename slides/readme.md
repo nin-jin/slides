@@ -174,11 +174,11 @@ const hello = ()=>
 
 # Как создать презентацию
 
-Попробовать в деле `$hyoo_slides` можно очень просто. Вам потребуется `readme.md` с вашим контентом и картинки. Так же рядом нужно будет скопипастить [`index.html`](https://github.com/nin-jin/slides/blob/master/slides/index.html), который редиректнет на веб приложение и откровет вашу презентацию в нём. А так же `offline.js` для поддержки оффлайна.
+Попробовать в деле `$hyoo_slides` можно очень просто. Вам потребуется `readme.md` с вашим контентом и картинки. Так же рядом нужно будет скопипастить `index.html`, который редиректнет на веб приложение и откровет вашу презентацию в нём. А так же `offline.js` для поддержки оффлайна.
 
 - `readme.md`
-- `index.html`
-- `offline.js`
+- [`index.html`](https://github.com/nin-jin/slides/blob/master/slides/index.html)
+- [`offline.js`](https://github.com/nin-jin/slides/blob/master/slides/offline.js)
 - картинки
 - статический хостинг
 
