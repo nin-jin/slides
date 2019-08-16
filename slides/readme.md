@@ -19,7 +19,7 @@
 
 Основаня идея в том, чтобы позволить докладчику сконцентрироваться на содержимом и не беспокоиться об оформлении. Докладу вовсе не нужны какие-то особые красоты и эффектные анимации. Иначе оформление будет перетягивать внимание на себя. А содержание рискует пролететь мимо ушей.
 
-![Потому, что я - Бэтмен!](https://github.com/nin-jin/slides/raw/master/slides/batmen.png)
+![Потому, что я - Бэтмен!](https://github.com/nin-jin/slides/raw/master/slides/batman.png)
 
 Но оформление тем не менее должно быть всё же опрятным, чтобы не портить впечатление о докладе. Поэтому дизайн приложения простой, не броский, и, что самое главное, соответствующий рекомендациям программых комитетов.
 
@@ -133,9 +133,7 @@ const hello = ()=>
 
 # Клавиатурная навигация
 
-![Стрелочки](https://habrastorage.org/webt/rq/vv/i_/rqvvi_1zdlvmbdui017_ss5verk.png)
-
-![Кликер](https://habrastorage.org/webt/nh/jl/sz/nhjlszck_oppfhemptopi2fyzzk.png)
+![Стрелочки](https://github.com/nin-jin/slides/raw/master/slides/keys.png)
 
 # Кликер сломался
 
@@ -160,7 +158,7 @@ const hello = ()=>
 
 Когда нужно?
 
-![Жесты](https://habrastorage.org/webt/n7/b_/tc/n7b_tcxog98_bfh8rnh7cmvfrfm.png)
+![Жесты](https://github.com/nin-jin/slides/raw/master/slides/touch.png)
 
 # Оффлайн
 
