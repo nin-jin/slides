@@ -164,13 +164,13 @@ const hello = ()=>
 
 Когда бывает?
 
-![Нет сети](https://habrastorage.org/webt/9r/xx/he/9rxxhem69ktbfaszkdwu9t65th4.png)
+![Нет сети](https://github.com/nin-jin/slides/raw/master/slides/offline.png)
 
 # Печать в PDF
 
 Зачем это надо?
 
-![Отпечаток](https://habrastorage.org/webt/-o/3b/_2/-o3b_2ul86cx3xr-ctfi4xm2t8e.png)
+![Отпечаток](https://github.com/nin-jin/slides/raw/master/slides/print.png)
 
 # Как создать презентацию
 
