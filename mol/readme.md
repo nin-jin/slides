@@ -164,7 +164,9 @@ const Result = combineLatest( Pos , Start ).pipe(
 ```typescript
 @mem
 result() {
-	return this.pos() < this.start() ? this.left() : null
+	return this.pos() < this.start()
+		? this.left()
+		: null
 }
 ```
 
