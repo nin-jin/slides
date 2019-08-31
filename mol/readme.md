@@ -245,7 +245,12 @@ $mol пронизан инкапсуляцией с ног до головы. Н
 Самое приятное в стилизации $mol компонент - программисту не надо вручную прописывать портянку классов каждому дом-элементу - они генерируются автоматически исходя из сформированного дерева компонент.
 
 ```html
-<mol_view my_date_calendar_day mol_date_calendar_day mol_calendar_day mol_view>
+<mol_view
+	my_date_calendar_day
+	mol_date_calendar_day
+	mol_calendar_day
+	mol_view
+	>
 	03
 </mol_view>
 ```
@@ -423,13 +428,13 @@ $my_heroes $mol_view
 > 	"$my_heroes_title_sub" : "My Heroes"
 > }
 > ```
-
+>
 > **heroes.view.tree.ts**
 > 
-> ```json
-> /// title_sub @ \My Heroes
+> ```typescript
+> /** title_sub @ \My Heroes */
 > title_sub() {
-> 	return this.$.$mol_locale.text( "$my_heroes_title_sub" )
+> 	return $mol_locale.text( "$my_heroes_title_sub" )
 > }
 > ```
 
