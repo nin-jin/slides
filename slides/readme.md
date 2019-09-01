@@ -96,14 +96,12 @@ const hello = ()=>
 
 Сравнивать различные штуки вам помогут таблицы. Например, давайте посмотрим, чем `$hyoo_slides` лучше ближайших конкурентов - [shwr.me](https://shwr.me) и [google slides](https://docs.google.com/presentation/)
 
-```markdown
     |                          | shwr.me | google slides | slides.hyoo.ru |
     |--------------------------|---------|---------------|----------------|
     | Исходник в MarkDown      | -       | -             | +              |
     | Двухпанельный режим      | -       | +             | +              |
     | Автопереключение слайдов | -       | -             | +              |
     | Оффлайн                  | -       | +             | +              |
-```
 
 |                          | shwr.me | google slides | slides.hyoo.ru |
 |--------------------------|---------|---------------|----------------|
@@ -544,11 +542,9 @@ Speech_next_auto $mol_speech
 
 Чтобы добавить поддержку оффлайна, достаточно включить в бандл модуль `mol/offline/install`.
 
-```md
-**hyoo/slides/slides.meta.tree**
-
-  include \/mol/offline/install
-```
+> **hyoo/slides/slides.meta.tree**
+>
+>  include \/mol/offline/install
 
 Он автоматически поднимает ServiceWorker, который кеширует все запросы. А в случае недоступности сети - выдаёт данные из кеша. Это не самая крутая реализация, но для простых случаев, когда не хочется заморачиваться, - подойдёт.
 
