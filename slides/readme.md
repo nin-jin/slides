@@ -32,7 +32,7 @@
 
 Интерфейс докладчика разделён на две части.
 
-![Презентация в режиме докладчика](https://slides.hyoo.ru/#slides=https%3A%2F%2Fnin-jin.github.io%2Fslides%2Forp%2F/slide=2)
+[![Презентация в режиме докладчика](https://slides.hyoo.ru/#slides=https%3A%2F%2Fnin-jin.github.io%2Fslides%2Forp%2F/slide=2)](https://slides.hyoo.ru/#slides=https%3A%2F%2Fnin-jin.github.io%2Fslides%2Forp%2F/slide=2)
 
 Слева отображается то, что видят слушатели. А справа - заметки докладчика. Они помогут вам вспомнить потерянную мысль, не отворачиваясь от слушателей и не напрягая их долгой.. эм... это.. паузой.
 
@@ -122,7 +122,7 @@ const hello = ()=>
 
 	![Нецелевая аудитория](https://www.youtube.com/embed/exfBX2pb7AQ?autoplay=1)
 
-![Нецелевая аудитория](https://www.youtube.com/embed/exfBX2pb7AQ?autoplay=1)
+[![Нецелевая аудитория](https://www.youtube.com/embed/exfBX2pb7AQ?autoplay=1)](https://www.youtube.com/embed/exfBX2pb7AQ?autoplay=1)
 
 Для примера я вставил видео иллюстрирующее, что современные интерфейсы настолько простые и удобные, что с ними справится даже обезьяна.
 
