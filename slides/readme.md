@@ -220,7 +220,6 @@ const hello = ()=>
 
 ```tree
 $hyoo_slides_page $mol_view
-
     sub /
         <= Listener
         <= Speaker
@@ -264,9 +263,7 @@ sub() {
 
 ```typescript
 role() : 'speaker' | 'listener' {
-
     return $mol_state_arg.value( 'role' ) || 'speaker'
-
 }
 ```
 
@@ -301,7 +298,6 @@ Listener $mol_page
 
 ```tree
 Slide_switcher $mol_paginator
-
     value?val <=> slide?val
 ```
 
@@ -327,7 +323,6 @@ Listener_content $mol_text
 
 ```tree
 Progress $mol_portion
-
 	portion <= progress
 ```
 
@@ -544,17 +539,12 @@ Speech_next_auto $mol_speech
 sub() {
 
     if( !this.$.$mol_print.active() ) {
-
         return [ this.Page( this.slide() ) ]
-
     }
 
     return $mol_range2(
-
         index => this.Page( index ) ,
-        
         ()=> this.slide_keys().length ,
-
     )
 
 }
