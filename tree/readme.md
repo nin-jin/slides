@@ -559,3 +559,9 @@ class $my_details extends $mol_view {
 | Поточная обработка        | ❌  | ❌       | ✅  | ✅   | ✅
 | Расширяемая модель данных | ✅  | ❌       | ✅  | ❌   | ✅
 | Широкая распросранённость | ✅  | ✅       | ❌  | ❌   | ❌
+
+# Куда пойти, куда податься
+
+- Эти слайды: [nin-jin/slides/tree](https://github.com/nin-jin/slides/tree/master/tree)
+- Всё о Tree: [nin-jin/tree.d](https://github.com/nin-jin/tree.d)
+- Телеграм чат: [@lang_idioms](https://teleg.run/lang_idioms)
