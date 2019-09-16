@@ -1,13 +1,16 @@
 # Tree - единый AST чтобы править всеми
 
-| Дмитрий Карловский @ Гдето#когдато |
-|------------------------------------|
+```
+Спикер \Дмитрий Карловский
+Место \Undefined Meetup #1
+Время 2019-09-17
+```
 
 # План
 
-- Проанализировать популярные форматы
-- Разработать новый формат без недостатков вышеназванных
-- Показать примеры применения нового формата
+- Проанализировать популярные форматы 💩
+- Разработать новый формат без недостатков вышеназванных 👽
+- Показать примеры применения нового формата 👾
 
 # Форматы
 
@@ -106,6 +109,16 @@ spoiler
 
 ## Модель YAML
 
+- Null
+- Boolean
+- Number
+- String
+- DateTime
+- Array
+- Dictionary
+- Alias
+- Reference
+- Document
 
 ## Модель TOML
 
@@ -139,34 +152,25 @@ spoiler
 # Удобочитаемость XML
 
 ```xml
-<greeting>
-    Hello, <b>Alice</b>!<br/>
-    How do you do?
-</greeting>
+Привет, Алиса!
+Как дела?
+Не могла бы ты принести мне кофе?
 
-
-<greeting>
-    Hello, <a href="http://example.org/user/alice">Alice</a>!<br/>
-    How do you do?
-</greeting>
+<message>
+    <greeting>
+		Привет, <a href="http://example.org/user/alice">Алиса</a>!
+	</greeting>
+    <body>
+		Как дела?<br/>
+		Не могла бы ты принести мне кофе?
+	</body>
+</message>
 ```
 
 # Удобочитаемость JSON
 
 ```
-{ "greetings": "Hello, Alice!\nHow do you do?" }
-
-
-{
-	"greetings": [
-		"Hello, ",
-		{
-			"link": "http://example.org/user/alice"
-			"content": [ "Alice" ]
-		},
-		"!\nHow do you do?"
-	]
-}
+{ "greetings": "Привет, Алиса!\nКак дела?\nНе могла бы ты принести мне кофе?\n" }
 ```
 
 # Экранирование
@@ -267,9 +271,9 @@ foo > 0 & foo < 10
 # Скорость обработки
 
 ```
-parsing:         "foo\\bar"  =>  foo\bar
+serialization:    foo\bar    =>  "foo\\bar"
 
-serialization:   foo\bar     =>  "foo\\bar"
+parsing:         "foo\\bar"  =>   foo\bar
 ```
 
 # Координаты ошибки
@@ -370,12 +374,15 @@ user
 		\role play 🎭
 ```
 
-# Tree языки
+# Языки основанные на форматах
 
-- grammar.tree
-- xml.tree
-- json.tree
-- view.tree
+| Формат         | **Языки**
+|----------------|-------------------------
+| XML            | XHTML, SVG, XSLT, ...  
+| JSON           | JSON Schema, json:api, ...
+| YAML           | yaml.org/type 
+| TOML           | -
+| Tree           | grammar.tree, xml.tree, json.tree, view.tree, ...
 
 ## Язык grammar.tree
 
@@ -390,7 +397,7 @@ line .is .sequence
 nodes .is .sequence
 	.optional .list_of struct
 	.optional data
-	.with-delimiter space
+	.with_delimiter space
 
 struct .is .list_of .byte
 	.except special
@@ -414,7 +421,7 @@ data_prefix .is .byte \5C
 space .is .list_of .byte \20
 ```
 
-## EBNF vs grammar.tree
+## Язык grammar.tree vs EBNF
 
 ```tree
 tree .is .optional .list_of line
@@ -443,7 +450,19 @@ nodes = data |
 	[ space , data ];
 ```
 
-## Язык xml.tree
+## Язык xml.tree vs XML
+
+```tree
+! doctype html
+html
+	meta @ charset \utf-8
+	link
+		@ href \web.css
+		@ rel \stylesheet
+	script @ src \web.js
+	body
+		div @ mol_view_root \$my_app
+```
 
 ```xml
 <!doctype html>
@@ -460,19 +479,17 @@ nodes = data |
 </html>
 ```
 
-```tree
-! doctype html
-html
-	meta @ charset \utf-8
-	link
-		@ href \web.css
-		@ rel \stylesheet
-	script @ src \web.js
-	body
-		div @ mol_view_root \$my_app
-```
+## Язык json.tree vs JSON
 
-## Язык json.tree
+```tree
+user *
+	name \Jin
+	age 35
+	hobby /
+		\kendo 🐱‍👤
+		\dance 🕺🏽
+		\role play 🎭
+```
 
 ```json
 {
@@ -488,17 +505,7 @@ html
 }
 ```
 
-```tree
-user *
-	name \Jin
-	age 35
-	hobby /
-		\kendo 🐱‍👤
-		\dance 🕺🏽
-		\role play 🎭
-```
-
-## Язык view.tree
+## Язык view.tree vs TypeScript
 
 ```tree
 $my_details $mol_view
@@ -513,14 +520,81 @@ class $my_details extends $mol_view {
 	sub() { return [ this.Pager() ] }
 
 	@ $mol_mem Pager() {
-		return this.$.$mol_paginator.make({
+		return $mol_paginator.make({
 			value : val => this.page( val )
 		})
 	}
 
-	@ $mol_mem page( val? : number ) {
-		return ( val !== void 0 ) ? val : 0
+	@ $mol_mem page( val = 0 ) {
+		return val
 	}
+
+}
+```
+
+# API
+
+| Формат         | Языки                      | **API**
+|----------------|----------------------------|------------
+| XML            | XHTML, SVG, XSLT, ...      | DOM, SAX
+| JSON           | JSON Schema, json:api, ... | -
+| YAML           | yaml.org/type              | -
+| TOML           | -                          | -
+| Tree           | xml.tree, json.tree, ...   | AST
+
+## Абстрактное Cинтаксичесткое Tree
+
+```tree
+user
+	name \Jin
+	age 35
+	hobby
+		\kendo 🐱‍👤
+		\dance 🕺🏽
+		\role play 🎭
+```
+
+```tree
+user
+	name \Jin
+	age 35
+	hobby
+		\kendo 🐱‍👤
+		\dance 🕺🏽
+		\role play 🎭
+```
+
+## Свойства узла Tree
+
+```typescript
+interface $mol_tree {
+	
+	type : string
+	data : string
+	sub : $mol_tree[]
+
+	baseUri : string   // https:/\/example.org
+	row : number       // 30
+	col : number       // 5
+
+	value : string
+	uri : string       // https://example.org#30:5 
+	
+}
+```
+
+# String <=> Tree <=> JSON
+
+```
+interface $mol_tree {
+
+	static fromString( str : string , baseUri? : string ) : $mol_tree
+	static fromJSON( str : string , baseUri? : string ) : $mol_tree
+	
+	constructor( fields : Partial< $mol_tree > )
+
+	toString() : string
+	toJSON() : string
 
 }
 ```
@@ -536,16 +610,6 @@ class $my_details extends $mol_view {
 
 - [TypeScript](https://github.com/eigenmethod/mol/tree/master/tree)
 - [D](https://github.com/nin-jin/tree.d)
-
-# Уровни стандартизации
-
-| Формат         | Примеры языков          | Примеры API
-|----------------|-------------------------|------------
-| XML            | XHTML, SVG, XSLT        | DOM, SAX
-| JSON           | JSON Schema, json:api   | -
-| YAML           | yaml.org/type           | -
-| TOML           | -                       | -
-| Tree           | grammar.tree, view.tree | AST
 
 # Итоги
 
@@ -564,4 +628,4 @@ class $my_details extends $mol_view {
 
 - Эти слайды: [nin-jin/slides/tree](https://github.com/nin-jin/slides/tree/master/tree)
 - Всё о Tree: [nin-jin/tree.d](https://github.com/nin-jin/tree.d)
-- Телеграм чат: [@lang_idioms](https://teleg.run/lang_idioms)
+- Чат о языках: [lang_idioms](https://teleg.run/lang_idioms)
