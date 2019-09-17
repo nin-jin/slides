@@ -1,15 +1,15 @@
 		if( typeof window === 'undefined' ) {
 			
-			self.addEventListener( 'install' , ( event : any )=> {
+			self.addEventListener( 'install' , ( event )=> {
 				self['skipWaiting']()
 			} )
 
-			self.addEventListener( 'activate' , ( event : any )=> {
+			self.addEventListener( 'activate' , ( event )=> {
 				self['clients'].claim()
 				console.info( '$mol_offline activated' )
 			} )
 
-			self.addEventListener( 'fetch' , ( event : any )=> {
+			self.addEventListener( 'fetch' , ( event )=> {
 				event.respondWith(
 
 					fetch( event.request )
@@ -25,7 +25,7 @@
 					.catch( error => {
 
 						return caches.match( event.request )
-						.catch( error2 => $mol_fail_hidden( error ) )
+						.catch( error2 => { throw error } )
 
 					} )
 
