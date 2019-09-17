@@ -6,11 +6,9 @@
 
 	if( window.parent === window ) document.location = '//slides.hyoo.ru/#slides=' + encodeURIComponent( location.href )
 
-	function content( message ) {
-		var request = new XMLHttpRequest
-		request.open( 'get' , 'readme.md' , false )
-		request.send()
-		done( request.responseText )
+	async function content( message ) {
+		const response = await fetch( 'readme.md' )
+		done( await response.text() )
 	}
 
 	function done( result ) {
