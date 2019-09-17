@@ -1,15 +1,14 @@
 <!doctype html>
 <html>
 <meta charset="utf-8" />
+<script src="offline.js"></script>
 <script>
 
 	if( window.parent === window ) document.location = '//slides.hyoo.ru/#slides=' + encodeURIComponent( location.href )
 
-	function content( message ) {
-		var request = new XMLHttpRequest
-		request.open( 'get' , 'readme.md' , false )
-		request.send()
-		done( request.responseText )
+	async function content( message ) {
+		const response = await fetch( 'readme.md' )
+		done( await response.text() )
 	}
 
 	function done( result ) {
