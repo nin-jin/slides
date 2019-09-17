@@ -627,9 +627,61 @@ interface $mol_tree {
 # Идеи
 
 - Tree представление иных форматов при редактировании
+- Tree как формат логирования
 - Tree как формат общения консольных утилит
 - Tree представление LISP-подобного языка
-- Tree представление серверных логов
+- Tree как универсальный AST
+
+## access.log.tree - логи доступа
+
+```
+193.34.12.132 - - [2011-10-20T12:46:08+04:00] "GET /index.html HTTP/1.1" 200 4435
+
+```
+
+```tree
+access
+	ip \193.34.12.132
+	time \2011-10-20T12:46:08+04:00
+	request \GET /index.html HTTP/1.1
+	response \200
+	size \4435
+```
+
+## tree-tools - убийца PowerShell
+
+```
+> cat access.log.tree | table ip time request
+
+193.34.12.132	2011-10-20T12:46:08+04:00	GET /index.html HTTP/1.1
+193.34.12.132	2011-10-20T12:46:10+04:00	GET /index.css HTTP/1.1
+193.34.12.132	2011-10-20T12:46:20+04:00	GET /index.js HTTP/1.1
+
+
+> cat access.log.tree | filter time > 2019-09 | table ip request
+
+193.34.12.132	GET /index.html HTTP/1.1
+193.34.12.132	GET /index.css HTTP/1.1
+193.34.12.132	GET /index.js HTTP/1.1
+```
+
+## jack.tree - LISP без скобочек
+
+```lisp
+(cdr (butlast '(1 2 3 4)))
+```
+
+```tree
+cut-head cut-tail tree
+	1
+	2
+	3
+	4
+```
+
+## Единый AST чтобы правиль всеми
+
+![Стандарты](https://nin-jin.github.io/slides/tree/standarts.png)
 
 # Куда пойти, куда податься
 
