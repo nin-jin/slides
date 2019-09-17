@@ -223,7 +223,7 @@ foo > 0 & foo < 10
 </users>
 
 
-<!-- -13% size -100% readability -->
+<!-- 13% less -->
 <users><user><name>Alice</name><age>20</age></user></users>
 ```
 
@@ -240,7 +240,7 @@ foo > 0 & foo < 10
 }
 
 
-// -30% size -100% readability
+// 30% less
 {"users":[{"name":"Alice","age":20}]}
 ```
 
@@ -482,7 +482,7 @@ html
 ## Язык json.tree vs JSON
 
 ```tree
-user *
+* user *
 	name \Jin
 	age 35
 	hobby /
@@ -658,7 +658,7 @@ access
 193.34.12.132	2011-10-20T12:46:20+04:00	GET /index.js HTTP/1.1
 
 
-> cat access.log.tree | filter time > 2019-09 | table ip request
+> cat access.log.tree | filter time >= 2019-09 | table ip request
 
 193.34.12.132	GET /index.html HTTP/1.1
 193.34.12.132	GET /index.css HTTP/1.1
