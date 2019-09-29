@@ -520,9 +520,9 @@ class $my_details extends $mol_view {
 	sub() { return [ this.Pager() ] }
 
 	@ $mol_mem Pager() {
-		return $mol_paginator.make({
-			value : val => this.page( val )
-		})
+		const Pager = new $mol_paginator
+		Pager.value = val => this.page( val )
+		return Pager
 	}
 
 	@ $mol_mem page( val = 0 ) {
@@ -546,39 +546,31 @@ class $my_details extends $mol_view {
 
 ```
 {
-  "user": {
-    "name": "Jin",
-    "age": 35,
-    "hobby" : [
-      "kendo 🐱‍👤",
-      "dance 🕺🏽",
-      "role play 🎭"
-    ]
-  }
+  "user": {}
 }
 ```
 
 ```
 {
-  type: "Object",
-  children: [
+  "type" : "Object",
+  "children" : [
     {
-      type: "Property",
-      key: {
+      "type" : "Property",
+      "key" : {
         "type": "Identifier",
         "value": "user",
         "raw": "\"user\""
       }
       "value": {
         "type": "Object",
-	"children": [ ... ]
+	"children": []
       }
     }
   ]
 }
 ```
 
-## Абстрактное Cинтаксичесткое Tree
+## AST Tree
 
 ```tree
 user
