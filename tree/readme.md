@@ -542,6 +542,42 @@ class $my_details extends $mol_view {
 | TOML           | -                          | -
 | Tree           | xml.tree, json.tree, ...   | AST
 
+## JSON AST
+
+```
+{
+  "user": {
+    "name": "Jin",
+    "age": 35,
+    "hobby" : [
+      "kendo 🐱‍👤",
+      "dance 🕺🏽",
+      "role play 🎭"
+    ]
+  }
+}
+```
+
+```
+{
+  type: "Object",
+  children: [
+    {
+      type: "Property",
+      key: {
+        "type": "Identifier",
+        "value": "user",
+        "raw": "\"user\""
+      }
+      "value": {
+        "type": "Object",
+	"children": [ ... ]
+      }
+    }
+  ]
+}
+```
+
 ## Абстрактное Cинтаксичесткое Tree
 
 ```tree
