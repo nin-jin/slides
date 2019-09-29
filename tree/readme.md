@@ -14,11 +14,13 @@
 
 # Форматы
 
-- XML
-- JSON
-- YAML
-- TOML
-- **Tree**
+| **Формат**
+|-----------
+| XML
+| JSON
+| YAML
+| TOML
+| Tree
 
 ## Пример XML
 
