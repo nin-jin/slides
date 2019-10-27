@@ -163,20 +163,18 @@ XML основан на модели типизированных элемент
 
 ```json
 {
-	"type" : "expression",
-	"content" : [
-		{
-			"type" : "multiplication",
-			"left" : {
-				"type" : "number",
-				"value" : 2
-			},
-			"right" : {
-				"type" : "number",
-				"value" : 2
-			}
+	"type" : "returning",
+	"expression" : {
+		"type" : "multiplication",
+		"left" : {
+			"type" : "number",
+			"value" : 2
+		},
+		"right" : {
+			"type" : "number",
+			"value" : 2
 		}
-	]
+	}
 }
 ```
 
