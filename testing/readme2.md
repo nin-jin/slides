@@ -131,9 +131,9 @@ function isEquilateral( a : number , b : number , c : number ) {
 ```typescript
 function isEquilateral(
     ... sides : [ number , number , number ]
-) {
+) { // single branch
     const [ a , b , c ] = sides.sort( compareNumbers ) 
-    return a === c // single branch
+    return a === c
 }
 ```
 
@@ -193,10 +193,7 @@ isEquilateral( Number.NaN , 2 , 2 ) 🔥
 
 # Суть TDD
 
-1. Red
-2. Green
-3. Refactor
-4. Go to (1)
+![Pure TDD](https://habrastorage.org/webt/nx/wy/ye/nxwyyetapmska5zuvikeaiw7yww.png)
 
 # Блеск и нищета TDD
 
@@ -219,11 +216,7 @@ function isEquilateral(
 
 # Правильный TDD - не TDD
 
-1. All cases checked? Done.
-2. Write test.
-3. Green? Go to (1).
-4. Fix it.
-5. Go to (3).
+![Fixed TDD](https://habrastorage.org/webt/j_/vt/33/j_vt33_3ez3jonfpekqyoddttgc.png)
 
 # Когда тесты лишние
 
