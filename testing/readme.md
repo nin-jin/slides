@@ -167,7 +167,11 @@
 # Полнота тестирования
 
 ```typescript
-function isEquilateral( a : number , b : number , c : number ) {
+function isEquilateral(
+    a: number,
+    b: number,
+    c: number,
+) {
     return ( a === b )&&( b === c )
 }
 ```
@@ -186,7 +190,11 @@ isEquilateral( 3 , 2 , 2 ) === false
 > **Белый ящик даёт лучшее покрытие**
 
 ```typescript
-function isEquilateral( a : number , b : number , c : number ) {
+function isEquilateral(
+    a: number,
+    b: number,
+    c: number,
+) {
     if( a !== b ) { // first branch
         return false
     } else { // second branch
