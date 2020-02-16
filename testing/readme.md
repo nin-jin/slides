@@ -180,9 +180,27 @@ isEquilateral( 3 , 2 , 2 ) === false
 
 Это чёрный ящик
 
+## Негативные сценарии
+
+```typescript
+isEquilateral( 0 , 2 , 2 ) 🔥 // not a triangle
+```
+
+```typescript
+function isEquilateral(
+    ... sides : [ number , number , number ]
+) {
+    const [ a , b , c ] = sides.sort( compareNumbers ) 
+    return a === c
+}
+```
+
 ## Ветки логики
 
-Белый ящик даёт лучшее покрытие
+```typescript
+isEquilateral( 0 , 2 , 2 ) 🔥 // first branch
+isEquilateral( 2 , 2 , 0 ) 🔥 // second branch
+```
 
 ```typescript
 function isEquilateral(
@@ -190,29 +208,12 @@ function isEquilateral(
     b: number,
     c: number,
 ) {
-    if( a !== b ) { // first branch
-        return false
-    } else { // second branch
-        return b !== Math.random()
-        // return b !== c
-    }
+    if( a !== b ) return false
+    else return b !== c
 }
 ```
 
-```typescript
-function isEquilateral(
-    ... sides : [ number , number , number ]
-) { // single branch
-    const [ a , b , c ] = sides.sort( compareNumbers ) 
-    return a === c
-}
-```
-
-## Негативные сценарии
-
-```typescript
-isEquilateral( 0 , 2 , 2 ) 🔥 // not a triangle
-```
+Белый ящик даёт лучшее покрытие
 
 ## Классы эквивалентности
 
