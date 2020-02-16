@@ -159,7 +159,25 @@
 | Конфигурационная проверка.. | | |
 
 
-# Полнота тестирования
+# Полнота тестирования: позитивные сценарии
+
+```typescript
+function isEquilateral(
+    ... sides : [ number , number , number ]
+) {
+    const [ a , b , c ] = sides.sort( compareNumbers ) 
+    return a === c
+}
+```
+
+| a | b | c | isEquilateral
+|---|---|---|--------------
+| 2 | 2 | 2 | true
+| 3 | 2 | 2 | false
+
+Это чёрный ящик
+
+# Полнота тестирования: ветки логики
 
 ```typescript
 function isEquilateral(
@@ -171,50 +189,19 @@ function isEquilateral(
 }
 ```
 
-## Позитивные сценарии
-
-| a | b | c | isEquilateral
-|---|---|---|--------------
-| 2 | 2 | 2 | true
-| 3 | 2 | 2 | false
-
-Это чёрный ящик
-
-## Ветки логики
-
 | branch | a | b | c | isEquilateral
 |--------|---|---|---|--------------
 | first | 1 | 2 | 2 | false
 | second | 2 | 2 | 1 | false
 | second | 2 | 2 | 2 | true
 
-```typescript
-function isEquilateral(
-    a: number,
-    b: number,
-    c: number,
-) {
-    if( a !== b ) return false
-    else return b !== c
-}
-```
-
 Белый ящик даёт лучшее покрытие
 
-## Негативные сценарии
+# Полнота тестирования: негативные сценарии
 
 | a | b | c | isEquilateral
 |---|---|---|--------------
 | 0 | 2 | 2 | 🔥
-
-```typescript
-function isEquilateral(
-    ... sides : [ number , number , number ]
-) {
-    const [ a , b , c ] = sides.sort( compareNumbers ) 
-    return a === c
-}
-```
 
 ## Классы эквивалентности
 
