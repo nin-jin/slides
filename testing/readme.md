@@ -170,7 +170,7 @@ function isEquilateral(
     ]
 ) {
     sides.sort( compareNumbers ) 
-    const [ a , b , c ] = side
+    const [ a , b , c ] = sides
     return a === c
 }
 ```
