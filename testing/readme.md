@@ -248,24 +248,19 @@ MAX_VALUE
 
 Полное покрытие - не менее **11** тестов
 
-```typescript
-isEquilateral( Number.NEGATIVE_INFINITY , 2 , 2 ) 🔥
-isEquilateral( 0 , 2 , 2 ) 🔥
-
-isEquilateral( Number.MIN_VALUE , Number.MIN_VALUE , Number.MIN_VALUE ) === true
-isEquilateral( Number.MIN_VALUE , 2 , 2 ) === false
-
-isEquilateral( 2 , 2 , 2 ) === true
-isEquilateral( 3 , 2 , 2 ) === false
-
-isEquilateral( 4 - 0.5 ** 51 , 2 , 2 ) === false
-isEquilateral( 4 - 0.5 ** 51 , 4 - 0.5 ** 51 , 4 - 0.5 ** 51 ) === true
-
-isEquilateral( 4 , 2 , 2 ) 🔥
-isEquilateral( Number.POSITIVE_INFINITY , 2 , 2 ) 🔥
-
-isEquilateral( Number.NaN , 2 , 2 ) 🔥
-```
+| a | b | c | isEquilateral
+|---|---|---|--------------
+| Number.NEGATIVE_INFINITY | 2 | 2 | 🔥
+| 0 | 2 | 2 | 🔥
+| Number.MIN_VALUE | Number.MIN_VALUE | Number.MIN_VALUE | true
+| Number.MIN_VALUE | 2 | 2 | false
+| 2 | 2 | 2 | true
+| 3 | 2 | 2 | false
+| 4 - 0.5 ** 51 | 2 | 2 | false
+| 4 - 0.5 ** 51 | 4 - 0.5 ** 51 | 4 - 0.5 ** 51 | true
+| 4 | 2 | 2 | 🔥
+| Number.POSITIVE_INFINITY | 2 | 2 | 🔥
+| Number.NaN | 2 | 2 | 🔥
 
 # Суть TDD
 
