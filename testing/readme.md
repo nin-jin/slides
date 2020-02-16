@@ -163,9 +163,14 @@
 
 ```typescript
 function isEquilateral(
-    ... sides : [ number , number , number ]
+    ... sides : [
+        number,
+        number,
+        number,
+    ]
 ) {
-    const [ a , b , c ] = sides.sort( compareNumbers ) 
+    sides.sort( compareNumbers ) 
+    const [ a , b , c ] = side
     return a === c
 }
 ```
