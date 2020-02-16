@@ -184,9 +184,7 @@ isEquilateral( 3 , 2 , 2 ) === false
 
 ```typescript
 isEquilateral( 0 , 2 , 2 ) 🔥 // not a triangle
-```
 
-```typescript
 function isEquilateral(
     ... sides : [ number , number , number ]
 ) {
@@ -200,9 +198,7 @@ function isEquilateral(
 ```typescript
 isEquilateral( 0 , 2 , 2 ) 🔥 // first branch
 isEquilateral( 2 , 2 , 0 ) 🔥 // second branch
-```
 
-```typescript
 function isEquilateral(
     a: number,
     b: number,
