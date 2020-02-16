@@ -173,12 +173,33 @@ function isEquilateral(
 
 ## Позитивные сценарии
 
-```typescript
-isEquilateral( 2 , 2 , 2 ) === true
-isEquilateral( 3 , 2 , 2 ) === false
-```
+| a | b | c | isEquilateral
+|---|---|---|--------------
+| 2 | 2 | 2 | true
+| 3 | 2 | 2 | false
 
 Это чёрный ящик
+
+## Ветки логики
+
+| branch | a | b | c | isEquilateral
+|--------|---|---|---|--------------
+| first | 1 | 2 | 2 | false
+| second | 2 | 2 | 1 | false
+| second | 2 | 2 | 2 | true
+
+```typescript
+function isEquilateral(
+    a: number,
+    b: number,
+    c: number,
+) {
+    if( a !== b ) return false
+    else return b !== c
+}
+```
+
+Белый ящик даёт лучшее покрытие
 
 ## Негативные сценарии
 
@@ -193,35 +214,17 @@ function isEquilateral(
 }
 ```
 
-## Ветки логики
-
-```typescript
-isEquilateral( 0 , 2 , 2 ) 🔥 // first branch
-isEquilateral( 2 , 2 , 0 ) 🔥 // second branch
-
-function isEquilateral(
-    a: number,
-    b: number,
-    c: number,
-) {
-    if( a !== b ) return false
-    else return b !== c
-}
-```
-
-Белый ящик даёт лучшее покрытие
-
 ## Классы эквивалентности
 
 ```typescript
 c : [ -∞ .. 0 .. a+b .. ∞ ]
 ```
 
-```typescript
-isEquilateral( -2 , 2 , 2 ) 🔥 // [ -∞ .. 0 ]
-isEquilateral( 3 , 2 , 2 ) === false // [ 0 .. 3 ]
-isEquilateral( 5 , 2 , 2 ) 🔥 // [ 3 .. +∞ ]
-```
+| range | a | b | c | isEquilateral
+|-------|---|---|---|--------------
+| [ -∞ .. 0 ] | -2 | 2 | 2 | 🔥
+| [ 0 .. 3 ] | 3 | 2 | 2 | false
+| [ 3 .. +∞ ] | 5 | 2 | 2 | 🔥
 
 ## Граничные условия
 
