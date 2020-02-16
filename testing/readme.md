@@ -203,9 +203,11 @@ function isEquilateral(
 
 ## Негативные сценарии
 
-```typescript
-isEquilateral( 0 , 2 , 2 ) 🔥 // not a triangle
+| a | b | c | isEquilateral
+|---|---|---|--------------
+| 0 | 2 | 2 | 🔥
 
+```typescript
 function isEquilateral(
     ... sides : [ number , number , number ]
 ) {
