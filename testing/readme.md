@@ -114,19 +114,19 @@
 
 Система - едница развёртывания.
 
-![Система](https://habrastorage.org/webt/c7/4_/sz/c74_szrrneggxzrhhlfmjcq9oii.png)
+![Система](https://habrastorage.org/webt/n7/b1/9t/n7b19tf55au57bd2w-akxxgscye.png)
 
 # Объект тестирования: модуль (юнит)
 
 Модуль - единица кода.
 
-![Модули](https://habrastorage.org/webt/5z/u8/vy/5zu8vyrvkhqjasajsfojyjle_ys.png)
+![Модули](https://habrastorage.org/webt/uh/hy/zr/uhhyzrwxalg0nrbwcbaien4qa_y.png)
 
 # Объект тестирования: компонент (подсистема)
 
 Компонент - единица функциональности.
 
-![Компоненты](https://habrastorage.org/webt/tj/7k/d0/tj7kd0ziamst1l_8sumfrbp42ke.png)
+![Компоненты](https://habrastorage.org/webt/rh/wf/hm/rhwfhmamtnvyhx8bmiaukpq_spw.png)
 
 # Игра про объекты
 
@@ -205,6 +205,8 @@
 # Модульные тесты не полны
 
 > *Чем меньше и проще модули, тем более важно их взаимодействие.*
+
+![Тестирование взаимодействия](https://habrastorage.org/webt/pe/gg/7x/pegg7xxyyeggnufdsh3gixdzfhm.png)
 
 # Интеграционные тесты не полны
 
