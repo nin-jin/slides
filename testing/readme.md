@@ -120,13 +120,13 @@
 
 Модуль - единица кода.
 
-![Модули](https://habrastorage.org/webt/uh/hy/zr/uhhyzrwxalg0nrbwcbaien4qa_y.png)
+![Модули](https://habrastorage.org/webt/cv/64/qb/cv64qbczdgub1xbetjr_c1_9pfo.png)
 
 # Объект тестирования: компонент (подсистема)
 
 Компонент - единица функциональности.
 
-![Компоненты](https://habrastorage.org/webt/rh/wf/hm/rhwfhmamtnvyhx8bmiaukpq_spw.png)
+![Компоненты](https://habrastorage.org/webt/zt/r-/ch/ztr-ch87u4jfaiwt4ixcmtukzfq.png)
 
 # Игра про объекты
 
@@ -206,7 +206,7 @@
 
 > *Чем меньше и проще модули, тем более важно их взаимодействие.*
 
-![Тестирование взаимодействия](https://habrastorage.org/webt/pe/gg/7x/pegg7xxyyeggnufdsh3gixdzfhm.png)
+![Тестирование взаимодействия](https://habrastorage.org/webt/r_/kh/ml/r_khmlkalzxp9cys-e1vg_dws3u.png)
 
 # Интеграционные тесты не полны
 
