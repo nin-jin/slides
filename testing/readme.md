@@ -114,7 +114,7 @@
 
 Система - едница развёртывания.
 
-![Система](https://habrastorage.org/webt/n7/b1/9t/n7b19tf55au57bd2w-akxxgscye.png)
+![Система](https://habrastorage.org/webt/2l/pj/7z/2lpj7ziss3wkfogjqpp_7y8oo5u.png)
 
 # Объект тестирования: модуль (юнит)
 
