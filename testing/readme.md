@@ -242,7 +242,7 @@
 
 # Рожок тестирования
 
-![Пирамида и рожок тестирования](https://habrastorage.org/webt/ep/iv/4k/epiv4k-gp9lfbunqemk8yom2qu4.png)
+![Пирамида и рожок тестирования](https://habrastorage.org/webt/ts/kf/oj/tskfojzogicipakwphg1ztrunpk.png)
 
 Хватит вращать рожок тестирования, его нужно просто выбросить.
 
