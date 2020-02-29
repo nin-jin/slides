@@ -120,7 +120,7 @@
 
 Модуль - единица кода.
 
-![Модули](https://habrastorage.org/webt/cv/64/qb/cv64qbczdgub1xbetjr_c1_9pfo.png)
+![Модули](https://habrastorage.org/webt/j5/lo/c0/j5loc0fpww-tsxydb_exrpr0ymk.png)
 
 # Объект тестирования: компонент (подсистема)
 
@@ -204,7 +204,7 @@
 
 # Модульные тесты не полны
 
-> *Чем меньше и проще модули, тем более важно их взаимодействие.*
+Чем меньше и проще модули, тем более важно их взаимодействие.
 
 ![Тестирование взаимодействия](https://habrastorage.org/webt/r_/kh/ml/r_khmlkalzxp9cys-e1vg_dws3u.png)
 
