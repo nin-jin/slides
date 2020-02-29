@@ -232,6 +232,10 @@
 2. Не локализуют проблему (часто запускаются в поизвольном порядке)
 3. Невозможны в монолитной архитектуре
 
+# Что стоит мокать
+
+![Что мокать](https://habrastorage.org/webt/1l/zd/1x/1lzd1xuoykhsh6rpokwjlupi-ii.png)
+
 # Рожок тестирования
 
 ![Пирамида и рожок тестирования](https://habrastorage.org/webt/ep/iv/4k/epiv4k-gp9lfbunqemk8yom2qu4.png)
