@@ -161,7 +161,7 @@
 
 # Рожок тестирования
 
-![Пирамида и рожок тестирования](https://habrastorage.org/webt/ts/kf/oj/tskfojzogicipakwphg1ztrunpk.png)
+![Пирамида и рожок тестирования](https://habrastorage.org/webt/xi/my/5f/ximy5fektwfqua-u9gsd4zh4_qm.png)
 
 # Тестирование в большинстве компаний
 
