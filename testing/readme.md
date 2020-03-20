@@ -168,20 +168,19 @@ MAM - сборщик яваскрипта, где тесты и стили вы�
 Просто используем компоненты как в реальном коде.
 
 ```typescript
-const app = $hyoo_todomvc.make({ $ })
+const app = new Todomvc({ context })
 
-$mol_assert_like( app.task_ids() , [] )
+assert( app.task_ids() , [] )
 
 app.Add().value( 'test title' )
 app.Add().done()
 
-$mol_assert_like( app.task_ids() , [ 1 ] )
+assert( app.task_ids() , [ 1 ] )
 
-$mol_assert_like( app.task_rows().length , 1 )
-$mol_assert_equal( app.Task_row(1).title() , 'test title' )
-$mol_assert_equal( app.Task_row(1).completed() , false )
+assert( app.Task_row(1).title() , 'test title' )
+assert( app.Task_row(1).completed() , false )
 
-$mol_assert_equal( app.Add().value() , '' )
+assert( app.Add().value() , '' )
 ```
 
 # Фрактальное тестирование: Постоянная сложность
