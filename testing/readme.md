@@ -142,7 +142,7 @@
 
 # Фрактальное тестирование
 
-![](https://habrastorage.org/webt/g9/db/vk/g9dbvkf6ps-f3z3uh1vsq3zsjv0.png)
+![](https://habrastorage.org/webt/ar/n1/yk/arn1ykrty8ewxjzmermjp9-fpmg.png)
 
 Фактически это правильная организация компонентных тестов.
 
