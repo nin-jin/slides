@@ -182,21 +182,18 @@ MAM - сборщик яваскрипта, где тесты и стили вы�
 ```typescript
 const app = new Todomvc({ context })
 
-const title = Math.random().toString()
+const title = guid()
 const rowsPrev = app.rows()
 
-app.Add().value( title )
-app.Add().done()
+app.AddTitle().value( title )
+app.AddButton().click()
 
 const rowNew = app.rows()[0]
-
 assertEqual( app.rows() , [ rowNew , ... rowsPrev ] )
-assertUnique( ... app.rows() )
 
 assertEqual( rowNew.title() , title )
-assertEqual( rowNew.completed() , false )
 
-assertEqual( app.Add().value() , '' )
+assertEqual( app.AddTitle().value() , '' )
 ```
 
 # Фрактальное тестирование: Постоянная сложность
