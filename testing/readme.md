@@ -157,7 +157,7 @@ TestBed в ангуляре давал 100мс на тест, или уже 5 с
 
 # Компонентные тесты: Подстраховка
 
-![](https://habrastorage.org/webt/wd/n7/jd/wdn7jdywjwqsypof2g3d9hwfkt4.png)
+![](https://habrastorage.org/webt/gv/yz/yd/gvyzyd-dmiz70nx6gmrm5maqzyc.png)
 
 Елси зависимость плохо протестирована зависимых поймает ошибку. Придётся поискать её, но это лучше, чем вообще её ропустить.
 
