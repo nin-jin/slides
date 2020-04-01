@@ -187,14 +187,14 @@ const app = new Todomvc({ context })
 const title = guid()
 const rowsPrev = app.rows()
 
-app.AddTitle().value( title )
-app.AddButton().click()
+app.NewTitle().value( title )
+app.NewSubmit().click()
 
 const rowNew = app.rows()[0]
 
 assertEqual( app.rows() , [ rowNew , ... rowsPrev ] )
 assertEqual( rowNew.title() , title )
-assertEqual( app.AddTitle().value() , '' )
+assertEqual( app.NewTitle().value() , '' )
 ```
 
 # Фрактальное тестирование: Постоянная сложность
@@ -222,16 +222,16 @@ assertEqual( app.AddTitle().value() , '' )
 - Пилю соло второй год
 - 300 тестов
 - 0.5 секунд
-- При перезагрузке страницы
+- Старт при перезагрузке страницы
 - Им пользуется мой начальник
 
-*Пишу тесты ибо это нужно прежде всего мне самому. Но стараюсь писать их так, чтобы тратить минимум усилий.*
+Пишу тесты ибо это нужно прежде всего мне самому. Но стараюсь писать их так, чтобы тратить минимум усилий.
 
 # Фрактальное тестирование: Ограничения
 
 - Монолитная архитектура
 - Тяжёлая архитектура
-- Кривой тестовый фреймворк
+- Отсутствие инверсии контроля
 
 # Фрактальное тестирование: Кратчайший путь
 
