@@ -189,10 +189,9 @@ app.AddTitle().value( title )
 app.AddButton().click()
 
 const rowNew = app.rows()[0]
+
 assertEqual( app.rows() , [ rowNew , ... rowsPrev ] )
-
 assertEqual( rowNew.title() , title )
-
 assertEqual( app.AddTitle().value() , '' )
 ```
 
