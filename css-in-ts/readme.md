@@ -138,7 +138,7 @@ interface Properties {
 	 * and the layout used for its children, such as flow layout, grid or flex.
 	 */
 	display? :
-	| 'block' | 'inline' | 'run-in' | 'list-item' | 'none'
+	| 'block' | 'inline' | 'none'
     // other values
 	| Common
     
