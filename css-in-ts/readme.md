@@ -227,7 +227,7 @@ type isFivesubtypeOfNumber = IsSubType< 5 , number > // true
 type isNumbersubtypeOfFive = IsSubType< number , 5 > // false
 ```
 
-# наивное сравнение типов
+# Наивное сравнение типов
 
 ```typescript
 type Equals< A , B > =
