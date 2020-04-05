@@ -3,6 +3,45 @@
 Вы можете [открыть это в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/css-in-ts/)
 
 # Что хотим получить
+
+```typescript
+$mol_style_define( $my_profile , {
+
+    display: 'flex',
+    
+    Page: {
+        Body: {
+            margin: rem(5),
+        }
+    },
+    
+    $mol_button: {
+        ':hover': {
+            background: 'red'
+        },
+    },
+    
+} )
+```
+
+```typescript
+class $my_profile extends $mol_view {
+
+    Page() { return new $mol_page }
+    
+} )
+
+class $my_page extends $mol_view {
+
+    Head() { return new $mol_view }
+    
+    Body() { return new $mol_view }
+    
+    Foot() { return new $mol_view }
+    
+} )
+```
+
 # Проблема девтулзов
 # CSS свойства
 # csstype
