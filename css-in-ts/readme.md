@@ -45,8 +45,8 @@ class $mol_page extends $mol_view {
     border-radius: .5rem;
 }
 
-[my_profile_details_body] [mol_button]:hover {
-    background: 'red'
+[my_profile_details_body] [mol_button]:focus {
+    background: var(--mol_theme_hover)
 }
 ```
 
@@ -60,8 +60,8 @@ $mol_style_define( $my_profile , {
                 border: {
                     radius: rem(.5),
                 },
-                ':hover': {
-                    background: 'red'
+                ':focus': {
+                    background: $mol_theme.hover
                 },
             },
         }
