@@ -181,7 +181,7 @@ type Length = 0 | UnitLen | Func<'calc'>
 # Единицы измерения
 
 ```typescript
-UnitLen< Lit extends 'px' | ... | 'rem' > {
+UnitLen< Lit extends 'rem' | ... | '%' > {
 
 	constructor(
 		readonly val: number,
