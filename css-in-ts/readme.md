@@ -175,29 +175,29 @@ type Size =
 | 'auto' | 'max-content' | 'min-content' | Func<'fit-content'>
 | Length | Common
 
-type Length = 0 | UnitLength | Func<'calc'>
+type Length = 0 | UnitLen | Func<'calc'>
 ```
 
 # Единицы измерения
 
 ```typescript
-UnitLength< Literal extends 'px' | ... | 'rem' > {
+UnitLen< Lit extends 'px' | 'rem' | ... > {
 
 	constructor(
-		readonly value : number,
-		readonly literal : Literal,
+		readonly val : number,
+		readonly lit : Lit,
 	) { }
 	
 	toString() {
-		return this.value + this.literal
+		return this.val + this.lit
 	}
 
 }
 ```
 
 ```typescript
-function rem( value : number ) {
-	return new UnitLength( value , 'rem' )
+function rem( val : number ) {
+	return new UnitLen( val, 'rem' )
 }
 
 
