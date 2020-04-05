@@ -151,29 +151,20 @@ interface Properties {
 ```typescript
 type Overflow = 'visible' | 'hidden' | 'clip' | 'scroll' | 'auto' | 'overlay' | Common
 
-/** What to do when an element's content is too big to fit in its block formatting context. It is a shorthand for `overflowX` and `overflowY`. */
-overflow?:
-| Overflow
-| [ Overflow , Overflow ]
-| {
-
-	/** What shows when content overflows a block-level element's left and right edges. */
-	x?:  Overflow
-
-	/** What shows when content overflows a block-level element's top and bottom edges. */
-	y?:  Overflow
-
+overflow? : Overflow | {
+	x? :  Overflow
+	y? :  Overflow
+	anchor? : 'auto' | 'none' | Common
 }
 ```
 
 ```
 overflow: 'hidden'
 
-overflow: [ 'auto' , 'scrol' ]
-
 overflow: {
-	x : 'auto' ,
-	y : 'scrol',
+	x: 'auto' ,
+	y: 'scrol',
+	anchor: 'none',
 }
 ```
 
