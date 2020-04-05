@@ -18,15 +18,15 @@ $mol_page $mol_view sub /
 
 ```typescript
 class $my_profile extends $mol_book {
-    Menu() : $mol_page
-    Details() : $mol_page
+    Menu(): $mol_page
+    Details(): $mol_page
 } )
 
 class $mol_page extends $mol_view {
-    Head() : $mol_view
-    Title() : $mol_button
-    Body() : $mol_scroll
-    Foot() : $mol_view
+    Head(): $mol_view
+    Title(): $mol_button
+    Body(): $mol_scroll
+    Foot(): $mol_view
 } )
 ```
 
