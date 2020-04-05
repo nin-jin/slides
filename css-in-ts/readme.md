@@ -5,13 +5,15 @@
 # Что хотим получить
 
 ```typescript
-class $my_app extends $mol_view {
+class $my_profile extends $mol_view {
 
-    Profile() { return new $mol_page }
+    Menu() { return new $my_panel }
+    
+    Details() { return new $my_panel }
     
 } )
 
-class $my_page extends $mol_view {
+class $my_panel extends $mol_view {
 
     Head() { return new $mol_view }
     
@@ -23,19 +25,17 @@ class $my_page extends $mol_view {
 ```
 
 ```typescript
-$mol_style_define( $my_app , {
+$mol_style_define( $my_profile , {
 
-    display: 'flex',
-    
-    Profile: {
+    Details: {
         Body: {
             
-            margin: rem(5),
-            
             $mol_button: {
+            
                 ':hover': {
                     background: 'red'
                 },
+                
             },
 
         }
