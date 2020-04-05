@@ -71,7 +71,7 @@ $mol_style_define( $my_profile , {
 
 # Генерация CSS или сразу CSSOM
 
-![](https://habrastorage.org/webt/gl/au/pi/glaupigcps2u-3-diebyculrdhs.png)
+![](https://i.imgur.com/qoJQD62.png)
 
 # CSS свойства
 # csstype
