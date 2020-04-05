@@ -89,9 +89,7 @@ type DisplayProperty =
 ```
 
 ```typescript
-{
-    display: 'black' // okay :^(
-}
+type DisplayProperty = string
 ```
 
 # csstype@3
@@ -99,10 +97,10 @@ type DisplayProperty =
 ```typescript
 type Display =
 | Globals
-| DataType.DisplayOutside
-| DataType.DisplayInside
-| DataType.DisplayInternal
-| DataType.DisplayLegacy
+| DisplayOutside
+| DisplayInside
+| DisplayInternal
+| DisplayLegacy
 | "contents" | "list-item" | "none"
 | (string & {})
 ```
