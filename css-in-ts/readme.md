@@ -10,7 +10,7 @@ $my_profile $mol_view
 
 $my_panel $mol_view
     Head $mol_view
-    Body $mol_view
+    Body $mol_scroll
     Foot $mol_view
 ```
 
@@ -25,7 +25,7 @@ class $my_panel extends $mol_view {
 
     Head() { return new $mol_view }
     
-    Body() { return new $mol_view }
+    Body() { return new $mol_scroll }
     
     Foot() { return new $mol_view }
     
