@@ -149,9 +149,9 @@ interface Properties {
 type Overflow = 'visible' | 'hidden' | ... | Common
 
 overflow? : Overflow | {
-	x? :  Overflow | Common
-	y? :  Overflow | Common
-	anchor? : 'auto' | 'none' | Common
+	x?:  Overflow | Common
+	y?:  Overflow | Common
+	anchor?: 'auto' | 'none' | Common
 }
 ```
 
@@ -160,8 +160,44 @@ overflow: 'hidden'
 
 overflow: {
 	x: 'auto' ,
-	y: 'scrol',
+	y: 'scroll',
 	anchor: 'none',
+}
+```
+
+# Свойства размеров
+
+```typescript
+width?: Size
+height?: Size
+
+type Size =
+| 'auto' | 'max-content' | 'min-content' | Func<'fit-content'>
+| Length | Common
+
+type Length = 0 | Unit<UnitLength> | Func<'calc'>
+```
+
+# Единицы измерения
+
+```typescript
+Unit< Literal extends string > {
+
+	constructor(
+		readonly value : number,
+		readonly literal : Literal,
+	) { }
+	
+	toString() {
+		return this.value + this.literal
+	}
+
+}
+```
+
+```typescript
+function rem( value : number ) {
+	return new Unit( value , 'rem' )
 }
 ```
 
