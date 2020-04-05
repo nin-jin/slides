@@ -175,13 +175,13 @@ type Size =
 | 'auto' | 'max-content' | 'min-content' | Func<'fit-content'>
 | Length | Common
 
-type Length = 0 | Unit<UnitLength> | Func<'calc'>
+type Length = 0 | UnitLength | Func<'calc'>
 ```
 
 # Единицы измерения
 
 ```typescript
-Unit< Literal extends string > {
+UnitLength< Literal extends 'px' | 'rem' | ... | '%' > {
 
 	constructor(
 		readonly value : number,
@@ -197,8 +197,11 @@ Unit< Literal extends string > {
 
 ```typescript
 function rem( value : number ) {
-	return new Unit( value , 'rem' )
+	return new UnitLength( value , 'rem' )
 }
+
+
+width: rem(1)
 ```
 
 # Иерархия типов TS
