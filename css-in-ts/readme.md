@@ -30,6 +30,25 @@ class $mol_page extends $mol_view {
 } )
 ```
 
+# Стилизация через CSS
+
+```html
+<mol_view
+    mol_view
+    mol_page_body
+    my_profile_details_body
+```
+
+```
+[my_profile_details_body] [mol_button] {
+    radius: .5rem;
+}
+
+[my_profile_details_body] [mol_button]:hover {
+    background: 'red'
+}
+```
+
 # Какие хотим стили
 
 ```typescript
