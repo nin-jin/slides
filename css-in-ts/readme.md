@@ -74,7 +74,45 @@ $mol_style_define( $my_profile , {
 ![](https://i.imgur.com/qoJQD62.png)
 
 # CSS свойства
+
 # csstype
+
+```typescript
+type DisplayProperty =
+| Globals
+| DisplayOutside
+| DisplayInside
+| DisplayInternal
+| DisplayLegacy
+| "contents" | "list-item" | "none"
+| string
+```
+
+```typescript
+{
+    display: 'black' // okay :^(
+}
+```
+
+# csstype@3
+
+```typescript
+type Display =
+| Globals
+| DataType.DisplayOutside
+| DataType.DisplayInside
+| DataType.DisplayInternal
+| DataType.DisplayLegacy
+| "contents" | "list-item" | "none"
+| (string & {})
+```
+
+```typescript
+{
+    display: 'black' // okay :^(
+}
+```
+
 # Иерархия типов TS
 
 ![](https://habrastorage.org/webt/-t/sp/4m/-tsp4mhhzvq2bdgu2flsbflmdrq.png)
