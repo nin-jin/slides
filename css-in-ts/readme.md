@@ -16,19 +16,15 @@ $my_panel $mol_view
 
 ```typescript
 class $my_profile extends $mol_view {
-
     Info() { return new $my_panel }
-    
 } )
 
 class $my_panel extends $mol_view {
 
     Head() { return new $mol_view }
-    
     Body() { return new $mol_scroll }
-    
     Foot() { return new $mol_view }
-    
+
 } )
 ```
 
