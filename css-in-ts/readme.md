@@ -137,10 +137,7 @@ interface Properties {
 	 * Whether an element is treated as a block or inline element
 	 * and the layout used for its children, such as flow layout, grid or flex.
 	 */
-	display?:
-	| 'block' | 'inline' | 'none'
-	// other values
-	| Common
+	display?: 'block' | 'inline' | 'none' | ... | Common
     
 	// etc
 }
@@ -149,7 +146,7 @@ interface Properties {
 # Группы свойств
 
 ```typescript
-type Overflow = 'visible' | 'hidden' | 'clip' | 'scroll' | 'auto' | 'overlay' | Common
+type Overflow = 'visible' | 'hidden' | ... | Common
 
 overflow? : Overflow | {
 	x? :  Overflow
