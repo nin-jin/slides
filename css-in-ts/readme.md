@@ -75,6 +75,19 @@ $mol_style_define( $my_profile , {
 
 # CSS свойства
 
+```typescript
+type CSSStyleDeclaration = {
+    display: string
+    // 500 lines
+}
+```
+
+```typescript
+{
+    display: 'black' // okay :^(
+}
+```
+
 # csstype
 
 ```typescript
