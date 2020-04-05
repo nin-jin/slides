@@ -69,7 +69,10 @@ $mol_style_define( $my_profile , {
 } )
 ```
 
-# Проблема девтулзов
+# Генерация CSS или сразу CSSOM
+
+![](https://habrastorage.org/webt/gl/au/pi/glaupigcps2u-3-diebyculrdhs.png)
+
 # CSS свойства
 # csstype
 # Тесты для типов
