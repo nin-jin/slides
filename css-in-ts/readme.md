@@ -77,7 +77,7 @@ $mol_style_define( $my_profile , {
 # csstype
 # Иерархия типов TS
 
-![](https://habrastorage.org/webt/ne/mt/pv/nemtpvlsmf1uip_wownlmzogej8.png)
+![](https://habrastorage.org/webt/dz/rg/aw/dzrgawgjllcw0-jzhkrj46amsue.png)
 
 # Тесты для типов
 # Кастомные типы свойств
