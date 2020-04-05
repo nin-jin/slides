@@ -184,8 +184,8 @@ type Length = 0 | UnitLen | Func<'calc'>
 UnitLen< Lit extends 'px' | 'rem' | ... > {
 
 	constructor(
-		readonly val : number,
-		readonly lit : Lit,
+		readonly val: number,
+		readonly lit: Lit,
 	) { }
 	
 	toString() {
@@ -197,7 +197,7 @@ UnitLen< Lit extends 'px' | 'rem' | ... > {
 
 ```typescript
 function rem( val : number ) {
-	return new UnitLen( val, 'rem' )
+	return new UnitLen( val , 'rem' )
 }
 
 
