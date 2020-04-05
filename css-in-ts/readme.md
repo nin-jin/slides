@@ -260,13 +260,21 @@ type Equal< A , B > =
 ```typescript
 type Assert<
 	Actual,
-	Expected extends Equals< Actual , Expected >,
+	Expected extends Equals<
+		Actual,
+		Expected,
+	>,
 > = Actual
+```
 
-type EqualNumbers = Assert< 777 , 777 > // 777
+```typescript
+// 5
+type EqualNumbers = Assert< 5 , 5 >
 
-type UnknownAny = Assert< unknown , any > // compile error
+// compile time error
+type UnknownAny = Assert< unknown , any >
 
+// boolean
 type BooleanUnion = Assert<
 	Equals< boolean , true | false >,
 	unknown,
