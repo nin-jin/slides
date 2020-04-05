@@ -149,8 +149,8 @@ interface Properties {
 type Overflow = 'visible' | 'hidden' | ... | Common
 
 overflow? : Overflow | {
-	x? :  Overflow
-	y? :  Overflow
+	x? :  Overflow | Common
+	y? :  Overflow | Common
 	anchor? : 'auto' | 'none' | Common
 }
 ```
