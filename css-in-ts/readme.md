@@ -7,7 +7,7 @@
 ```tree
 $my_profile $mol_view sub /
     <= Menu $my_panel
-    <= Info $my_panel
+    <= Details $my_panel
 
 $my_panel $mol_view sub /
     <= Head $mol_view sub /
@@ -18,7 +18,8 @@ $my_panel $mol_view sub /
 
 ```typescript
 class $my_profile extends $mol_view {
-    Info() { return new $my_panel }
+    Menu() { return new $my_panel }
+    Details() { return new $my_panel }
 } )
 
 class $my_panel extends $mol_view {
@@ -35,7 +36,7 @@ class $my_panel extends $mol_view {
 
 ```typescript
 $mol_style_define( $my_profile , {
-    Info: {
+    Details: {
         Body: {
             $mol_button: {
                 border: {
