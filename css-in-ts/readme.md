@@ -5,11 +5,11 @@
 # Компоненты
 
 ```tree
-$my_profile $mol_view sub /
-    <= Menu $my_panel
-    <= Details $my_panel
+$my_profile $mol_book pages /
+    <= Menu $mol_page
+    <= Details $mol_page
 
-$my_panel $mol_view sub /
+$mol_page $mol_view sub /
     <= Head $mol_view sub /
         <= Title $mol_button
     <= Body $mol_scroll
@@ -17,17 +17,17 @@ $my_panel $mol_view sub /
 ```
 
 ```typescript
-class $my_profile extends $mol_view {
-    Menu() { return new $my_panel }
-    Details() { return new $my_panel }
+class $my_profile extends $mol_book {
+    Menu() : $mol_page
+    Details() : $mol_page
 } )
 
-class $my_panel extends $mol_view {
+class $mol_page extends $mol_view {
 
-    Head() { return new $mol_view }
-    Title() { return new $mol_button }
-    Body() { return new $mol_scroll }
-    Foot() { return new $mol_view }
+    Head() : $mol_view
+    Title() : $mol_button
+    Body() : $mol_scroll
+    Foot() : $mol_view
 
 } )
 ```
