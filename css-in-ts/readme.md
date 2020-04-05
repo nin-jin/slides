@@ -5,29 +5,9 @@
 # Что хотим получить
 
 ```typescript
-$mol_style_define( $my_profile , {
+class $my_app extends $mol_view {
 
-    display: 'flex',
-    
-    Page: {
-        Body: {
-            margin: rem(5),
-        }
-    },
-    
-    $mol_button: {
-        ':hover': {
-            background: 'red'
-        },
-    },
-    
-} )
-```
-
-```typescript
-class $my_profile extends $mol_view {
-
-    Page() { return new $mol_page }
+    Profile() { return new $mol_page }
     
 } )
 
@@ -38,6 +18,28 @@ class $my_page extends $mol_view {
     Body() { return new $mol_view }
     
     Foot() { return new $mol_view }
+    
+} )
+```
+
+```typescript
+$mol_style_define( $my_app , {
+
+    display: 'flex',
+    
+    Profile: {
+        Body: {
+            
+            margin: rem(5),
+            
+            $mol_button: {
+                ':hover': {
+                    background: 'red'
+                },
+            },
+
+        }
+    },
     
 } )
 ```
