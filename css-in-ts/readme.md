@@ -5,13 +5,15 @@
 # Компоненты
 
 ```tree
-$my_profile $mol_view 
-    Info $my_panel
+$my_profile $mol_view sub /
+    <= Menu $my_panel
+    <= Info $my_panel
 
-$my_panel $mol_view
-    Head $mol_view
-    Body $mol_scroll
-    Foot $mol_view
+$my_panel $mol_view sub /
+    <= Head $mol_view sub /
+        <= Title $mol_button
+    <= Body $mol_scroll
+    <= Foot $mol_view
 ```
 
 ```typescript
@@ -22,6 +24,7 @@ class $my_profile extends $mol_view {
 class $my_panel extends $mol_view {
 
     Head() { return new $mol_view }
+    Title() { return new $mol_button }
     Body() { return new $mol_scroll }
     Foot() { return new $mol_view }
 
