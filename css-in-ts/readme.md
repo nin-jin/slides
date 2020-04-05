@@ -42,7 +42,7 @@ class $mol_page extends $mol_view {
 
 ```
 [my_profile_details_body] [mol_button] {
-    radius: .5rem;
+    border-radius: .5rem;
 }
 
 [my_profile_details_body] [mol_button]:hover {
