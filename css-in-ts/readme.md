@@ -131,7 +131,10 @@ type Common = 'inherit' | 'initial' | 'unset'
 
 interface Properties {
 
-	/** Whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex. */
+	/**
+	 * Whether an element is treated as a block or inline element
+	 * and the layout used for its children, such as flow layout, grid or flex.
+	 */
 	display? :
 	| 'block' | 'inline' | 'run-in' | 'list-item' | 'none'
     // other values
