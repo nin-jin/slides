@@ -213,9 +213,9 @@ function rem( val : number ) {
 # Типотернарник
 
 ```typescript
-type isFivesubtypeOfNumber = 5 extends number ? true : false // true
+type A = 5 extends number ? true : false // true
 
-type isNumbersubtypeOfFive = number extends 5 ? true : false // false
+type B = number extends 5 ? true : false // false
 ```
 
 # Типофункции
@@ -223,8 +223,8 @@ type isNumbersubtypeOfFive = number extends 5 ? true : false // false
 ```typescript
 type IsSubType< Low , High > = Low extends High ? true : false
 
-type isFivesubtypeOfNumber = IsSubType< 5 , number > // true
-type isNumbersubtypeOfFive = IsSubType< number , 5 > // false
+type A = IsSubType< 5 , number > // true
+type B = IsSubType< number , 5 > // false
 ```
 
 # Наивное сравнение типов
@@ -237,14 +237,43 @@ type Equals< A , B > =
 			: false
 		: false
 
-type IsFiveEqualsToNumber = Equals< 5 , number > // false =)
-type IsDefferenObjectsAreEqual = Equals< Object , object > // true =(
-type IsAnyEqualsToObject = Equals< any , object > // boolean =\
+type A = Equals< 5 , number > // false =)
+type B = Equals< Object , object > // true =(
+type C = Equals< any , object > // boolean =\
+```
+
+# Железное сравнение типов
+
+```typescript
+type Equal< A , B > =
+(
+	<X>()=> X extends A ? 1 : 2
+) extends (
+	<X>()=> X extends B ? 1 : 2
+)
+? unknown
+: never
 ```
 
 # Тесты для типов
+
+```typescript
+type Assert<
+	Actual,
+	Expected extends Equals< Actual , Expected >,
+> = Actual
+
+type EqualNumbers = Assert< 777 , 777 > // 777
+
+type UnknownAny = Assert< unknown , any > // compile error
+
+type BooleanUnion = Assert<
+	Equals< boolean , true | false >,
+	unknown,
+>
+```
+
 # Кастомные типы свойств
-# Юниты и декораторы
 # Функции
 # Псевдоклассы и псевдоэлементы
 # Аттрибуты
