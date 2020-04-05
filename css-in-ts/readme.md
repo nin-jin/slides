@@ -39,6 +39,9 @@ $mol_style_define( $my_profile , {
     Info: {
         Body: {
             $mol_button: {
+                border: {
+                    radius: rem(.5),
+                },
                 ':hover': {
                     background: 'red'
                 },
