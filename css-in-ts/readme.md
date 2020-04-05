@@ -124,6 +124,23 @@ type Display =
 }
 ```
 
+# Свои типы: простые свойства
+
+```typescript
+type Common = 'inherit' | 'initial' | 'unset'
+
+interface Properties {
+
+	/** Whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex. */
+	display? :
+	| 'block' | 'inline' | 'run-in' | 'list-item' | 'none'
+    // other values
+	| Common
+    
+    // etc
+}
+```
+
 # Иерархия типов TS
 
 ![](https://habrastorage.org/webt/-t/sp/4m/-tsp4mhhzvq2bdgu2flsbflmdrq.png)
