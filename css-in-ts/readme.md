@@ -37,6 +37,7 @@ class $mol_page extends $mol_view {
     mol_view
     mol_page_body
     my_profile_details_body
+>
 ```
 
 ```
