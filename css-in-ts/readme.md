@@ -2,14 +2,22 @@
 
 Вы можете [открыть это в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/css-in-ts/)
 
-# Что хотим получить
+# Компоненты
+
+```tree
+$my_profile $mol_view 
+    Info $my_panel
+
+$my_panel $mol_view
+    Head $mol_view
+    Body $mol_view
+    Foot $mol_view
+```
 
 ```typescript
 class $my_profile extends $mol_view {
 
-    Menu() { return new $my_panel }
-    
-    Details() { return new $my_panel }
+    Info() { return new $my_panel }
     
 } )
 
@@ -24,23 +32,19 @@ class $my_panel extends $mol_view {
 } )
 ```
 
+# Какие хотим стили
+
 ```typescript
 $mol_style_define( $my_profile , {
-
-    Details: {
+    Info: {
         Body: {
-            
             $mol_button: {
-            
                 ':hover': {
                     background: 'red'
                 },
-                
             },
-
         }
     },
-    
 } )
 ```
 
