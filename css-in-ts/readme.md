@@ -214,6 +214,7 @@ function rem( val : number ) {
 
 ```typescript
 type isFivesubtypeOfNumber = 5 extends number ? true : false // true
+
 type isNumbersubtypeOfFive = number extends 5 ? true : false // false
 ```
 
