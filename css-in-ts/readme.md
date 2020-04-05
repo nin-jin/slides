@@ -213,8 +213,8 @@ function rem( val : number ) {
 # Типотернарник
 
 ```typescript
-type is777subtypeOfNumber = 777 extends number ? true : false // true
-type isNumbersubtypeOf777 = number extends 777 ? true : false // false
+type isFivesubtypeOfNumber = 5 extends number ? true : false // true
+type isNumbersubtypeOfFive = number extends 5 ? true : false // false
 ```
 
 # Типофункции
@@ -222,8 +222,8 @@ type isNumbersubtypeOf777 = number extends 777 ? true : false // false
 ```typescript
 type IsSubType< Low , High > = Low extends High ? true : false
 
-type is777subtypeOfNumber = IsSubType< 777 , number > // true
-type isNumbersubtypeOf777 = IsSubType< number , 777 > // false
+type isFivesubtypeOfNumber = IsSubType< 5 , number > // true
+type isNumbersubtypeOfFive = IsSubType< number , 5 > // false
 ```
 
 # наивное сравнение типов
@@ -236,7 +236,7 @@ type Equals< A , B > =
 			: false
 		: false
 
-type Is5EqualsToNumber = Equals< 5 , number > // false =)
+type IsFiveEqualsToNumber = Equals< 5 , number > // false =)
 type IsDefferenObjectsAreEqual = Equals< Object , object > // true =(
 type IsAnyEqualsToObject = Equals< any , object > // boolean =\
 ```
