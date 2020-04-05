@@ -8,27 +8,27 @@
 
 ```tree
 $my_profile $mol_book pages /
-    <= Menu $mol_page
-    <= Details $mol_page
+	<= Menu $mol_page
+	<= Details $mol_page
 
 $mol_page $mol_view sub /
-    <= Head $mol_view sub /
-        <= Title $mol_button
-    <= Body $mol_scroll
-    <= Foot $mol_view
+	<= Head $mol_view sub /
+		<= Title $mol_button
+	<= Body $mol_scroll
+	<= Foot $mol_view
 ```
 
 ```typescript
 class $my_profile extends $mol_book {
-    Menu(): $mol_page
-    Details(): $mol_page
+	Menu(): $mol_page
+	Details(): $mol_page
 } )
 
 class $mol_page extends $mol_view {
-    Head(): $mol_view
-    Title(): $mol_button
-    Body(): $mol_scroll
-    Foot(): $mol_view
+	Head(): $mol_view
+	Title(): $mol_button
+	Body(): $mol_scroll
+	Foot(): $mol_view
 } )
 ```
 
@@ -36,19 +36,19 @@ class $mol_page extends $mol_view {
 
 ```html
 <mol_view
-    mol_view
-    mol_page_body
-    my_profile_details_body
+	mol_view
+	mol_page_body
+	my_profile_details_body
 >
 ```
 
 ```
 [my_profile_details_body] [mol_button] {
-    border-radius: .5rem;
+	border-radius: .5rem;
 }
 
 [my_profile_details_body] [mol_button]:focus {
-    background: var(--mol_theme_hover)
+	background: var(--mol_theme_hover)
 }
 ```
 
@@ -79,14 +79,14 @@ $mol_style_define( $my_profile , {
 
 ```typescript
 type CSSStyleDeclaration = {
-    display: string
-    // 500 lines
+	display: string
+	// 500 lines
 }
 ```
 
 ```typescript
 {
-    display: 'black' // okay :^(
+	display: 'black' // okay :^(
 }
 ```
 
@@ -122,11 +122,11 @@ type Display =
 
 ```typescript
 {
-    display: 'black' // okay :^(
+	display: 'black' // okay :^(
 }
 ```
 
-# Свои типы: простые свойства
+# Простые свойства
 
 ```typescript
 type Common = 'inherit' | 'initial' | 'unset'
@@ -137,12 +137,43 @@ interface Properties {
 	 * Whether an element is treated as a block or inline element
 	 * and the layout used for its children, such as flow layout, grid or flex.
 	 */
-	display? :
+	display?:
 	| 'block' | 'inline' | 'none'
-    // other values
+	// other values
 	| Common
     
-    // etc
+	// etc
+}
+```
+
+# Группы свойств
+
+```typescript
+type Overflow = 'visible' | 'hidden' | 'clip' | 'scroll' | 'auto' | 'overlay' | Common
+
+/** What to do when an element's content is too big to fit in its block formatting context. It is a shorthand for `overflowX` and `overflowY`. */
+overflow?:
+| Overflow
+| [ Overflow , Overflow ]
+| {
+
+	/** What shows when content overflows a block-level element's left and right edges. */
+	x?:  Overflow
+
+	/** What shows when content overflows a block-level element's top and bottom edges. */
+	y?:  Overflow
+
+}
+```
+
+```
+overflow: 'hidden'
+
+overflow: [ 'auto' , 'scrol' ]
+
+overflow: {
+	x : 'auto' ,
+	y : 'scrol',
 }
 ```
 
