@@ -268,9 +268,6 @@ type Assert<
 ```
 
 ```typescript
-// 5
-type EqualNumbers = Assert< 5 , 5 >
-
 // compile time error
 type UnknownAny = Assert< unknown , any >
 
