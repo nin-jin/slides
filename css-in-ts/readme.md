@@ -75,6 +75,10 @@ $mol_style_define( $my_profile , {
 
 # CSS свойства
 # csstype
+# Иерархия типов TS
+
+![](https://habrastorage.org/webt/8p/nv/kw/8pnvkwsn6dmc6okyphiozujyera.png)
+
 # Тесты для типов
 # Кастомные типы свойств
 # Юниты и декораторы
