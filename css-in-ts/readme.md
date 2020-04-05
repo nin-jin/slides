@@ -181,7 +181,7 @@ type Length = 0 | UnitLength | Func<'calc'>
 # Единицы измерения
 
 ```typescript
-UnitLength< Literal extends 'px' | 'rem' | ... | '%' > {
+UnitLength< Literal extends 'px' | ... | 'rem' > {
 
 	constructor(
 		readonly value : number,
@@ -201,7 +201,9 @@ function rem( value : number ) {
 }
 
 
-width: rem(1)
+{
+	width: rem(1)
+}
 ```
 
 # Иерархия типов TS
