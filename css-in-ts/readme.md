@@ -210,6 +210,37 @@ function rem( val : number ) {
 
 ![](https://habrastorage.org/webt/-t/sp/4m/-tsp4mhhzvq2bdgu2flsbflmdrq.png)
 
+# Типотернарник
+
+```typescript
+type is777subtypeOfNumber = 777 extends number ? true : false // true
+type isNumbersubtypeOf777 = number extends 777 ? true : false // false
+```
+
+# Типофункции
+
+```typescript
+type IsSubType< Low , High > = Low extends High ? true : false
+
+type is777subtypeOfNumber = IsSubType< 777 , number > // true
+type isNumbersubtypeOf777 = IsSubType< number , 777 > // false
+```
+
+# наивное сравнение типов
+
+```typescript
+type Equals< A , B > =
+	A extends B
+		? B extends A
+			? true
+			: false
+		: false
+
+type Is5EqualsToNumber = Equals< 5 , number > // false =)
+type IsDefferenObjectsAreEqual = Equals< Object , object > // true =(
+type IsAnyEqualsToObject = Equals< any , object > // boolean =\
+```
+
 # Тесты для типов
 # Кастомные типы свойств
 # Юниты и декораторы
