@@ -197,7 +197,7 @@ Unit< Lit extends string > {
 
 ```typescript
 function rem( val : number ) {
-	return new UnitLen( val , 'rem' )
+	return new Unit( val , 'rem' )
 }
 
 
