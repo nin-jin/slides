@@ -206,6 +206,38 @@ function rem( val : number ) {
 }
 ```
 
+# Функции
+
+# Сокращённые свойства
+
+```typescript
+type Directions =
+| Size
+| [ Size , Size ]
+| {
+	top?: Size ,
+	right?: Size ,
+	bottom?: Size ,
+	left?: Size ,
+}
+
+margin?: Directions
+padding?: Directions
+```
+
+```typescript
+margin: rem(.5)
+
+margin: [ 0 , rem(.5) ]
+
+margin: {
+	top: 0,
+	right: rem(.5),
+	bottom: rem(.5),
+	left: rem(.5),
+}
+```
+
 # Иерархия типов TS
 
 ![](https://habrastorage.org/webt/-t/sp/4m/-tsp4mhhzvq2bdgu2flsbflmdrq.png)
@@ -278,7 +310,6 @@ type BooleanUnion = Assert<
 >
 ```
 
-# Кастомные типы свойств
 # Функции
 # Псевдоклассы и псевдоэлементы
 # Аттрибуты
