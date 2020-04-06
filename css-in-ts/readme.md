@@ -228,7 +228,7 @@ padding?: Directions
 ```typescript
 margin: rem(.5)
 
-margin: [ 0 , rem(.5) ]
+padding: [ 0 , rem(.5) ]
 
 margin: {
 	top: 0,
@@ -310,7 +310,6 @@ type BooleanUnion = Assert<
 >
 ```
 
-# Функции
 # Псевдоклассы и псевдоэлементы
 # Аттрибуты
 # Медиа запросы
