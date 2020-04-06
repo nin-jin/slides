@@ -238,6 +238,16 @@ margin: {
 }
 ```
 
+# Атрибуты
+
+```typescript
+attr() {
+	return {
+		mol_link_current: ()=> this.current()
+	}
+}
+```
+
 # Иерархия типов TS
 
 ![](https://habrastorage.org/webt/-t/sp/4m/-tsp4mhhzvq2bdgu2flsbflmdrq.png)
@@ -311,7 +321,6 @@ type BooleanUnion = Assert<
 ```
 
 # Псевдоклассы и псевдоэлементы
-# Аттрибуты
 # Медиа запросы
 # БЭМ-элементы
 # Фильтрация по над и под типам
