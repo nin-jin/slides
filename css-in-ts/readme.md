@@ -202,7 +202,7 @@ function rem( val : number ) {
 
 
 {
-	width: rem(1)
+	width: rem(1) // Unit<'rem'>
 }
 ```
 
