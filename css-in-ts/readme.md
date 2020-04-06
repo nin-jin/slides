@@ -175,13 +175,13 @@ type Size =
 | 'auto' | 'max-content' | 'min-content' | 'fit-content'
 | Length | Common
 
-type Length = 0 | UnitLen | Func<'calc'>
+type Length = 0 | Unit< 'rem' | ... | '%' > | Func<'calc'>
 ```
 
 # Единицы измерения
 
 ```typescript
-UnitLen< Lit extends 'rem' | ... | '%' > {
+Unit< Lit extends string > {
 
 	constructor(
 		readonly val: number,
