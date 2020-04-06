@@ -172,7 +172,7 @@ width?: Size
 height?: Size
 
 type Size =
-| 'auto' | 'max-content' | 'min-content' | Func<'fit-content'>
+| 'auto' | 'max-content' | 'min-content' | 'fit-content'
 | Length | Common
 
 type Length = 0 | UnitLen | Func<'calc'>
