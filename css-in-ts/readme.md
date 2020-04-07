@@ -244,7 +244,7 @@ margin: {
 attr() {
 	return {
 		... super.attr(),
-		my_item_active: this.active(),
+		mol_link_current: this.active(),
 	}
 }
 ```
@@ -252,7 +252,7 @@ attr() {
 ```
 {
 	'@': {
-		my_item_active: {
+		mol_link_current: {
 			true: {
 				zIndex: 1
 			}
