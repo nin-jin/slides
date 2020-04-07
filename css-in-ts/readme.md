@@ -243,7 +243,8 @@ margin: {
 ```typescript
 attr() {
 	return {
-		my_item_active: ()=> this.active()
+		... super.attr(),
+		my_item_active: ()=> this.active(),
 	}
 }
 ```
