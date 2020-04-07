@@ -266,46 +266,6 @@ interface $mol_page {
 }
 ```
 
-# Атрибуты
-
-```typescript
-attr *
-	^
-	mol_link_current <= current false
-
-                ⇩
-
-attr() {
-	return {
-		... super.attr(),
-		mol_link_current: this.current(),
-	}
-}
-```
-
-# Стили для атрибутов
-
-```typescript
-{
-	'@': Record<
-		ReturnType< View['attr'] >,
-		Record< string , Properties >,
-	>
-}
-```
-
-```typescript
-{
-	'@': {
-		mol_link_current: {
-			true: {
-				zIndex: 1
-			}
-		}
-	}
-}
-```
-
 # Иерархия типов TS
 
 ![](https://habrastorage.org/webt/u2/42/wk/u242wkmqgwvud3ohaztjmvudrbe.png)
@@ -378,15 +338,73 @@ type BooleanUnion = Assert<
 >
 ```
 
+# Типы-отображения
+
+```typescript
+
+```
+
+# Поиск ключей по типу значения
+
+```typescript
+```
+
+# Фильтрация объекта по типу свойств
+
+# Рекурсивные типы
+
+```typescript
+type Config< View > =
+& Properties
+& {
+	[ Key in Keys< View , ()=> $mol_view > ]: Config< View[ Key ]
+}
+```
+
+# Атрибуты
+
+```typescript
+attr *
+	^
+	mol_link_current <= current false
+
+                ⇩
+
+attr() {
+	return {
+		... super.attr(),
+		mol_link_current: this.current(),
+	}
+}
+```
+
+# Стили для атрибутов
+
+```typescript
+{
+	'@': Record<
+		ReturnType< View['attr'] >,
+		Record< string , Properties >,
+	>
+}
+```
+
+```typescript
+{
+	'@': {
+		mol_link_current: {
+			true: {
+				zIndex: 1
+			}
+		}
+	}
+}
+```
+
 # Псевдоклассы и псевдоэлементы
 # Медиа запросы
-# БЭМ-элементы
-# Фильтрация по над и под типам
-# Рекурсивные типы
-# Типы-отображения
 # Вложенные блоки
 # Непосредственно вложенные блоки
-# Поиск классов по типу
 # Что получилось
 # Планы
 
