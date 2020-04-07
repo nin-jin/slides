@@ -250,7 +250,7 @@ attr() {
 
 # Иерархия типов TS
 
-![](https://habrastorage.org/webt/-t/sp/4m/-tsp4mhhzvq2bdgu2flsbflmdrq.png)
+![](https://habrastorage.org/webt/u2/42/wk/u242wkmqgwvud3ohaztjmvudrbe.png)
 
 # Типотернарник
 
