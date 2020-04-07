@@ -241,6 +241,11 @@ margin: {
 # Атрибуты
 
 ```typescript
+attr *
+	^
+	mol_link_current <= current false
+
+
 attr() {
 	return {
 		... super.attr(),
