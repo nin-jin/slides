@@ -245,7 +245,7 @@ margin: {
 
 attr() {
 	return {
-		mol_link_current: ()=> this.current()
+		my_item_active: ()=> this.active()
 	}
 }
 ```
@@ -253,7 +253,7 @@ attr() {
 ```
 {
 	'@': {
-		'mol_link_current: {
+		'my_item_active: {
 			true: {
 				background: $mol_theme.current
 			}
