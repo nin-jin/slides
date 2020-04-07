@@ -241,8 +241,6 @@ margin: {
 # Атрибуты
 
 ```typescript
-
-
 attr() {
 	return {
 		my_item_active: ()=> this.active()
