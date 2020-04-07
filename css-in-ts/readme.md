@@ -238,6 +238,34 @@ margin: {
 }
 ```
 
+# БЭМ элементы
+
+```typescript
+interface $my_profile {
+	Details(): $mol_page
+} )
+
+interface $mol_page {
+	Body(): $mol_scroll
+} )
+```
+
+```typescript
+{
+	padding: rem(1),
+	
+	Details: {
+	
+		margin: 'auto',
+		
+		Body: {
+			overflow: 'scroll',
+		},
+		
+	},
+}
+```
+
 # Атрибуты
 
 ```typescript
