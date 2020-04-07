@@ -244,7 +244,7 @@ margin: {
 attr() {
 	return {
 		... super.attr(),
-		mol_link_current: this.active(),
+		mol_link_current: this.current(),
 	}
 }
 ```
