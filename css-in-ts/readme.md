@@ -252,7 +252,7 @@ attr() {
 ```
 {
 	'@': {
-		'my_item_active: {
+		my_item_active: {
 			true: {
 				zIndex: 1
 			}
