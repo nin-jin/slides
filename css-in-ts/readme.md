@@ -248,6 +248,18 @@ attr() {
 }
 ```
 
+```
+{
+	'@': {
+		'mol_link_current: {
+			true: {
+				background: $mol_theme.current
+			}
+		}
+	}
+}
+```
+
 # Иерархия типов TS
 
 ![](https://habrastorage.org/webt/u2/42/wk/u242wkmqgwvud3ohaztjmvudrbe.png)
