@@ -211,18 +211,18 @@ function rem( val : number ) {
 # Сокращённые свойства
 
 ```typescript
-type Directions =
-| Size
-| [ Size , Size ]
-| {
-	top?: Size ,
-	right?: Size ,
-	bottom?: Size ,
-	left?: Size ,
-}
+margin?: Directions<Length>
+padding?: Directions<Length>
 
-margin?: Directions
-padding?: Directions
+type Directions< Value > =
+| Value
+| [ Value , Value ]
+| {
+	top?: Value ,
+	right?: Value ,
+	bottom?: Value ,
+	left?: Value ,
+}
 ```
 
 ```typescript
