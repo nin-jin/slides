@@ -241,6 +241,8 @@ margin: {
 # Атрибуты
 
 ```typescript
+
+
 attr() {
 	return {
 		mol_link_current: ()=> this.current()
