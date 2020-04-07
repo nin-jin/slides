@@ -4,7 +4,7 @@
 <script src="offline.js"></script>
 <script>
 
-	if( window.parent === window ) document.location = '//slides.hyoo.ru/#slides=' + encodeURIComponent( location.href )
+	if( window.parent === window ) document.location = '//slides.hyoo.ru/#slides=' + encodeURIComponent( location.href + location.path ) + location.hash
 
 	async function content( message ) {
 		const response = await fetch( 'readme.md' )
