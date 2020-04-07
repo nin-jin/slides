@@ -244,7 +244,7 @@ margin: {
 attr() {
 	return {
 		... super.attr(),
-		my_item_active: ()=> this.active(),
+		my_item_active: this.active(),
 	}
 }
 ```
