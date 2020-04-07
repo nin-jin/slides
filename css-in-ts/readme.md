@@ -255,7 +255,18 @@ attr() {
 }
 ```
 
+# Стили для атрибутов
+
+```typescript
+{
+	'@': Record<
+		ReturnType< View['attr'] >,
+		Record< string , Properties >,
+	>
+}
 ```
+
+```typescript
 {
 	'@': {
 		mol_link_current: {
