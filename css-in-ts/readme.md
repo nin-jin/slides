@@ -255,7 +255,7 @@ attr() {
 	'@': {
 		'my_item_active: {
 			true: {
-				background: $mol_theme.current
+				zIndex: 1
 			}
 		}
 	}
