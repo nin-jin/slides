@@ -400,7 +400,7 @@ type MethodNames< Obj > = {
 ```
 
 ```typescript
-type StrangeThing = Assert<
+type DifferentValues = Assert<
 
 	MethodNames<{
 		foo: ()=> void
