@@ -341,13 +341,74 @@ type BooleanUnion = Assert<
 # Типы-отображения
 
 ```typescript
+type KeysAsValues< Obj > = {
+	[ Key in keyof Obj ]: Key
+}
+```
 
+```typescript
+type StrangeThing = Assert<
+
+	KeysAsValues<{
+		foo: 1
+		bar: 2
+	}>,
+
+	{
+		foo: 'foo'
+		bar: 'bar'
+	},
+
+>
+```
+
+# Туда и обратно
+
+```typescript
+type KeyOf< Obj > = {
+	[ Key in keyof Obj ]: Key
+}[ keyof Obj ]
+```
+
+```typescript
+type StrangeThing = Assert<
+
+	KeyOf<{
+		foo: 1
+		bar: 2
+	}>,
+
+	'foo' | 'bar',
+
+>
 ```
 
 # Поиск ключей по типу значения
 
 ```typescript
+type MethodNames< Obj > = {
+	[ Key in keyof Obj ]:
+		Obj[ Key ] extends Function
+		? Key
+		: never
+}[ keyof Obj ]
 ```
+
+```typescript
+type StrangeThing = Assert<
+
+	MethodNames<{
+		foo: ()=> void
+		bar: 2
+		lol: { name : string }
+	}>,
+
+	'foo' | 'lol',
+
+>
+```
+
+# Обобщённый поиск ключей
 
 # Фильтрация объекта по типу свойств
 
