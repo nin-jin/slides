@@ -404,11 +404,12 @@ type DifferentValues = Assert<
 
 	MethodNames<{
 		foo: ()=> void
-		bar: 2
+		bar: new ()=> {}
+		num: 5
 		lol: { name : string }
 	}>,
 
-	'foo' | 'lol',
+	'foo' | 'bar' | 'lol',
 
 >
 ```
