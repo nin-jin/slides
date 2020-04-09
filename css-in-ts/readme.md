@@ -365,21 +365,26 @@ type StrangeThing = Assert<
 # Туда и обратно
 
 ```typescript
-type KeyOf< Obj > = {
+type KeyOf1< Obj > = {
 	[ Key in keyof Obj ]: Key
 }[ keyof Obj ]
+
+type KeyOf2< Obj > = keyof Obj
 ```
 
 ```typescript
 type StrangeThing = Assert<
 
-	KeyOf<{
+	KeyOf1<{
 		foo: 1
 		bar: 2
 	}>,
 
-	'foo' | 'bar',
-
+	KeyOf2<{
+		foo: 1
+		bar: 2
+	}>,
+	
 >
 ```
 
