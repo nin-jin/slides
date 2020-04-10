@@ -443,7 +443,7 @@ type Trash = {
 }
 
 type Methods = Assert<
-	Pick< Trash , Function >,
+	MyPick< Trash , Function >,
 	{
 		foo: ()=> void
 		bar: new()=> {}
