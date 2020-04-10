@@ -391,7 +391,7 @@ type StrangeThing = Assert<
 # Поиск ключей по типу значения
 
 ```typescript
-type ExtractKeys< Obj , Upper > =
+type Keys< Obj , Upper > =
 {
 	[ Key in keyof Obj ]
 
@@ -405,23 +405,19 @@ type ExtractKeys< Obj , Upper > =
 	? Key
 
 	: never
-
 }[ keyof Obj ]
 ```
 
 ```typescript
-type GodObject = {
+type Trash = {
 	foo: ()=> void
 	bar: new()=> {}
 	lol: 5
 }
 
 type MethodNames = Assert<
-
-	ExtractKeys< GodObject , Function >,
-
+	Keys< Trash , Function >,
 	'foo' | 'bar',
-
 >
 ```
 
