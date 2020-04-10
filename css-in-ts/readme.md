@@ -391,30 +391,39 @@ type StrangeThing = Assert<
 # Поиск ключей по типу значения
 
 ```typescript
-type MethodNames< Obj > = {
-	[ Key in keyof Obj ]:
-		Obj[ Key ] extends Function
-		? Key
-		: never
+type ExtractKeys< Obj , Upper > =
+{
+	[ Key in keyof Obj ]
+
+	: unknown extends Obj[ Key ]
+	? never
+
+	: Obj[ Key ] extends never
+	? never
+
+	: Obj[ Key ] extends Upper
+	? Key
+
+	: never
+
 }[ keyof Obj ]
 ```
 
 ```typescript
-type DifferentValues = Assert<
+type GodObject = {
+	foo: ()=> void
+	bar: new()=> {}
+	lol: 5
+}
 
-	MethodNames<{
-		foo: ()=> void
-		bar: new()=> {}
-		num: 5
-		lol: { name : string }
-	}>,
+type MethodNames = Assert<
 
-	'foo' | 'bar' | 'lol',
+	ExtractKeys< GodObject , Function >,
+
+	'foo' | 'bar',
 
 >
 ```
-
-# Обобщённый поиск ключей
 
 # Фильтрация объекта по типу свойств
 
