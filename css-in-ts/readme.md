@@ -423,6 +423,33 @@ type MethodNames = Assert<
 
 # Фильтрация объекта по типу свойств
 
+```typescript
+type MyPick< Obj , Type > = Pick<
+	Obj,
+	keys< Obj , Type >
+>
+
+type MyOmit< Obj , Type > = Omit<
+	Obj,
+	keys< Obj , Type >
+>
+```
+
+```typescript
+namespace $ {
+	export class $mol_view {}
+	export class $my_app extends $mol_view {}
+	export class $mol_time_moment {}
+}
+
+const AllViews = MyPick< typeof $ , $mol_view >
+
+Assert< AllViews , {
+	$mol_view : typeof $mol_view
+	$my_app : typeof $my_app
+} >
+```
+
 # Рекурсивные типы
 
 ```typescript
