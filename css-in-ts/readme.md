@@ -436,6 +436,24 @@ type MyOmit< Obj , Type > = Omit<
 ```
 
 ```typescript
+type Trash = {
+	foo: ()=> void
+	bar: new()=> {}
+	lol: 5
+}
+
+type Methods = Assert<
+	Pick< Trash , Function >,
+	{
+		foo: ()=> void
+		bar: new()=> {}
+	}
+>
+```
+
+# Поиск всех подклассов
+
+```typescript
 namespace $ {
 	export class $mol_view {}
 	export class $my_app extends $mol_view {}
