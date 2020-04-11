@@ -290,16 +290,16 @@ type B = IsSubType< number , 5 > // false
 # Наивное сравнение типов
 
 ```typescript
-type Equals< A , B > =
+type Equal< A , B > =
 	A extends B
 		? B extends A
 			? true
 			: false
 		: false
 
-type A = Equals< 5 , number > // false =)
-type B = Equals< Object , object > // true =(
-type C = Equals< any , object > // boolean =\
+type A = Equal< 5 , number > // false =)
+type B = Equal< Object , object > // true =(
+type C = Equal< any , object > // boolean =\
 ```
 
 # Железное сравнение типов
@@ -320,7 +320,7 @@ type Equal< A , B > =
 ```typescript
 type Assert<
 	Actual,
-	Expected extends Equals<
+	Expected extends Equal<
 		Actual,
 		Expected,
 	>,
@@ -333,7 +333,7 @@ type UnknownAny = Assert< unknown , any >
 
 // boolean
 type BooleanUnion = Assert<
-	Equals< boolean , true | false >,
+	Equal< boolean , true | false >,
 	unknown,
 >
 ```
