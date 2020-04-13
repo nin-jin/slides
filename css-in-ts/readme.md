@@ -307,7 +307,7 @@ interface $mol_page {
 
 # Иерархия типов TS
 
-![](https://habrastorage.org/webt/u2/42/wk/u242wkmqgwvud3ohaztjmvudrbe.png)
+![](https://habrastorage.org/webt/jg/fv/nq/jgfvnq3cka9i4sgxslxoomo7el4.png)
 
 # Типотернарник
 
