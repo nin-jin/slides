@@ -209,6 +209,35 @@ function rem( val : number ) {
 
 # Функции
 
+```typescript
+Func<
+	Name extends string,
+	Value = unknown,
+> {
+
+	constructor(
+		readonly name : Name,
+		readonly val : Value,
+	) { }
+	
+	toString() {
+		return `${ this.name }(${ this.val })`
+	}
+
+}
+```
+
+```typescript
+function calc( val : string ) {
+	return new Func( 'calc' , val )
+}
+
+
+{
+	width: calc( '1px + 1em' ) // Func<'calc'>
+}
+```
+
 # Сокращённые свойства
 
 ```typescript
