@@ -130,8 +130,6 @@ type Display =
 # Простые свойства
 
 ```typescript
-type Common = 'inherit' | 'initial' | 'unset'
-
 interface Properties {
 
 	/**
@@ -142,18 +140,23 @@ interface Properties {
     
 	// etc
 }
+
+type Common = 'inherit' | 'initial' | 'unset'
+
 ```
 
 # Группы свойств
 
 ```typescript
-type Overflow = 'visible' | 'hidden' | ... | Common
-
-overflow? : {
-	x?:  Overflow | Common
-	y?:  Overflow | Common
-	anchor?: 'auto' | 'none' | Common
+interface Properties {
+	overflow? : {
+		x?:  Overflow | Common
+		y?:  Overflow | Common
+		anchor?: 'auto' | 'none' | Common
+	}
 }
+
+type Overflow = 'visible' | 'hidden' | ... | Common
 ```
 
 ```
@@ -167,8 +170,10 @@ overflow: {
 # Свойства размеров
 
 ```typescript
-width?: Size
-height?: Size
+interface Properties {
+	width?: Size
+	height?: Size
+}
 
 type Size =
 | 'auto' | 'max-content' | 'min-content' | 'fit-content'
@@ -239,8 +244,10 @@ function calc( val : string ) {
 # Сокращённые свойства
 
 ```typescript
-margin?: Directions<Length>
-padding?: Directions<Length>
+interface Properties {
+	margin?: Directions<Length>
+	padding?: Directions<Length>
+}
 
 type Directions< Value > =
 | Value
