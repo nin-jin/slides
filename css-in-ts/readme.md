@@ -572,6 +572,12 @@ function defineStyle<
 )
 ```
 
+# Типошибки
+
+```
+type Error< Message > = 'Error' & { $mol_type_error : Message }
+```
+
 # Атрибуты
 
 ```typescript
