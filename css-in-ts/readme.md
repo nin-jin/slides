@@ -550,15 +550,6 @@ type StylesGuard< View , Config > =
 		Config[ Key ]
 	>
 
-	: key extends keyof View
-	? View[ key ] extends ( id? : any )=> infer Sub
-		? Sub extends $mol_view
-			? StylesGuard< Sub , Config[ key ] >
-			: Error<[ 'Wrong Property' , key ]>
-		: Error<[ 'Property is not Element' , key ]>
-
-	: Error<[ 'Unknown Property' , key ]>
-
 }
 ```
 
@@ -575,6 +566,16 @@ function defineStyle<
 # Типошибки
 
 ```
+: key extends keyof View
+? View[ key ] extends ( id? : any )=> infer Sub
+	? Sub extends $mol_view
+		? StylesGuard< Sub , Config[ key ] >
+		: Error<[ 'Wrong Property' , key ]>
+	: Error<[ 'Property is not Element' , key ]>
+
+: Error<[ 'Unknown Property' , key ]>
+
+
 type Error< Message > = 'Error' & { $mol_type_error : Message }
 ```
 
