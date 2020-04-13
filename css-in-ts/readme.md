@@ -506,11 +506,68 @@ Assert< AllViews , {
 # Рекурсивные типы
 
 ```typescript
-type Config< View > =
+type Styles< View > =
 & Properties
 & {
-	[ Key in Keys< View , ()=> $mol_view > ]: Config< View[ Key ]
+	[ Key in Keys< View , ()=> $mol_view > ]:
+		Styles< ReturnType< View[ Key ] > >
 }
+& {
+	[ Key in keyof AllViews ]:
+		Styles< InstanceType< AllViews[ Key ] > >
+}
+```
+
+```
+function defineStyle<
+	View extends typeof $mol_view,
+	Config extends Styles< View >
+>(
+	view : View,
+	config : Config
+)
+```
+
+# Типогуарды
+
+```typescript
+type StylesGuard< View , Config > =
+& Properties
+& {
+	[ Key in keyof Config ]
+
+	: key extends keyof Properties
+	? unknown
+
+	: key extends keyof AllViews
+	? StylesGuard<
+		Extract<
+			ResultType< AllViews[ Key ] > ,
+			$mol_view,
+		>,
+		Config[ Key ]
+	>
+
+	: key extends keyof View
+	? View[ key ] extends ( id? : any )=> infer Sub
+		? Sub extends $mol_view
+			? StylesGuard< Sub , Config[ key ] >
+			: Error<[ 'Wrong Property' , key ]>
+		: Error<[ 'Property is not Element' , key ]>
+
+	: Error<[ 'Unknown Property' , key ]>
+
+}
+```
+
+```
+function defineStyle<
+	View extends typeof $mol_view,
+	Config extends StylesGuard< View , Config >
+>(
+	view : View,
+	config : Config
+)
 ```
 
 # Атрибуты
