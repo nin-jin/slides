@@ -289,6 +289,10 @@ interface $mol_page {
 {
 	padding: rem(1),
 	
+	$mol_button: {
+		border: 'none',
+	},
+	
 	Details: {
 	
 		margin: 'auto',
@@ -591,15 +595,6 @@ attr() {
 
 ```typescript
 {
-	'@': Record<
-		ReturnType< View['attr'] >,
-		Record< string , Properties >,
-	>
-}
-```
-
-```typescript
-{
 	'@': {
 		mol_link_current: {
 			true: {
@@ -611,13 +606,59 @@ attr() {
 ```
 
 # Псевдоклассы и псевдоэлементы
+
+```typescript
+{
+	':hover': {
+		zIndex: 1
+	}
+}
+```
+
 # Медиа запросы
-# Вложенные блоки
+
+```typescript
+{
+	$mol_scroll: {
+		'@media': {
+			'print': {
+				overflow: 'visible',
+			},
+		},
+	},
+}
+```
+
 # Непосредственно вложенные блоки
+
+```typescript
+{
+	'>': {
+	
+		$mol_view: {
+			margin: rem(1),
+		},
+		
+		$mol_button: {
+			margin: rem(0),
+		},
+		
+	},
+}
+```
+
 # Что получилось
+
+* Тайпчек всех ключей и значений
+* Подсказки по всем ключам и значениям
+* Описание всех свойств
+* Удобство описания стилей
+* Каскадные переопределения стилей
+
 # Планы
 
 * Рантайм чтение стилей до рендеринга
 * Типизация всех свойств
 * Все функции
 * Анимации
+* Типизированные выражения в calc
