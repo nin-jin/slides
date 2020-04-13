@@ -294,13 +294,11 @@ interface $mol_page {
 	},
 	
 	Details: {
-	
 		margin: 'auto',
 		
 		Body: {
 			overflow: 'scroll',
 		},
-		
 	},
 }
 ```
