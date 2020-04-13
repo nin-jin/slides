@@ -232,7 +232,7 @@ function calc( val : string ) {
 
 
 {
-	width: calc( '1px + 1em' ) // Func<'calc'>
+	width: calc( '1px + 1em' ) // Func<'calc',string>
 }
 ```
 
