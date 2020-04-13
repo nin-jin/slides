@@ -149,7 +149,7 @@ interface Properties {
 ```typescript
 type Overflow = 'visible' | 'hidden' | ... | Common
 
-overflow? : Overflow | {
+overflow? : {
 	x?:  Overflow | Common
 	y?:  Overflow | Common
 	anchor?: 'auto' | 'none' | Common
@@ -157,8 +157,6 @@ overflow? : Overflow | {
 ```
 
 ```
-overflow: 'hidden'
-
 overflow: {
 	x: 'auto' ,
 	y: 'scroll',
