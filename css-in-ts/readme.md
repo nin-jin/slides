@@ -7,7 +7,7 @@
 
 # Подопытное приложение
 
-![](https://habrastorage.org/webt/xd/qn/qk/xdqnqklbt4o1hq61ffrr_wvvmgu.png)
+![](https://habrastorage.org/webt/su/al/6_/sual6_ozsyx1opyhlqwb-afemlk.png)
 
 # Компоненты
 
