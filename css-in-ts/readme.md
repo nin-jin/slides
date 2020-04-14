@@ -5,31 +5,31 @@
 
 Вы можете [открыть это в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/css-in-ts/)
 
+# Подопытное приложение
+
+![](https://habrastorage.org/webt/xd/qn/qk/xdqnqklbt4o1hq61ffrr_wvvmgu.png)
+
 # Компоненты
 
 ```tree
-$my_profile $mol_book pages /
-	<= Menu $mol_page
-	<= Details $mol_page
+$my_profile $mol_view sub /
+	<= Menu $my_panel
+	<= Details $my_panel
 
-$mol_page $mol_view sub /
-	<= Head $mol_view sub /
-		<= Title $mol_button
+$my_panel $mol_view sub /
+	<= Head $mol_view
 	<= Body $mol_scroll
-	<= Foot $mol_view
 ```
 
 ```typescript
-class $my_profile extends $mol_book {
-	Menu(): $mol_page
-	Details(): $mol_page
+class $my_profile extends $mol_view {
+	Menu(): $my_panel
+	Details(): $my_panel
 } )
 
-class $mol_page extends $mol_view {
+class $my_panel extends $mol_view {
 	Head(): $mol_view
-	Title(): $mol_button
 	Body(): $mol_scroll
-	Foot(): $mol_view
 } )
 ```
 
@@ -38,8 +38,15 @@ class $mol_page extends $mol_view {
 ```html
 <mol_view
 	mol_view
-	mol_page_body
+	my_panel_body
 	my_profile_details_body
+>
+
+<mol_button_major
+	mol_view
+	mol_button
+	mol_button_major
+	my_profile_signup
 >
 ```
 
