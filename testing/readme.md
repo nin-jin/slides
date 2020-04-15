@@ -68,19 +68,19 @@
 
 Система - едница развёртывания, ваш продукт. E2E, системное тестирование.
 
-![Система](https://habrastorage.org/webt/2l/pj/7z/2lpj7ziss3wkfogjqpp_7y8oo5u.png)
+![](https://habrastorage.org/webt/h9/pe/t4/h9pet4ua862thaq9-ugcg8wmlnw.png)
 
 # Модуль (юнит)
 
 Модуль - единица кода. Модульное тестирование.
 
-![Модули](https://habrastorage.org/webt/j5/lo/c0/j5loc0fpww-tsxydb_exrpr0ymk.png)
+![](https://habrastorage.org/webt/ip/6-/my/ip6-my7poauwvga0n3iswxieqvs.png)
 
 # Компонент (подсистема)
 
 Компонент - единица функциональности. Компонентное тестирование.
 
-![Компоненты](https://habrastorage.org/webt/zt/r-/ch/ztr-ch87u4jfaiwt4ixcmtukzfq.png)
+![](https://habrastorage.org/webt/wk/ze/xb/wkzexblhbsx5vxtadfz-rjenrgq.png)
 
 # Рожок тестирования
 
@@ -129,7 +129,7 @@ const three = summator.summ( 1 , 2 )
 
 Чем меньше и проще модули, тем более важно их взаимодействие. 2х тестов.
 
-![Тестирование взаимодействия](https://habrastorage.org/webt/r_/kh/ml/r_khmlkalzxp9cys-e1vg_dws3u.png)
+![](https://habrastorage.org/webt/iz/wm/ee/izwmeechwa5ptk7swidli8rt2qu.png)
 
 # Системные тесты не масштабируются
 
@@ -158,13 +158,13 @@ TestBed в ангуляре давал 100мс на тест, или уже 5 с
 
 # Компонентные тесты: Подстраховка
 
-![](https://habrastorage.org/webt/gv/yz/yd/gvyzyd-dmiz70nx6gmrm5maqzyc.png)
+![](https://habrastorage.org/webt/jb/9a/4a/jb9a4aponmju_rvamak6urk-n_u.png)
 
 Елси зависимость плохо протестирована зависимых поймает ошибку. Придётся поискать её, но это лучше, чем вообще её ропустить.
 
 # Компонентные тесты: Где ошибка?
 
-![](https://habrastorage.org/webt/wd/n7/jd/wdn7jdywjwqsypof2g3d9hwfkt4.png)
+![](https://habrastorage.org/webt/wr/ue/h1/wrueh1s35bnb_0edrw1mq3f6_mg.png)
 
 Часто запускаются в поизвольном порядке. Из-за чего ошибка в глубине роняет высокоуровневый компонент и приходится долго испкать сбойный модуль.
 
@@ -172,7 +172,7 @@ TestBed в ангуляре давал 100мс на тест, или уже 5 с
 
 Запуск в порядке от зависимостей к зависимым позволяет по первому упавшему тесты понять где проблема. Остальные тесты можно уже и не исполнять.
 
-![Порядок исполнения тестов](https://habrastorage.org/webt/jj/rf/_g/jjrf_goaqaltjofbhkkx-gntwh8.png)
+![](https://habrastorage.org/webt/vu/oi/zq/vuoizqhipgfquzyb7s2_gqxuo74.png)
 
 MAM - сборщик яваскрипта, где тесты и стили выстраиваются в том же порядке, что и код в бандле.
 
