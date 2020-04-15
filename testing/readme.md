@@ -112,9 +112,13 @@
 
 # Модульные тесты - ломают абстракции
 
-> *Модуль А зависит от модуля Б.*
-> *Зависимость от Б выносится в публичный интерфейс.*
-> *Часто это знание навязывается через конструктор.*
+```typescript
+const algebra = new StandartAlgebra
+const logger = new ConsoleLogger
+const allocator = new StackAllocator
+const summator = new Summator( algebra , logger , allocator )
+const three = summator.summ( 1 , 2 )
+```
 
 # Модульные тесты - хрупкие
 
