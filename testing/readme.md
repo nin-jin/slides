@@ -240,8 +240,8 @@ assertEqual( app.NewTitle().value() , '' )
 
 # Опыт других людей
 
-- [PiterJS#44: Если нужен тест, пусть он будет интеграционным](https://piterjs.org/#meetup=44/speech=should-test-be-integrational)
-- [Is TDD Dead?: My personal practice is that I mock almost nothing.](https://youtu.be/z9quxZsLcfo)
+- [PiterJS#44: Если нужен тест, пусть он будет интеграционным](https://piterjs.org/#meetup=44/speech=should-test-be-integrational) @ Василий Малыхин
+- [Is TDD Dead?: My personal practice is that I mock almost nothing.](https://youtu.be/z9quxZsLcfo) @ Kent Beck
 
 # Резюме
 
