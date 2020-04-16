@@ -37,7 +37,7 @@
 
 # Зачем тесты? Локализация дефектов!
 
-![](https://habrastorage.org/webt/yh/tj/l3/yhtjl39oi0n03q6eqdvgopw-wey.png)
+![](https://habrastorage.org/webt/7w/py/3c/7wpy3caqtdd65bwkifphjesudny.png)
 
 Хороший тест указывает на конкретное проблемное место.
 
