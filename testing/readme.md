@@ -4,10 +4,7 @@
 
 ![](https://habrastorage.org/webt/ze/fo/ha/zefohaukq9yg1aduozplvdj6rek.jpeg)
 
-| Дмитрий Карловский @ TechLead Conf 2020 |
-|--------------------------------------|
-
-Вы можете [читать её как статью](https://github.com/nin-jin/slides/tree/master/testing), а можете [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/testing/).
+Это расшифровка выступления на TechLead Conf 2020. Вы можете [читать её как статью](https://github.com/nin-jin/slides/tree/master/testing), а можете [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/testing/).
 
 # О себе
 
