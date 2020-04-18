@@ -116,11 +116,11 @@ CSS( $my_profile , {
 } )
 ```
 
-# CSSOM - проблема с редактированием через DevTools
+# CSSOM: проблема с редактированием через DevTools
 
 ![](https://i.imgur.com/qoJQD62.png)
 
-# CSS свойства
+# CSSStyleDeclaration: слабая типизация
 
 ```typescript
 type CSSStyleDeclaration = {
@@ -135,7 +135,7 @@ type CSSStyleDeclaration = {
 }
 ```
 
-# csstype
+# csstype: кривая типизация
 
 ```typescript
 type DisplayProperty =
@@ -152,7 +152,7 @@ type DisplayProperty =
 type DisplayProperty = string
 ```
 
-# csstype@3
+# csstype@3: кривая типизация с подсказками
 
 ```typescript
 type Display =
@@ -330,7 +330,7 @@ interface $mol_page {
 ```
 
 ```typescript
-{
+CSS( $my_profile , {
 	padding: rem(1),
 	
 	$mol_button: {
@@ -344,192 +344,7 @@ interface $mol_page {
 			overflow: 'scroll',
 		},
 	},
-}
-```
-
-# Иерархия типов TS
-
-![](https://habrastorage.org/webt/jg/fv/nq/jgfvnq3cka9i4sgxslxoomo7el4.png)
-
-# Типотернарник
-
-```typescript
-type A = 5 extends number ? true : false // true
-
-type B = number extends 5 ? true : false // false
-```
-
-# Типофункции
-
-```typescript
-type IsSubType< Low , High > = Low extends High ? true : false
-
-type A = IsSubType< 5 , number > // true
-type B = IsSubType< number , 5 > // false
-```
-
-# Наивное сравнение типов
-
-```typescript
-type Equal< A , B > =
-	A extends B
-		? B extends A
-			? true
-			: false
-		: false
-
-type A = Equal< 5 , number > // false =)
-type B = Equal< Object , object > // true =(
-type C = Equal< any , object > // boolean =\
-```
-
-# Железное сравнение типов
-
-```typescript
-type Equal< A , B > =
-(
-	<X>()=> X extends A ? 1 : 2
-) extends (
-	<X>()=> X extends B ? 1 : 2
-)
-? unknown
-: never
-```
-
-# Тесты для типов
-
-```typescript
-type Assert<
-	Actual,
-	Expected extends Equal<
-		Actual,
-		Expected,
-	>,
-> = Actual
-```
-
-```typescript
-// compile time error
-type UnknownAny = Assert< unknown , any >
-
-// boolean
-type BooleanUnion = Assert<
-	Equal< boolean , true | false >,
-	unknown,
->
-```
-
-# Типы-отображения
-
-```typescript
-type KeysAsValues< Obj > = {
-	[ Key in keyof Obj ]: Key
-}
-```
-
-```typescript
-type StrangeThing = Assert<
-
-	KeysAsValues<{
-		foo: 1
-		bar: 2
-	}>,
-
-	{
-		foo: 'foo'
-		bar: 'bar'
-	},
-
->
-```
-
-# Туда и обратно
-
-```typescript
-type KeyOf1< Obj > = {
-	[ Key in keyof Obj ]: Key
-}[ keyof Obj ]
-
-type KeyOf2< Obj > = keyof Obj
-```
-
-```typescript
-type StrangeThing = Assert<
-
-	KeyOf1<{
-		foo: 1
-		bar: 2
-	}>,
-
-	KeyOf2<{
-		foo: 1
-		bar: 2
-	}>,
-	
->
-```
-
-# Поиск ключей по типу значения
-
-```typescript
-type Keys< Obj , Upper > =
-{
-	[ Key in keyof Obj ]
-
-	: unknown extends Obj[ Key ]
-	? never
-
-	: Obj[ Key ] extends never
-	? never
-
-	: Obj[ Key ] extends Upper
-	? Key
-
-	: never
-}[ keyof Obj ]
-```
-
-```typescript
-type Trash = {
-	foo: ()=> void
-	bar: new()=> {}
-	lol: 5
-}
-
-type MethodNames = Assert<
-	Keys< Trash , Function >,
-	'foo' | 'bar',
->
-```
-
-# Фильтрация объекта по типу свойств
-
-```typescript
-type MyPick< Obj , Type > = Pick<
-	Obj,
-	keys< Obj , Type >
->
-
-type MyOmit< Obj , Type > = Omit<
-	Obj,
-	keys< Obj , Type >
->
-```
-
-```typescript
-type Trash = {
-	foo: ()=> void
-	bar: new()=> {}
-	lol: 5
-}
-
-type Methods = Assert<
-	MyPick< Trash , Function >,
-	{
-		foo: ()=> void
-		bar: new()=> {}
-	}
->
+} )
 ```
 
 # Поиск всех подклассов
@@ -537,35 +352,45 @@ type Methods = Assert<
 ```typescript
 namespace $ {
 	export class $mol_view {}
-	export class $my_app extends $mol_view {}
+	export class $my_panel extends $mol_view {}
 	export class $mol_time_moment {}
 }
 
-const AllViews = MyPick< typeof $ , $mol_view >
+type $mol_view_all = $mol_type_pick< typeof $ , $mol_view >
 
-Assert< AllViews , {
+type HaveOnlyViews = $mol_type_assert< $mol_view_all , {
 	$mol_view : typeof $mol_view
-	$my_app : typeof $my_app
+	$my_panel : typeof $my_panel
 } >
 ```
 
-# Рекурсивные типы
+# Поиск всех БЭМ-элементов
 
 ```typescript
-type Styles< View > =
-& Properties
-& {
-	[ Key in Keys< View , ()=> $mol_view > ]:
-		Styles< ReturnType< View[ Key ] > >
-}
-& {
-	[ Key in keyof AllViews ]:
-		Styles< InstanceType< AllViews[ Key ] > >
-}
+class $my_profile extends $mol_view {
+	title(): string
+	Menu(): $my_panel
+	Details(): $my_panel
+} )
 ```
 
+```typescript
+type HaveOnlyElements = $mol_type_assert<
+
+	$mol_type_pick< $my_profile , ()=> $mol_view >,
+	
+	{
+		Menu(): $my_panel
+		Details(): $my_panel
+	}
+	
+>
 ```
-function defineStyle<
+
+# Декларативные ограничения
+
+```typescript
+function CSS<
 	View extends typeof $mol_view,
 	Config extends Styles< View >
 >(
@@ -574,31 +399,22 @@ function defineStyle<
 )
 ```
 
-# Типогуарды
+```
+A > B
+B > A
 
-```typescript
-type StylesGuard< View , Config > =
-& Properties
-& {
-	[ Key in keyof Config ]
+A > A
+B > B
 
-	: key extends keyof Properties
-	? unknown
-
-	: key extends keyof AllViews
-	? StylesGuard<
-		Extract<
-			ResultType< AllViews[ Key ] > ,
-			$mol_view,
-		>,
-		Config[ Key ]
-	>
-
-}
+A > A > A
+A > A > B
+...
 ```
 
+# Императивные ограничения
+
 ```
-function defineStyle<
+function CSS<
 	View extends typeof $mol_view,
 	Config extends StylesGuard< View , Config >
 >(
