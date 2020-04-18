@@ -102,7 +102,7 @@ class $my_panel extends $mol_view {
 ```
 
 ```typescript
-CSS( $my_profile , {
+$mol_style_define( $my_profile , {
 	Details: {
 		Body: {
 			overflow: 'overlay',
@@ -111,7 +111,7 @@ CSS( $my_profile , {
 					radius: rem(.5),
 				},
 			},
-		}
+		},
 	},
 } )
 ```
@@ -330,7 +330,7 @@ interface $mol_page {
 ```
 
 ```typescript
-CSS( $my_profile , {
+$mol_style_define( $my_profile , {
 	padding: rem(1),
 	
 	$mol_button: {
@@ -401,7 +401,7 @@ type HaveOnlyElems = $mol_type_assert<
 # Декларативные ограничения
 
 ```typescript
-function CSS<
+function $mol_style_define<
 	View extends typeof $mol_view,
 	Config extends Styles< View >
 >(
@@ -425,7 +425,7 @@ A > A > B
 # Императивные ограничения
 
 ```
-function CSS<
+function $mol_style_define<
 	View extends typeof $mol_view,
 	Config extends StylesGuard< View , Config >
 >(
