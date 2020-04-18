@@ -463,12 +463,14 @@ $mol_style_define<
 $mol_style_define<
 	typeof $my_profile,
 	{
-		title: $mol_type_error<[ 'Property is not Elem' , 'title' ]>,
+		title: $mol_type_error<[ 'Wrong Property' , 'title' ]>,
 	}
 >
 
 type $mol_type_error< Message > = '$mol_type_error' & { $mol_type_error : Message }
 ```
+
+# Пояснения по типошибкам
 
 ![](https://habrastorage.org/webt/wx/te/se/wxtesei5pbvudaqsb2yoed-sil4.png)
 
