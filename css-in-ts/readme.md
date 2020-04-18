@@ -281,7 +281,8 @@ function calc( val : string ) {
 
 
 {
-	width: calc( '1px + 1em' ) // Func<'calc',string>
+	// Func< 'calc' , string >
+	width: calc( '1px + 1em' )
 }
 ```
 
