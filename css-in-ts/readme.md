@@ -470,6 +470,10 @@ $mol_style_define<
 type $mol_type_error< Message > = '$mol_type_error' & { $mol_type_error : Message }
 ```
 
+![](https://habrastorage.org/webt/wx/te/se/wxtesei5pbvudaqsb2yoed-sil4.png)
+
+![](https://habrastorage.org/webt/8z/0f/un/8z0fung2kawmt4zuvpvbr_esg4i.png)
+
 # Атрибуты
 
 ```typescript
