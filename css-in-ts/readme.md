@@ -428,7 +428,10 @@ A > A > B
 ```typescript
 function $mol_style_define<
 	View extends typeof $mol_view,
-	Config extends StylesGuard< View , Config >
+	Config extends StylesGuard<
+		View,
+		Config,
+	>
 >(
 	view: View,
 	config: Config
