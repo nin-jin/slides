@@ -191,7 +191,7 @@ type Common = 'inherit' | 'initial' | 'unset'
 
 # Подсказки по свойствам
 
-![](https://habrastorage.org/webt/la/jn/p7/lajnp7iq3garkgwgqjxptmc6upm.png)
+![](https://habrastorage.org/webt/ey/ng/ct/eyngctffx2xdtmh36wyix6m7wmi.png)
 
 # Группы свойств
 
