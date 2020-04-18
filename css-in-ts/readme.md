@@ -263,8 +263,8 @@ Func<
 > {
 
 	constructor(
-		readonly name : Name,
-		readonly val : Value,
+		readonly name: Name,
+		readonly val: Value,
 	) { }
 	
 	toString() {
@@ -411,7 +411,7 @@ function $mol_style_define<
 )
 ```
 
-```
+```typescript
 A > B
 B > A
 
@@ -425,30 +425,42 @@ A > A > B
 
 # Императивные ограничения
 
-```
+```typescript
 function $mol_style_define<
 	View extends typeof $mol_view,
 	Config extends StylesGuard< View , Config >
 >(
-	view : View,
-	config : Config
+	view: View,
+	config: Config
 )
+```
+
+```typescript
+$mol_style_define( $my_profile, {
+	title: {
+		color: 'red',
+	},
+} )
+
+$mol_style_define<
+	typeof $my_profile,
+	{
+		title: never,
+	}
+>
 ```
 
 # Типошибки
 
-```
-: key extends keyof View
-? View[ key ] extends ( id? : any )=> infer Sub
-	? Sub extends $mol_view
-		? StylesGuard< Sub , Config[ key ] >
-		: Error<[ 'Wrong Property' , key ]>
-	: Error<[ 'Property is not Element' , key ]>
+```typescript
+$mol_style_define<
+	typeof $my_profile,
+	{
+		title: $mol_type_error<[ 'Property is not Elem' , 'title' ]>,
+	}
+>
 
-: Error<[ 'Unknown Property' , key ]>
-
-
-type Error< Message > = 'Error' & { $mol_type_error : Message }
+type $mol_type_error< Message > = '$mol_type_error' & { $mol_type_error : Message }
 ```
 
 # Атрибуты
