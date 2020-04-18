@@ -352,16 +352,24 @@ CSS( $my_profile , {
 ```typescript
 namespace $ {
 	export class $mol_view {}
-	export class $my_panel extends $mol_view {}
-	export class $mol_time_moment {}
+	export class $my_panel {}
+	export class $mol_tree {}
 }
+```
 
-type $mol_view_all = $mol_type_pick< typeof $ , $mol_view >
+```typescript
+type $mol_view_all = $mol_type_pick<
+	typeof $,
+	$mol_view,
+>
 
-type HaveOnlyViews = $mol_type_assert< $mol_view_all , {
-	$mol_view : typeof $mol_view
-	$my_panel : typeof $my_panel
-} >
+type HaveOnlyViews = $mol_type_assert<
+	$mol_view_all,
+	{
+		$mol_view: typeof $mol_view
+		$my_panel: typeof $my_panel
+	},
+>
 ```
 
 # Поиск всех БЭМ-элементов
@@ -375,9 +383,12 @@ class $my_profile extends $mol_view {
 ```
 
 ```typescript
-type HaveOnlyElements = $mol_type_assert<
+type HaveOnlyElems = $mol_type_assert<
 
-	$mol_type_pick< $my_profile , ()=> $mol_view >,
+	$mol_type_pick<
+		$my_profile,
+		()=> $mol_view,
+	>,
 	
 	{
 		Menu(): $my_panel
