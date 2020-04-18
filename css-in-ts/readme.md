@@ -7,7 +7,7 @@
 
 # Подопытное приложение
 
-![](https://habrastorage.org/webt/su/al/6_/sual6_ozsyx1opyhlqwb-afemlk.png)
+![](https://habrastorage.org/webt/r8/fj/d8/r8fjd8aylsbmw3iasyox6j_tcn4.png)
 
 # Генерация классов
 
