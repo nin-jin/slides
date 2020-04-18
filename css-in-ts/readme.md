@@ -189,6 +189,10 @@ type Common = 'inherit' | 'initial' | 'unset'
 
 ```
 
+# Подсказки по свойствам
+
+![](https://habrastorage.org/webt/la/jn/p7/lajnp7iq3garkgwgqjxptmc6upm.png)
+
 # Группы свойств
 
 ```typescript
