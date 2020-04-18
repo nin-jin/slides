@@ -52,14 +52,14 @@ class $my_panel extends $mol_view {
 	mol_view
 	my_panel_body
 	my_profile_details_body
->
+	>
 
 	<mol_button_major
 		mol_view
 		mol_button
 		mol_button_major
 		my_profile_signup
-	>
+		>
 ```
 
 # Наложение стилей
@@ -69,14 +69,14 @@ class $my_panel extends $mol_view {
 	mol_view
 	my_panel_body
 	my_profile_details_body
->
+	>
 
-<mol_button_major
-	mol_view
-	mol_button
-	mol_button_major
-	my_profile_signup
->
+	<mol_button_major
+		mol_view
+		mol_button
+		mol_button_major
+		my_profile_signup
+		>
 ```
 
 ```
