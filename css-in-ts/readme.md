@@ -9,7 +9,7 @@
 
 ![](https://habrastorage.org/webt/su/al/6_/sual6_ozsyx1opyhlqwb-afemlk.png)
 
-# Компоненты
+# Генерация классов
 
 ```tree
 $my_profile $mol_view sub /
@@ -33,7 +33,36 @@ class $my_panel extends $mol_view {
 } )
 ```
 
-# Стилизация через CSS
+# Генерация DOM
+
+```typescript
+class $my_profile extends $mol_view {
+	Menu(): $my_panel
+	Details(): $my_panel
+} )
+
+class $my_panel extends $mol_view {
+	Head(): $mol_view
+	Body(): $mol_scroll
+} )
+```
+
+```html
+<mol_view
+	mol_view
+	my_panel_body
+	my_profile_details_body
+>
+
+<mol_button_major
+	mol_view
+	mol_button
+	mol_button_major
+	my_profile_signup
+>
+```
+
+# Наложение стилей
 
 ```html
 <mol_view
@@ -54,13 +83,15 @@ class $my_panel extends $mol_view {
 [my_profile_details_body] [mol_button] {
 	border-radius: .5rem;
 }
-
-[my_profile_details_body] [mol_button]:focus {
-	background: var(--mol_theme_hover)
-}
 ```
 
-# Какие хотим стили
+# Генерация стилей
+
+```
+[my_profile_details_body] [mol_button] {
+	border-radius: .5rem;
+}
+```
 
 ```typescript
 $mol_style_define( $my_profile , {
@@ -70,16 +101,13 @@ $mol_style_define( $my_profile , {
                 border: {
                     radius: rem(.5),
                 },
-                ':focus': {
-                    background: $mol_theme.hover
-                },
             },
         }
     },
 } )
 ```
 
-# Генерация CSS или сразу CSSOM
+# CSSOM - проблема с редактированием через DevTools
 
 ![](https://i.imgur.com/qoJQD62.png)
 
