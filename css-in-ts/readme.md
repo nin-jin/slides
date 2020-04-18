@@ -80,6 +80,10 @@ class $my_panel extends $mol_view {
 ```
 
 ```
+[my_profile_details_body] {
+	overflow: 'overlay';
+}
+
 [my_profile_details_body] [mol_button] {
 	border-radius: .5rem;
 }
@@ -88,22 +92,27 @@ class $my_panel extends $mol_view {
 # Генерация стилей
 
 ```
+[my_profile_details_body] {
+	overflow: 'overlay';
+}
+
 [my_profile_details_body] [mol_button] {
 	border-radius: .5rem;
 }
 ```
 
 ```typescript
-$mol_style_define( $my_profile , {
-    Details: {
-        Body: {
-            $mol_button: {
-                border: {
-                    radius: rem(.5),
-                },
-            },
-        }
-    },
+CSS( $my_profile , {
+	Details: {
+		Body: {
+			overflow: 'overlay',
+			$mol_button: {
+				border: {
+					radius: rem(.5),
+				},
+			},
+		}
+	},
 } )
 ```
 
