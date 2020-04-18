@@ -94,7 +94,7 @@
 
 ![](https://habrastorage.org/webt/r-/mw/nu/r-mwnurad5al7wuyh1rfevttqhw.png)
 
-# Стопка тестирования
+# Рюмка тестирования
 
 ![](https://habrastorage.org/webt/sp/cv/s6/spcvs6epo2odp4cnzbj9mnpodcc.png)
 
@@ -106,9 +106,9 @@
 # Модульные тесты - ломают абстракции
 
 ```typescript
-const algebra = new StandartAlgebra
-const logger = new ConsoleLogger
-const allocator = new StackAllocator
+const three = summ( 1 , 2 ) // no way, hard to mock!
+
+
 const summator = new Summator( algebra , logger , allocator )
 const three = summator.summ( 1 , 2 )
 ```
