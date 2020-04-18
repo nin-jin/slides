@@ -472,9 +472,7 @@ type $mol_type_error< Message > = '$mol_type_error' & { $mol_type_error : Messag
 
 # Пояснения по типошибкам
 
-![](https://habrastorage.org/webt/wx/te/se/wxtesei5pbvudaqsb2yoed-sil4.png)
-
-![](https://habrastorage.org/webt/8z/0f/un/8z0fung2kawmt4zuvpvbr_esg4i.png)
+![](https://habrastorage.org/webt/jv/dw/ag/jvdwagpatbgzugbjpee_srfkd1u.png)
 
 # Атрибуты
 
