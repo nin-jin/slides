@@ -118,7 +118,7 @@ $mol_style_define( $my_profile , {
 
 # CSSOM: проблема с редактированием через DevTools
 
-![](https://i.imgur.com/qoJQD62.png)
+![](https://habrastorage.org/webt/5e/jj/ai/5ejjaihonegovdnv9mqzfe0gcyq.png)
 
 # CSSStyleDeclaration: слабая типизация
 
