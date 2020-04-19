@@ -460,19 +460,12 @@ $mol_style_define<
 # Типошибки
 
 ```typescript
-$mol_style_define<
-	typeof $my_profile,
-	{
-		title: $mol_type_error<[ 'Wrong Property' , 'title' ]>,
-	}
->
-
-type $mol_type_error< Message > = '$mol_type_error' & { $mol_type_error : Message }
+type $mol_type_error< Message , Info = {} > = Message & { $mol_type_error : Info }
 ```
 
 # Пояснения по типошибкам
 
-![](https://habrastorage.org/webt/jv/dw/ag/jvdwagpatbgzugbjpee_srfkd1u.png)
+![](https://habrastorage.org/webt/4h/ox/4_/4hox4_d5xssyyjdz9n0vrhr7ncm.png)
 
 # Атрибуты
 
