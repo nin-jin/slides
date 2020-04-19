@@ -325,6 +325,16 @@ margin: {
 # Цвета
 
 ```
+type Color =
+| keyof typeof $mol_colors
+| 'transparent' | 'currentcolor'
+| $mol_style_func< 'hsla' | 'rgba' | 'var' >
+
+
+color?: Color | Common
+```
+
+```
 rgba( 0 , 0 , 255 , 1 )
 hsla( 0 , 50 , 50 , 1 )
 ```
@@ -332,32 +342,49 @@ hsla( 0 , 50 , 50 , 1 )
 # Списки
 
 ```typescript
-$mol_style_define( $my_profile , {
-	background: {
-		image: [
-			url('/image.svg'),
-		],
-	},
-})
+background?: {
+	image?: [ $mol_style_func<'url'> ][]
+}
+```
+
+```typescript
+background: {
+	image: [
+		url('/image.svg'),
+	],
+},
 ```
 
 # Списки структур
 
 ```typescript
-$mol_style_define( $my_profile , {
-	box: {
-		shadow: [
-			{
-				inset: true,
-				x: 0,
-				y: 0,
-				blur: rem(.5),
-				spread: 0,
-				color: 'black',
-			},
-		],
-	},
-})
+box?: {
+
+	shadow?: readonly {
+		inset: boolean
+		x: Length
+		y: Length
+		blur: Length
+		spread: Length
+		color: Color
+	}[]
+
+}
+```
+
+```typescript
+box: {
+	shadow: [
+		{
+			inset: true,
+			x: 0,
+			y: 0,
+			blur: rem(.5),
+			spread: 0,
+			color: 'black',
+		},
+	],
+},
 ```
 
 # БЭМ элементы
