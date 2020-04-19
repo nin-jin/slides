@@ -651,8 +651,8 @@ attr() {
 
 # Куда пойти
 
-- [eigenmethod/mol](https://github.com/eigenmethod/mol)
-- [mam_mol](https://teleg.run/mam_mol)
-- [nin_jin](https://teleg.run/nin_jin)
-- [habhub.hyoo.ru](https://habhub.hyoo.ru/)
-- [_jin_nin_](https://twitter.com/_jin_nin_)
+- Репо: [eigenmethod/mol/style](https://github.com/eigenmethod/mol/tree/master/style)
+- Обсуждения: [mam_mol](https://teleg.run/mam_mol)
+- Связь со мной: [nin_jin](https://teleg.run/nin_jin)
+- Статьи: [habhub.hyoo.ru](https://habhub.hyoo.ru/)
+- Твиттер: [_jin_nin_](https://twitter.com/_jin_nin_)
