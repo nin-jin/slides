@@ -322,6 +322,44 @@ margin: {
 }
 ```
 
+# Цвета
+
+```
+rgba( 0 , 0 , 255 , 1 )
+hsla( 0 , 50 , 50 , 1 )
+```
+
+# Списки
+
+```typescript
+$mol_style_define( $my_profile , {
+	background: {
+		image: [
+			url('/image.svg'),
+		],
+	},
+})
+```
+
+# Списки структур
+
+```typescript
+$mol_style_define( $my_profile , {
+	box: {
+		shadow: [
+			{
+				inset: true,
+				x: 0,
+				y: 0,
+				blur: rem(.5),
+				spread: 0,
+				color: 'black',
+			},
+		],
+	},
+})
+```
+
 # БЭМ элементы
 
 ```typescript
