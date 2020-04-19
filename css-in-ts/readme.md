@@ -387,14 +387,14 @@ box: {
 },
 ```
 
-# БЭМ элементы
+# БЭМ-элементы
 
 ```typescript
 interface $my_profile {
-	Details(): $mol_page
+	Details(): $my_panel
 } )
 
-interface $mol_page {
+interface $my_panel {
 	Body(): $mol_scroll
 } )
 ```
@@ -403,15 +403,64 @@ interface $mol_page {
 $mol_style_define( $my_profile , {
 	padding: rem(1),
 	
-	$mol_button: {
-		border: 'none',
-	},
-	
 	Details: {
 		margin: 'auto',
 		
 		Body: {
 			overflow: 'scroll',
+		},
+	},
+} )
+```
+
+# Поиск всех БЭМ-элементов
+
+```typescript
+class $my_profile extends $mol_view {
+	title(): string
+	Menu(): $my_panel
+	Details(): $my_panel
+} )
+```
+
+```typescript
+type HaveOnlyElems = $mol_type_assert<
+
+	$mol_type_pick<
+		$my_profile,
+		()=> $mol_view,
+	>,
+	
+	{
+		Menu(): $my_panel
+		Details(): $my_panel
+	}
+	
+>
+```
+
+# БЭМ-блоки
+
+```typescript
+interface $my_profile {
+	Menu(): $my_panel
+	Details(): $my_panel
+} )
+
+interface $mol_button {
+} )
+```
+
+```typescript
+$mol_style_define( $my_profile , {
+	
+	$mol_button: {
+		color: 'red',
+	},
+	
+	Details: {
+		$mol_button: {
+			color: 'blue',
 		},
 	},
 } )
@@ -439,32 +488,6 @@ type HaveOnlyViews = $mol_type_assert<
 		$mol_view: typeof $mol_view
 		$my_panel: typeof $my_panel
 	},
->
-```
-
-# Поиск всех БЭМ-элементов
-
-```typescript
-class $my_profile extends $mol_view {
-	title(): string
-	Menu(): $my_panel
-	Details(): $my_panel
-} )
-```
-
-```typescript
-type HaveOnlyElems = $mol_type_assert<
-
-	$mol_type_pick<
-		$my_profile,
-		()=> $mol_view,
-	>,
-	
-	{
-		Menu(): $my_panel
-		Details(): $my_panel
-	}
-	
 >
 ```
 
@@ -611,11 +634,12 @@ attr() {
 
 # Что получилось
 
+- Каскадные переопределения стилей
 - Тайпчек всех ключей и значений
 - Подсказки по всем ключам и значениям
+- Понятные сообщения об ошибках
 - Описание всех свойств
 - Удобство описания стилей
-- Каскадные переопределения стилей
 
 # Планы
 
@@ -624,3 +648,11 @@ attr() {
 - Все функции
 - Анимации
 - Типизированные выражения в calc
+
+# Куда пойти
+
+- [eigenmethod/mol](https://github.com/eigenmethod/mol)
+- [mam_mol](https://teleg.run/mam_mol)
+- [nin_jin](https://teleg.run/nin_jin)
+- [habhub.hyoo.ru](https://habhub.hyoo.ru/)
+- [_jin_nin_](https://twitter.com/_jin_nin_)
