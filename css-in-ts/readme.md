@@ -427,6 +427,10 @@ A > A > B
 ...
 ```
 
+# Не понятные типошибки
+
+![](https://habrastorage.org/webt/1i/hr/jn/1ihrjnlfvnsy8fl5oziqftwmc-a.png)
+
 # Императивные ограничения
 
 ```typescript
