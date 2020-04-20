@@ -23,12 +23,12 @@ $my_panel $mol_view sub /
 ```
 
 ```typescript
-class $my_profile extends $mol_view {
+interface $my_profile extends $mol_view {
 	Menu(): $my_panel
 	Details(): $my_panel
 } )
 
-class $my_panel extends $mol_view {
+interface $my_panel extends $mol_view {
 	Head(): $mol_view
 	Body(): $mol_scroll
 } )
@@ -37,12 +37,12 @@ class $my_panel extends $mol_view {
 # Генерация DOM
 
 ```typescript
-class $my_profile extends $mol_view {
+interface $my_profile extends $mol_view {
 	Menu(): $my_panel
 	Details(): $my_panel
 } )
 
-class $my_panel extends $mol_view {
+interface $my_panel extends $mol_view {
 	Head(): $mol_view
 	Body(): $mol_scroll
 } )
@@ -234,7 +234,7 @@ type Length = 0 | Unit< 'rem' | ... | '%' > | Func<'calc'>
 # Единицы измерения
 
 ```typescript
-Unit< Lit extends string > {
+class Unit< Lit extends string > {
 
 	constructor(
 		readonly val: number,
@@ -336,8 +336,12 @@ color?: Color | Common
 ```
 
 ```
-rgba( 0 , 0 , 255 , 1 )
-hsla( 0 , 50 , 50 , 1 )
+{
+	color: 'snow',
+	background: {
+		color: hsla( 0 , 0 , 50 , .1 ),
+	},
+}
 ```
 
 # Списки
@@ -417,7 +421,7 @@ $mol_style_define( $my_profile , {
 # Поиск всех БЭМ-элементов
 
 ```typescript
-class $my_profile extends $mol_view {
+interface $my_profile extends $mol_view {
 	title(): string
 	Menu(): $my_panel
 	Details(): $my_panel
@@ -642,13 +646,24 @@ attr() {
 - Описание всех свойств
 - Удобство описания стилей
 
-# Планы
+# Что можно улучшить
 
 - Рантайм чтение стилей до рендеринга
 - Типизация всех свойств
 - Все функции
 - Анимации
 - Типизированные выражения в calc
+
+# Продолжение следует
+
+- Сравнение типов
+- Типофункции
+- Типотесты
+- Типошибки
+- Фильтрация интерфейсов
+- Типогуарды
+- Брендированные примитивы
+- Типошибки
 
 # Куда пойти
 
