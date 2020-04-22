@@ -509,7 +509,7 @@ function $mol_style_define<
 ```
 
 ```typescript
-{
+type Config< View extends $mol_view >{
 	$my_panel: {
 		$my_panel: {
 			...
