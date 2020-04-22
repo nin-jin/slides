@@ -662,7 +662,12 @@ yarn add mol_style_all
 ```
 
 ```typescript
-import { $mol_style_unit , $mol_style_func , $mol_style_properties } from 'mol_style_all'
+import {
+	$mol_style_unit,
+	$mol_style_func,
+	$mol_style_properties,
+} from 'mol_style_all'
+
 const { rem , px } = $mol_style_unit
 const { calc } = $mol_style_func
 
