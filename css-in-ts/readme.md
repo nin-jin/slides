@@ -421,27 +421,25 @@ $mol_style_define( $my_profile , {
 # Поиск всех БЭМ-элементов
 
 ```typescript
+$mol_type_pick<
+	$my_profile,
+	()=> $mol_view,
+>
+```
+
+```typescript
 interface $my_profile extends $mol_view {
 	title(): string
 	Menu(): $my_panel
 	Details(): $my_panel
 } )
-```
 
-```typescript
-type HaveOnlyElems = $mol_type_assert<
+        ⇩
 
-	$mol_type_pick<
-		$my_profile,
-		()=> $mol_view,
-	>,
-	
-	{
-		Menu(): $my_panel
-		Details(): $my_panel
-	}
-	
->
+{
+	Menu(): $my_panel
+	Details(): $my_panel
+}
 ```
 
 # БЭМ-блоки
@@ -474,26 +472,25 @@ $mol_style_define( $my_profile , {
 # Поиск всех подклассов
 
 ```typescript
+type $mol_view_all = $mol_type_pick<
+	typeof $,
+	$mol_view,
+>
+```
+
+```typescript
 namespace $ {
 	export class $mol_view {}
 	export class $my_panel {}
 	export class $mol_tree {}
 }
-```
 
-```typescript
-type $mol_view_all = $mol_type_pick<
-	typeof $,
-	$mol_view,
->
+        ⇩
 
-type HaveOnlyViews = $mol_type_assert<
-	$mol_view_all,
-	{
-		$mol_view: typeof $mol_view
-		$my_panel: typeof $my_panel
-	},
->
+{
+	$mol_view: typeof $mol_view
+	$my_panel: typeof $my_panel
+}
 ```
 
 # Декларативные ограничения
