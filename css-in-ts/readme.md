@@ -668,11 +668,11 @@ import {
 	$mol_style_properties,
 } from 'mol_style_all'
 
-const { rem , em } = $mol_style_unit
+const { em , rem } = $mol_style_unit
 const { calc } = $mol_style_func
 
 const props : $mol_style_properties = {
-	width: [ em(1) , rem(1) ],
+	margin: [ em(1) , rem(1) ],
 	height: calc('100% - 1rem'),
 }
 ```
