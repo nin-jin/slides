@@ -509,15 +509,20 @@ function $mol_style_define<
 ```
 
 ```typescript
-A > B
-B > A
-
-A > A
-B > B
-
-A > A > A
-A > A > B
-...
+{
+	$my_panel: {
+		$my_panel: {
+			...
+		}
+		$my_deck: {
+			$my_panel: {
+				...
+			}
+		}
+		...
+	}
+	...
+}
 ```
 
 # Не понятные типошибки
