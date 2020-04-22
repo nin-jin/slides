@@ -658,7 +658,6 @@ attr() {
 # Попробовать вне $mol
 
 ```typescript
-// [sandbox](https://codesandbox.io/s/molstyleall-ked9t?file=/src/index.ts)
 import {
 	$mol_style_unit,
 	$mol_style_func,
