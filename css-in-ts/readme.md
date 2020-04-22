@@ -540,18 +540,19 @@ function $mol_style_define<
 ```
 
 ```typescript
-$mol_style_define( $my_profile, {
-	title: {
-		color: 'red',
+{
+	Details: {
+		foo: 'bar',
 	},
-} )
+}
 
-$mol_style_define<
-	typeof $my_profile,
-	{
-		title: never,
-	}
->
+        ⇩
+
+{
+	Details: {
+		foo: never,
+	},
+}
 ```
 
 # Всё ещё непонятные ошибки
