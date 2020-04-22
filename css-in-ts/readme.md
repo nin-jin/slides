@@ -1,6 +1,6 @@
 # Продвинутый CSS-in-TS
 
-![](https://art-sheep.com/wp-content/uploads/2015/06/GAK_1382-Anne-Duffy-Blood-Consciousness-EMAIL-976x1024.jpg)
+![](https://habrastorage.org/webt/tx/q7/xo/txq7xoc7v2q-rqxis6wlji5xz8g.jpeg)
 
 Здравствуйте, меня зовут Дмитрий Карловский и я.. автор одного из первых фреймворков целиком и полностью написанного на тайпскрипте - $mol. И сегодня речь пойдёт о максимально жёсткой статической фиксации стилей.
 
