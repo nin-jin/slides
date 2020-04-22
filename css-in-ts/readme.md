@@ -655,6 +655,23 @@ attr() {
 - Анимации
 - Типизированные выражения в calc
 
+# Попробовать вне $mol
+
+```sh
+yarn add mol_style_all
+```
+
+```typescript
+import { $mol_style_unit , $mol_style_func , $mol_style_properties } from 'mol_style_all'
+const { rem , px } = $mol_style_unit
+const { calc } = $mol_style_func
+
+const props : $mol_style_properties = {
+	width: rem(1),
+	height: calc('100% - 1rem'),
+}
+```
+
 # Продолжение следует
 
 - Сравнение типов
