@@ -657,9 +657,7 @@ attr() {
 
 # Попробовать вне $mol
 
-```sh
-yarn add mol_style_all
-```
+[codesandbox.io/s/molstyleall-ked9t](https://codesandbox.io/s/molstyleall-ked9t?file=/src/index.ts)
 
 ```typescript
 import {
