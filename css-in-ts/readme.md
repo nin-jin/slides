@@ -554,13 +554,11 @@ $mol_style_define<
 >
 ```
 
-# Типошибки
+# Всё ещё непонятные ошибки
 
-```typescript
-type $mol_type_error< Message , Info = {} > = Message & { $mol_type_error : Info }
-```
+![](https://habrastorage.org/webt/dx/7x/9l/dx7x9lf79kj7of_kya32crriw4c.png)
 
-# Пояснения по типошибкам
+# Понятные ошибки
 
 ![](https://habrastorage.org/webt/4h/ox/4_/4hox4_d5xssyyjdz9n0vrhr7ncm.png)
 
