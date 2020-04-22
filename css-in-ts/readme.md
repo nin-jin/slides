@@ -132,7 +132,7 @@ type CSSStyleDeclaration = {
 
 ```typescript
 {
-	display: 'black' // okay :^(
+	display: 'black' // 😢
 }
 ```
 
@@ -168,7 +168,7 @@ type Display =
 
 ```typescript
 {
-	display: 'black' // okay :^(
+	display: 'black' // 😭
 }
 ```
 
