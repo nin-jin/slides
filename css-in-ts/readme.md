@@ -688,8 +688,8 @@ const props : $mol_style_properties = {
 
 # Куда пойти
 
-- Репо: [eigenmethod/mol/style](https://github.com/eigenmethod/mol/tree/master/style)
-- Обсуждения: [mam_mol](https://teleg.run/mam_mol)
-- Связь со мной: [nin_jin](https://teleg.run/nin_jin)
-- Статьи: [habhub.hyoo.ru](https://habhub.hyoo.ru/)
-- Твиттер: [_jin_nin_](https://twitter.com/_jin_nin_)
+- [eigenmethod/mol/style](https://github.com/eigenmethod/mol/tree/master/style) - исходники
+- [mam_mol](https://teleg.run/mam_mol) - обсуждение
+- [nin_jin](https://teleg.run/nin_jin) - связь со мной
+- [habhub.hyoo.ru](https://habhub.hyoo.ru/) - статьи
+- [_jin_nin_](https://twitter.com/_jin_nin_) - заметки
