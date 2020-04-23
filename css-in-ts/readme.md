@@ -612,6 +612,7 @@ attr() {
 ```typescript
 {
 	$mol_scroll: {
+		overflow: 'scroll',
 		'@media': {
 			'print': {
 				overflow: 'visible',
