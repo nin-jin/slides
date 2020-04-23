@@ -355,7 +355,8 @@ background?: {
 ```typescript
 background: {
 	image: [
-		[url('/image.svg')],
+		[url('/foo.svg')],
+		[url('/bar.svg')],
 	],
 },
 ```
