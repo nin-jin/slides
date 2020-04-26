@@ -55,7 +55,7 @@
 
 Минимальное число, но охватывают все сценарии
 
-![](https://vignette.wikia.nocookie.net/future-fight/images/3/3b/%D0%94%D0%BE%D0%BA%D1%82%D0%BE%D1%80_%D0%9E%D1%81%D1%8C%D0%BC%D0%B8%D0%BD%D0%BE%D0%B3_%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5.png/revision/latest?cb=20190805212709&path-prefix=ru)
+![](https://habrastorage.org/webt/n2/sg/og/n2sgogzjpousryqbpj7mleel0mq.png)
 
 # Идеальные тесты: быстро и просто
 
