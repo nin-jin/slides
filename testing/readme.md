@@ -115,9 +115,11 @@
 # Модульные тесты - ломают абстракции
 
 ```typescript
-const three = summ( 1 , 2 ) // no way, hard to mock!
+ // No way! It's hard to mock!
+ const three = summ( 1 , 2 )
 
 
+// Yeah! It's enterprise, baby!
 const summator = new Summator( algebra , logger , allocator )
 const three = summator.summ( 1 , 2 )
 ```
