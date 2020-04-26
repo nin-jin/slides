@@ -150,7 +150,7 @@ const three = summator.summ( 1 , 2 )
 
 # Системные тесты - хрупкие
 
-![](https://habrastorage.org/webt/dz/wm/c7/dzwmc7d8oj5i3cyxq289xhuhjkw.png)
+![](https://habrastorage.org/webt/mg/sl/ja/mgsljah190qhsh-dhcdzhjj7gpq.png)
 
 Чуть поправил и все тесты посыпались.
 
