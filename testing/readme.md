@@ -269,3 +269,10 @@ assertEqual( app.NewTitle().value() , '' )
 | Писать быстро и просто | ✅* |
 
 Хватит вращать рожок тестирования, его нужно просто выбросить, и писать компонентные тесты во фрактальном стиле.
+
+# Хочется большего?
+
+- [nin-jin/slides](https://github.com/nin-jin/slides) - мои выступления
+- [habhub.hyoo.ru](https://habhub.hyoo.ru/) - мои статьи
+- [_jin_nin_](https://twitter.com/_jin_nin_) - мои заметки
+- [nin_jin](https://teleg.run/nin_jin) - связь со мной
