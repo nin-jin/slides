@@ -154,12 +154,6 @@ const three = summator.summ( 1 , 2 )
 
 Чуть поправил и все тесты посыпались.
 
-# Фрактальное тестирование
-
-![](https://habrastorage.org/webt/ze/ry/ck/zeryckshafly7bvux2c8vy-rs6c.png)
-
-Фактически это правильная организация компонентных тестов.
-
 # Интеграционные тесты: Медленно
 
 ![](https://habrastorage.org/webt/d1/sn/fn/d1snfnhjxmkhr5rsfatgroahmfu.png)
@@ -184,6 +178,12 @@ TestBed в ангуляре давал 100мс на тест, или уже 5 с
 ![](https://habrastorage.org/webt/43/is/-0/43is-0bbn4avjzlnvo6qpbbmjpe.png)
 
 Часто запускаются в поизвольном порядке. Из-за чего ошибка в глубине роняет высокоуровневый компонент и приходится долго испкать сбойный модуль.
+
+# Фрактальное тестирование
+
+![](https://habrastorage.org/webt/ze/ry/ck/zeryckshafly7bvux2c8vy-rs6c.png)
+
+Фактически это правильная организация компонентных тестов.
 
 # Фрактальное тестирование: Вот ошибка!
 
