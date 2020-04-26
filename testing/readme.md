@@ -63,6 +63,8 @@
 
 Исполняются быстро, а писать просто
 
+![](https://habrastorage.org/webt/ud/2d/26/ud2d26qrwzgfptloqlapax5odsw.png)
+
 # Термины
 
 - Нет чётких определений
