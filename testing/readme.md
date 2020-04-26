@@ -142,11 +142,17 @@ const three = summator.summ( 1 , 2 )
 
 ![](https://habrastorage.org/webt/iz/wm/ee/izwmeechwa5ptk7swidli8rt2qu.png)
 
-# Системные тесты не масштабируются
+# Системные тесты - не масштабируются
 
 ![](https://anekdotsuper.ru/assets/img/cvety/aero-1.jpg)
 
 Так, эту кнопку протестировали, сажаем самолёт.
+
+# Системные тесты - хрупкие
+
+![](https://habrastorage.org/webt/ed/pd/np/edpdnpw1qv_y_pbbg5rf_vu2nb8.png)
+
+Чуть поправил и все тесты посыпались.
 
 # Фрактальное тестирование
 
