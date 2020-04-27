@@ -122,6 +122,7 @@ function sum( a , b ) {
     logger.trace( a , b )
     return algebra.apply( '+' , a , b )
 }
+```
 
 ```typescript
 class Summ {
