@@ -116,13 +116,14 @@
 # Модульные тесты - ломают абстракции
 
 ```typescript
- // No way! It's hard to mock!
- const three = summ( 1 , 2 )
+summ( 1 , 2 )
 
+function sum( a , b ) {
+    logger.trace( a , b )
+    return algebra.apply( '+' , a , b )
+}
 
-// Yeah! It's enterprise, baby!
-const summator = new Summator( algebra , logger , allocator )
-const three = summator.summ( 1 , 2 )
+new Summ( algebra , logger ).exec( 1 , 2 )
 ```
 
 # Модульные тесты - хрупкие
