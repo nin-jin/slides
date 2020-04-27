@@ -199,7 +199,7 @@ TestBed в ангуляре давал 100мс на тест, или уже 5 с
 
 # Фрактальное тестирование
 
-![](https://habrastorage.org/webt/ze/ry/ck/zeryckshafly7bvux2c8vy-rs6c.png)
+![](https://habrastorage.org/webt/je/xu/mm/jexumm3oxi4287kazq8n8nfdoey.png)
 
 Фактически это правильная организация компонентных тестов.
 
