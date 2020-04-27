@@ -126,15 +126,17 @@ function sum( a , b ) {
 
 ```typescript
 class Summ {
+
     constructor(
         private algebra,
         private logger,
     ) {}
+
     sum( a , b ) {
-        const res = algebra.apply( '+' , a , b )
-        logger.trace( a , b , res )
-        return res
+        logger.trace( a , b )
+        return algebra.apply( '+' , a , b )
     }
+
 }
 
 new Summ( algebra , logger ).exec( 1 , 2 )
