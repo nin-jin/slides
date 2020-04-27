@@ -123,6 +123,19 @@ function sum( a , b ) {
     return algebra.apply( '+' , a , b )
 }
 
+```typescript
+class Summ {
+    constructor(
+        private algebra,
+        private logger,
+    ) {}
+    sum( a , b ) {
+        const res = algebra.apply( '+' , a , b )
+        logger.trace( a , b , res )
+        return res
+    }
+}
+
 new Summ( algebra , logger ).exec( 1 , 2 )
 ```
 
