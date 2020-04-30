@@ -311,3 +311,5 @@ assertEqual( app.NewTitle().value() , '' )
 - [habhub.hyoo.ru](https://habhub.hyoo.ru/) - мои статьи
 - [_jin_nin_](https://twitter.com/_jin_nin_) - мои заметки
 - [nin_jin](https://teleg.run/nin_jin) - связь со мной
+
+![](https://sites.google.com/site/fansoliterature/_/rsrc/1529081185507/home/characters-of-fiction/doctor-strange/Doctor%20Strange.jpg?height=320&width=256)
