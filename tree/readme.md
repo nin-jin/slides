@@ -851,8 +851,6 @@ cut-head
 
 ![Стандарты](https://habrastorage.org/webt/9i/nr/cn/9inrcnhwl6ijiyfj88wqb1bvh1q.png)
 
-[$mol_tree](https://github.com/eigenmethod/mol/tree/master/jack)
-
 # Куда пойти, куда податься
 
 - Эти слайды: [nin-jin/slides/tree](https://github.com/nin-jin/slides/tree/master/tree)
