@@ -849,7 +849,7 @@ cut-head
 
 ## Единый AST чтобы правиль всеми
 
-![Стандарты](https://nin-jin.github.io/slides/tree/standarts.png)
+![Стандарты](https://habrastorage.org/webt/9i/nr/cn/9inrcnhwl6ijiyfj88wqb1bvh1q.png)
 
 [$mol_tree](https://github.com/eigenmethod/mol/tree/master/jack)
 
