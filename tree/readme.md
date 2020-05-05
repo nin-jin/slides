@@ -799,6 +799,9 @@ interface $mol_tree {
 ```
 193.34.12.132 - - [2011-10-20T12:46:08+04:00] GET /nin-jin/slides/edit/master/t
 ree/readme.md HTTP/1.1 200 4435
+193.34.12.132 - - [2011-10-20T12:46:09+04:00] GET /nin-jin/slides/edit/master/t
+ree/readme.html HTTP/1.1 404 4435
+
 ```
 
 ```tree
