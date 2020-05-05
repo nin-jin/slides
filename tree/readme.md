@@ -810,7 +810,7 @@ access
 	size \4435
 ```
 
-## tree-tools - убийца PowerShell
+## mill - убийца PowerShell
 
 ```
 > cat access.log.tree | table ip time request
@@ -827,6 +827,8 @@ access
 193.34.12.132	GET /index.js HTTP/1.1
 ```
 
+[hyoo-ru/mill](https://github.com/hyoo-ru/mill/)
+
 ## jack.tree - LISP без скобочек
 
 ```lisp
@@ -841,9 +843,13 @@ cut-head cut-tail tree
 	4
 ```
 
+[$mol_jack](https://github.com/eigenmethod/mol/tree/master/jack)
+
 ## Единый AST чтобы правиль всеми
 
 ![Стандарты](https://nin-jin.github.io/slides/tree/standarts.png)
+
+[$mol_tree](https://github.com/eigenmethod/mol/tree/master/jack)
 
 # Куда пойти, куда податься
 
