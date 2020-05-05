@@ -836,11 +836,13 @@ access
 ```
 
 ```tree
-cut-head cut-tail tree
-	1
-	2
-	3
-	4
+cut-head
+	cut-tail
+		tree
+			1
+			2
+			3
+			4
 ```
 
 [$mol_jack](https://github.com/eigenmethod/mol/tree/master/jack)
