@@ -797,15 +797,17 @@ interface $mol_tree {
 ## access.log.tree - логи доступа
 
 ```
-193.34.12.132 - - [2011-10-20T12:46:08+04:00] "GET /index.html HTTP/1.1" 200 4435
-
+193.34.12.132 - - [2011-10-20T12:46:08+04:00] GET /nin-jin/slides/edit/master/t
+ree/readme.md HTTP/1.1 200 4435
 ```
 
 ```tree
 access
 	ip \193.34.12.132
 	time \2011-10-20T12:46:08+04:00
-	request \GET /index.html HTTP/1.1
+	method \GET
+	uri \/nin-jin/slides/edit/master/tree/readme.md
+	protocol \HTTP/1.1
 	response \200
 	size \4435
 ```
@@ -813,18 +815,18 @@ access
 ## tree-tools - убийца PowerShell
 
 ```
-> cat access.log.tree | table ip time request
+> cat access.log.tree | pick ip time method uri | table
 
-193.34.12.132	2011-10-20T12:46:08+04:00	GET /index.html HTTP/1.1
-193.34.12.132	2011-10-20T12:46:10+04:00	GET /index.css HTTP/1.1
-193.34.12.132	2011-10-20T12:46:20+04:00	GET /index.js HTTP/1.1
+193.34.12.132	2011-10-20T12:46:08+04:00	GET /index.html
+193.34.12.132	2011-10-20T12:46:10+04:00	GET /index.css
+193.34.12.132	2011-10-20T12:46:20+04:00	GET /index.js
 
 
-> cat access.log.tree | filter time >= 2019-09 | table ip request
+> cat access.log.tree | filter time >= 2019-09 | pick ip uri | table
 
-193.34.12.132	GET /index.html HTTP/1.1
-193.34.12.132	GET /index.css HTTP/1.1
-193.34.12.132	GET /index.js HTTP/1.1
+193.34.12.132	/index.html
+193.34.12.132	/index.css
+193.34.12.132	/index.js
 ```
 
 [hyoo-ru/mill](https://github.com/hyoo-ru/mill/)
