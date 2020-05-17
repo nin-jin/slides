@@ -834,6 +834,10 @@ access
 
 [hyoo-ru/mill](https://github.com/hyoo-ru/mill/)
 
+## wasm.tree - понятный универсальный ассемблер
+
+![](https://habrastorage.org/getpro/habr/comment_images/fb9/c20/28c/fb9c2028c169caf46e6ab7d7aa39c2b9.png)
+
 ## jack.tree - LISP без скобочек
 
 ```lisp
