@@ -1154,16 +1154,21 @@ jack
 Можно пойти ещё дальше и генерировать не wasm байткоды, а прямо таки байткоды целевого процессора, просто добавив ещё один трансформер в паплайн.
 
 ```
-compile: jack.tree => wasm.tree => bin.tree
-compile: jack.tree => wasm.tree => arm.tree => bin.tree
+compile pipelines:
+
+jack.tree => wasm.tree => bin.tree
+jack.tree => wasm.tree => arm.tree => bin.tree
+any-dsl.tree => jack.tree => wasm.tree => arm.tree => bin.tree
 ```
 
 При этом на любом уровне можно запускать дополнительные трансформеры, которые смогут оптимизировать код, применяя информацию, доступную на соответствующих уровнях абстракции.
 
 ```
-opt: jack.tree => jack.tree
-opt: wasm.tree => wasm.tree
-opt: arm.tree => arm.tree
+optimization midlewares:
+
+jack.tree => jack.tree
+wasm.tree => wasm.tree
+arm.tree => arm.tree
 ```
 
 Опять же, присоединяйтесь к разработке, это может получиться крутая штука на замену LLVM.
