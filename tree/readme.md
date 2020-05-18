@@ -1060,36 +1060,82 @@ commit
 	date \2020-05-15T23:03:30+0300
 	author \nin-jin <nin-jin@ya.ru>
 
-> git log | pick date message | table | 
+> git log | pick date message | table
 \2020-05-15T23:24:32+0300	Create regexp.yml
 \2020-05-15T23:03:30+0300	$mol_regexp: parse is a generator
 ```
 
-## wasm.tree - понятный универсальный ассемблер
+## WAT
 
-![](https://habrastorage.org/getpro/habr/comment_images/fb9/c20/28c/fb9c2028c169caf46e6ab7d7aa39c2b9.png)
+WebAssembly - перспективный ассемблер, опускающийся настолько близко к машине на сколько это возможно без потери портабельности. Для него есть текстовый формат представления, основанный на лисповых s-expressions.
+
+```wat
+(func $fact (param $x i64) (result i64)
+    (if $x (result i64) 
+      (i64.eqz
+        (local.get $x)) 
+      (then
+        (i64.const 1))
+      (else
+        (i64.mul
+          (local.get $x)
+          (call $fact      
+            (i64.sub
+              (local.get $x)
+              (i64.const 1)))))))
+```
+
+Его сложно воспринимать как ни форматируй. К сожалению, именно такого рода код вы будете видеть при дизассемблировании в браузерных девтулзах.
+
+## wasm.tree - ассемблер без мишуры
+
+Я сейчас работаю над компилятором в байт коды более наглядного wasm.tree описания.
+
+```tree
+func
+	name $fact
+	param $x i64
+	result i64
+	body switch
+		test i64.eqz local.get $x
+		then i64.const 1
+		else i64.mul
+			local.get $x
+			call $fact 64.sub
+				local.get $x
+				64.const 1
+```
+
+Когда будет что-то более-менее завершённое - попробую потолкнуть этот синтаксис в качестве WAT2.0. Кому не безразлична судьба WebAssembly - присоединяйтесь к разработке.
 
 ## jack.tree - LISP без скобочек
 
-```lisp
-(cdr (butlast '(1 2 3 4)))
-```
+На самом деле писать на сыром ассемблере слишком многословно. Поэтому следующим шагом идёт реализация мета-языка, позволяющего расширять язык средствами самого этого же языка. Ядро такого языка должно получиться предельно минималистичным, а все идиомы в него будут подключаться как сторонние библиотеки, написанные на этом же языке.
 
 ```tree
-cut-head
-	cut-tail
-		tree
-			1
-			2
-			3
-			4
+jack
+	import wasm
+	tree func $fact
+		param $x #8
+		result #8 switch
+			test is-zero $x
+			then #8 1
+			else mul
+				$x
+				$fact sub
+					$x
+					#8 1
 ```
+
+Грубо говоря, программа на этом языке итеративно модифицирует свой собственный AST таким образом, что на выходе получается wasm-бинарник. Звучит, возможно, пугающе, но благодаря тому, что tree сохраняет координаты исходников, проследить источник ошибки не составляет друга. В репозитории можно глянуть куцый прототип. Опять же, присоединяйтесь к разработке, это может получиться крутая штука на замену LLVM.
 
 [$mol_jack](https://github.com/eigenmethod/mol/tree/master/jack)
 
 ## Единый AST чтобы правиль всеми
 
-![Стандарты](https://habrastorage.org/webt/9i/nr/cn/9inrcnhwl6ijiyfj88wqb1bvh1q.png)
+```
+CODE => LINTER => PRETIER => COMPILER => BUNDLER => TERSER => BUNDlE
+```
 
 # Куда пойти, куда податься
 
