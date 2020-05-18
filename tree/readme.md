@@ -779,21 +779,15 @@ html
 	# \If disabled will be used platform specific delimiters
 	# \CRLN on windows and LN on others
 	unix_delimiters true
-
-	# \Deploy at this time
-	release_time $ \2020-08-04T00:00:00Z
 ```
 
-В tree мы легко расширили язык под наши нужды, добавив специальные типы узлов для коментариев и временных меток.
+В tree мы легко расширили язык под наши нужды, добавив специальный тип узла для коментариев.
 
 ```json
 {
 	"unix_delimiters#1": "If disabled will be used platform specific delimiters",
 	"unix_delimiters#2": "CRLN on windows and LN on others",
 	"unix_delimiters": true,
-	
-	"release_time#": "Deploy at this time",
-	"release_time": { "$time" : "2020-08-04T00:00:00Z" }
 }
 ```
 
