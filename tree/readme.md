@@ -929,10 +929,10 @@ interface $mol_span {
 
 ```typescript
 interface $mol_tree2 {
-	struct : ( type : string , kids : $mol_tree2[] )=> $mol_tree2
-	data : ( value : string , kids : $mol_tree2[] )=> $mol_tree2
-	list : ( kids : $mol_tree2[] )=> $mol_tree2
-	clone : ( kids : $mol_tree2[] )=> $mol_tree2
+	struct : ( type , kids )=> $mol_tree2
+	data : ( value , kids )=> $mol_tree2
+	list : ( kids )=> $mol_tree2
+	clone : ( kids )=> $mol_tree2
 }
 ```
 
