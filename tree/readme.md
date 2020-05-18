@@ -635,7 +635,7 @@ user
 
 ## Язык grammar.tree
 
-[grammar.tree](https://github.com/nin-jin/tree.d/wiki/grammar.tree) - язык описания формальных грамматик. Для примера, давайте напишем полную формальную грамматику собственно формата tree.
+Язык [grammar.tree](https://github.com/nin-jin/tree.d/wiki/grammar.tree) - предназначен для описания формальных грамматик. К примеру, давайте напишем полную формальную грамматику собственно формата tree.
 
 ```tree
 tree .is .optional .list_of line
@@ -709,7 +709,7 @@ nodes = data |
 
 ## Язык xml.tree vs XML
 
-[xml.tree](https://github.com/nin-jin/tree.d/wiki/xml.tree) - это способ представления модели данных XML в tree формате. Из него можно генерировать любого вида XML. И наоборт, любой XML может быть скорвертирован в xml.tree.
+Язык [xml.tree](https://github.com/nin-jin/tree.d/wiki/xml.tree) - это способ представления модели данных XML в tree формате. Из него можно генерировать любого вида XML. И наоборт, любой XML может быть скорвертирован в xml.tree.
 
 ```tree
 ! doctype html
@@ -801,7 +801,7 @@ html
 
 ## Язык view.tree vs TypeScript
 
-[view.tree](https://github.com/eigenmethod/mol/tree/master/view#viewtree) - язык композиции компонент, используемый в [разработанном мной фреймворке $mol](https://github.com/nin-jin/HabHub/issues/23).
+Язык [view.tree](https://github.com/eigenmethod/mol/tree/master/view#viewtree) - используется для композиции компонент в [разработанном мной фреймворке $mol](https://github.com/nin-jin/HabHub/issues/23).
 
 ```tree
 $my_details $mol_view
