@@ -763,7 +763,7 @@ html
 			"kendo 🐱‍👤",
 			"dance 🕺🏽",
 		],
-		home: "C:\\users\\jin\\"
+		"home": "C:\\users\\jin\\"
 	}
 }
 ```
