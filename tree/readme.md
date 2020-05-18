@@ -1179,9 +1179,7 @@ arm.tree => arm.tree
 
 ```
 code =(P)=> loader =(P)=> compiler =(SP)=> bundler =(SP)=> terser =(S)=> bundle
-```
 
-```
 P - Parse
 S - Serialize
 ```
@@ -1189,7 +1187,7 @@ S - Serialize
 И каждый инструмент заново парсит ваши исходники в своё AST, обрабатывает, сериализует и передаёт далее. Если же договориться о едином формате AST, то можно значительно упростить реализацию утилит и снизить накладные расходны на обработку кода.
 
 ```
-code =(P)=> loader => compiler => bundler => terser =(S)=> bundle
+code =(P)=> loader =====> compiler ======> bundler ======> terser =(S)=> bundle
 ```
 
 # Куда пойти, куда податься
