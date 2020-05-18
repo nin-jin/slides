@@ -1174,7 +1174,9 @@ opt: arm.tree => arm.tree
 
 ```
 code =(P)=> loader =(P)=> compiler =(SP)=> bundler =(SP)=> terser =(S)=> bundle
+```
 
+```
 P - Parse
 S - Serialize
 ```
