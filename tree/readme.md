@@ -1156,8 +1156,8 @@ jack
 ```
 compile pipelines:
 
-jack.tree => wasm.tree => bin.tree
-jack.tree => wasm.tree => arm.tree => bin.tree
+                jack.tree => wasm.tree => bin.tree
+                jack.tree => wasm.tree => arm.tree => bin.tree
 any-dsl.tree => jack.tree => wasm.tree => arm.tree => bin.tree
 ```
 
