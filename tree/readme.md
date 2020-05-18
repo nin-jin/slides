@@ -838,35 +838,30 @@ user
 ## Свойства узла Tree
 
 ```typescript
-interface $mol_tree {
-	
+interface $mol_tree2 {
 	type : string
-	data : string
-	sub : $mol_tree[]
-
-	baseUri : string   // https:/\/example.org
-	row : number       // 30
-	col : number       // 5
-
 	value : string
-	uri : string       // https://example.org#30:5 
-	
+	sub : $mol_tree2[]
+	span : $mol_span
 }
 ```
 
-# String <=> Tree <=> JSON
-
+```typescript
+interface $mol_span {
+	uri : string   // https:/\/example.org
+	row : number   // 30
+	col : number   // 5
+	length : number // 10
+}
 ```
-interface $mol_tree {
 
-	static fromString( str : string , baseUri? : string ) : $mol_tree
-	static fromJSON( str : string , baseUri? : string ) : $mol_tree
-	
-	constructor( fields : Partial< $mol_tree > )
+## Производные Tree узлы
 
-	toString() : string
-	toJSON() : string
-
+```typescript
+interface $mol_tree2 {
+	struct : ( type : string , kids : $mol_tree2[] )=> $mol_tree2
+	data : ( value : string , kids : $mol_tree2[] )=> $mol_tree2
+	list : ( kids : $mol_tree2[] )=> $mol_tree2
 }
 ```
 
