@@ -10,7 +10,7 @@
 Время 2019-09-17
 ```
 
-Это - текстовая версия одноимённого выступления на [Undefined Meetup #1](https://events.epam.com/events/undefined-meetup-1). Вы можете [читать её как статью](https://github.com/nin-jin/slides/blob/master/tree/readme.md), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/tree/), либо [посмотреть видео](https://youtu.be/vBqJWQzPB3Y?t=5652).
+Это - расширенная текстовая версия одноимённого выступления на [Undefined Meetup #1](https://events.epam.com/events/undefined-meetup-1). Вы можете [читать её как статью](https://github.com/nin-jin/slides/blob/master/tree/readme.md), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/tree/), либо [посмотреть видео](https://youtu.be/vBqJWQzPB3Y?t=5652).
 
 # План
 
