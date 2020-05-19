@@ -208,7 +208,7 @@ XML основан на модели типизированных элемент
 [ "returning",
 	[ "expression" ,
 		[ "multiplication",
-			[ "number" , 2 ]
+			[ "number" , 2 ],
 			[ "number" , 2 ]
 		]
 	]
