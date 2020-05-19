@@ -901,10 +901,10 @@ user
 
 ```typescript
 interface $mol_tree2 {
-	type : string
-	value : string
-	kids : $mol_tree2[]
-	span : $mol_span
+	readonly type : string
+	readonly value : string
+	readonly kids : $mol_tree2[]
+	readonly span : $mol_span
 }
 ```
 
@@ -912,10 +912,10 @@ interface $mol_tree2 {
 
 ```typescript
 interface $mol_span {
-	uri : string
-	row : number
-	col : number
-	length : number
+	readonly uri : string
+	readonly row : number
+	readonly col : number
+	readonly length : number
 }
 ```
 
