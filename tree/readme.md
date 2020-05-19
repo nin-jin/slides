@@ -1034,25 +1034,30 @@ if( !auth( password.text() ) ) {
 ## Язык запросов к СУБД
 
 ```tree
-or
-	and
-		@status = \single
-		@age > 16
-	@hobby ~ \\b(?:java|type)script\b
+select
+	from Users
+	where or
+		and
+			@status = \single
+			@age > 16
+		@hobby ~ \\b(?:java|type)script\b
+	fetch
+		name
+		phone
+		photo * uri
 ```
 
 ```tree
-or
-	and
-		@status = \single
-		@age > 16
-	@hobby ~ 
+select
+	from Users
+	where @hobby ~ 
 		word-edge
 		or
 			\java
 			\type
 		\script
 		word-edge
+	fetch *
 ```
 
 ## Логи доступа
