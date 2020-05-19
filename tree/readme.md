@@ -1045,7 +1045,7 @@ select
 			height
 	where or
 		and
-			@ status = \single
+			@ sex = female
 			@ age > 16
 		@ hobby ~ \\b(?:java|type)script\b
 ```
@@ -1053,6 +1053,7 @@ select
 ```tree
 select
 	from Users
+	fetch *
 	where @hobby ~ 
 		word-edge
 		or
@@ -1060,7 +1061,6 @@ select
 			\type
 		\script
 		word-edge
-	fetch *
 ```
 
 ## Логи доступа
