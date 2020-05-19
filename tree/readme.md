@@ -848,20 +848,20 @@ class $my_details extends $mol_view {
 
 ```
 {
-  "type" : "Object",
-  "children" : [
-    {
-      "type" : "Property",
-      "key" : {
-        "type": "Identifier",
-        "value": "user"
-      }
-      "value": {
-        "type": "Object",
-        "children": []
-      }
-    }
-  ]
+	"type" : "Object",
+	"children" : [
+		{
+			"type" : "Property",
+			"key" : {
+				"type": "Identifier",
+				"value": "user"
+			}
+			"value": {
+				"type": "Object",
+				"children": []
+			}
+		}
+	]
 }
 ```
 
