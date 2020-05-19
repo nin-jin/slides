@@ -1044,7 +1044,10 @@ select
 	fetch
 		name
 		phone
-		photo * uri
+		photo *
+			uri
+			width
+			height
 ```
 
 ```tree
