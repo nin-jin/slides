@@ -227,7 +227,9 @@ XML основан на модели типизированных элемент
 			"age": { "$gt": 16 },
 		},
 		{
-			"hobby": { "$regex": "\\b(?:java|type)script\\b" }
+			"hobby": {
+				"$regex": "\\b(?:java|type)script\\b"
+			}
 		}
 	]
 }
