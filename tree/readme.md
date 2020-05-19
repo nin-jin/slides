@@ -1041,12 +1041,12 @@ access
 > git log
 
 commit
-	message \Create regexp.yml
+	message \$mol_style: TS@3.9 compatibility
 	sha \b1a8f07c839604d0d34430a186246f0c1f71e628
 	date \2020-05-15T23:24:32+0300
 	author \nin-jin <sairi-na-tenshi@ya.ru>
 commit
-	message \$mol_regexp: parse is a generator
+	message \$mol_regexp: concurent parse ability
 	sha \be1abfa50542728dd5c156517ea31f469e7fb4d4
 	date \2020-05-15T23:03:30+0300
 	author \nin-jin <nin-jin@ya.ru>
