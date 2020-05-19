@@ -1124,8 +1124,8 @@ func
 jack
 	import wasm
 	tree func $fact
-		param $x #8
-		result #8 switch
+		> $x #8
+		< #8 switch
 			test is-zero $x
 			then #8 1
 			else mul
