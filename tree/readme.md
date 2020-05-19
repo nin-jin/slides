@@ -1031,7 +1031,7 @@ if( !auth( password.text() ) ) {
 - Tree представление LISP-подобного языка
 - Tree как универсальный AST
 
-## Язык запросов к СУБД
+## sql.tree - запросы к СУБД
 
 ```tree
 select
