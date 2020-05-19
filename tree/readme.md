@@ -134,7 +134,27 @@ XML основан на модели типизированных элемент
 
 ### Расширяемость модели XML
 
-...
+```xml
+
+<xsl:stylesheet
+	version="1.0"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	>
+
+	<xsl:template match="/">
+		<html>
+			<head>
+				<link rel="stylesheet" href="web.css" />
+			</head>
+			<body>
+				<xsl:apply-templates select="*" />
+			</body>
+		</html>
+	</xsl:template>
+
+</xsl:stylesheet>
+```
 
 ### Недостатки модели XML
 
