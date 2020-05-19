@@ -1047,12 +1047,12 @@ or
 		@status = \single
 		@age > 16
 	@hobby ~ 
-		word-break
+		word-edge
 		or
 			\java
 			\type
 		\script
-		word-break
+		word-edge
 ```
 
 ## Логи доступа
