@@ -1053,8 +1053,8 @@ commit
 
 > git log | pick date message | table
 
-\2020-05-15T23:24:32+0300	Create regexp.yml
-\2020-05-15T23:03:30+0300	$mol_regexp: parse is a generator
+\2020-05-15T23:24:32+0300	$mol_style: TS@3.9 compatibility
+\2020-05-15T23:03:30+0300	$mol_regexp: concurent parse ability
 ```
 
 ## WAT
