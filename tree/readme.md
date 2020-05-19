@@ -1033,7 +1033,7 @@ if( !auth( password.text() ) ) {
 
 ## Язык запросов к СУБД
 
-```
+```tree
 or
 	and
 		@status = \single
@@ -1041,7 +1041,7 @@ or
 	@hobby ~ \\b(?:java|type)script\b
 ```
 
-```
+```tree
 or
 	and
 		@status = \single
