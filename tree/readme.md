@@ -1036,11 +1036,6 @@ if( !auth( password.text() ) ) {
 ```tree
 select
 	from Users
-	where or
-		and
-			@ status = \single
-			@ age > 16
-		@ hobby ~ \\b(?:java|type)script\b
 	fetch
 		name
 		phone
@@ -1048,6 +1043,11 @@ select
 			uri
 			width
 			height
+	where or
+		and
+			@ status = \single
+			@ age > 16
+		@ hobby ~ \\b(?:java|type)script\b
 ```
 
 ```tree
