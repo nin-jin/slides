@@ -858,7 +858,7 @@ class $my_details extends $mol_view {
       }
       "value": {
         "type": "Object",
-	"children": []
+        "children": []
       }
     }
   ]
