@@ -938,11 +938,11 @@ interface $mol_tree2 {
 
 ```typescript
 const config = $mol_tree2.fromString( config_text )
-const password = config.select( 'server' , 'auth' , 'password' )
+const password = config.select( 'server' , 'auth' , 'password' , '' )
 
-if( !auth( password.text ) ) {
+if( !auth( password.text() ) ) {
 	// AuthError: Wrong password
-	// password \default
+	// \default
 	// ./config.tree#5:3-11
 	throw password.error( 'Wrong password' , AuthError )
 }
