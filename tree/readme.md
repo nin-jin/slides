@@ -1038,9 +1038,9 @@ select
 	from Users
 	where or
 		and
-			@status = \single
-			@age > 16
-		@hobby ~ \\b(?:java|type)script\b
+			@ status = \single
+			@ age > 16
+		@ hobby ~ \\b(?:java|type)script\b
 	fetch
 		name
 		phone
