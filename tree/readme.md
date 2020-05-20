@@ -492,9 +492,10 @@ foo > 0 & foo < 10
 ## Нестрогость YAML
 
 ```
-a: true
-b: tru
-c: (-:
+a: true # boolean
+b: fals # string
+c: (-:  # error
+d: :-)  # string
 ```
 
 # Скорость обработки
