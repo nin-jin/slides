@@ -241,15 +241,15 @@ XML основан на модели типизированных элемент
 
 Модель YAML во многом аналогична модели JSON. Разве что тут есть поддержка времени и внутренних ссылок.
 
-- Null
-- Boolean
-- Number
-- String
-- DateTime
-- Array
-- Dictionary
-- Alias
-- Reference
+- !!null
+- !!bool
+- !!int
+- !!float
+- !!str
+- !!timestamp
+- !!seq
+- !!map
+- Anchor & Alias
 - Document
 - **TypeTags**
 
