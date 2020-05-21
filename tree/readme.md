@@ -972,7 +972,7 @@ interface $mol_tree2 {
 const config_path = './config.tree'
 const config_text = fs.readFileSync( config_path )
 const config = $mol_tree2.fromString( config_text , config_path )
-//	server credentials
+//	server auth
 //		login \root
 //		password \qwerty
 
