@@ -10,7 +10,7 @@
 Время 2020-05-20
 ```
 
-Это - расширенная текстовая версия одноимённого выступления на PiterJS#47. Вы можете [читать её как статью](https://github.com/nin-jin/slides/blob/master/tree/readme.md), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/tree/), либо [посмотреть видео](https://youtu.be/pev6g_oysUs?t=5518).
+Это - расширенная текстовая версия одноимённого выступления на [PiterJS#47](https://medium.com/piterjs/%D0%B0%D0%BD%D0%BE%D0%BD%D1%81-piterjs-47-cf7cb666834a). Вы можете [читать её как статью](https://github.com/nin-jin/slides/blob/master/tree/readme.md), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/tree/), либо [посмотреть видео](https://youtu.be/pev6g_oysUs?t=5518).
 
 <cut/>
 
