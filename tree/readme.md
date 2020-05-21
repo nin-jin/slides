@@ -1055,6 +1055,7 @@ fs.writeFileSync( config_path , new_config )
 А теперь давайте пофантазируем, чего ещё интересного можно сделать используя tree формат.
 
 - Запросы к СУБД
+- Описание домена
 - Логирование
 - Общение консольных утилит
 - LISP-подобный язык
@@ -1095,6 +1096,32 @@ select
 		\script
 		word-edge
 ```
+
+## model.tree - описание домена
+
+Раз уж мы заговорили о базах данных. Примерно так я описываю модель предметной области.
+
+```
+hyoo_api_person
+	descr \Живой пользователь сервиса
+	inherit hyoo_api_entity
+	field
+		id
+			descr \Уникальный человекопонятный идентификатор
+			example \person=jin
+			key unique
+			type text
+			edit author
+		avatar
+			descr \Ссылки на аватары
+			type list hyoo_api_image
+			edit author
+		mail
+			descr \Привязанные имейлы
+			type set hyoo_api_mail
+```
+
+Из такого формального описания автоматически формируется серверный API, правила ACL, схема СУБД и админка для управления всем этим делом.
 
 ## Логи
 
