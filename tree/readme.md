@@ -342,7 +342,7 @@ XML хотя бы поддерживает многострочный текст
 
 ```
 a: true # boolean
-b: tru # string
+b: tru  # string
 c: (-:  # error
 d: :-)  # string
 ```
