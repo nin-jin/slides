@@ -1301,4 +1301,4 @@ code =(P)=> loader =====> compiler ======> bundler ======> terser =(S)=> bundle
 - Эти слайды: [nin-jin/slides/tree](https://github.com/nin-jin/slides/tree/master/tree)
 - Всё о Tree: [nin-jin/tree.d](https://github.com/nin-jin/tree.d)
 - Чат о языках: [lang_idioms](https://teleg.run/lang_idioms)
-- Чат о языках: [lang_idioms](https://teleg.run/nin_jin)
+- Связь со мной: [lang_idioms](https://teleg.run/nin_jin)
