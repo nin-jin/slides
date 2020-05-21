@@ -933,10 +933,10 @@ user
 
 ```typescript
 interface $mol_tree2 {
-	readonly type: string
-	readonly value: string
-	readonly kids: $mol_tree2[]
-	readonly span: $mol_span
+	type: string
+	value: string
+	kids: $mol_tree2[]
+	span: $mol_span
 }
 ```
 
@@ -944,10 +944,10 @@ interface $mol_tree2 {
 
 ```typescript
 interface $mol_span {
-	readonly uri: string
-	readonly row: number
-	readonly col: number
-	readonly length: number
+	uri: string
+	row: number
+	col: number
+	length: number
 }
 ```
 
@@ -980,6 +980,25 @@ if( !auth( password.text() ) ) {
 	// ./config.tree#5:3-11
 	throw password.error( 'Wrong password' , AuthError )
 }
+```
+
+# Обработка Tree
+
+```
+const input = $mol_tree2.fromString( `foo bar xxx` , 'sample' )
+const output = input.list(
+	input.hack({
+	
+		'' : ( tree , context )=> [
+			tree.clone( tree.hack( context ) ),
+		] ,
+		
+		'bar' : ( tree , context )=> [
+			tree.struct( '777' , tree.hack( context ) ),
+		] ,
+		
+	})
+)
 ```
 
 # Поддержка редакторами
