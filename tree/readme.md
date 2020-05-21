@@ -972,9 +972,9 @@ interface $mol_tree2 {
 const config_path = './config.tree'
 const config_text = fs.readFileSync( config_path )
 const config = $mol_tree2.fromString( config_text , config_path )
-// server credentials
-// 	login \root
-// 	password \qwerty
+//	server credentials
+//		login \root
+//		password \qwerty
 
 const password = config.select( 'server' , 'auth' , 'password' , '' )
 
@@ -989,9 +989,9 @@ if( !auth( password.text() ) ) {
 # Обработка Tree
 
 ```
-// server credentials
-// 	login \root
-// 	password \qwerty
+//	server credentials
+//		login \root
+//		password \qwerty
 const output = config.list(
 	input.hack({
 	
