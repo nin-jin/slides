@@ -972,6 +972,10 @@ interface $mol_tree2 {
 const config_path = './config.tree'
 const config_text = fs.readFileSync( config_path )
 const config = $mol_tree2.fromString( config_text , config_path )
+// server credentials
+// 	login \root
+// 	password \qwerty
+
 const password = config.select( 'server' , 'auth' , 'password' , '' )
 
 if( !auth( password.text() ) ) {
@@ -985,16 +989,18 @@ if( !auth( password.text() ) ) {
 # Обработка Tree
 
 ```
-const input = $mol_tree2.fromString( `foo bar xxx` , 'sample' )
-const output = input.list(
+// server credentials
+// 	login \root
+// 	password \qwerty
+const output = config.list(
 	input.hack({
 	
 		'' : ( tree , context )=> [
 			tree.clone( tree.hack( context ) ),
 		] ,
 		
-		'bar' : ( tree , context )=> [
-			tree.struct( '777' , tree.hack( context ) ),
+		'auth' : ( tree , context )=> [
+			tree.struct( 'credentials' , tree.hack( context ) ),
 		] ,
 		
 	})
