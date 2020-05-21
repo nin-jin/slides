@@ -294,6 +294,10 @@ assertEqual( app.NewTitle().value() , '' )
 
 Пишу тесты ибо это нужно прежде всего мне самому. Но стараюсь писать их так, чтобы тратить минимум усилий.
 
+# Прогон тестов при запуске приложения
+
+![](https://habrastorage.org/webt/9o/_7/my/9o_7my6h6_hhslyzph_uql72m9e.png)
+
 # Опыт других людей
 
 - [PiterJS#44: Если нужен тест, пусть он будет интеграционным](https://piterjs.org/#meetup=44/speech=should-test-be-integrational) @ Василий Малыхин
