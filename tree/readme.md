@@ -992,7 +992,7 @@ if( !auth( password.text() ) ) {
 //	server credentials
 //		login \root
 //		password \qwerty
-const output = config.list(
+const new_config = config.list(
 	input.hack({
 	
 		'auth' : ( tree , context )=> [
@@ -1005,6 +1005,7 @@ const output = config.list(
 		
 	})
 )
+fs.writeFileSync( config_path , new_config )
 ```
 
 # Поддержка редакторами
