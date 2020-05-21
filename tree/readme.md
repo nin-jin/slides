@@ -995,12 +995,12 @@ if( !auth( password.text() ) ) {
 const output = config.list(
 	input.hack({
 	
-		'' : ( tree , context )=> [
-			tree.clone( tree.hack( context ) ),
-		] ,
-		
 		'auth' : ( tree , context )=> [
 			tree.struct( 'credentials' , tree.hack( context ) ),
+		] ,
+		
+		'' : ( tree , context )=> [
+			tree.clone( tree.hack( context ) ),
 		] ,
 		
 	})
