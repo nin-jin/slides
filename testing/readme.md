@@ -265,7 +265,7 @@ assertEqual( app.NewTitle().value() , '' )
 
 # Сравнение трудоёмкости
 
-![](https://habrastorage.org/webt/bs/e2/pc/bse2pcrwu1yrocegpvyhyujvaze.png)
+![](https://habrastorage.org/webt/z_/bc/c4/z_bcc4rgyy68sa4oprhacgvckni.png)
 
 # Близость к идеалу
 
