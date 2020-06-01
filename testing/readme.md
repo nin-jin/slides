@@ -263,7 +263,7 @@ assertEqual( app.NewTitle().value() , '' )
 - Скорость исполнения сравнима с модульными
 - Падают лишь при изменении значимого поведения
 
-# Сравнение подходов
+# Сравнение трудоёмкости
 
 ![](https://habrastorage.org/webt/bs/e2/pc/bse2pcrwu1yrocegpvyhyujvaze.png)
 
