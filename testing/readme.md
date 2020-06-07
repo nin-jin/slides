@@ -116,6 +116,7 @@
 ```typescript
 summ( 1 , 2 )
 
+
 function sum( a , b ) {
     logger.trace( a , b )
     return algebra.apply( '+' , a , b )
@@ -123,6 +124,9 @@ function sum( a , b ) {
 ```
 
 ```typescript
+new Summ( algebra , logger ).exec( 1 , 2 )
+
+
 class Summ {
 
     constructor(
@@ -136,8 +140,6 @@ class Summ {
     }
 
 }
-
-new Summ( algebra , logger ).exec( 1 , 2 )
 ```
 
 # Модульные тесты: хрупкие
