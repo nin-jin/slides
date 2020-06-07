@@ -238,7 +238,7 @@ app.NewSubmit().click()
 
 const rowNew = app.rows()[0]
 
-assertEqual( app.rows() , [ rowNew , ... rowsPrev ] )
+assertEqual( app.rows().slice(1) , rowsPrev )
 assertEqual( rowNew.title() , title )
 assertEqual( app.NewTitle().value() , '' )
 ```
