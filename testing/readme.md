@@ -236,10 +236,8 @@ const rowsPrev = app.rows()
 app.NewTitle().value( title )
 app.NewSubmit().click()
 
-const rowNew = app.rows()[0]
-
+assertEqual( app.rows()[0].title() , title )
 assertEqual( app.rows().slice(1) , rowsPrev )
-assertEqual( rowNew.title() , title )
 assertEqual( app.NewTitle().value() , '' )
 ```
 
