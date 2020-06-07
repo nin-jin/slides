@@ -25,7 +25,7 @@
 
 # Зачем тесты? Оперативная обратная связь!
 
-![](https://habrastorage.org/webt/cc/ri/dx/ccridxneeqhxo83qiy_jb5smgl8.png)
+![](https://habrastorage.org/webt/0o/jm/uu/0ojmuu_qfrkgy9apfzmpofs3aqc.png)
 
 Чем раньше поставить тесты, чем короче цикл отладки и меньше негатива от сопричастных. А чем меньше цек, тем он быстрее, а значит быстрее поставляются новые фичи.
 
