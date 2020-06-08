@@ -296,12 +296,21 @@ assertEqual( app.NewTitle().value() , '' )
 - [PiterJS#44: Если нужен тест, пусть он будет интеграционным](https://piterjs.org/#meetup=44/speech=should-test-be-integrational) @ Василий Малыхин
 - [Is TDD Dead?: My personal practice is that I mock almost nothing](https://youtu.be/z9quxZsLcfo) @ Kent Beck
 
-# Ограничения фрактального тестирования
+# Ограничения: Монолитная архитектура
 
-- Монолитная архитектура
-- Тяжёлая архитектура
-- Отсутствие инверсии контроля
-- Неограниченные ресурсы
+![](https://habrastorage.org/webt/ew/p4/y7/ewp4y7a_whaqfnvumvtb9qaa47u.png)
+
+# Ограничения: тяжёлая архитектура
+
+![](https://habrastorage.org/webt/ri/bb/dg/ribbdgwpv0_gt3xhb9uvtbf0isw.png)
+
+# Ограничения: инверсия контроля
+
+![](https://habrastorage.org/webt/on/xu/wx/onxuwxmzawtxzhrhpe4ngnky4p8.png)
+
+# Ограничения: стоимость ошибки
+
+![](https://habrastorage.org/webt/8j/pj/lz/8jpjlz2tkkr2k1icfb8b6yywwh4.png)
 
 # Хочется большего?
 
