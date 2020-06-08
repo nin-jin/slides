@@ -306,7 +306,7 @@ assertEqual( app.NewTitle().value() , '' )
 
 # Ограничения: инверсия контроля
 
-![](https://habrastorage.org/webt/on/xu/wx/onxuwxmzawtxzhrhpe4ngnky4p8.png)
+![](https://habrastorage.org/webt/af/ca/rp/afcarpf1wtfnogcjjsduhu0vmdg.png)
 
 # Ограничения: стоимость ошибки
 
