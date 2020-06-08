@@ -300,15 +300,15 @@ assertEqual( app.NewTitle().value() , '' )
 
 ![](https://habrastorage.org/webt/ew/p4/y7/ewp4y7a_whaqfnvumvtb9qaa47u.png)
 
-# Ограничения: тяжёлая архитектура
+# Ограничения: Тяжёлая архитектура
 
 ![](https://habrastorage.org/webt/ri/bb/dg/ribbdgwpv0_gt3xhb9uvtbf0isw.png)
 
-# Ограничения: инверсия контроля
+# Ограничения: Нет инверсии контроля
 
 ![](https://habrastorage.org/webt/af/ca/rp/afcarpf1wtfnogcjjsduhu0vmdg.png)
 
-# Ограничения: стоимость ошибки
+# Ограничения: Высокая стоимость ошибки
 
 ![](https://habrastorage.org/webt/8j/pj/lz/8jpjlz2tkkr2k1icfb8b6yywwh4.png)
 
