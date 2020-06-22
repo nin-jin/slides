@@ -120,9 +120,9 @@ const hello = ()=>
 
 Можно размещать видео, веб страницы и любой другой внешний контент, используя тот же MarkDown синтаксис, что и для вставки картинок. 
 
-	![Быстрый старт на $mol](https://www.youtube.com/watch?v=PyK3if5sgN0)
+	![Быстрый старт на $mol](https://www.youtube.com/embed/PyK3if5sgN0)
 
-![Быстрый старт на $mol](https://www.youtube.com/watch?v=PyK3if5sgN0)
+![Быстрый старт на $mol](https://www.youtube.com/embed/PyK3if5sgN0)
 
 Для примера я вставил видео иллюстрирующее, как быстро и просто можно сделать приложение на $mol.
 
