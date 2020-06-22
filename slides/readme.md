@@ -12,7 +12,9 @@
 <cut />
 # Интерфейс слушателя
 
-[![Презентация в режиме слушателя](https://slides.hyoo.ru/#slides=https%3A%2F%2Fnin-jin.github.io%2Fslides%2Forp%2F/slide=2/role=listener)](https://slides.hyoo.ru/#slides=https%3A%2F%2Fnin-jin.github.io%2Fslides%2Forp%2F/slide=2/role=listener)
+![Презентация в режиме слушателя](https://slides.hyoo.ru/#slides=https%3A%2F%2Fnin-jin.github.io%2Fslides%2Forp%2F/slide=2/role=listener)
+
+[nin-jin.github.io/slides/orp](https://slides.hyoo.ru/#slides=https%3A%2F%2Fnin-jin.github.io%2Fslides%2Forp%2F/slide=2/role=listener)
 
 Перед вами интерфейс, который видят слушатели во время выступления. В нём нет ничего лишнего.
 
