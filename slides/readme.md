@@ -32,7 +32,7 @@
 
 Интерфейс докладчика разделён на две части.
 
-[![Презентация в режиме докладчика](https://slides.hyoo.ru/#slides=https%3A%2F%2Fnin-jin.github.io%2Fslides%2Forp%2F/slide=2)](https://slides.hyoo.ru/#slides=https%3A%2F%2Fnin-jin.github.io%2Fslides%2Forp%2F/slide=2)
+![Презентация в режиме докладчика](https://slides.hyoo.ru/#slides=https%3A%2F%2Fnin-jin.github.io%2Fslides%2Forp%2F/slide=2)
 
 Слева отображается то, что видят слушатели. А справа - заметки докладчика. Они помогут вам вспомнить потерянную мысль, не отворачиваясь от слушателей и не напрягая их долгой.. эм... это.. паузой.
 
@@ -122,7 +122,7 @@ const hello = ()=>
 
 	![Нецелевая аудитория](https://www.youtube.com/embed/exfBX2pb7AQ?autoplay=1)
 
-[![Нецелевая аудитория](https://www.youtube.com/embed/exfBX2pb7AQ?autoplay=1)](https://www.youtube.com/embed/exfBX2pb7AQ?autoplay=1)
+![Нецелевая аудитория](https://www.youtube.com/embed/exfBX2pb7AQ?autoplay=1)
 
 Для примера я вставил видео иллюстрирующее, что современные интерфейсы настолько простые и удобные, что с ними справится даже обезьяна.
 
@@ -199,7 +199,7 @@ const hello = ()=>
 
 Если вам понравилось это приложение, то можете глянуть и другие интересные приложения, реализованные на фреймворке $mol. Они настолько легковесные, что даже несколько десятков их не страшно загрузить разом на одном слайде.
 
-[![Галерея приложений](https://showcase.hyoo.ru/)](https://showcase.hyoo.ru/)
+![Галерея приложений](https://showcase.hyoo.ru/)
 
 Но о них как-нибудь потом... 
 
@@ -555,7 +555,7 @@ sub() {
 В итоге у нас получилось современное веб приложение с кучей функциональности и весом всего в 35кб. Добавить manifest и будет полноценное Progressive Web Application. Разумеется, многие детали не были рассмотрены. Увидеть их можно в коде на ГитХабе. По всем вопросам пишите телеграмы в чате.
 
 > Эти слайды: [slides.hyoo.ru](https://slides.hyoo.ru)
-> Исходники приложения: [hyoo-ru/slides.hyoo.ru](https://github.com/hyoo-ru/slides.hyoo.ru).
+> Исходники приложения: [hyoo-ru/slides.hyoo.ru](https://github.com/hyoo-ru/slides.hyoo.ru)
 > Телеграм чат: [@mam_mol](https://teleg.run/mam_mol)
 
 Буду рад, если вы попробуете сделать свою презентацию с помощью `$hyoo_slides`. И буду совсем счастлив, если поможете сделать его ещё лучше, чем есть сейчас. Спасибо за внимание!
