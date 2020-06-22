@@ -556,6 +556,6 @@ sub() {
 
 > Эти слайды: [slides.hyoo.ru](https://slides.hyoo.ru)
 > Исходники приложения: [hyoo-ru/slides.hyoo.ru](https://github.com/hyoo-ru/slides.hyoo.ru)
-> Телеграм чат: [@mam_mol](https://teleg.run/mam_mol)
+> Телеграм чат: [mam_mol](https://teleg.run/mam_mol)
 
 Буду рад, если вы попробуете сделать свою презентацию с помощью `$hyoo_slides`. И буду совсем счастлив, если поможете сделать его ещё лучше, чем есть сейчас. Спасибо за внимание!
