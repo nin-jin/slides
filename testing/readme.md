@@ -4,7 +4,7 @@
 
 ![](https://habrastorage.org/webt/ib/cz/-8/ibcz-8oemwznh7e6vkfm2g5ly18.png)
 
-Это расшифровка выступления на TechLead Conf 2020. Вы можете [читать её как статью](https://github.com/nin-jin/slides/tree/master/testing), а можете [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/testing/).
+Это расшифровка выступления на TechLead Conf 2020. Вы можете [читать её как статью](https://github.com/nin-jin/slides/tree/master/testing), [посмотреть видео](https://youtu.be/0naG18RzouI), а можете [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/testing/).
 
 # О себе
 
