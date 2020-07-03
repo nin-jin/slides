@@ -1,14 +1,14 @@
 # Деконструкция аббревиатур
 
-- TDD
-- SRP
-- OCP
-- LSP
-- ISP
-- DIP
-- SOLID
-- DRY
-- KISS
+> TDD
+> SRP
+> OCP
+> LSP
+> ISP
+> DIP
+> SOLID
+> DRY
+> KISS
 
 Вы можете [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/abbr/)
 
