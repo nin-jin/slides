@@ -10,6 +10,8 @@
 - DRY
 - KISS
 
+Вы можете [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/abbr/)
+
 ## Деконструкция TDD
 
 > Test Driven Development
