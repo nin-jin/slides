@@ -10,7 +10,7 @@
 
 ### Суть TDD
 
-![Pure TDD](https://habrastorage.org/webt/nx/wy/ye/nxwyyetapmska5zuvikeaiw7yww.png)
+![Pure TDD](https://habrastorage.org/webt/m7/wm/ts/m7wmts_olawooeqs5kcduncwgyy.png)
 
 ### Слепое пятно TDD
 
@@ -33,7 +33,7 @@
 
 ### Правильный TDD
 
-![Fixed TDD](https://habrastorage.org/webt/j_/vt/33/j_vt33_3ez3jonfpekqyoddttgc.png)
+![Fixed TDD](https://habrastorage.org/webt/l7/s1/tw/l7s1twvhyykq77w3sxvfwc7ecxe.png)
 
 ### Лишняя работа при TDD
 
