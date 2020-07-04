@@ -2,7 +2,7 @@
 
 Здравствуйте, меня зовут Дим. А вы на канале "Core Dump", где мы берём разные темы из компьютерной науки и деконструируем их по полочкам.
 
-> TDD SRP OCP LSP ISP DIP SOLID DRY KISS
+> **TDD** SRP OCP LSP ISP DIP SOLID DRY KISS
 
 Вы можете [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/abbr/).
 
