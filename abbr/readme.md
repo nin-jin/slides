@@ -33,7 +33,7 @@
 
 ### Правильный TDD
 
-![Fixed TDD](https://habrastorage.org/webt/l7/s1/tw/l7s1twvhyykq77w3sxvfwc7ecxe.png)
+![Fixed TDD](https://habrastorage.org/webt/r4/zf/fw/r4zffwtbquxcqfn19uu6qx9ij1i.png)
 
 ### Лишняя работа при TDD
 
