@@ -134,6 +134,7 @@ TDD предлагает нам даже не пытаться писать по
 
 - [Егор Бугаенко — TDD вверх ногами](https://www.youtube.com/watch?v=3QT7jaoOa9w)
 - [TDD: когда нужно и, самое главное, когда не нужно / Павел Калашников](https://www.youtube.com/watch?v=QT1yDL-L0t4)
+- [Dependency Rejection and TDD without Mocks. Антон Молдован](https://www.youtube.com/watch?v=9zpG_hJsrL8)
 
 # Продолжение следует..
 
