@@ -4,11 +4,11 @@
 
 > **TDD** SRP OCP LSP ISP DIP SOLID DRY KISS
 
-Вы можете [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/abbr/).
+Вы можете [читать это как статью](https://github.com/nin-jin/slides/tree/master/abbr), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/abbr/).
 
 ## Деконструкция TDD
 
-Начнём мы с разработки через тестирование.
+Начнём мы с разработки через тестирование. [Видео запись этого раздела](https://youtu.be/sLWURdgEcrI).
 
 > Test Driven Development
 
