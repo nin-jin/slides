@@ -2,7 +2,7 @@
 
 Здравствуйте, меня зовут Дмитрий Карловский. А вы на канале "Core Dump", где мы берём разные темы из компьютерной науки и деконструируем их по полочкам.
 
-> **TDD** SRP OCP LSP ISP DIP SOLID DRY KISS
+> **TDD** SRP OCP **LSP** ISP DIP SOLID DRY KISS
 
 Вы можете [читать это как статью](https://github.com/nin-jin/slides/tree/master/abbr), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/abbr/).
 
@@ -10,7 +10,7 @@
 
 Начнём мы с разработки через тестирование. [Видео запись этого раздела](https://youtu.be/sLWURdgEcrI).
 
-> Test Driven Development
+> [Test Driven Development](https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)
 
 Суть этого подхода заключается в ритуализации процесса разработки. То есть в некритическом безусловном выполнении определённых простых действий.
 
@@ -135,6 +135,10 @@ TDD предлагает нам даже не пытаться писать по
 - [Егор Бугаенко — TDD вверх ногами](https://www.youtube.com/watch?v=3QT7jaoOa9w)
 - [TDD: когда нужно и, самое главное, когда не нужно / Павел Калашников](https://www.youtube.com/watch?v=QT1yDL-L0t4)
 - [Dependency Rejection and TDD without Mocks. Антон Молдован](https://www.youtube.com/watch?v=9zpG_hJsrL8)
+
+# Деконструкция LSP
+
+> [Liskov Substitution Principle](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF_%D0%BF%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8_%D0%91%D0%B0%D1%80%D0%B1%D0%B0%D1%80%D1%8B_%D0%9B%D0%B8%D1%81%D0%BA%D0%BE%D0%B2)
 
 # Продолжение следует..
 
