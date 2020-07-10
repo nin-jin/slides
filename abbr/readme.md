@@ -150,7 +150,7 @@ TDD предлагает нам даже не пытаться писать по
 
 Подтип - частный случай надтипа.
 
-![](https://user-images.githubusercontent.com/442988/69067485-30b58100-0a34-11ea-8fc1-0fd6a04a49de.png)
+![](https://habrastorage.org/webt/hs/7p/hl/hs7phlymhzqtlozr3c89xqflcr8.png)
 
 ### Произведние типов
 
