@@ -156,7 +156,7 @@ TDD предлагает нам даже не пытаться писать по
 
 Произведение является подтипом нескольких ортогональных типов.
 
-![](https://user-images.githubusercontent.com/442988/69067361-fc41c500-0a33-11ea-88af-249cf407c316.png)
+![](https://habrastorage.org/webt/av/lp/pd/avlppdmufjxnr7swrtvsooampow.png)
 
 ### Параметрический полиморфизм
 
