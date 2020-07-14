@@ -1,4 +1,3 @@
-# Фрактальное тестирование
 Здравствуйте, меня зовут Дмитрий Карловский и я.. люблю гнать всякую странную дичь. Осторожно, после этого доклада у вас может появиться странное, но непреодолимое желание удалить все модульные и e2e тесты из вашего проекта, ибо они требуют много ресурсов, но дают мало профита.
 
 ![](https://habrastorage.org/webt/ib/cz/-8/ibcz-8oemwznh7e6vkfm2g5ly18.png)
@@ -387,10 +386,11 @@ assertEqual( app.NewTitle().value() , '' )
 
 # Хочется большего?
 
-- [nin-jin/slides](https://github.com/nin-jin/slides) - мои выступления
-- [habhub.hyoo.ru](https://habhub.hyoo.ru/) - мои статьи
-- [_jin_nin_](https://twitter.com/_jin_nin_) - мои заметки
-- [nin_jin](https://teleg.run/nin_jin) - связь со мной
+- [Деконструкция TDD](https://youtu.be/sLWURdgEcrI) - продолжение темы тестирования
+- [nin-jin/slides](https://github.com/nin-jin/slides) - другие мои выступления
+- [habhub.hyoo.ru](https://habhub.hyoo.ru/) - все мои статьи
+- [_jin_nin_](https://twitter.com/_jin_nin_) - мои заметки о программировании
+- [nin_jin](https://teleg.run/nin_jin) - прямая связь со мной
 
 # Отзывы
 
