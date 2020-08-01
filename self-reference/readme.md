@@ -1,5 +1,7 @@
 # Проблема останова лжеца Канотра и брадобрея Гёделя
 
+Вы можете [открыть это в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/self-reference/).
+
 ## Истинные и ложные утверждения
 
 ![](https://habrastorage.org/webt/wp/-m/x-/wp-mx--xzohucrgs-bf5ywt8yru.png)
