@@ -10,7 +10,7 @@
 
 ![](https://habrastorage.org/webt/zg/gx/5y/zggx5ywp1olxrhxgbc_ang7m3w4.png)
 
-## Гипотезы
+## Доказательство от противного
 
 ![](https://habrastorage.org/webt/ox/hp/5m/oxhp5mz3ryp06_djnb8cho5a4nu.png)
 
