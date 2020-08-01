@@ -12,7 +12,7 @@
 
 ## Гипотезы
 
-![](https://habrastorage.org/webt/vf/n5/ws/vfn5wsimbr_gvahz1cyejfbyglc.png)
+![](https://habrastorage.org/webt/ox/hp/5m/oxhp5mz3ryp06_djnb8cho5a4nu.png)
 
 ## Самоподтверждение
 
@@ -26,7 +26,11 @@
 
 ## Самоопровержение
 
-![](https://habrastorage.org/webt/d9/_b/6v/d9_b6v0p2gx_8f0xotfyzqhtbw0.png)
+![](https://habrastorage.org/webt/kd/mi/qe/kdmiqegonnp_uazvu6pyxad4htu.png)
+
+## Самоооснование
+
+![](https://habrastorage.org/webt/04/fw/oe/04fwoers6sgtkr1ircvbn8blzve.png)
 
 ## Парадокс Карри
 
