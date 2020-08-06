@@ -26,11 +26,11 @@
 
 ## Самоопровержение
 
-![](https://habrastorage.org/webt/kd/mi/qe/kdmiqegonnp_uazvu6pyxad4htu.png)
+![](this-is-incorrect.svg)
 
 ## Самообоснование
 
-![](https://habrastorage.org/webt/04/fw/oe/04fwoers6sgtkr1ircvbn8blzve.png)
+![](this-is-correct.svg)
 
 ## Парадокс брадобрея
 
