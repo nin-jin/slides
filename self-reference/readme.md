@@ -16,7 +16,7 @@
 
 ## Самоподтверждение
 
-![](https://habrastorage.org/webt/qy/yx/ur/qyyxur4eem6ygdjiwuevbct6cr4.png)
+![](this-is-true.svg)
 
 ## Самоотрицание
 
