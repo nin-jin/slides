@@ -22,7 +22,7 @@
 
 Он же парадокс лжеца.
 
-![](https://habrastorage.org/webt/6b/ym/xf/6bymxfzjdbkri7ihau45ntlghn4.png)
+![](this-is-false.svg)
 
 ## Самоопровержение
 
