@@ -12,7 +12,7 @@
 
 ## Доказательство от противного
 
-![](https://habrastorage.org/webt/ox/hp/5m/oxhp5mz3ryp06_djnb8cho5a4nu.png)
+![](easy.png)
 
 ## Самоподтверждение
 
