@@ -4,11 +4,11 @@
 
 ## Истинность
 
-![](https://habrastorage.org/webt/wp/-m/x-/wp-mx--xzohucrgs-bf5ywt8yru.png)
+![](bool.svg)
 
 ## Корректность
 
-![](https://habrastorage.org/webt/zg/gx/5y/zggx5ywp1olxrhxgbc_ang7m3w4.png)
+![](correctness.svg)
 
 ## Доказательство от противного
 
