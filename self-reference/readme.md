@@ -6,37 +6,37 @@
 
 ## Истинность
 
-![](bool.svg)
+![](bool.png)
 
 ## Корректность
 
-![](correctness.svg)
+![](correctness.png)
 
 ## Доказательство от противного
 
-![](contra.svg)
+![](contra.png)
 
 ## Самоподтверждение
 
-![](this-is-true.svg)
+![](this-is-true.png)
 
 ## Самоотрицание
 
 Он же парадокс лжеца.
 
-![](this-is-false.svg)
+![](this-is-false.png)
 
 ## Самообоснование
 
-![](this-is-correct.svg)
+![](this-is-correct.png)
 
 ## Самоопровержение
 
-![](this-is-incorrect.svg)
+![](this-is-incorrect.png)
 
 ## Теорема Гёделя
 
-![](gedel.svg)
+![](gedel.png)
 
 ## Разбиение множества по предикату
 
