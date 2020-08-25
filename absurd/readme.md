@@ -2,7 +2,7 @@
 
 ![](fire.jpg)
 
-Вы можете [открыть это в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/self-reference/).
+Вы можете [открыть это в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/absurd/).
 
 ## Классическая логика
 
