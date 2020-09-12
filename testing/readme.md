@@ -391,7 +391,7 @@ assertEqual( app.NewTitle().value() , '' )
 - [Деконструкция TDD](https://youtu.be/sLWURdgEcrI) - продолжение темы тестирования
 - [nin-jin/slides](https://github.com/nin-jin/slides) - другие мои выступления
 - [habhub.hyoo.ru](https://habhub.hyoo.ru/) - все мои статьи
-- [_jin_nin_](https://twitter.com/_jin_nin_) - мои заметки о программировании
+- [`_jin_nin_`](https://twitter.com/_jin_nin_) - мои заметки о программировании
 - [nin_jin](https://teleg.run/nin_jin) - прямая связь со мной
 
 # Отзывы
