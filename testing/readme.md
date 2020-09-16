@@ -389,6 +389,7 @@ assertEqual( app.NewTitle().value() , '' )
 # Хочется большего?
 
 - [Деконструкция TDD](https://youtu.be/sLWURdgEcrI) - продолжение темы тестирования
+- [hyoo/todomvc/todomvc.test.ts](https://github.com/hyoo-ru/todomvc.hyoo.ru/blob/master/todomvc.test.ts) - примеры тестов
 - [nin-jin/slides](https://github.com/nin-jin/slides) - другие мои выступления
 - [habhub.hyoo.ru](https://habhub.hyoo.ru/) - все мои статьи
 - [`_jin_nin_`](https://twitter.com/_jin_nin_) - мои заметки о программировании
