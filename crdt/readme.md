@@ -28,6 +28,12 @@
 
 ## Алгоритмы синхронизации
 
+| Что передаётся | Последовательная обработка | Произвольный порядок
+|----------------|----------------------------|---------------------
+| Состояния      | Full State Replacement     | ConVergent Replicated Data Type
+| Операции       | Operational Transformation | CoMutative Replicated Data Type
+| Разница        | Difference Stream          | Delta Replicated Data Type
+
 ### Лог состояний
 
 - Full State Replacement
