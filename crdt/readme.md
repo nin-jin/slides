@@ -34,20 +34,14 @@
 | Операции       | Operational Transformation | CoMutative Replicated Data Type
 | Разница        | Difference Stream          | Delta Replicated Data Type
 
-### Лог состояний
+### Full State Replacement
+### ConVergent Replicated Data Type
 
-- Full State Replacement
-- ConVergent Replicated Data Type
+### Operational Transformation
+### CoMutative Replicated Data Type
 
-### Лог операций
-
-- Operational Transformation
-- CoMutative Replicated Data Type
-
-### Лог изменений
-
-- Difference Stream
-- Delta Replicated Data Type
+### Difference Stream
+### Delta Replicated Data Type
 
 ### Выбор алгоритма
 
