@@ -769,15 +769,18 @@ attr() {
 
 # Попробовать вне $mol
 
-Ести вас заинтересовал мой расказ и вы хотели бы попробовать поиграться с этим, но не готовы ещё перейти на $mol, то можете воспользоваться библиотекой `mol_style_all`, позволяющей описывать CSS-свойства. 
+Ести вас заинтересовал мой расказ и вы хотели бы попробовать поиграться с этим, но не готовы ещё перейти на $mol, то можете воспользоваться библиотекой `mol_style_all`, позволяющей описывать CSS-свойства.
+
 ```typescript
 import {
 	$mol_style_unit,
 	$mol_style_func,
 	$mol_style_properties,
 } from 'mol_style_all'
+
 const { em , rem } = $mol_style_unit
 const { calc } = $mol_style_func
+
 const props : $mol_style_properties = {
 	margin: [ em(1) , rem(1) ],
 	height: calc('100% - 1rem'),
