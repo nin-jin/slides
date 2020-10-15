@@ -58,6 +58,12 @@
 - Усреднённая
 - Последняя
 
+## Когда обновляться
+
+- onScroll
+- IntersectionObserver
+- requestAnimationFrame
+
 ## Составные компоненты
 
 - Вертикальный список
