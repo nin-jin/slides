@@ -66,7 +66,8 @@
 
 ## Долгая раскладка
 
-contain: layout
+contain: strict
+transform: translateZ(0)
 
 ## Составные компоненты
 
