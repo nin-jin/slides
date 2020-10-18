@@ -64,6 +64,10 @@
 - IntersectionObserver
 - requestAnimationFrame
 
+## Долгая раскладка
+
+contain: layout
+
 ## Составные компоненты
 
 - Вертикальный список
