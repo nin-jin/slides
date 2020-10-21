@@ -66,8 +66,10 @@
 
 ## Долгая раскладка
 
+```
 contain: content // for scroller
 transform: translateZ(0) // for it's content
+```
 
 ## Составные компоненты
 
