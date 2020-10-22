@@ -54,6 +54,14 @@
 - где работает
 - что делать, если не работает
 
+### Подавление Scroll Anchoring
+
+- top, left, right, bottom
+- margin, padding
+- Any width or height-related properties
+- transform
+- scroll-anchor: none
+
 ## Оценка размеров
 
 - Точная
