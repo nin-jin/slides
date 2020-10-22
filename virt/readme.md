@@ -4,6 +4,8 @@
 
 [Дмитрий Карловский @ HolyJS'20 Moscow](https://holyjs-moscow.ru/)
 
+Вы можете либо [посмотреть видео запись](), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/virt/), либо [читать как статью](https://github.com/nin-jin/slides/blob/master/virt/readme.md)...
+
 ## Типичный цикл разработки
 
 - Написали код
