@@ -54,6 +54,14 @@
 - где работает
 - что делать, если не работает
 
+### Зачем Scroll Anchoring
+
+![](https://codepen.io/chriscoyier/embed/oWgENp?theme-id=1)
+
+### Автопрокрутка
+
+![](//jsfiddle.net/eqrion/Lte142dv/14/embedded/result/dark/)
+
 ### Подавление Scroll Anchoring
 
 - top, left, right, bottom
