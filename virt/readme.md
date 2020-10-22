@@ -56,7 +56,7 @@
 
 ### Зачем Scroll Anchoring
 
-![](https://codepen.io/chriscoyier/embed/oWgENp?theme-id=1)
+![](https://codepen.io/chriscoyier/embed/oWgENp?theme-id=dark&default-tab=result)
 
 ### Автопрокрутка
 
