@@ -49,16 +49,6 @@
 
 ## Scroll Anchoring
 
-- как работает
-- как использовать
-- где работает
-
-### Что делать, если не работает
-
-```
-CSS.supports( 'overflow-anchor:auto' )
-```
-
 ### Зачем Scroll Anchoring
 
 ![](https://codepen.io/chriscoyier/embed/oWgENp?theme-id=dark&default-tab=result)
@@ -66,6 +56,38 @@ CSS.supports( 'overflow-anchor:auto' )
 ### Автопрокрутка
 
 ![](//jsfiddle.net/eqrion/Lte142dv/14/embedded/result/dark/)
+
+### Прокрутка вниз
+
+![](overlap-bottom.png)
+
+### Прокрутка вверх
+
+![](overlap-top.png)
+
+### Расширение
+
+![](inside.png)
+
+### Скачок вниз
+
+![](after.png)
+
+### Скачок вверх
+
+![](before.png)
+
+### Поддержка
+
+- Chrome ✅
+- Firefox ✅
+- Safari ❌
+
+### Что делать, если не работает
+
+```
+CSS.supports( 'overflow-anchor:auto' )
+```
 
 ### Подавление Scroll Anchoring
 
