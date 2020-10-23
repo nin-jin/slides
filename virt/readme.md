@@ -59,11 +59,11 @@
 
 ### Прокрутка вниз
 
-![](overlap-bottom.png)
+![](overlap-top.png)
 
 ### Прокрутка вверх
 
-![](overlap-top.png)
+![](overlap-bottom.png)
 
 ### Расширение
 
