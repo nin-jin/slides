@@ -152,6 +152,7 @@
 ```
 const anchoring_support = CSS.supports( 'overflow-anchor:auto' )
 
+
 if( anchoring_support ) {
     virtual render
 } else {
