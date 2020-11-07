@@ -151,11 +151,11 @@
 # Scroll Anchoring: Fallback
 
 ```
-CSS.supports( 'overflow-anchor:auto' )
-```
-
-```
-virtual rende -> lazy render
+if( CSS.supports( 'overflow-anchor:auto' ) ) {
+    virtual render
+} else {
+  lazy render
+}
 ```
 
 # Оценка размеров
