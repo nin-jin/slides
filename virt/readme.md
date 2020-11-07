@@ -178,6 +178,8 @@ if( anchoring_support ) {
 
 ```
 contain: content // for scroller
+
+
 transform: translateZ(0) // for it's content
 ```
 
