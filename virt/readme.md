@@ -250,4 +250,8 @@ transform: translateZ(0) // for it's content
 
 # Ссылочки
 
-# Вопросы?
+- [Вырезаем SSR и ускоряем Хабр в 10 раз](https://habr.com/ru/post/514144/) - статья о виртуализации в $mol
+- [nin-jin/slides/virt/](https://nin-jin.github.io/slides/virt/) - эти слайды
+- [habhub.hyoo.ru](https://habhub.hyoo.ru/) - другие мои статьи
+
+# Обратная связь
