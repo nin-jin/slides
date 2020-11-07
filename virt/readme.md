@@ -238,6 +238,11 @@ transform: translateZ(0) // for it's content
 
 # Бенчмарки: Потребление памяти
 
+| Вариант | JS Heap | Tab Weight
+|---------|---------|-----------
+| VueJS   | 50 MB   | 270 MB
+| $mol    | 7 MB    | 80MB
+
 # Бонус: Бесконечная виртуализация
 
 ![](https://mol.js.org/app/demo/-/#demo=mol_infinite_demo)
