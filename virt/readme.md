@@ -233,6 +233,7 @@ transform: translateZ(0) // for it's content
 # Бенчмарки: Скорость открытия
 
 ![](https://i.imgur.com/ZABkEx6.png)
+![](https://i.imgur.com/JmSyCZh.png)
 
 # Бенчмарки: Отзывчивость
 
