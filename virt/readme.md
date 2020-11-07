@@ -150,10 +150,12 @@
 # Scroll Anchoring: Fallback
 
 ```
-if( CSS.supports( 'overflow-anchor:auto' ) ) {
+const anchoring_support = CSS.supports( 'overflow-anchor:auto' )
+
+if( anchoring_support ) {
     virtual render
 } else {
-  lazy render
+    lazy render
 }
 ```
 
