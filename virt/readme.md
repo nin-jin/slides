@@ -89,7 +89,7 @@
 
 # Оптимизации: Резюме
 
-| Оптимизация    |
+| Оптимизация    | Стоит того?
 |----------------|---
 | Вёрстка        | ❌
 | Прикладной код | ❌
@@ -119,7 +119,7 @@
 - margin, padding
 - Any width or height-related properties
 - transform
-- scroll-anchor: none
+- overflow-anchor: none
 
 # Виртуализация: Прокрутка вниз
 
@@ -143,8 +143,9 @@
 
 # Scroll Anchoring: Поддержка
 
-| Chrome  | ✅
+| Браузер | overflow-anchor
 |---------|---
+| Chrome  | ✅
 | Firefox | ✅
 | Safari  | ❌
 
