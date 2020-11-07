@@ -147,7 +147,7 @@
 | Firefox | ✅
 | Safari  | ❌
 
-# Scroll Anchoring: Fallback
+# Scroll Anchoring: Запасный выход
 
 ```
 const anchoring_support = CSS.supports( 'overflow-anchor:auto' )
@@ -209,12 +209,14 @@ transform: translateZ(0) // for it's content
 # Логика прокрутки
 
 - Рекурсивно спускаемся по компонентам
-- Форсируем рендерингпо пути до найденного
+- Форсируем рендеринг по пути до найденного
 - Отложенно вызываем scrollIntoView на дом узле
 
 # Логика поиска
 
-> *подумать*
+- Рекурсивно спускаемся по компонентам
+- Отбираем соответствующие запросу
+- Отложенно вызываем scrollIntoView на дом узле
 
 # Демонстрация
 
@@ -230,6 +232,10 @@ transform: translateZ(0) // for it's content
 
 - Скачки скроллбара при неточной оценке размеров
 - Scroll Anchoring может не работать в некоторых контекстах.
+
+# Бонус: Бесконечная виртуализация
+
+![](https://mol.js.org/app/demo/-/#demo=mol_infinite_demo)
 
 # Ссылочки
 
