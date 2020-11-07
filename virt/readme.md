@@ -232,7 +232,7 @@ transform: translateZ(0) // for it's content
 
 # Бенчмарки: Скорость открытия и Отзывчивость
 
-![](https://habrastorage.org/webt/sa/1r/0d/sa1r0dao7wxh85snityqgv6nwca.png)
+![](https://habrastorage.org/webt/qf/h7/g9/qfh7g9fze_nlbveaxf9t2dfwh7i.png)
 
 Сверху [статья на Хабре](https://habr.com/post/522578). Мобильная версия. Меньше 200 комментариев без самой статьи рендерятся на VueJS. Снизу примерно то же самое на $mol. Отображается и статья, и комментарии. 
 
