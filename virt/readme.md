@@ -193,13 +193,30 @@ contain: content // for scroller
 transform: translateZ(0) // for it's content
 ```
 
-# Типы компонент
+# Типы компонент: Атомарный
 
-- Атомарный компонент
-- Вертикальный список
-- Горизонтальный список
-- Стек наложения
-- Горизонтальный список с переносами
+![](https://habrastorage.org/webt/kv/a1/ip/kva1ipui8zzr5gw374ungvoadgg.png)
+
+# Типы компонент: Стек наложения
+
+![](https://habrastorage.org/webt/kj/lp/me/kjlpmet3brj87osslxcmjkibas4.png)
+
+# Типы компонент: Вертикальный список
+
+![](https://habrastorage.org/webt/yv/u2/f6/yvu2f6a2tgtl4pd1et1fhcaryqi.png)
+
+# Типы компонент: Горизонтальный список
+
+![](https://habrastorage.org/webt/w_/ba/pb/w_bapbyuf17rh1sqq0ujqeu0gpy.png)
+
+# Типы компонент: Горизонтальный список с переносами
+
+![](https://habrastorage.org/webt/bd/sh/hz/bdshhzecmy_e3xyhxq9tdr3bhx0.png)
+
+# Типы компонент: Грид
+
+- Смотри горизонтальный список с переносами
+- Только переносы заранее известны
 
 # Объекты против функций
 
