@@ -232,9 +232,11 @@ if( anchoring_support ) {
 
 # Проблема: Когда обновляться?
 
-- onScroll
-- IntersectionObserver
-- requestAnimationFrame
+# Обновление на onScroll
+
+# Обновление на IntersectionObserver
+
+# Обновление на requestAnimationFrame
 
 # Проблема: Долгая раскладка
 
@@ -253,7 +255,7 @@ transform: translateZ(0) // for it's content
 
 ![HabrComment](https://nin-jin.github.io/habrcomment/#article=423889)
 
-# Проблемы виртуализации
+# Решаемые проблемы виртуализации
 
 - Оценка будущих размеров
 - Скачки контента
