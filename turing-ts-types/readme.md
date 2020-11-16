@@ -281,4 +281,10 @@ function defineStyle<
 type Error< Message > = 'Error' & { $mol_type_error : Message }
 ```
 
-# Брендированные литеральные типы
+# Уникальные типы
+
+`unique symbol`
+
+# Брендированные примитивные типы
+
+`string&{}`
