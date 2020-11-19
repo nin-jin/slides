@@ -117,7 +117,7 @@
 
 # Прикладная оптимизация: Вирт скролл
 
-> *пример*
+[![https://bvaughn.github.io/react-virtualized/#/components/WindowScroller](https://bvaughn.github.io/react-virtualized/#/components/WindowScroller)](https://bvaughn.github.io/react-virtualized/#/components/WindowScroller)
 
 # Прикладная оптимизация: Резюме
 
