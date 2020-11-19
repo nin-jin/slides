@@ -115,16 +115,15 @@
 
 > *пример*
 
-# Прикладная оптимизация: Вирт скролл
+# Достоинства бесконечного скролла
+
+# Прикладная оптимизация: Виртуальный скролл
 
 [![https://bvaughn.github.io/react-virtualized/#/components/WindowScroller](https://bvaughn.github.io/react-virtualized/#/components/WindowScroller)](https://bvaughn.github.io/react-virtualized/#/components/WindowScroller)
 
-# Прикладная оптимизация: Резюме
+# Достоинства виртуального скролла
 
-- Пагинация
-- Экспандеры
-- Бесконечный скролл
-- Вирт скролл
+# Прикладная оптимизация: Резюме
 
 - Ухудшение пользовательского опыта ❌
 - Не решают проблему полностью ❌
@@ -155,11 +154,10 @@
 
 # Оптимизация инструментов: Резюме
 
-1. Тайм слайсинг 
-2. Прогрессивный рендеринг
-3. Ленивый рендеринг
-4. Виртуальный рендеринг
-5. Виртуальный рендеринг
+- Тайм слайсинг ❌
+- Прогрессивный рендеринг❌
+- Ленивый рендеринг ❌
+- Виртуальный рендеринг ✅
 
 # Оптимизации: Резюме
 
@@ -314,18 +312,21 @@ if( anchoring_support ) {
 
 ![HabrComment](https://nin-jin.github.io/habrcomment/#article=423889)
 
-# Аппаратное ускорение скролла
+# Минимизация расчётов лейаута
 
 ```
 contain: content // for scroller
+```
 
+# Аппаратное ускорение скролла
 
-transform: translateZ(0) // for it's content
+```
+transform: translateZ(0) // for all scroller content
 ```
 
 # Финальная версия
 
-![HabrComment](https://nin-jin.github.io/habrcomment/#article=423889)
+[![http://nin-jin.github.io/my_gitlab](http://nin-jin.github.io/my_gitlab)](http://nin-jin.github.io/my_gitlab)
 
 # Решаемые проблемы виртуализации
 
