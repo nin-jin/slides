@@ -368,4 +368,4 @@ transform: translateZ(0) // for all scroller content
 
 # Обратная связь
 
-![](https://habrastorage.org/webt/0v/rl/lv/0vrllvnqpborans0nol2s6k1zew.jpeg)
+![](https://habrastorage.org/webt/-c/vu/6i/-cvu6iyueghl7bh37sld_nstysw.jpeg)
