@@ -137,7 +137,7 @@
 
 # Оптимизация инструментов: Тайм слайсинг
 
-> *пример*
+[![https://pbs.twimg.com/media/DZAJN9yVoAAi3LW.jpg](https://pbs.twimg.com/media/DZAJN9yVoAAi3LW.jpg)](https://pbs.twimg.com/media/DZAJN9yVoAAi3LW.jpg)
 
 # Оптимизация инструментов: Прогрессивный рендеринг
 
