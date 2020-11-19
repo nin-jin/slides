@@ -56,7 +56,24 @@
 
 # Оптимизации вёрстки
 
-> *быстрее, но асимптотика не меняется*
+*быстрее, но асимптотика не меняется*
+
+```
+<div class="amount">
+    <h3 class="heading heading_size_m heading_margins_m heading_theme_alfa-on-white">
+        <span>
+            <span class="amount__major">1 233</span>
+            <div class="amount__minor-container">
+                <span class="amount__separator">,</span>
+                <span class="amount__minor">43</span>
+            </div>
+            <span class="amount__currency"> ₽</span>
+        </span>
+    </h3>
+</div>
+```
+
+[$mol: 4 года спустя](https://habhub.hyoo.ru/#gist=https%3A%2F%2Fapi.github.com%2Frepos%2Fnin-jin%2FHabHub%2Fissues%2F23)
 
 # Прикладная оптимизация: Пагинация
 
