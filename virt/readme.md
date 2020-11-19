@@ -139,6 +139,8 @@
 
 [![https://pbs.twimg.com/media/DZAJN9yVoAAi3LW.jpg](https://pbs.twimg.com/media/DZAJN9yVoAAi3LW.jpg)](https://pbs.twimg.com/media/DZAJN9yVoAAi3LW.jpg)
 
+[Quantum Mechanics of Calculations in JS](https://github.com/nin-jin/slides/blob/master/fibers)
+
 # Оптимизация инструментов: Прогрессивный рендеринг
 
 [![https://catberry.github.io/](https://catberry.github.io/)](https://catberry.github.io/)
