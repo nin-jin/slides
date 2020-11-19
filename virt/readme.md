@@ -42,6 +42,8 @@
 
 # Подопытный: ченьжлог на GitLab
 
+![](https://i.imgur.com/zrawDWA.png)
+
 Открыть [GitLab](https://gitlab.com/gitlab-org/gitlab-foss/-/commit/9517d0eb2ca8bde02d7fae2173e0a43b67b2b9f5#27e06e15cfe9583d733619cf7d72629b777f7757_26212_26221)
 
 # Перенос рендеринга HTML на сервер
