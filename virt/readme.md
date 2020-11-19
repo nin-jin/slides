@@ -60,7 +60,7 @@
 
 ```
 <div class="amount">
-    <h3 class="heading heading_size_m heading_margins_m heading_theme_alfa-on-white">
+    <h3 class="heading ...">
         <span>
             <span class="amount__major">1 233</span>
             <div class="amount__minor-container">
@@ -71,6 +71,13 @@
         </span>
     </h3>
 </div>
+```
+
+```
+<h3 class="amount">
+    <span class="amount__major">1 233</span>
+    <span class="amount__minor">,43 ₽</span>
+</h3>
 ```
 
 [$mol: 4 года спустя](https://habhub.hyoo.ru/#gist=https%3A%2F%2Fapi.github.com%2Frepos%2Fnin-jin%2FHabHub%2Fissues%2F23)
