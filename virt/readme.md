@@ -326,7 +326,7 @@ transform: translateZ(0) // for all scroller content
 
 # Финальная версия
 
-[![http://nin-jin.github.io/my_gitlab](http://nin-jin.github.io/my_gitlab)](http://nin-jin.github.io/my_gitlab)
+[![https://nin-jin.github.io/my_gitlab](https://nin-jin.github.io/my_gitlab)](https://nin-jin.github.io/my_gitlab)
 
 # Решаемые проблемы виртуализации
 
