@@ -367,3 +367,5 @@ transform: translateZ(0) // for all scroller content
 - [Вырезаем SSR и ускоряем Хабр в 10 раз](https://habhub.hyoo.ru/#gist=https%3A%2F%2Fapi.github.com%2Frepos%2Fnin-jin%2FHabHub%2Fissues%2F34) - статья о виртуализации в $mol
 
 # Обратная связь
+
+![](https://habrastorage.org/webt/0v/rl/lv/0vrllvnqpborans0nol2s6k1zew.jpeg)
