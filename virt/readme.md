@@ -40,9 +40,17 @@
 - Высокое потребление памяти
 - Риск неработоспособности
 
+# Подопытный: ченьжлог на GitLab
+
+Открыть [GitLab](https://gitlab.com/gitlab-org/gitlab-foss/-/commit/9517d0eb2ca8bde02d7fae2173e0a43b67b2b9f5#27e06e15cfe9583d733619cf7d72629b777f7757_26212_26221)
+
 # Перенос рендеринга HTML на сервер
 
-![GitLab](https://gitlab.com/gitlab-org/gitlab-foss/-/commit/9517d0eb2ca8bde02d7fae2173e0a43b67b2b9f5#27e06e15cfe9583d733619cf7d72629b777f7757_26212_26221)
+![](https://i.imgur.com/Kq38m4l.png)
+
+# Страдания Ильи Климова во GitLab-у
+
+![](https://youtu.be/3tdfBMRq34o)
 
 # Оптимизации вёрстки
 
@@ -295,8 +303,8 @@ transform: translateZ(0) // for it's content
 
 # Ссылочки
 
-- [Вырезаем SSR и ускоряем Хабр в 10 раз](https://habr.com/ru/post/514144/) - статья о виртуализации в $mol
+- [nin-jin/my_gitlab](http://nin-jin.github.io/my_gitlab)
 - [nin-jin/slides/virt](https://github.com/nin-jin/slides/tree/master/virt) - эти слайды
-- [habhub.hyoo.ru](https://habhub.hyoo.ru/) - другие мои статьи
+- [Вырезаем SSR и ускоряем Хабр в 10 раз](https://habhub.hyoo.ru/#gist=https%3A%2F%2Fapi.github.com%2Frepos%2Fnin-jin%2FHabHub%2Fissues%2F34) - статья о виртуализации в $mol
 
 # Обратная связь
