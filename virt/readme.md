@@ -50,7 +50,7 @@
 
 # Страдания Ильи Климова во GitLab-у
 
-[![](https://www.youtube.com/embed/3tdfBMRq34o)](https://www.youtube.com/embed/3tdfBMRq34o)
+[![https://www.youtube.com/embed/3tdfBMRq34o](https://www.youtube.com/embed/3tdfBMRq34o)](https://www.youtube.com/embed/3tdfBMRq34o)
 
 # Оптимизации вёрстки
 
