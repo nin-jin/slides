@@ -269,6 +269,23 @@ contain-intrinsic-size: 1000px;
 - Отбираем соответствующие запросу
 - Рисуем интерфейс перехода между найденным.
 
+```
+*find(
+	check: ( text: string, path : View[] )=> boolean,
+	path = [] as View[],
+): Generator< View > {
+
+    path = [ ... path, this ]
+
+    if( check( '', path ) ) return yield this
+
+    for( const item of this.kids ) {
+        yield* item.find( check, path )
+    }
+
+}
+```
+
 # Логика: Прокрутка к компоненту
 
 - Рекурсивно спускаемся по компонентам
