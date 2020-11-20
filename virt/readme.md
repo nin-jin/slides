@@ -273,16 +273,11 @@ function *find_path(
 ): Generator< View > {
 
 	path = [ ... path, view ]
-
     	if( check( view ) ) return yield path
 
 	for( const item of view.kids ) {
 		if( item instanceof View ) { 
-			yield* find_view(
-				item,
-				check,
-				path,
-			)
+			yield* find_view( item, check, path )
 		} else {
 			if( check( item, view ) ) {
 				return yield path
@@ -317,10 +312,6 @@ function scroll_to_view( root: View, view: View ) {
 
 }
 ```
-
-- Рекурсивно спускаемся по компонентам
-- Форсируем рендеринг по пути до найденного
-- Отложенно вызываем scrollIntoView на дом узле
 
 # Пролема: Скачки при скроллинге
 
