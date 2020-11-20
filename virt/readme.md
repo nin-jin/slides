@@ -266,18 +266,17 @@ contain-intrinsic-size: 1000px;
 # Логика: Поиск
 
 ```
-function *find_path(
-	view: View,
+*find_path(
 	check: ( view : View )=> boolean,
 	path = [] as View[],
-): Generator< View > {
+): Generator< View[] > {
 
-	path = [ ... path, view ]
+	path = [ ... path, this ]
 	
-    	if( check( view ) ) return yield path
+	if( check( view ) ) return yield path
 
-	for( const item of view.kids ) {
-		yield* find_view( item, check, path )
+	for( const item of this.kids ) {
+		yield* item.find_path( check, path )
 	}
 
 }
@@ -290,11 +289,11 @@ function *find_path(
 # Логика: Прокрутка к компоненту
 
 ```
-function scroll_to_view( root: View, view: View ) {
+scroll_to_view( view: View ) {
 
-	const path = find_view( root, v => v === view ).next().value
+	const path = this.find_path( v => v === view ).next().value
 
-	force_render( root, new Set( path ) )
+	this.force_render( new Set( path ) )
 
 	defer( ()=> {
 		view.dom_node.scrollIntoView({
@@ -309,26 +308,14 @@ function scroll_to_view( root: View, view: View ) {
 # Логика: Форсирование рендеринга видимого
 
 ```
-force_render( view: View, path : Set< View > ): number {
+force_render( path : Set< View > ): number {
 
-	const index = view.kids.findIndex( item => path.has( item ) )
-
-	if( index >= 0 ) {
-		force_render( view.kids[ index ], path )
-	}
-
-	return index
-}
-```
-
-```
-force_render( view: View, path : Set< View > ): number {
-
-	const index = view.rows.findIndex( item => path.has( item ) )
+	// kids => rows // in Column
+	const index = this.kids.findIndex( item => path.has( item ) )
 
 	if( index >= 0 ) {
-		view.visible_range = [ index, index + 1 ]
-		force_render( view.rows[ index ], path )
+		// this.visible_range = [ index, index + 1 ] // in Column
+		this.kids[ index ].force_render( path )
 	}
 
 	return index
