@@ -230,7 +230,7 @@ contain-intrinsic-size: 1000px;
 
 # Типы компонент: Горизонтальный список с переносами
 
-![](https://habrastorage.org/webt/bd/sh/hz/bdshhzecmy_e3xyhxq9tdr3bhx0.png)
+![](wrap.png)
 
 # Типы компонент: Грид
 
