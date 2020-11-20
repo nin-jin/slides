@@ -365,6 +365,10 @@ transform: translateZ(0) // for all scroller content
 
 [![https://nin-jin.github.io/my_gitlab](https://nin-jin.github.io/my_gitlab)](https://nin-jin.github.io/my_gitlab)
 
+# Приколы со фреймами
+
+[![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
+
 # Решаемые проблемы виртуализации
 
 - Оценка будущих размеров
