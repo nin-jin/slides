@@ -40,7 +40,13 @@
 - Высокое потребление памяти
 - Риск неработоспособности
 
-# Подопытный: ченьжлог на GitLab
+# Первый подопытный: Статья на Хабре
+
+[Вырезаем SSR и ускоряем Хабр в 10 раз](https://habhub.hyoo.ru/#author=nin-jin/repo=HabHub/article=34)
+
+[![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
+
+# Второй подопытный: Ченьжлог на GitLab
 
 ![](https://i.imgur.com/zrawDWA.png)
 
@@ -86,7 +92,7 @@
 </h3>
 ```
 
-[$mol: 4 года спустя](https://habhub.hyoo.ru/#gist=https%3A%2F%2Fapi.github.com%2Frepos%2Fnin-jin%2FHabHub%2Fissues%2F23)
+[$mol: 4 года спустя](https://habhub.hyoo.ru/#search=mol/author=nin-jin/repo=HabHub/article=23)
 
 # Прикладная оптимизация
 
@@ -110,7 +116,7 @@
 - Большой элемент возвращает тормоза ❌
 - Работает быстрее, чем всё скопом рендерить ✅
 
-[Популярные антипаттерны: паджинация](https://habhub.hyoo.ru/#gist=https%3A%2F%2Fapi.github.com%2Frepos%2Fnin-jin%2FHabHub%2Fissues%2F13)
+[Популярные антипаттерны: паджинация](https://habhub.hyoo.ru/#search=%D0%BF%D0%B0/author=nin-jin/repo=HabHub/article=13)
 
 # Прикладная оптимизация: Экспандеры
 
@@ -519,9 +525,11 @@ transform: translateZ(0) // for all scroller content
 
 # Ссылочки
 
-- [nin-jin/my_gitlab](http://nin-jin.github.io/my_gitlab)
-- [nin-jin/slides/virt](https://github.com/nin-jin/slides/tree/master/virt) - эти слайды
-- [Вырезаем SSR и ускоряем Хабр в 10 раз](https://habhub.hyoo.ru/#gist=https%3A%2F%2Fapi.github.com%2Frepos%2Fnin-jin%2FHabHub%2Fissues%2F34) - статья о виртуализации в $mol
+- [nin-jin/my_gitlab](http://nin-jin.github.io/my_gitlab) - ченьжлог на $mol.
+- [nin-jin/habrcomment](http://nin-jin.github.io/habrcomment) - хабрастатья на $mol.
+- [nin-jin/slides/virt](https://github.com/nin-jin/slides/tree/master/virt) - эти слайды.
+- [nin-jin/slides](https://github.com/nin-jin/slides) - другие мои выступления.
+- [habhub.hyoo.ru](https://habhub.hyoo.ru/) - мои статьи.
 
 # Обратная связь
 
