@@ -286,7 +286,7 @@ contain-intrinsic-size: 1000px;
 
 # Scroll Anchoring: Выбор точки привязки
 
-> *диаграмма*
+![](anchor.png)
 
 # Scroll Anchoring: Подавление привязки
 
