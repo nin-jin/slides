@@ -325,8 +325,7 @@ force_render( path : Set< View > ): number {
 
 # Пролема: Скачки при скроллинге
 
-- снизу менять DOM - полный штиль
-- сверху менять DOM - дискотека авария
+[![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
 
 # Scroll Anchoring: Предотвращает скачки
 
@@ -437,7 +436,7 @@ function tick() {
 
 # Проблема: Долгая раскладка
 
-![HabrComment](https://nin-jin.github.io/habrcomment/#article=423889)
+[![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
 
 # Минимизация расчётов лейаута
 
