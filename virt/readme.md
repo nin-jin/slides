@@ -265,28 +265,50 @@ contain-intrinsic-size: 1000px;
 
 # Логика: Поиск
 
-- Рекурсивно спускаемся по компонентам
-- Отбираем соответствующие запросу
-- Рисуем интерфейс перехода между найденным.
-
 ```
-*find(
-	check: ( text: string, path : View[] )=> boolean,
+function *find_path(
+	view: View,
+	check: ( view : View, text?: string )=> boolean,
 	path = [] as View[],
 ): Generator< View > {
 
-    path = [ ... path, this ]
+    if( check( view ) ) return yield [ ... path, view ]
 
-    if( check( '', path ) ) return yield this
-
-    for( const item of this.kids ) {
-        yield* item.find( check, path )
+    for( const item of view.kids ) {
+    	if( item instanceof View ) { 
+        	yield* find_view( item, check, [ ... path, view ] )
+	} else {
+		if( check( item, view ) ) {
+			return yield [ ... path, view ]
+		}
+	}
     }
 
 }
 ```
 
+- Рекурсивно спускаемся по компонентам.
+- Отбираем соответствующие запросу.
+- Рисуем интерфейс перехода между найденным.
+
 # Логика: Прокрутка к компоненту
+
+```
+function scroll_to_view( root: View, view: View ) {
+
+	const path = find_view( root, v => v === view ).next().value
+
+	force_render( root, new Set( path ) )
+
+	defer( ()=> {
+		view.dom_node.scrollIntoView({
+			block: 'center',
+			inline: 'center',
+		})
+	})
+
+}
+```
 
 - Рекурсивно спускаемся по компонентам
 - Форсируем рендеринг по пути до найденного
