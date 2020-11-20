@@ -310,12 +310,12 @@ scroll_to_view( view: View ) {
 ```
 force_render( path : Set< View > ): number {
 
-	const items = this.kids // in `Column` changed to `this.rows`
+	const items = this.rows
 	
 	const index = items.findIndex( item => path.has( item ) )
 
 	if( index >= 0 ) {
-		// in Column add: `this.visible_range = [ index, index + 1 ]`
+		this.visible_range = [ index, index + 1 ]
 		items[ index ].force_render( path )
 	}
 
