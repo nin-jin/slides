@@ -508,7 +508,7 @@ transform: translateZ(0) // for all scroller content
 
 | Вариант                           | Память JS                                             | Память вкладки
 |-----------------------------------|-------------------------------------------------------|------------
-| [VueJS: 170 комментариев](https://m.habr.com/post/522578)                                 |40 MB     | 145 MB
+| [VueJS: 170 комментариев](https://m.habr.com/post/522578)                                 |40 MB     | 130 MB
 | $mol: 170 комментариев без виртуализации | 19 MB      | 90 MB
 | [$mol: статья + 170 комментариев](https://nin-jin.github.io/habrcomment/#article=522578/) | 7 MB      | 55 MB
 | [$mol: статья + 2500 комментариев](https://nin-jin.github.io/habrcomment/#article=423889) | 40 MB     | 75 MB
