@@ -368,6 +368,8 @@ const observer = new IntersectionObserver(
     { root: document.body  }
     
 )
+
+observer.observe( watched_element )
 ```
 
 # Обновление на requestAnimationFrame
