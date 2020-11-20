@@ -113,15 +113,24 @@
 
 # Прикладная оптимизация: Бесконечный скролл
 
-> *пример*
+![](https://habrastorage.org/webt/7n/eq/s1/7neqs12fscopypxiafivw950key.png)
 
 # Достоинства бесконечного скролла
+
+- Применимо лишь для плоских списков ❌
+- Ожидание загрузки каждой ветки ❌
+- Увеличение тормозов по мере прокрутки ❌
+- Открывается быстро ✅
 
 # Прикладная оптимизация: Виртуальный скролл
 
 [![https://bvaughn.github.io/react-virtualized/#/components/WindowScroller](https://bvaughn.github.io/react-virtualized/#/components/WindowScroller)](https://bvaughn.github.io/react-virtualized/#/components/WindowScroller)
 
 # Достоинства виртуального скролла
+
+- Применимо лишь для плоских списков ❌
+- Размеры элементов должны быть предсказуемы ❌
+- Работает быстро ✅
 
 # Прикладная оптимизация: Резюме
 
@@ -146,18 +155,16 @@
 
 # Оптимизация инструментов: Ленивый рендеринг
 
-> *пример*
+[![https://nin-jin.github.io/my_gitlab/#lazy](https://nin-jin.github.io/my_gitlab/#lazy)](https://nin-jin.github.io/my_gitlab/#lazy)
 
 # Оптимизация инструментов: Виртуальный рендеринг
 
-> *пример*
+[![https://nin-jin.github.io/my_gitlab/](https://nin-jin.github.io/my_gitlab/)](https://nin-jin.github.io/my_gitlab/)
 
 # Оптимизация инструментов: Резюме
 
-- Тайм слайсинг ❌
-- Прогрессивный рендеринг❌
-- Ленивый рендеринг ❌
-- Виртуальный рендеринг ✅
+- Поддерживает полтора фреймворка ❌
+- Работает само по себе ✅
 
 # Оптимизации: Резюме
 
