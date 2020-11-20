@@ -339,11 +339,48 @@ if( anchoring_support ) {
 
 # Проблема: Когда обновляться?
 
+- onScroll
+- IntersectionObserver
+- requestAnimationFrame
+
 # Обновление на onScroll
+
+```
+for( const scroll of all_scrolls ) {
+    scroll.addEventListener( 'scroll', event => {
+        // few times per frame
+    } )
+}
+```
 
 # Обновление на IntersectionObserver
 
+```
+const observer = new IntersectionObserver(
+    event => {
+        // calls on change of visibility percentage
+        // don't calls when visibility percentage doesn't changed
+    },
+    { root: document.body  }
+)
+```
+
 # Обновление на requestAnimationFrame
+
+```
+requestAnimationFrame( tick )
+
+function tick() {
+
+    requestAnimationFrame( tick )
+    
+    for( const element of watched_elements ) {
+        element.getBoundingClientRect()
+    }
+ 
+    render()   
+}
+```
 
 # Проблема: Долгая раскладка
 
