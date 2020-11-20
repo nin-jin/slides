@@ -92,7 +92,7 @@
 </h3>
 ```
 
-[$mol: 4 года спустя](https://habhub.hyoo.ru/#search=mol/author=nin-jin/repo=HabHub/article=23)
+[$mol: 4 года спустя](https://habhub.hyoo.ru/#author=nin-jin/repo=HabHub/article=23)
 
 # Прикладная оптимизация
 
@@ -116,7 +116,7 @@
 - Большой элемент возвращает тормоза ❌
 - Работает быстрее, чем всё скопом рендерить ✅
 
-[Популярные антипаттерны: паджинация](https://habhub.hyoo.ru/#search=%D0%BF%D0%B0/author=nin-jin/repo=HabHub/article=13)
+[Популярные антипаттерны: паджинация](https://habhub.hyoo.ru/#author=nin-jin/repo=HabHub/article=13)
 
 # Прикладная оптимизация: Экспандеры
 
