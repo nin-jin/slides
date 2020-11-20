@@ -268,21 +268,16 @@ contain-intrinsic-size: 1000px;
 ```
 function *find_path(
 	view: View,
-	check: ( view : View, text?: string )=> boolean,
+	check: ( view : View )=> boolean,
 	path = [] as View[],
 ): Generator< View > {
 
 	path = [ ... path, view ]
+	
     	if( check( view ) ) return yield path
 
 	for( const item of view.kids ) {
-		if( item instanceof View ) { 
-			yield* find_view( item, check, path )
-		} else {
-			if( check( item, view ) ) {
-				return yield path
-			}
-		}
+		yield* find_view( item, check, path )
 	}
 
 }
@@ -297,9 +292,7 @@ function *find_path(
 ```
 function scroll_to_view( root: View, view: View ) {
 
-	const path = find_view( root, v => {
-		return v === view
-	} ).next().value
+	const path = find_view( root, v => v === view ).next().value
 
 	force_render( root, new Set( path ) )
 
@@ -310,6 +303,35 @@ function scroll_to_view( root: View, view: View ) {
 		})
 	})
 
+}
+```
+
+# Логика: Форсирование рендеринга видимого
+
+```
+force_render( view: View, path : Set< View > ): number {
+
+	const index = view.kids.findIndex( item => path.has( item ) )
+
+	if( index >= 0 ) {
+		force_render( view.kids[ index ], path )
+	}
+
+	return index
+}
+```
+
+```
+force_render( view: View, path : Set< View > ): number {
+
+	const index = view.rows.findIndex( item => path.has( item ) )
+
+	if( index >= 0 ) {
+		view.visible_range = [ index, index + 1 ]
+		force_render( view.rows[ index ], path )
+	}
+
+	return index
 }
 ```
 
