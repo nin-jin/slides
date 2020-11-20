@@ -272,17 +272,23 @@ function *find_path(
 	path = [] as View[],
 ): Generator< View > {
 
-    if( check( view ) ) return yield [ ... path, view ]
+	path = [ ... path, view ]
 
-    for( const item of view.kids ) {
-    	if( item instanceof View ) { 
-        	yield* find_view( item, check, [ ... path, view ] )
-	} else {
-		if( check( item, view ) ) {
-			return yield [ ... path, view ]
+    	if( check( view ) ) return yield path
+
+	for( const item of view.kids ) {
+		if( item instanceof View ) { 
+			yield* find_view(
+				item,
+				check,
+				path,
+			)
+		} else {
+			if( check( item, view ) ) {
+				return yield path
+			}
 		}
 	}
-    }
 
 }
 ```
@@ -296,7 +302,9 @@ function *find_path(
 ```
 function scroll_to_view( root: View, view: View ) {
 
-	const path = find_view( root, v => v === view ).next().value
+	const path = find_view( root, v => {
+		return v === view
+	} ).next().value
 
 	force_render( root, new Set( path ) )
 
