@@ -174,7 +174,7 @@
 
 [Квантовая механика вычислений в JS](https://github.com/nin-jin/slides/blob/master/fibers)
 
-![https://pbs.twimg.com/media/DZAJN9yVoAAi3LW.jpg](https://pbs.twimg.com/media/DZAJN9yVoAAi3LW.jpg)
+![](timeslice.png)
 
 # Достоинства тайм слайсинга
 
