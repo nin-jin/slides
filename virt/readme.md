@@ -354,21 +354,25 @@ force_render( path : Set< View > ): number {
 
 [![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
 
-# Scroll Anchoring: Предотвращает скачки
+# Привязка скролла: Предотвращает скачки
 
 ![codepen](https://codepen.io/chriscoyier/embed/oWgENp?theme-id=dark&default-tab=result)
 
-# Scroll Anchoring: Выбор точки привязки
+# Привязка скролла: Выбор точки привязки
 
 ![](anchor.png)
 
-# Scroll Anchoring: Подавление привязки
+# Привязка скролла: Подавление привязки
 
 - top, left, right, bottom
 - margin, padding
 - Any width or height-related properties
 - transform
 - overflow-anchor: none
+
+# Привязка скролла: Распорки
+
+![](gaps.png)
 
 # Виртуализация: Прокрутка вниз
 
@@ -390,7 +394,7 @@ force_render( path : Set< View > ): number {
 
 ![](before.png)
 
-# Scroll Anchoring: Поддержка
+# Привязка скролла: Поддержка
 
 | Браузер | overflow-anchor
 |---------|---
@@ -398,7 +402,7 @@ force_render( path : Set< View > ): number {
 | Firefox | ✅
 | Safari  | ❌
 
-# Scroll Anchoring: Запасный выход
+# Привязка скролла: Запасный выход
 
 ```
 const anchoring_support = CSS.supports( 'overflow-anchor:auto' )
