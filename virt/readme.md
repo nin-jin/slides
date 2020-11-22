@@ -184,7 +184,9 @@
 
 # Оптимизация инструментов: Прогрессивный рендеринг
 
-[![https://catberry.github.io/](https://catberry.github.io/)](https://catberry.github.io/)
+[catberry.github.io](https://catberry.github.io/)
+
+![](https://catberry.github.io/)
 
 # Достоинства прогрессивного рендеринга
 
