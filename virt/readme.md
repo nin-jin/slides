@@ -44,7 +44,7 @@
 
 [Вырезаем SSR и ускоряем Хабр в 10 раз](https://habhub.hyoo.ru/#author=nin-jin/repo=HabHub/article=34)
 
-[![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
+![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)
 
 # Второй подопытный: Ченьжлог на GitLab
 
