@@ -452,11 +452,9 @@ scroll_to_view( view: View ) {
 
 	this.force_render( new Set( path ) )
 
-	defer( ()=> {
-		view.dom_node.scrollIntoView({
-			block: 'center',
-			inline: 'center',
-		})
+	view.dom_node.scrollIntoView({
+		block: 'center',
+		inline: 'center',
 	})
 
 }
