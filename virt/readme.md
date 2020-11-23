@@ -359,7 +359,7 @@ function tick() {
 - transform
 - overflow-anchor: none
 
-# Привязка скролла: Распорки
+# Виртуализация: Распорки
 
 ![](gaps.png)
 
