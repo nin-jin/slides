@@ -518,6 +518,10 @@ force_render( path : Set< View > ): number {
 | [$mol: статья + 170 комментариев](https://nin-jin.github.io/habrcomment/#article=522578/) | 7 MB      | 55 MB
 | [$mol: статья + 2500 комментариев](https://nin-jin.github.io/habrcomment/#article=423889) | 40 MB     | 75 MB
 
+# Бенчмарки: Гулять так гулять!
+
+[![https://showcase.hyoo.ru/](https://showcase.hyoo.ru/)](https://showcase.hyoo.ru/)
+
 # ООП против ФП
 
 - **Объект**: одно состояние - много действий.
