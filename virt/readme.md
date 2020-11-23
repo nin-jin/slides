@@ -156,6 +156,7 @@
 - Ухудшение пользовательского опыта ❌
 - Не решают проблему полностью ❌
 - Ограниченная применимость ❌
+- Полный контроль где какую применять ✅
 
 - Нужно не забыть ❌
 - Нужно продавить ❌
@@ -226,18 +227,18 @@
 | Прикладной код | ❌
 | Инструментарий | ✅
 
-# Оптимизация браузера: content-visibility
+# Виртуализация браузера
 
 ```css
-content-visibility: auto; /* automatic `contain` switch */
-contain-intrinsic-size: 1000px; /* estimate or larger than window */
+content-visibility: auto;
+contain-intrinsic-size: 1000px;
 ```
 
 # Логика рендеринга
 
 ![](render.png)
 
-# Проблема: Оценка размеров
+# Оценка размеров
 
 - Точная
 - Усреднённая
@@ -267,8 +268,7 @@ contain-intrinsic-size: 1000px; /* estimate or larger than window */
 
 # Типы компонент: Грид
 
-- Вертикальный список из горизонтальных списков
-- Или наоборот
+![](grids.png)
 
 # Типы компонент: Резюме
 
@@ -348,7 +348,7 @@ force_render( path : Set< View > ): number {
 }
 ```
 
-# Пролема: Скачки при скроллинге
+# Пролема: Скачки при прокрутке
 
 [![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
 
