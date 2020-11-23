@@ -229,8 +229,8 @@
 # Оптимизация браузера: content-visibility
 
 ```css
-content-visibility: auto;
-contain-intrinsic-size: 1000px;
+content-visibility: auto; /* automatic `contain` switch */
+contain-intrinsic-size: 1000px; /* estimate or larger than window */
 ```
 
 # Логика рендеринга
