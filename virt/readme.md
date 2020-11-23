@@ -379,6 +379,10 @@ function tick() {
 
 ![](after.png)
 
+# Привязка скролла в действии
+
+[![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
+
 # Привязка скролла: Поддержка
 
 | Браузер | overflow-anchor
