@@ -328,7 +328,7 @@ function tick() {
 }
 ```
 
-# Достоинства отслеживания IntersectionObserver
+# Достоинства отслеживания requestAnimationFrame
 
 - Постоянная фоновая нагрузка ❌
 - Просто и надёжно ✅
