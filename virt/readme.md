@@ -276,78 +276,70 @@ contain-intrinsic-size: 1000px;
 - Вертикальный список
 - Горизонтальный список
 
-# Логика: ООП против ФП
-
-- **Объект**: одно состояние - много действий.
-- **Функция**: много состояний - одно действие.
-
-# Логика: Ортогональные методы
-
-- Узнать минимальные размеры.
-- Частично отрендерить содержимое.
-- Проверить соответствие поисковому запросу.
-
-# Логика поиска
+# Отслеживание положения: onScroll
 
 ```
-*find_path(
-	check: ( view : View )=> boolean,
-	path = [] as View[],
-): Generator< View[] > {
+document.addEventListener( 'scroll', event => {
+	// few times per frame
+}, { capture: true } )
+```
 
-	path = [ ... path, this ]
-	
-	if( check( view ) ) return yield path
+# Достоинства отслеживания onScroll
 
-	for( const item of this.kids ) {
-		yield* item.find_path( check, path )
-	}
+- Слишком часто ❌
+- Изменения DOM ❌
+- Изменения стилей ❌
+- Изменения состояния элементов ❌
+- Изменения состояния браузера ❌
 
+# Отслеживание положения: IntersectionObserver
+
+```
+const observer = new IntersectionObserver(
+
+    event => {
+        // calls on change of visibility percentage
+        // don't calls when visibility percentage doesn't changed
+    },
+    
+    { root: document.body  }
+    
+)
+
+observer.observe( watched_element )
+```
+
+# Достоинства отслеживания IntersectionObserver
+
+- Облом, если степень наложения не меняется ❌
+
+# Отслеживание положения: requestAnimationFrame
+
+```
+function tick() {
+
+    requestAnimationFrame( tick )
+    
+    for( const element of watched_elements ) {
+        element.getBoundingClientRect()
+    }
+ 
+    render()   
 }
 ```
 
-- Рекурсивно спускаемся по компонентам.
-- Отбираем соответствующие запросу.
-- Рисуем интерфейс перехода между найденным.
+# Достоинства отслеживания IntersectionObserver
 
-# Логика прокрутки к компоненту
+- Постоянная фоновая нагрузка ❌
+- Просто и надёжно ✅
 
-```
-scroll_to_view( view: View ) {
+# Обновление: Резюме
 
-	const path = this.find_path( v => v === view ).next().value
+- onScroll ❌
+- IntersectionObserver ❌
+- requestAnimationFrame ✅
 
-	this.force_render( new Set( path ) )
-
-	defer( ()=> {
-		view.dom_node.scrollIntoView({
-			block: 'center',
-			inline: 'center',
-		})
-	})
-
-}
-```
-
-# Логика: Форсирование рендеринга видимого
-
-```
-force_render( path : Set< View > ): number {
-
-	const items = this.rows
-	
-	const index = items.findIndex( item => path.has( item ) )
-
-	if( index >= 0 ) {
-		this.visible_range = [ index, index + 1 ]
-		items[ index ].force_render( path )
-	}
-
-	return index
-}
-```
-
-# Пролема: Скачки при прокрутке
+# Скачки при прокрутке
 
 [![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
 
@@ -408,56 +400,6 @@ if( anchoring_support ) {
 }
 ```
 
-# Проблема: Когда обновляться?
-
-- onScroll
-- IntersectionObserver
-- requestAnimationFrame
-
-# Обновление на onScroll
-
-```
-for( const scroll of all_scrolls ) {
-
-    scroll.addEventListener( 'scroll', event => {
-        // few times per frame
-    } )
-
-}
-```
-
-# Обновление на IntersectionObserver
-
-```
-const observer = new IntersectionObserver(
-
-    event => {
-        // calls on change of visibility percentage
-        // don't calls when visibility percentage doesn't changed
-    },
-    
-    { root: document.body  }
-    
-)
-
-observer.observe( watched_element )
-```
-
-# Обновление на requestAnimationFrame
-
-```
-function tick() {
-
-    requestAnimationFrame( tick )
-    
-    for( const element of watched_elements ) {
-        element.getBoundingClientRect()
-    }
- 
-    render()   
-}
-```
-
 # Проблема: Долгая раскладка
 
 [![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
@@ -474,13 +416,69 @@ contain: content // for scroller
 transform: translateZ(0) // for all scroller content
 ```
 
-# Финальная версия
-
-[![https://nin-jin.github.io/my_gitlab](https://nin-jin.github.io/my_gitlab)](https://nin-jin.github.io/my_gitlab)
-
 # Приколы со фреймами
 
 [![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
+
+# Логика поиска
+
+```
+*find_path(
+	check: ( view : View )=> boolean,
+	path = [] as View[],
+): Generator< View[] > {
+
+	path = [ ... path, this ]
+	
+	if( check( view ) ) return yield path
+
+	for( const item of this.kids ) {
+		yield* item.find_path( check, path )
+	}
+
+}
+```
+
+- Рекурсивно спускаемся по компонентам.
+- Отбираем соответствующие запросу.
+- Рисуем интерфейс перехода между найденным.
+
+# Логика прокрутки к компоненту
+
+```
+scroll_to_view( view: View ) {
+
+	const path = this.find_path( v => v === view ).next().value
+
+	this.force_render( new Set( path ) )
+
+	defer( ()=> {
+		view.dom_node.scrollIntoView({
+			block: 'center',
+			inline: 'center',
+		})
+	})
+
+}
+```
+
+# Логика форсирование рендеринга видимого
+
+```
+force_render( path : Set< View > ): number {
+
+	const items = this.rows
+	
+	const index = items.findIndex( item => path.has( item ) )
+
+	if( index >= 0 ) {
+		this.visible_range = [ index, index + 1 ]
+		items[ index ].force_render( path )
+	}
+
+	return index
+}
+```
 
 # Решаемые проблемы виртуализации
 
@@ -517,9 +515,23 @@ transform: translateZ(0) // for all scroller content
 | [$mol: статья + 170 комментариев](https://nin-jin.github.io/habrcomment/#article=522578/) | 7 MB      | 55 MB
 | [$mol: статья + 2500 комментариев](https://nin-jin.github.io/habrcomment/#article=423889) | 40 MB     | 75 MB
 
-# Бонус: Бесконечная виртуализация
+# ООП против ФП
 
-![](https://mol.js.org/app/demo/-/#demo=mol_infinite_demo)
+- **Объект**: одно состояние - много действий.
+- **Функция**: много состояний - одно действие.
+
+# Ортогональные действия
+
+- Узнать минимальные размеры.
+- Частично отрендерить содержимое.
+- Проверить соответствие поисковому запросу.
+
+# Перспективы во фреймворках
+
+- React ❌
+- Vue ❌
+- Angular ❌
+- $mol ✅
 
 # Ссылочки
 
