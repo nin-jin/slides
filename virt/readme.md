@@ -58,12 +58,6 @@
 
 [![https://www.youtube.com/embed/3tdfBMRq34o](https://www.youtube.com/embed/3tdfBMRq34o)](https://www.youtube.com/embed/3tdfBMRq34o)
 
-# Оптимизации
-
-- Вёрстка
-- Прикладной код
-- Инструментарий
-
 # Оптимизации вёрстки
 
 *быстрее, но асимптотика не меняется*
@@ -115,7 +109,7 @@
 - Слепые вас ненавидят ❌
 - Работает быстрее, чем всё скопом рендерить ✅
 
-[Популярные антипаттерны: паджинация](https://habhub.hyoo.ru/#author=nin-jin/repo=HabHub/article=13)
+[Популярные антипаттерны: падгинация](https://habhub.hyoo.ru/#author=nin-jin/repo=HabHub/article=13)
 
 # Прикладная оптимизация: Экспандеры
 
@@ -266,7 +260,7 @@ contain-intrinsic-size: 1000px;
 
 ![](wrap.png)
 
-# Типы компонент: Грид
+# Типы компонент: Грид и Буклет
 
 ![](grids.png)
 
