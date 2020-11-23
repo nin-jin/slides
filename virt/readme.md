@@ -478,6 +478,10 @@ force_render( path : Set< View > ): number {
 }
 ```
 
+# Доступность
+
+[![https://nin-jin.github.io/my_gitlab/](https://nin-jin.github.io/my_gitlab/)](https://nin-jin.github.io/my_gitlab/)
+
 # Решаемые проблемы виртуализации
 
 - Оценка будущих размеров
@@ -485,6 +489,7 @@ force_render( path : Set< View > ): number {
 - Тормоза при скроллинге
 - Прокрутка к элементу
 - Поиск по странице
+- Доступность
 
 # Фундаментальные особенности
 
