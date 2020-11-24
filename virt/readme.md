@@ -124,7 +124,7 @@
 
 # Прикладная оптимизация: Экспандеры
 
-[![https://nin-jin.github.io/my_gitlab/#collapse](https://nin-jin.github.io/my_gitlab/#collapse)](https://nin-jin.github.io/my_gitlab/#collapse)
+[![https://nin-jin.github.io/my_gitlab/#collapse=true](https://nin-jin.github.io/my_gitlab/#collapse=true)](https://nin-jin.github.io/my_gitlab/#collapse=true)
 
 # Достоинства экспандеров
 
