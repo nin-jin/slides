@@ -560,11 +560,14 @@ force_render( path : Set< View > ): number {
 
 # Ссылочки
 
-- [nin-jin/my_gitlab](http://nin-jin.github.io/my_gitlab) - ченьжлог на $mol.
-- [nin-jin/habrcomment](http://nin-jin.github.io/habrcomment) - хабрастатья на $mol.
 - [nin-jin/slides/virt](https://github.com/nin-jin/slides/tree/master/virt) - эти слайды.
 - [nin-jin/slides](https://github.com/nin-jin/slides) - другие мои выступления.
 - [habhub.hyoo.ru](https://habhub.hyoo.ru/) - мои статьи.
+- [`_jin_nin_`](https://twitter.com/_jin_nin_) - моё ворчание.
+
+- [nin-jin/my_gitlab](http://nin-jin.github.io/my_gitlab) - ченьжлог на $mol.
+- [nin-jin/habrcomment](http://nin-jin.github.io/habrcomment) - хабрастатья на $mol.
+- [mol_news](https://t.me/mol_news) - $mol новости.
 
 # Обратная связь
 
