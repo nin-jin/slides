@@ -17,6 +17,10 @@
 
 ![](https://i.imgur.com/mSzn9qX.png)
 
+# Альтернативная линия времени: $mol
+
+[![https://mol.js.org/app/demo/-/](https://mol.js.org/app/demo/-/)](https://mol.js.org/app/demo/-/)
+
 # Типичный цикл разработки
 
 - Написали код.
