@@ -549,10 +549,14 @@ force_render( path : Set< View > ): number {
 
 # Перспективы во фреймворках
 
-- React ❌
-- Vue ❌
-- Angular ❌
-- $mol ✅
+| Инструмент | ООП | КОП
+|------------|-----|----
+| React | ❌ | ❌
+| React Native | ❌ | ✅
+| Vue | ✅ | ❌
+| Angular | ✅ | ❌
+| Svelte | ✅ | ❌
+| $mol | ✅ | ✅
 
 # Ссылочки
 
