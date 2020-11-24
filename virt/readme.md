@@ -545,6 +545,34 @@ force_render( path : Set< View > ): number {
 - Частично отрендерить содержимое.
 - Проверить соответствие поисковому запросу.
 
+# Композиция против вёрстки
+
+```tree
+Column
+	Row
+		Search
+		Icon
+	Scroll
+		Column
+			Task
+			Task
+			Task
+```
+
+```html
+<main class="panel">
+	<div class="header">
+		<input class="search" />
+		<img src="..." class="icon" />
+	</div>
+	<div class="scroll">
+		<div class="card" />
+		<div class="card" />
+		<div class="card" />
+	</div>
+</main>
+```
+
 # Перспективы во фреймворках
 
 | Инструмент | ООП | КОП
