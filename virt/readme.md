@@ -346,7 +346,7 @@ function tick() {
 
 # Скачки при прокрутке
 
-[![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
+[![https://nin-jin.github.io/my_gitlab/](https://nin-jin.github.io/my_gitlab/)](https://nin-jin.github.io/my_gitlab/)
 
 # Привязка скролла: Предотвращает скачки
 
@@ -390,7 +390,7 @@ function tick() {
 
 # Привязка скролла в действии
 
-[![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
+[![https://nin-jin.github.io/my_gitlab/](https://nin-jin.github.io/my_gitlab/)](https://nin-jin.github.io/my_gitlab/)
 
 # Привязка скролла: Поддержка
 
