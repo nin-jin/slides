@@ -429,7 +429,7 @@ contain: content // for scroller
 transform: translateZ(0) // for all scroller content
 ```
 
-# Приколы со фреймами
+# Плавная прокрутка (или нет)
 
 [![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
 
@@ -487,6 +487,10 @@ force_render( path : Set< View > ): number {
 	return index
 }
 ```
+
+# Работающий поиск
+
+[![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
 
 # Доступность
 
