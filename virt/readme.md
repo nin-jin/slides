@@ -346,7 +346,7 @@ function tick() {
 
 # Скачки при прокрутке
 
-[![https://nin-jin.github.io/my_gitlab/](https://nin-jin.github.io/my_gitlab/)](https://nin-jin.github.io/my_gitlab/)
+[![https://nin-jin.github.io/my_gitlab/#anchoring=false](https://nin-jin.github.io/my_gitlab/#anchoring=false)](https://nin-jin.github.io/my_gitlab/#anchoring=false)
 
 # Привязка скролла: Предотвращает скачки
 
