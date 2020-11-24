@@ -482,7 +482,7 @@ force_render( path : Set< View > ): number {
 
 # Доступность
 
-[![https://nin-jin.github.io/my_gitlab/](https://nin-jin.github.io/my_gitlab/)](https://nin-jin.github.io/my_gitlab/)
+[![https://nin-jin.github.io/habrcomment/#article=423889](https://nin-jin.github.io/habrcomment/#article=423889)](https://nin-jin.github.io/habrcomment/#article=423889)
 
 # Решаемые проблемы виртуализации
 
