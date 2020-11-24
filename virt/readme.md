@@ -584,6 +584,10 @@ Column
 | Svelte | ✅ | ❌
 | $mol | ✅ | ✅
 
+# Выбери виртуализацию
+
+![](https://i.imgur.com/Y2qj6cr.png)
+
 # Ссылочки
 
 - [nin-jin/slides/virt](https://github.com/nin-jin/slides/tree/master/virt) - эти слайды.
