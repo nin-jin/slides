@@ -202,7 +202,7 @@
 
 # Оптимизация инструментов: Ленивый рендеринг
 
-[![https://nin-jin.github.io/my_gitlab/#lazy](https://nin-jin.github.io/my_gitlab/#lazy)](https://nin-jin.github.io/my_gitlab/#lazy)
+[![https://nin-jin.github.io/my_gitlab/#lazy=true](https://nin-jin.github.io/my_gitlab/#lazy=true)](https://nin-jin.github.io/my_gitlab/#lazy=true)
 
 # Достоинства ленивого рендеринга
 
