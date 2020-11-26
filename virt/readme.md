@@ -605,3 +605,5 @@ Column
 # Обратная связь
 
 ![](https://habrastorage.org/webt/-c/vu/6i/-cvu6iyueghl7bh37sld_nstysw.jpeg)
+
+![](https://i.imgur.com/Xxm3XKK.png)
