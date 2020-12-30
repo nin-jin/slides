@@ -683,8 +683,6 @@ Column
 
 ![](https://habrastorage.org/webt/-c/vu/6i/-cvu6iyueghl7bh37sld_nstysw.jpeg)
 
-![](https://i.imgur.com/Xxm3XKK.png)
-
 ## Превосходно: 34%
 
 - Вроде все знакомо, но нашел для себя пару интересных нюансов.
