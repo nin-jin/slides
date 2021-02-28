@@ -1003,14 +1003,10 @@ if( !auth( password.text() ) ) {
 //		login \root
 //		password \qwerty
 const new_config = config.list(
-	input.hack({
+	config.hack({
 	
-		'auth' : ( tree , context )=> [
-			tree.struct( 'credentials' , tree.hack( context ) ),
-		] ,
-		
-		'' : ( tree , context )=> [
-			tree.clone( tree.hack( context ) ),
+		'auth' : ( auth , context )=> [
+			auth.struct( 'credentials' , auth.hack( context ) ),
 		] ,
 		
 	})
