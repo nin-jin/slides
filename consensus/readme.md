@@ -34,11 +34,11 @@
 
 ## Алгоритмы синхронизации
 
-| Что передаётся | Строгий порядок            | Частичный порядок | Произвольный порядок
-|----------------|----------------------------|-------------------|--------------------------------
-| Состояния      | Full State Replacement     |                   | ConVergent Replicated Data Type
-| Операции       | Operational Transformation |                   | CoMutative Replicated Data Type
-| Разница        |                            | Difference Stream | Delta Replicated Data Type
+| Что передаётся | Строгий порядок (Naive)    | Частичный порядок (CROWD) | Произвольный порядок (RDT)
+|----------------|----------------------------|---------------------------|--------------------------------
+| Состояния      | Full State Replacement     | CROWD Register/Sequence   | ConVergent Replicated Data Type
+| Операции       | Operational Transformation |                           | CoMutative Replicated Data Type
+| Разница        |                            | CROWD Dictionary          | Delta Replicated Data Type
 
 ### Full State Replacement
 ### ConVergent Replicated Data Type
