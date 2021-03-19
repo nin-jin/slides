@@ -36,9 +36,9 @@
 
 | Что передаётся | Строгий порядок (Naive)    | Частичный порядок (CROWD) | Произвольный порядок (RDT)
 |----------------|----------------------------|---------------------------|--------------------------------
-| Состояния      | Full State Replacement     | CROWD Register/Sequence   | ConVergent Replicated Data Type
+| Состояния      | Full State Replacement     | CROWD Register / Ordered Set   | ConVergent Replicated Data Type
 | Операции       | Operational Transformation |                           | CoMutative Replicated Data Type
-| Разница        |                            | CROWD Dictionary          | Delta Replicated Data Type
+| Разница        |                            | CROWD Counter / Onordered Set / Tagged Union / Tuple / Dictionary / Text / Json          | Delta Replicated Data Type
 
 ### Full State Replacement
 ### ConVergent Replicated Data Type
