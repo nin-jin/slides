@@ -71,6 +71,10 @@
 - [Proposal V2 2010](https://docs.google.com/document/d/1xi12LrcqjqIHTtZzrzZKmQ3lbTv9mKrN076UB-j3UZQ/edit?hl=en_US) +JSON -20%
 - [Proposal V3 2013](https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit) - 50%
 
+## Крупицы информации
+
+- [Introduction to JavaScript Source Maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
+
 ## Как подключаются
 
 HTTP заголовком:
@@ -115,9 +119,7 @@ HTTP заголовком:
 
 # Отладка трансформаций: Дамп AST
 
-```javascript
-foo = { bar: 123 }
-```
+- [`foo = { bar: 123 }`](https://astexplorer.net/#/gist/1296170ba2b75ef8f70acb6c478a8215/9eb19231aca08d65d1048919670839dc04469e63)
 
 ```json
 {
@@ -136,27 +138,7 @@ foo = { bar: 123 }
         "right": {
           "type": "ObjectExpression",
           "properties": [
-            {
-              "type": "Property",
-              "key": {
-                "type": "Identifier",
-                "name": "bar"
-              },
-              "value": {
-                "type": "Literal",
-                "value": 123
-              },
-              "kind": "init",
-              "computed": false,
-              "method": false,
-              "shorthand": false
-            }
-          ]
-        }
-      }
-    }
-  ]
-}
+	    ...
 ```
 
 # Отладка трансформаций: Наглядный дамп
