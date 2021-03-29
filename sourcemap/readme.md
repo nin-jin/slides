@@ -147,11 +147,13 @@ HTTP заголовком:
 [`const foo = { "bar": 123 };`](https://tree.hyoo.ru/#source=%7B%3B%7D%0A%09const%0A%09%09foo%0A%09%09%7B%2C%7D%0A%09%09%09%3A%0A%09%09%09%09%5Cbar%0A%09%09%09%09123%0A/pipeline=%24mol_tree2_from_string~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string)
 
 ```tree
-{;} const
-	foo
-	{,} :
-		\bar
-		123
+{;}
+    const
+	    foo
+	    {,}
+            :
+		        \bar
+		        123
 ```
 
 # песочница трансформаций
