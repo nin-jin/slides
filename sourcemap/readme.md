@@ -12,7 +12,7 @@
 
 ## JS в песочница?!?
 
-- Да, это возможно: sandbox.js.hyoo.ru
+- Да, это возможно: [sandbox.js.hyoo.ru](https://sandbox.js.hyoo.ru)
 - JS слишком сложный
 
 ## Зачем? Фатальный недостаток
