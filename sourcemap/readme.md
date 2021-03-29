@@ -123,23 +123,23 @@ HTTP заголовком:
 
 ```json
 {
-  "type": "Program",
-  "sourceType": "script",
-  "body": [
-    {
-      "type": "VariableDeclaration",
-      "kind": "const",
-      "declarations": [
+    "type": "Program",
+    "sourceType": "script",
+    "body": [
         {
-          "type": "VariableDeclarator",
-          "id": {
-            "type": "Identifier",
-            "name": "foo"
-          },
-          "init": {
-            "type": "ObjectExpression",
-            "properties": [
-	    ...
+            "type": "VariableDeclaration",
+            "kind": "const",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "foo"
+                    },
+                    "init": {
+                        "type": "ObjectExpression",
+                        "properties": [
+                            ...
 ```
 
 # Отладка трансформаций: Наглядный дамп
