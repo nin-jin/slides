@@ -119,7 +119,7 @@ HTTP заголовком:
 
 # Отладка трансформаций: Дамп AST
 
-- [`foo = { bar: 123 }`](https://astexplorer.net/#/gist/1296170ba2b75ef8f70acb6c478a8215/9eb19231aca08d65d1048919670839dc04469e63)
+- [`const foo = { "bar": 123 };`](https://astexplorer.net/#/gist/1296170ba2b75ef8f70acb6c478a8215/8c64175041878ae28e750fedafb55193cf839c53)
 
 ```json
 {
@@ -127,42 +127,33 @@ HTTP заголовком:
   "sourceType": "script",
   "body": [
     {
-      "type": "ExpressionStatement",
-      "expression": {
-        "type": "AssignmentExpression",
-        "left": {
-          "type": "Identifier",
-          "name": "foo"
-        },
-        "operator": "=",
-        "right": {
-          "type": "ObjectExpression",
-          "properties": [
+      "type": "VariableDeclaration",
+      "kind": "const",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "foo"
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [
 	    ...
 ```
 
 # Отладка трансформаций: Наглядный дамп
 
-```javascript
-foo = { bar: 123 }
-```
+[`const foo = { "bar": 123 };`](https://tree.hyoo.ru/#source=%7B%3B%7D%0A%09const%0A%09%09foo%0A%09%09%7B%2C%7D%0A%09%09%09%3A%0A%09%09%09%09%5Cbar%0A%09%09%09%09123%0A/pipeline=%24mol_tree2_from_string~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string)
 
 ```tree
 {;}
-	=
+	const
 		foo
 		{,}
 			:
 				\bar
 				123
-```
-
-```javascript
-{
-	foo = {
-		"bar": 123,
-	};
-}
 ```
 
 # песочница трансформаций
