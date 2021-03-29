@@ -119,7 +119,7 @@ HTTP заголовком:
 
 # Отладка трансформаций: Дамп AST
 
-- [`const foo = { "bar": 123 };`](https://astexplorer.net/#/gist/1296170ba2b75ef8f70acb6c478a8215/8c64175041878ae28e750fedafb55193cf839c53)
+[`const foo = { "bar": 123 };`](https://astexplorer.net/#/gist/1296170ba2b75ef8f70acb6c478a8215/8c64175041878ae28e750fedafb55193cf839c53)
 
 ```json
 {
