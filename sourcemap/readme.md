@@ -86,6 +86,7 @@
 ## Крупицы информации
 
 - [Introduction to JavaScript Source Maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
+- [Source Maps: быстро и понятно](https://habr.com/ru/post/509250/)
 
 ## Как подключаются
 
