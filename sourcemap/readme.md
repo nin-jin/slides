@@ -24,24 +24,30 @@ class $my_app extends $my_page {
     body() {
         return [ this.Agree() ]
     }
-    agree( val = true ) {
-        return val
-    }
     Agree() {
         const obj = new this.$.$my_checkbox()
         obj.checked = val => this.agree( val )
         return obj
     }
+    agree( val = true ) {
+        return val
+    }
 }
-$mol_mem( $my_app.prototype, "agree" )
-$mol_mem( $my_app.prototype, "Agree" )
+$my_mem( $my_app.prototype, "agree" )
+$my_mem( $my_app.prototype, "Agree" )
 ```
 
 ## Зачем? Пользовательские скрипты
 
-> *пример скрипта*
+```javascript
+set @assignee $me
+set @component \Frontend
+set @deadline sum
+    $prev.@deadline
+    @estimate
+```
 
-## JS в песочница?!?
+## JS в песочнице?!?
 
 - Да, это возможно: [sandbox.js.hyoo.ru](https://sandbox.js.hyoo.ru)
 - JS слишком сложный
