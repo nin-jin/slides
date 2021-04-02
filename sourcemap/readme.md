@@ -6,6 +6,12 @@
 
 Это - слайды с выступления на HolyJS'21. Вы можете [читать их как статью](https://github.com/nin-jin/slides/tree/master/sourcemap), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/sourcemap/).
 
+## Чем я занимаюсь?
+
+- Формат tree
+- Язык view.tree
+- Фреймворк $mol
+
 ## Зачем? Без DSL один бойлерплейт
 
 ```tree
@@ -98,6 +104,7 @@ class Task extends Model {
 }
 $my_mem( Task.prototype, "estimate" )
 
+
 CREATE CLASS Task extends Model;
 CREATE PROPERTY title string;
 CREATE PROPERTY estimate string;
@@ -105,7 +112,30 @@ CREATE PROPERTY estimate string;
 
 ## Проблемы? Это не то, что я написал!
 
-> *пример исходника и результата*
+```markdown
+Hello, **World**!
+```
+
+```javascript
+function make_dom( parent ) {
+    {
+	    const child = document.createTextNode( "Hello, " )
+        parent.appendChild( child )
+    }
+	{
+		const child = document.createElement( "strong" )
+		void ( parent => {
+            const child = document.createTextNode( "World" )
+            parent.appendChild( child )
+        } )( child )
+		parent.appendChild( child )
+	}
+    { 
+	    const child = document.createTextNode( "!" )
+        parent.appendChild( child )
+    }
+}
+```
 
 ## Проблемы? Да тут чёрт ногу сломит!
 
