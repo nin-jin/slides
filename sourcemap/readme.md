@@ -240,6 +240,12 @@ HTTP заголовком.
 - Только имена переменных, никаких выражений
 - Только полное совпадение
 
+## Как же сорсмапы хороши! Что-то пошло не так..
+
+> Карты Таро
+> Натальные карты
+> Гугл Карты
+
 ## Пробуем генерить руками..
 
 - Сложно само по себе
@@ -317,31 +323,30 @@ HTTP заголовком.
 # Ручная трансляция AST
 
 ```tree
-click \$hyoo_tree.Root(0).Lights()
-focus \$hyoo_tree.Root(0).Source_text().Edit()
+click \\$my_app.Root(0).Task(0)
+click \\$my_app.Root(0).Details().TrackTime()
 ```
 
 ```javascript
-src.hack({
-	click: ( i, belt )=> [
-		i.struct( '()', [
-			i.struct( 'document' ),
-			i.struct( '[]', [
-				i.data( 'getElementById' ),
-			] ),
-			i.struct( '(,)', [
-				i.data( i.text() )
-			] ),
-			i.struct( '[]', [
-				i.data( 'click' ),
-			] ),
-			i.struct( '(,)' ),
-		] ),
-	],
-})
+click: ( click, belt )=> {
+    const id = click.kids[0]
+    return [
+        click.struct( '()', [
+            id.struct( 'document' ),
+            id.struct( '[]', [
+                id.data( 'getElementById' ),
+            ] ),
+            id.struct( '(,)', id.kids ),
+            click.struct( '[]', [
+                click.data( 'click' ),
+            ] ),
+            click.struct( '(,)' ),
+        ] ),
+    ]
+},
 ```
 
-Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_js_eval~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string~%24mol_js_eval/source=let%20src%20%3D%20%24mol_tree2_from_string%28%60%0A%09click%20%5C%5C%24hyoo_tree.Root%280%29.Lights%28%29%0A%09focus%20%5C%5C%24hyoo_tree.Root%280%29.Source_text%28%29.Edit%28%29%0A%60%29%0A%0Asrc%20%3D%20src.list%28%5B%0A%09src.struct%28%20'%7B%3B%7D'%2C%0A%09%09src.hack%28%7B%0A%0A%09%09%09click%3A%20%28%20i%2C%20belt%20%29%3D%3E%20%5B%0A%09%09%09%09i.struct%28%20'%28%29'%2C%20%5B%0A%09%09%09%09%09i.struct%28%20'document'%20%29%2C%0A%09%09%09%09%09i.struct%28%20'%5B%5D'%2C%20%5B%0A%09%09%09%09%09%09i.data%28%20'getElementById'%20%29%2C%0A%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09i.struct%28%20'%28%2C%29'%2C%20%5B%0A%09%09%09%09%09%09i.data%28%20i.text%28%29%20%29%0A%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09i.struct%28%20'%5B%5D'%2C%20%5B%0A%09%09%09%09%09%09i.data%28%20'click'%20%29%2C%0A%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09i.struct%28%20'%28%2C%29'%20%29%2C%0A%09%09%09%09%5D%20%29%2C%0A%09%09%09%5D%2C%0A%0A%09%09%09focus%3A%20%28%20i%2C%20belt%20%29%3D%3E%20%5B%0A%09%09%09%09i.struct%28%20'%28%29'%2C%20%5B%0A%09%09%09%09%09i.struct%28%20'document'%20%29%2C%0A%09%09%09%09%09i.struct%28%20'%5B%5D'%2C%20%5B%0A%09%09%09%09%09%09i.data%28%20'getElementById'%20%29%2C%0A%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09i.struct%28%20'%28%2C%29'%2C%20%5B%0A%09%09%09%09%09%09i.data%28%20i.text%28%29%20%29%0A%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09i.struct%28%20'%5B%5D'%2C%20%5B%0A%09%09%09%09%09%09i.data%28%20'focus'%20%29%2C%0A%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09i.struct%28%20'%28%2C%29'%20%29%2C%0A%09%09%09%09%5D%20%29%2C%0A%09%09%09%5D%2C%0A%0A%09%09%09''%3A%20%28%29%3D%3E%20%5B%5D%0A%09%09%7D%29%2C%0A%09%29%2C%0A%5D%29%0A%0Areturn%20src)
+Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_js_eval~%24mol_tree2_js_to_text~%24mol_tree2_text_to_sourcemap_vis/source=let%20src%20%3D%20%24mol_tree2_from_string%28%60%0A%09click%20%5C%5C%24my_app.Root%280%29.Task%280%29%0A%09click%20%5C%5C%24my_app.Root%280%29.Details%28%29.TrackTime%28%29%0A%60%29%0A%0Asrc%20%3D%20src.list%28%5B%0A%09src.struct%28%20'%7B%3B%7D'%2C%0A%09%09src.hack%28%7B%0A%0A%09%09%09click%3A%20%28%20click%2C%20belt%20%29%3D%3E%20%7B%0A%09%09%09%09const%20id%20%3D%20click.kids%5B0%5D%0A%09%09%09%09return%20%5B%0A%09%09%09%09%09click.struct%28%20'%28%29'%2C%20%5B%0A%09%09%09%09%09%09id.struct%28%20'document'%20%29%2C%0A%09%09%09%09%09%09id.struct%28%20'%5B%5D'%2C%20%5B%0A%09%09%09%09%09%09%09id.data%28%20'getElementById'%20%29%2C%0A%09%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09%09id.struct%28%20'%28%2C%29'%2C%20id.kids%20%29%2C%0A%09%09%09%09%09%09click.struct%28%20'%5B%5D'%2C%20%5B%0A%09%09%09%09%09%09%09click.data%28%20'click'%20%29%2C%0A%09%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09%09click.struct%28%20'%28%2C%29'%20%29%2C%0A%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%5D%0A%09%09%09%7D%2C%0A%0A%09%09%09''%3A%20%28%29%3D%3E%20%5B%5D%0A%0A%09%09%7D%29%2C%0A%09%29%2C%0A%5D%29%0A%0Areturn%20src).
 
 # jack.tree - макро язык
 
