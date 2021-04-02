@@ -9,18 +9,18 @@
 ## Зачем? Без DSL один бойлерплейт
 
 ```tree
-$my_app $mol_page
+$my_app $my_page
 	title @ \New
 	body /
-		<= Flag $mol_check_box
+		<= Flag $my_check_box
 			title @ \Send me your SPAM
 			checked?val <=> subscribed?val true
 ```
 
 ```javascript
-class $my_app extends $mol_page {
+class $my_app extends $my_page {
     title() {
-        return this.$.$mol_locale.text( '$my_app_title' )
+        return this.$.$my_text( '$my_app_title' )
     }
     body() {
         return [ this.Flag() ]
@@ -29,14 +29,14 @@ class $my_app extends $mol_page {
         return val
     }
     Flag() {
-        const obj = new this.$.$mol_check_box()
-        obj.title = () => this.$.$mol_locale.text( '$my_app_Flag_title' )
+        const obj = new this.$.$my_check_box()
+        obj.title = ()=> this.$.$my_text( '$my_app_Flag_title' )
         obj.checked = val => this.subscribed( val )
         return obj
     }
 }
-$mol_mem( $my_flag.prototype, "subscribed" )
-$mol_mem( $my_flag.prototype, "Flag" )
+$mol_mem( $my_app.prototype, "subscribed" )
+$mol_mem( $my_app.prototype, "Flag" )
 ```
 
 ## Зачем? Пользовательские скрипты
