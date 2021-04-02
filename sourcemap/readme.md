@@ -23,12 +23,12 @@ class $my_app extends $my_page {
         return this.$.$my_text( '$my_app_title' )
     }
     body() {
-        return [ this.Flag() ]
+        return [ this.Agree() ]
     }
     agree( val = true ) {
         return val
     }
-    Flag() {
+    Agree() {
         const obj = new this.$.$my_checkbox()
         obj.title = ()=>
             this.$.$my_text( '$my_app_Agree_title' )
