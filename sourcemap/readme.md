@@ -53,7 +53,7 @@ $my_mem( $my_app.prototype, "Agree" )
 
 ## Зачем? Фатальный недостаток
 
-- Какой программист не хочет свой язык?
+> Какой программист не хочет свой язык?
 
 ## Зачем? Транспиляция
 
@@ -78,6 +78,31 @@ $my_mem( $my_app.prototype, "Agree" )
 - GPU
 - JVM
 - CIL
+
+## Одна модель, чтобы править всеми
+
+```tree
+Task
+    title String
+    estimate Duration
+```
+
+```javascript
+class Task extends Model {
+    title() {
+        return this.json().title
+    }
+    estimate() {
+        return new Duration( this.json().estimate )
+    }
+}
+```
+
+```sql
+CREATE CLASS Task extends Model;
+CREATE PROPERTY title string;
+CREATE PROPERTY estimate string;
+```
 
 ## Проблемы? Это не то, что я написал!
 
