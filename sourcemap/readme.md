@@ -40,11 +40,10 @@ $my_mem( $my_app.prototype, "Agree" )
 ## Зачем? Пользовательские скрипты
 
 ```javascript
-set @assignee $me
-set @component \Frontend
-set @deadline sum
-    $prev.@deadline
-    @estimate
+@assignee = $me
+@component = \Frontend
+@estimate ?= 1D
+@deadline = $prev.@deadline + @estimate
 ```
 
 ## JS в песочнице?!?
