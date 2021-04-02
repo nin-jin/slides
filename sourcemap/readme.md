@@ -139,7 +139,13 @@ function make_dom( parent ) {
 
 ## Проблемы? Да тут чёрт ногу сломит!
 
-> *пример сложного (минифицированного?) сгенерированного кода*
+```markdown
+Hello, **World**!
+```
+
+```javascript
+function make_dom(e){{const t=document.createTextNode("Hello, ");e.appendChild(t)}{const t=document.createElement("strong");(e=>{const t=document.createTextNode("World");e.appendChild(t)})(t),e.appendChild(t)}{const t=document.createTextNode("!");e.appendChild(t)}}
+```
 
 ## Сорсмапы спешат на помощь! Исходники
 
