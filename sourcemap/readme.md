@@ -96,9 +96,8 @@ class Task extends Model {
         return new Duration( this.json().estimate )
     }
 }
-```
+$my_mem( Task.prototype, "estimate" )
 
-```sql
 CREATE CLASS Task extends Model;
 CREATE PROPERTY title string;
 CREATE PROPERTY estimate string;
