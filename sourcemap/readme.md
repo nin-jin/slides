@@ -8,7 +8,36 @@
 
 ## Зачем? Без DSL один бойлерплейт
 
-> *пример dsl и сгенеренного кода*
+```tree
+$my_app $mol_page
+	title @ \New
+	body /
+		<= Flag $mol_check_box
+			title @ \Send me your SPAM
+			checked?val <=> subscribed?val true
+```
+
+```javascript
+class $my_app extends $mol_page {
+    title() {
+        return this.$.$mol_locale.text( '$my_app_title' )
+    }
+    body() {
+        return [ this.Flag() ]
+    }
+    subscribed( val = true ) {
+        return val
+    }
+    Flag() {
+        const obj = new this.$.$mol_check_box()
+        obj.title = () => this.$.$mol_locale.text( '$my_app_Flag_title' )
+        obj.checked = val => this.subscribed( val )
+        return obj
+    }
+}
+$mol_mem( $my_flag.prototype, "subscribed" )
+$mol_mem( $my_flag.prototype, "Flag" )
+```
 
 ## Зачем? Пользовательские скрипты
 
