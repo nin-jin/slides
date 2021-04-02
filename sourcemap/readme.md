@@ -10,10 +10,9 @@
 
 ```tree
 $my_app $my_page
-	title @ \New
+	title @ \Are you ready for SPAM?
 	body /
 		<= Agree $my_checkbox
-			title @ \Send me your SPAM
 			checked?val <=> agree?val true
 ```
 
@@ -30,8 +29,6 @@ class $my_app extends $my_page {
     }
     Agree() {
         const obj = new this.$.$my_checkbox()
-        obj.title = ()=>
-            this.$.$my_text( '$my_app_Agree_title' )
         obj.checked = val => this.agree( val )
         return obj
     }
