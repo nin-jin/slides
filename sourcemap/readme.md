@@ -12,9 +12,9 @@
 $my_app $my_page
 	title @ \New
 	body /
-		<= Flag $my_check_box
+		<= Agree $my_checkbox
 			title @ \Send me your SPAM
-			checked?val <=> subscribed?val true
+			checked?val <=> agree?val true
 ```
 
 ```javascript
@@ -25,18 +25,19 @@ class $my_app extends $my_page {
     body() {
         return [ this.Flag() ]
     }
-    subscribed( val = true ) {
+    agree( val = true ) {
         return val
     }
     Flag() {
-        const obj = new this.$.$my_check_box()
-        obj.title = ()=> this.$.$my_text( '$my_app_Flag_title' )
-        obj.checked = val => this.subscribed( val )
+        const obj = new this.$.$my_checkbox()
+        obj.title = ()=>
+            this.$.$my_text( '$my_app_Agree_title' )
+        obj.checked = val => this.agree( val )
         return obj
     }
 }
-$mol_mem( $my_app.prototype, "subscribed" )
-$mol_mem( $my_app.prototype, "Flag" )
+$mol_mem( $my_app.prototype, "agree" )
+$mol_mem( $my_app.prototype, "Agree" )
 ```
 
 ## Зачем? Пользовательские скрипты
