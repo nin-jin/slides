@@ -259,7 +259,51 @@ HTTP заголовком.
 
 ## Сложно? Возьмём бабель!
 
-> *пример трансформации на бабеле*
+Открыть на [гитхабе](https://github.com/babel/babel/blob/master/packages/babel-plugin-transform-arrow-functions/src/index.js).
+
+```typescript
+import { declare } from "@babel/helper-plugin-utils";
+import type NodePath from "@babel/traverse";
+
+export default declare((api, options) => {
+  const { spec } = options;
+  return {
+    name: "transform-arrow-functions",
+    visitor: {
+      ArrowFunctionExpression(
+        path: NodePath<BabelNodeArrowFunctionExpression>,
+      ) {
+        if (!path.isArrowFunctionExpression()) return
+        path.arrowFunctionToExpression({
+          allowInsertArrow: false,
+          specCompliant: !!spec,
+        })
+      },
+    },
+  }
+})
+```
+
+## Бабель, зачем столько бойлерплейта?
+
+Открыть на [гитхабе](https://github.com/babel/babel/blob/e498bee10f0123bb208baa228ce6417542a2c3c4/packages/babel-traverse/src/path/conversion.js#L104).
+
+```typescript
+import * as t from "@babel/types";
+import nameFunction from "@babel/helper-function-name";
+
+// ...
+
+this.replaceWith(
+    t.callExpression(
+        t.memberExpression(
+            nameFunction(this, true) || this.node,
+            t.identifier("bind"),
+        ),
+        [checkBinding ? t.identifier(checkBinding.name) : t.thisExpression()],
+    ),
+);
+```
 
 ## Всё равно сложно? Нужна абстракция!
 
