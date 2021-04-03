@@ -430,12 +430,6 @@ click: ( click, belt )=> {
 # jack.tree - макро язык
 
 ```tree
-script
-	click \$hyoo_tree.Root(0).Lights()
-	focus \$hyoo_tree.Root(0).Source_text().Edit()
-```
-
-```tree
 hack script {;} from
 
 hack click ()
@@ -445,15 +439,12 @@ hack click ()
 	[] \click
 	(,)
 
-hack focus ()
-	document
-	[] \getElementById
-	(,) data from
-	[] \focus
-	(,)
+script jack
+	click \$my_app.Root(0).Task(0)
+	click \$my_app.Root(0).Details().TrackTime()
 ```
 
-Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string~%24mol_js_eval/source=hack%20script%20%7B%3B%7D%20from%0A%0Ahack%20click%20%28%29%0A%09document%0A%09%5B%5D%20%5CgetElementById%0A%09%28%2C%29%20data%20from%0A%09%5B%5D%20%5Cclick%0A%09%28%2C%29%0A%0Ahack%20focus%20%28%29%0A%09document%0A%09%5B%5D%20%5CgetElementById%0A%09%28%2C%29%20data%20from%0A%09%5B%5D%20%5Cfocus%0A%09%28%2C%29%0A%0Ascript%0A%09click%20%5C%24hyoo_tree.Root%280%29.Lights%28%29%0A%09focus%20%5C%24hyoo_tree.Root%280%29.Source_text%28%29.Edit%28%29%0A)
+Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string_mapped_js/source=hack%20script%20%7B%3B%7D%20from%0A%0Ahack%20click%20%28%29%0A%09document%0A%09%5B%5D%20%5CgetElementById%0A%09%28%2C%29%20data%20from%0A%09%5B%5D%20%5Cclick%0A%09%28%2C%29%0A%0Ascript%20jack%0A%09click%20%5C%24my_app.Root%280%29.Task%280%29%0A%09click%20%5C%24my_app.Root%280%29.Details%28%29.TrackTime%28%29%0A)
 
 # хотим совсем свой синтаксис
 
