@@ -62,7 +62,7 @@ $my_mem( $my_app.prototype, "Agree" )
 
 ## Зачем? Фатальный недостаток
 
-> Какой программист не хочет свой язык?
+![](https://habrastorage.org/webt/bf/r_/dx/bfr_dxmy-xwvpql8fxv3x1c2vha.jpeg)
 
 ## Зачем? Транспиляция
 
