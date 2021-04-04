@@ -52,10 +52,13 @@ $my_mem( $my_app.prototype, "Agree" )
 @deadline = $prev.@deadline + @estimate
 ```
 
-## JS в песочнице?!?
+## JS в песочнице? Это законно?!7
 
-- Да, это возможно: [sandbox.js.hyoo.ru](https://sandbox.js.hyoo.ru)
-- JS слишком сложный
+![sandbox.js.hyoo.ru](https://sandbox.js.hyoo.ru)
+
+## JS? Не для средних умов..
+
+> 🤯
 
 ## Зачем? Фатальный недостаток
 
