@@ -377,17 +377,17 @@ type $mol_span = {
 ## Как не протерять координаты?
 
 ```typescript
-interface Tree {
-    struct( type , kids ): Tree
-    data( value , kids ): Tree
-    list( kids ): Tree
-    clone( kids ): Tree
+interface $mol_tree2 {
+    struct( type , kids ): $mol_tree2
+    data( value , kids ): $mol_tree2
+    list( kids ): $mol_tree2
+    clone( kids ): $mol_tree2
 }
 ```
 
 ## Пайплайн
 
-- Распарсили в ASTю
+- Распарсили в AST.
 - Всё протрансфрмировали и прочекали.
 - Сериализовали в скрипты/стили и сорсмапы.
 
