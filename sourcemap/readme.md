@@ -482,6 +482,12 @@ t%5Ct%5C%5C123%5Cnline%20%5C%5C%7D%5Cn%22%5D
 
 Открыть в [песочнице](http://localhost:9080/hyoo/tree/-/test.html#pipeline=%24mol_tree2_from_string~%24mol_tree2_text_to_string_mapped_js/source=line%20%5C%7B%0Aindent%0A%09line%0A%09%09%5Cfoo%0A%09%09%5C%3A%20%0A%09%09%5C123%0Aline%20%5C%7D%0A).
 
+# не только скрипты
+
+- стили
+- хтмл
+- что угодно
+
 ## wasm.tree -> bin.tree
 
 ```tree
@@ -508,12 +514,6 @@ import foo.bar func xxx
 ```
 
 Открыть в [песочнице](https://tree.hyoo.ru/#source=custom%20xxx%0A%0Atype%20xxx%0A%09%3D%3E%20i32%0A%09%3D%3E%20i64%0A%09%3D%3E%20f32%0A%09%3C%3D%20f64%0A%0Aimport%20foo.bar%20func%20xxx%0A/pipeline=%24mol_tree2_from_string~%24mol_tree2_wasm_to_bin~%24mol_tree2_bin_to_bytes~%24mol_wasm_module).
-
-# не только скрипты
-
-- стили
-- хтмл
-- что угодно
 
 # меняем таргеты налету (js/wasm?)
 
