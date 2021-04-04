@@ -54,6 +54,8 @@ $my_mem( $my_app.prototype, "Agree" )
 
 ## JS в песочнице? Это законно?!7
 
+[sandbox.js.hyoo.ru](https://sandbox.js.hyoo.ru)
+
 ![sandbox.js.hyoo.ru](https://sandbox.js.hyoo.ru)
 
 ## JS? Не для средних умов..
