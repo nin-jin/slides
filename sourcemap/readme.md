@@ -482,11 +482,11 @@ t%5Ct%5C%5C123%5Cnline%20%5C%5C%7D%5Cn%22%5D
 
 Открыть в [песочнице](http://localhost:9080/hyoo/tree/-/test.html#pipeline=%24mol_tree2_from_string~%24mol_tree2_text_to_string_mapped_js/source=line%20%5C%7B%0Aindent%0A%09line%0A%09%09%5Cfoo%0A%09%09%5C%3A%20%0A%09%09%5C123%0Aline%20%5C%7D%0A).
 
-# не только скрипты
+## Не только скрипты
 
-- стили
-- хтмл
-- что угодно
+- CSS
+- HTML
+- Whatever
 
 ## wasm.tree -> bin.tree
 
@@ -515,21 +515,24 @@ import foo.bar func xxx
 
 Открыть в [песочнице](https://tree.hyoo.ru/#source=custom%20xxx%0A%0Atype%20xxx%0A%09%3D%3E%20i32%0A%09%3D%3E%20i64%0A%09%3D%3E%20f32%0A%09%3C%3D%20f64%0A%0Aimport%20foo.bar%20func%20xxx%0A/pipeline=%24mol_tree2_from_string~%24mol_tree2_wasm_to_bin~%24mol_tree2_bin_to_bytes~%24mol_wasm_module).
 
-# меняем таргеты налету (js/wasm?)
+## Меняем таргеты налету (js/wasm?)
 
-# даже wasm с сорсмапингом?!
+## даже wasm с сорсмапингом?!
 
-# LS для IDE
+## LS для IDE?
 
 - Привязка структур к узлам аст
 
-# Обратные трансформации?
+## Обратные трансформации?
 
-# Подсветка синтаксиса
+## Что там с радугой?
 
 - для tree уже есть но можно сделать кастомизируемую
 - для своего языка через парсинг в tree
 
-## Песочница трансформаций
+# Куда-куда пойти?
 
-[tree.hyoo.ru](https://tree.hyoo.ru/)
+- [lang_idioms](https://t.me/lang_idioms) - о разработке языков
+- [_jin_nin_](https://twitter.com/_jin_nin_) - о JS
+- [nin-jin.github.io/slides/sourcemap](https://nin-jin.github.io/slides/sourcemap/) - эти слайды
+- ![tree.hyoo.ru](https://tree.hyoo.ru/)
