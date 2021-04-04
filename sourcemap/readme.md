@@ -335,17 +335,46 @@ type Span = {
 }
 ```
 
-# пайплайн
+## Пайплайн
 
 - загрузили аст
 - трансфрмировали и почекали
 - сериализовали в скрипты/стили и сорсмапы
 
-# Хороший тон
+## Хороший тон
 
 - Укзывать на исходник, а не шаблон
 - Генерить инструкции, а не выражения
 - Прикладывать исходник
+
+## text.tree
+
+```tree
+line \{ 
+indent
+    line
+        \foo
+        \: 
+        \123
+line \ }
+```
+
+```javascript
+{
+	foo: 123
+}
+
+//# sourceMappingURL=data:application/json,
+%7B%22version%22%3A3%2C%22sources%22%3A%5B%22
+unknown%22%5D%2C%22sourcesContent%22%3A%5B%22
+line%20%5C%5C%7B%5Cnindent%5Cn%5Ctline%5Cn%5C
+t%5Ct%5C%5Cfoo%5Cn%5Ct%5Ct%5C%5C%3A%20%5Cn%5C
+t%5Ct%5C%5C123%5Cnline%20%5C%5C%7D%5Cn%22%5D
+%2C%22mappings%22%3A%22%3B%3BAAAA%2CAAAK%3BAACL
+%2CAACC%2CCACC%2CGACA%2CEACA%3BAACF%2CAAAK%3B%22%7D
+```
+
+Открыть в [песочнице](http://localhost:9080/hyoo/tree/-/test.html#pipeline=%24mol_tree2_from_string~%24mol_tree2_text_to_string_mapped_js/source=line%20%5C%7B%0Aindent%0A%09line%0A%09%09%5Cfoo%0A%09%09%5C%3A%20%0A%09%09%5C123%0Aline%20%5C%7D%0A).
 
 # Отладка трансформаций: AST курильщика
 
