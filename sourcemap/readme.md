@@ -314,69 +314,7 @@ this.replaceWith(
 );
 ```
 
-## Всё равно сложно? Нужна абстракция!
-
-```typescript
-type Tree = {
-    readonly type: string
-    readonly value: string
-    readonly kids: Tree[]
-    readonly span: Span[]
-}
-```
-
-```typescript
-type Span = {
-    readonly uri: string
-    readonly source: string
-    readonly row: number
-    readonly col: number
-    readonly length: number
-}
-```
-
-## Пайплайн
-
-- загрузили аст
-- трансфрмировали и почекали
-- сериализовали в скрипты/стили и сорсмапы
-
-## Хороший тон
-
-- Укзывать на исходник, а не шаблон
-- Генерить инструкции, а не выражения
-- Прикладывать исходник
-
-## text.tree
-
-```tree
-line \{ 
-indent
-    line
-        \foo
-        \: 
-        \123
-line \ }
-```
-
-```javascript
-{
-	foo: 123
-}
-
-//# sourceMappingURL=data:application/json,
-%7B%22version%22%3A3%2C%22sources%22%3A%5B%22
-unknown%22%5D%2C%22sourcesContent%22%3A%5B%22
-line%20%5C%5C%7B%5Cnindent%5Cn%5Ctline%5Cn%5C
-t%5Ct%5C%5Cfoo%5Cn%5Ct%5Ct%5C%5C%3A%20%5Cn%5C
-t%5Ct%5C%5C123%5Cnline%20%5C%5C%7D%5Cn%22%5D
-%2C%22mappings%22%3A%22%3B%3BAAAA%2CAAAK%3BAACL
-%2CAACC%2CCACC%2CGACA%2CEACA%3BAACF%2CAAAK%3B%22%7D
-```
-
-Открыть в [песочнице](http://localhost:9080/hyoo/tree/-/test.html#pipeline=%24mol_tree2_from_string~%24mol_tree2_text_to_string_mapped_js/source=line%20%5C%7B%0Aindent%0A%09line%0A%09%09%5Cfoo%0A%09%09%5C%3A%20%0A%09%09%5C123%0Aline%20%5C%7D%0A).
-
-# Отладка трансформаций: AST курильщика
+# Займёмся отладкой? AST курильщика..
 
 [`const foo = { "bar": 123 };`](https://astexplorer.net/#/gist/1296170ba2b75ef8f70acb6c478a8215/8c64175041878ae28e750fedafb55193cf839c53)
 
@@ -401,7 +339,7 @@ t%5Ct%5C%5C123%5Cnline%20%5C%5C%7D%5Cn%22%5D
                             ...
 ```
 
-# Отладка трансформаций: AST здорового человека
+# Займёмся отладкой? AST здорового человека!
 
 [`const foo = { "bar": 123 };`](https://tree.hyoo.ru/#source=%7B%3B%7D%0A%09const%0A%09%09foo%0A%09%09%7B%2C%7D%0A%09%09%09%3A%0A%09%09%09%09%5Cbar%0A%09%09%09%09123%0A/pipeline=%24mol_tree2_from_string~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string)
 
@@ -415,12 +353,26 @@ t%5Ct%5C%5C123%5Cnline%20%5C%5C%7D%5Cn%22%5D
 		        123
 ```
 
-# песочница трансформаций
+## $mol_tree2 + $mol_span = проще не куда!
 
-# пилим свой dsl сразу на ast
+```typescript
+type $mol_tree2 = {
+    readonly type: string
+    readonly value: string
+    readonly kids: $mol_tree2[]
+    readonly span: $mol_span[]
+}
+```
 
-- самый простой путь
-- синтаксис специфический
+```typescript
+type $mol_span = {
+    readonly uri: string
+    readonly source: string
+    readonly row: number
+    readonly col: number
+    readonly length: number
+}
+```
 
 ## Как не протерять координаты?
 
@@ -461,6 +413,17 @@ click: ( click, belt )=> {
 
 Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_js_eval~%24mol_tree2_js_to_text~%24mol_tree2_text_to_sourcemap_vis/source=let%20src%20%3D%20%24mol_tree2_from_string%28%60%0A%09click%20%5C%5C%24my_app.Root%280%29.Task%280%29%0A%09click%20%5C%5C%24my_app.Root%280%29.Details%28%29.TrackTime%28%29%0A%60%29%0A%0Asrc%20%3D%20src.list%28%5B%0A%09src.struct%28%20'%7B%3B%7D'%2C%0A%09%09src.hack%28%7B%0A%0A%09%09%09click%3A%20%28%20click%2C%20belt%20%29%3D%3E%20%7B%0A%09%09%09%09const%20id%20%3D%20click.kids%5B0%5D%0A%09%09%09%09return%20%5B%0A%09%09%09%09%09click.struct%28%20'%28%29'%2C%20%5B%0A%09%09%09%09%09%09id.struct%28%20'document'%20%29%2C%0A%09%09%09%09%09%09id.struct%28%20'%5B%5D'%2C%20%5B%0A%09%09%09%09%09%09%09id.data%28%20'getElementById'%20%29%2C%0A%09%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09%09id.struct%28%20'%28%2C%29'%2C%20id.kids%20%29%2C%0A%09%09%09%09%09%09click.struct%28%20'%5B%5D'%2C%20%5B%0A%09%09%09%09%09%09%09click.data%28%20'click'%20%29%2C%0A%09%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09%09click.struct%28%20'%28%2C%29'%20%29%2C%0A%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%5D%0A%09%09%09%7D%2C%0A%0A%09%09%09''%3A%20%28%29%3D%3E%20%5B%5D%0A%0A%09%09%7D%29%2C%0A%09%29%2C%0A%5D%29%0A%0Areturn%20src).
 
+## Пайплайн
+
+- Распарсили в ASTю
+- Всё протрансфрмировали и прочекали.
+- Сериализовали в скрипты/стили и сорсмапы.
+
+# пилим свой dsl сразу на ast
+
+- самый простой путь
+- синтаксис специфический
+
 # jack.tree - макро язык
 
 ```tree
@@ -484,6 +447,41 @@ script jack
 
 - парсим в аст
 
+## Правила хорошего тона генерации сорсмап
+
+- Укзывать на исходник, а не шаблон
+- Генерить инструкции, а не выражения
+- Прикладывать исходник
+
+## text.tree
+
+```tree
+line \{ 
+indent
+    line
+        \foo
+        \: 
+        \123
+line \ }
+```
+
+```javascript
+{
+	foo: 123
+}
+
+//# sourceMappingURL=data:application/json,
+%7B%22version%22%3A3%2C%22sources%22%3A%5B%22
+unknown%22%5D%2C%22sourcesContent%22%3A%5B%22
+line%20%5C%5C%7B%5Cnindent%5Cn%5Ctline%5Cn%5C
+t%5Ct%5C%5Cfoo%5Cn%5Ct%5Ct%5C%5C%3A%20%5Cn%5C
+t%5Ct%5C%5C123%5Cnline%20%5C%5C%7D%5Cn%22%5D
+%2C%22mappings%22%3A%22%3B%3BAAAA%2CAAAK%3BAACL
+%2CAACC%2CCACC%2CGACA%2CEACA%3BAACF%2CAAAK%3B%22%7D
+```
+
+Открыть в [песочнице](http://localhost:9080/hyoo/tree/-/test.html#pipeline=%24mol_tree2_from_string~%24mol_tree2_text_to_string_mapped_js/source=line%20%5C%7B%0Aindent%0A%09line%0A%09%09%5Cfoo%0A%09%09%5C%3A%20%0A%09%09%5C123%0Aline%20%5C%7D%0A).
+
 # не только скрипты
 
 - стили
@@ -502,4 +500,6 @@ script jack
 
 - для tree уже есть но можно сделать кастомизируемую
 - для своего языка через парсинг в tree
+
+# песочница трансформаций
 
