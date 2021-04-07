@@ -226,7 +226,7 @@ AAAA,ADJH,WFCIG;ADJI;
 
 ...
 
-	target_column
+	target_relative_column
 	source_relative_index
 	source_relative_row
 	source_relative_column
