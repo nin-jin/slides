@@ -208,7 +208,7 @@ HTTP заголовком.
     "sources": [ "url1", "url2", ... ],
     "sourcesContent": [ "src1", "src2", ... ],
     "names": [ "va1", "var2", ... ],
-    "mappings": "AAAA,ACCO;AAAA,ADJH,wFCIG;ADJI;..."
+    "mappings": "AAAA,ACCO;AAAA,ADJH,WFCIG;ADJI;..."
 }
 ```
 
@@ -216,7 +216,7 @@ HTTP заголовком.
 
 ```
 AAAA,ACCO;
-AAAA,ADJH,wFCIG;ADJI;
+AAAA,ADJH,WFCIG;ADJI;
 ...
 ```
 
