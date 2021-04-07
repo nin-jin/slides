@@ -532,7 +532,9 @@ import foo.bar func xxx
 
 # Песочница
 
-- ![tree.hyoo.ru](https://tree.hyoo.ru/)
+[tree.hyoo.ru](https://tree.hyoo.ru/)
+
+![tree.hyoo.ru](https://tree.hyoo.ru/)
 
 # Куда-куда пойти?
 
