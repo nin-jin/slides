@@ -231,7 +231,7 @@ target_relative_column
 source_relative_index
 source_relative_row
 source_relative_column
-source_variable_name
+source_variable_name?
 ```
 
 ## Как же сорсмапы хороши! Был бы исходник..
@@ -543,9 +543,8 @@ import foo.bar func xxx
 
 | Field         | Bytes Count
 |---------------|------------
-| source_index  | 2
-| source_offset | 2
-| source_length | 2
+| source_offset | 3
+| source_length | 3
 | target_length | 2
 
 ## LS для IDE?
