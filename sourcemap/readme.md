@@ -530,9 +530,7 @@ import foo.bar func xxx
 - для tree уже есть но можно сделать кастомизируемую
 - для своего языка через парсинг в tree
 
-# Песочница
-
-[tree.hyoo.ru](https://tree.hyoo.ru/)
+# [tree.hyoo.ru](https://tree.hyoo.ru/)
 
 ![tree.hyoo.ru](https://tree.hyoo.ru/)
 
