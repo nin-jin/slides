@@ -547,7 +547,6 @@ import foo.bar func xxx
 | source_offset | 2
 | source_length | 2
 | target_length | 2
-```
 
 ## LS для IDE?
 
