@@ -212,9 +212,27 @@ HTTP заголовком.
 }
 ```
 
+## Как расшифровать маппинги?
+
+```
+AAAA,ACCO;
+AAAA,ADJH,wFCIG;ADJI;
+...
+```
+
 ## Это что за спаны такие?
 
-> *структура спана*
+```
+target_relative_column
+```
+
+```
+target_relative_column
+source_relative_index
+source_relative_row
+source_relative_column
+source_variable_name
+```
 
 ## Как же сорсмапы хороши! Был бы исходник..
 
@@ -519,6 +537,18 @@ import foo.bar func xxx
 
 ## даже wasm с сорсмапингом?!
 
+> [DWARF](http://dwarfstd.org/)
+
+## Пофантазируем? Сорсмапы здорового человека!
+
+| Field         | Bytes Count
+|---------------|------------
+| source_index  | 2
+| source_offset | 2
+| source_length | 2
+| target_length | 2
+```
+
 ## LS для IDE?
 
 - Привязка структур к узлам аст
@@ -530,7 +560,7 @@ import foo.bar func xxx
 - для tree уже есть но можно сделать кастомизируемую
 - для своего языка через парсинг в tree
 
-# Песочница
+## Песочница
 
 ![tree.hyoo.ru](https://tree.hyoo.ru/)
 
