@@ -226,13 +226,11 @@ AAAA,ADJH,WFCIG;ADJI;
 
 ...
 
-```
-target_column
-source_relative_index
-source_relative_row
-source_relative_column
-source_variable_name?
-```
+	target_column
+	source_relative_index
+	source_relative_row
+	source_relative_column
+	source_variable_name?
 
 ## Как же сорсмапы хороши! Был бы исходник..
 
