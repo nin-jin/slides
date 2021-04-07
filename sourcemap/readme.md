@@ -530,12 +530,13 @@ import foo.bar func xxx
 - для tree уже есть но можно сделать кастомизируемую
 - для своего языка через парсинг в tree
 
-# [tree.hyoo.ru](https://tree.hyoo.ru/)
+# Песочница
 
 ![tree.hyoo.ru](https://tree.hyoo.ru/)
 
 # Куда-куда пойти?
 
+- [tree.hyoo.ru](https://tree.hyoo.ru/) - песочница
 - [lang_idioms](https://t.me/lang_idioms) - о разработке языков
 - [_jin_nin_](https://twitter.com/_jin_nin_) - о JS
 - [nin-jin.github.io/slides/sourcemap](https://nin-jin.github.io/slides/sourcemap/) - эти слайды
