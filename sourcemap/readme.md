@@ -222,9 +222,7 @@ AAAA,ADJH,WFCIG;ADJI;
 
 ## Это что за спаны такие?
 
-```
-target_relative_column
-```
+	target_relative_column
 
 ...
 
