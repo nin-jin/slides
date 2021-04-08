@@ -312,18 +312,18 @@ return {
 Открыть на [гитхабе](https://github.com/babel/babel/blob/e498bee10f0123bb208baa228ce6417542a2c3c4/packages/babel-traverse/src/path/conversion.js#L104).
 
 ```typescript
-import * as t from "@babel/types";
+import "@babel/types";
 import nameFunction from "@babel/helper-function-name";
 
 // ...
 
 this.replaceWith(
-    t.callExpression(
-        t.memberExpression(
+    callExpression(
+        memberExpression(
             nameFunction(this, true) || this.node,
-            t.identifier("bind"),
+            identifier("bind"),
         ),
-        [checkBinding ? t.identifier(checkBinding.name) : t.thisExpression()],
+        [checkBinding ? identifier(checkBinding.name) : thisExpression()],
     ),
 );
 ```
