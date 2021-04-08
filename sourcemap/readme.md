@@ -66,7 +66,7 @@ $my_mem( $my_app.prototype, "Agree" )
 
 ![](https://habrastorage.org/webt/bf/r_/dx/bfr_dxmy-xwvpql8fxv3x1c2vha.jpeg)
 
-## Зачем? Транспиляция
+## Зачем? Транспиляция и проверки!
 
 - Babel и прочие транспайлеры
 - Uglify и прочие минификаторы
@@ -75,9 +75,6 @@ $my_mem( $my_app.prototype, "Agree" )
 - SVGO, CSSO и прочие оптимизаторы
 - JSX, Pug, Handlebars и прочие шаблонизаторы
 - MD, TeX и прочие языки разметки
-
-## Зачем? Проверки при сборке
-
 - TypeScript, FlowJS, Hegel и прочие тайпчекеры
 - ESLint и прочие линтеры
 - Pretier и прочие форматтеры
