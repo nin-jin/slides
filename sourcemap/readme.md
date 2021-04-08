@@ -532,7 +532,36 @@ import foo.bar func xxx
 
 Открыть в [песочнице](https://tree.hyoo.ru/#source=custom%20xxx%0A%0Atype%20xxx%0A%09%3D%3E%20i32%0A%09%3D%3E%20i64%0A%09%3D%3E%20f32%0A%09%3C%3D%20f64%0A%0Aimport%20foo.bar%20func%20xxx%0A/pipeline=%24mol_tree2_from_string~%24mol_tree2_wasm_to_bin~%24mol_tree2_bin_to_bytes~%24mol_wasm_module).
 
-## Меняем таргеты налету (js/wasm?)
+## Меняем таргеты налету
+
+Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string/source=hack%20%2Bjs%0A%09hack%20print%20%28%29%0A%09%09console%0A%09%09%5B%5D%20%5Clog%0A%09%09%28%2C%29%20from%0A%09hack%20%40%20%28%29%0A%09%09localize%0A%09%09%28%2C%29%20type%20from%0A%09%7B%3B%7D%20from%0A%0Ahack%20%2Bloc%0A%09hack%20print%20from%0A%09hack%20%40%20%3A%0A%09%09type%20from%0A%09%09kids%20from%0A%09%7B%2C%7D%20from%0A%0Ahack%20script%20%2Bjs%20from%0A%0Ascript%0A%09print%20%40%20hello%20%5CHello%2C%20World!%0A%09print%20%40%20bye%20%5CBye%2C%20World!%0A%0A).
+
+```tree
+hack +js
+	hack print ()
+		console
+		[] \log
+		(,) from
+	hack @ ()
+		localize
+		(,) type from
+	{;} from
+
+hack +loc
+	hack print from
+	hack @ :
+		type from
+		kids from
+	{,} from
+```
+
+```tree
+hack script +js from
+
+script
+	print @ hello \Hello, World!
+	print @ bye \Bye, World!
+```
 
 ## даже wasm с сорсмапингом?!
 
