@@ -616,7 +616,7 @@ hack +loc
 
 # Куда-куда пойти?
 
+- [nin-jin.github.io/slides/sourcemap](https://nin-jin.github.io/slides/sourcemap/) - эти слайды
 - [tree.hyoo.ru](https://tree.hyoo.ru/) - песочница
 - [lang_idioms](https://t.me/lang_idioms) - о разработке языков
 - [_jin_nin_](https://twitter.com/_jin_nin_) - о JS
-- [nin-jin.github.io/slides/sourcemap](https://nin-jin.github.io/slides/sourcemap/) - эти слайды
