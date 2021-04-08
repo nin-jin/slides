@@ -532,7 +532,19 @@ import foo.bar func xxx
 
 Открыть в [песочнице](https://tree.hyoo.ru/#source=custom%20xxx%0A%0Atype%20xxx%0A%09%3D%3E%20i32%0A%09%3D%3E%20i64%0A%09%3D%3E%20f32%0A%09%3C%3D%20f64%0A%0Aimport%20foo.bar%20func%20xxx%0A/pipeline=%24mol_tree2_from_string~%24mol_tree2_wasm_to_bin~%24mol_tree2_bin_to_bytes~%24mol_wasm_module).
 
-## Меняем таргеты налету: скрипты
+## Даже WASM с сорсмапингом?!
+
+> [DWARF](http://dwarfstd.org/)
+
+## Пофантазируем? Сорсмапы здорового человека!
+
+| Field         | Bytes Count
+|---------------|------------
+| source_offset | 3
+| source_length | 3
+| target_length | 2
+
+## Трансформируем в JS, вырезая локализацию
 
 ```tree
 +js
@@ -547,7 +559,7 @@ import foo.bar func xxx
 }
 ```
 
-## Меняем таргеты налету: тексты
+## Вычленяем переводы, игнорируя логику
 
 ```tree
 +loc
@@ -562,7 +574,7 @@ import foo.bar func xxx
 }
 ```
 
-## Меняем таргеты налету: трансформации
+## Меняем трансформации как перчатки
 
 Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string/source=hack%20%2Bjs%0A%09hack%20print%20%28%29%0A%09%09console%0A%09%09%5B%5D%20%5Clog%0A%09%09%28%2C%29%20from%0A%09hack%20%40%20%28%29%0A%09%09localize%0A%09%09%28%2C%29%20type%20from%0A%09%7B%3B%7D%20from%0A%0Ahack%20%2Bloc%0A%09hack%20print%20from%0A%09hack%20%40%20%3A%0A%09%09type%20from%0A%09%09kids%20from%0A%09%7B%2C%7D%20from%0A%0A%2Bjs%0A%09print%20%40%20hello%20%5CHello%2C%20World!%0A%09print%20%40%20bye%20%5CBye%2C%20World!%0A%0A).
 
@@ -586,18 +598,6 @@ hack +loc
 		kids from
 	{,} from
 ```
-
-## даже wasm с сорсмапингом?!
-
-> [DWARF](http://dwarfstd.org/)
-
-## Пофантазируем? Сорсмапы здорового человека!
-
-| Field         | Bytes Count
-|---------------|------------
-| source_offset | 3
-| source_length | 3
-| target_length | 2
 
 ## LS для IDE?
 
