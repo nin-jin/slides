@@ -152,13 +152,9 @@ e.appendChild(t)}{const t=document.createElement("strong");
 e.appendChild(t)}{const t=document.createTextNode("!");e.appendChild(t)}}
 ```
 
-## Сорсмапы спешат на помощь! Исходники
+## Сорсмапы спешат на помощь! Исходники и отладка
 
-> *скрин из девтулзов*
-
-## Сорсмапы спешат на помощь! Отладчик
-
-> *скрин с брейкпоинтом в VSCode*
+![](https://i.imgur.com/05Fg1oy.png)
 
 ## Сорсмапы спешат на помощь! Стек трейсы
 
