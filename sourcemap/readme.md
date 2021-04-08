@@ -541,8 +541,10 @@ import foo.bar func xxx
 ```
 
 ```javascript
-console.log( localize("hello") )
-console.log( localize("bye") )
+{
+	console.log( localize( "hello" ) );
+	console.log( localize( "bye" ) );
+}
 ```
 
 ## Меняем таргеты налету: тексты
