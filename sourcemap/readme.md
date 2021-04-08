@@ -158,11 +158,11 @@ e.appendChild(t)}{const t=document.createTextNode("!");e.appendChild(t)}}
 
 ## Сорсмапы спешат на помощь! Стек трейсы
 
-> *скрин до и после загрузки сорсмап*
+![](https://i.imgur.com/R4mbe2U.png)
 
 ## Сорсмапы спешат на помощь! Переменные
 
-> *скрин со значением переменной при наведении*
+![](https://i.imgur.com/aWZBEGm.png)
 
 ## Как работают сорсмапы?
 
