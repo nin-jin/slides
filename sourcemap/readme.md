@@ -216,7 +216,8 @@ HTTP заголовком.
 
 ```
 AAAA,ACCO;
-AAAA,ADJH,WFCIG;ADJI;
+AAAA,ADJH,WFCIG;
+ADJI;
 ...
 ```
 
