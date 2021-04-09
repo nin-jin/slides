@@ -216,15 +216,13 @@ ADJI;
 
 ## Это что за спаны такие?
 
-	target_relative_column
+![](https://habrastorage.org/webt/rr/ob/ph/rrobphvnat_krxjzwxcnflkians.png)
 
-...
+## И это всё в 5 байтах?
 
-	target_relative_column
-	source_relative_index
-	source_relative_row
-	source_relative_column
-	source_variable_name?
+- Дифференциальное кодирование: `56` => `5,1`
+- VLQ кодирование: -15..15 - один байт, -511..511 - два байта, ...
+- Base64 кодирование
 
 ## Как же сорсмапы хороши! Был бы исходник..
 
