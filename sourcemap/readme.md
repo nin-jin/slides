@@ -216,17 +216,17 @@ ADJI;
 
 ## Это что за спаны такие?
 
-![](https://habrastorage.org/webt/rr/ob/ph/rrobphvnat_krxjzwxcnflkians.png)
+![](https://habrastorage.org/webt/sq/4l/hs/sq4lhshg0pwckovb590_nnwyzu4.png)
 
 ## И это всё в 5 байтах? Дифференциальное кодирование!
 
-| tc | si | sr  | sc 
+| TC | SI | SR  | SC 
 |----|----|-----|---
 | 0  | 1  | 40  | 30
 | 3  | 3  | 900 | 10
 | 6  | 3  | 910 | 20
 
-| tc | si  | sr   | sc 
+| TC | SI  | SR   | SC
 |----|-----|------|---
 | 0  | 1   | 40   | 30
 | +3 | +2  | +860 | -20
