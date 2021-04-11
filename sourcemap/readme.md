@@ -516,12 +516,6 @@ script jack
 
 Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string_mapped_js/source=hack%20script%20%7B%3B%7D%20from%0A%0Ahack%20click%20%28%29%0A%09document%0A%09%5B%5D%20%5CgetElementById%0A%09%28%2C%29%20data%20from%0A%09%5B%5D%20%5Cclick%0A%09%28%2C%29%0A%0Ascript%20jack%0A%09click%20%5C%24my_app.Root%280%29.Task%280%29%0A%09click%20%5C%24my_app.Root%280%29.Details%28%29.TrackTime%28%29%0A)
 
-## Что-то пошло не так? Трейс трансформаций!
-
-Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string/source=hack%20%2Bpipe%0A%09hack%20%7C%3E%20var%0A%09%09pipe%0A%09%09from%0A%09hack%20%3C%7C%0A%09%09pipe%0A%09%09test%0A%09%09%09case%20count%20from%0A%09%09%09case%200%0A%09from%0A%0Ahack%20%2Bmath%20%2Bpipe%0A%09hack%20square%20%28**%29%0A%09%09%3C%7C%201%0A%09%092%0A%09from%0A%0A%2Bmath%20%7B%3B%7D%0A%09%7C%3E%203%0A%09%7C%3E%20square%0A).
-
-![](https://habrastorage.org/webt/7k/4r/by/7k4rbyvkgphsh1mkfg81q8rh9zm.png)
-
 # хотим совсем свой синтаксис
 
 - парсим в аст
@@ -661,20 +655,30 @@ hack +loc
 	{,} from
 ```
 
-## LS для IDE?
+## Что-то пошло не так? Трейс трансформаций!
 
-- Привязка структур к узлам аст
+Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string/source=hack%20%2Bpipe%0A%09hack%20%7C%3E%20var%0A%09%09pipe%0A%09%09from%0A%09hack%20%3C%7C%0A%09%09pipe%0A%09%09test%0A%09%09%09case%20count%20from%0A%09%09%09case%200%0A%09from%0A%0Ahack%20%2Bmath%20%2Bpipe%0A%09hack%20square%20%28**%29%0A%09%09%3C%7C%201%0A%09%092%0A%09from%0A%0A%2Bmath%20%7B%3B%7D%0A%09%7C%3E%203%0A%09%7C%3E%20square%0A).
 
-## Обратные трансформации?
+![](https://habrastorage.org/webt/7k/4r/by/7k4rbyvkgphsh1mkfg81q8rh9zm.png)
 
-## Что там с радугой?
+## Ничего не забыли?
 
-- для tree уже есть но можно сделать кастомизируемую
-- для своего языка через парсинг в tree
+- Language Service
+- Подсветка синтаксиса
 
-## Песочница
+## Единое расширение, чтобы править всеми.. Да ладно?!
 
-![tree.hyoo.ru](https://tree.hyoo.ru/)
+- Декларативное описание языка.
+- Синтаксическая привязка к семантике.
+- Без установки для каждого языка.
+- Автоматическое скачивание схемы.
+
+## Подсветка на основе трансформации?
+
+- Транспилируем
+- Мапим токен на результат
+- Выясняем как он раскрашивается
+- Красим так же
 
 # Куда-куда пойти?
 
