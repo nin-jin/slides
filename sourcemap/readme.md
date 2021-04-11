@@ -244,23 +244,73 @@ ADJI;
 
 ![](https://habrastorage.org/webt/qc/yc/nc/qcycnc3qglfbyg9vemcmwof5usa.png)
 
-## Нет Исходника? Шаблоны!
-
-> *Пример включения кода из шаблона*
-
 ## Как же сорсмапы хороши! Был бы результат..
 
 ![](https://habrastorage.org/webt/ew/ew/ae/ewewaeps8nxiz3hcmpk6vdm-yp4.png)
+
+## Как же сорсмапы хороши! А если бы не шаблоны..
+
+```cpp
+template log( value ) {
+    if( logLevel > Info ) { // a
+        console.log( value ); // b
+    }
+}
+
+log!1; // 1
+log!2; // 2
+log!3; // 3
+```
+
+```cpp
+if( logLevel > Info ) { // 1a
+    console.log( 1 ); // 1b
+}
+
+if( logLevel > Info ) { // 2a
+    console.log( 1 ); // 2b
+}
+
+if( logLevel > Info ) { // 3a
+    console.log( 1 ); // 3b
+}
+```
+
+## Как же сорсмапы хороши! А если бы не шаблоны..
+
+```cpp
+template log( value ) {
+    if( logLevel > Info ) { // a
+        console.log( value ); // b
+    }
+}
+
+log!1; // 1
+log!2; // 2
+log!3; // 3
+```
+
+```cpp
+void 0; // 1
+if( logLevel > Info ) { // 1a
+    console.log( 1 ); // 1b
+}
+
+void 0; // 2
+if( logLevel > Info ) { // 2a
+    console.log( 1 ); // 2b
+}
+
+void 0; // 3
+if( logLevel > Info ) { // 3a
+    console.log( 1 ); // 3b
+}
+```
 
 ## Как же сорсмапы хороши! Если бы не имена переменных..
 
 - Только имена переменных, никаких выражений
 - Только полное совпадение
-
-## Как же сорсмапы хороши! Если бы не макросы..
-
-- Место объявления макроса
-- Место применения макроса
 
 ## Как же сорсмапы хороши! Если бы не evil..
 
@@ -614,4 +664,4 @@ hack +loc
 - [nin-jin.github.io/slides/sourcemap](https://nin-jin.github.io/slides/sourcemap/) - эти слайды
 - [tree.hyoo.ru](https://tree.hyoo.ru/) - песочница
 - [lang_idioms](https://t.me/lang_idioms) - о разработке языков
-- [_jin_nin_](https://twitter.com/_jin_nin_) - о JS
+- [`_jin_nin_`](https://twitter.com/_jin_nin_) - о JS
