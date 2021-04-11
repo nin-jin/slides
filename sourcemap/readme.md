@@ -257,22 +257,22 @@ template log( value ) {
     }
 }
 
-log!1; // 1
-log!2; // 2
-log!3; // 3
+log!stat1(); // 1
+log!stat2(); // 2
+log!stat3(); // 3
 ```
 
 ```cpp
 if( logLevel > Info ) { // 1a
-    console.log( 1 ); // 1b
+    console.log( stat1() ); // 1b
 }
 
 if( logLevel > Info ) { // 2a
-    console.log( 1 ); // 2b
+    console.log( stat2() ); // 2b
 }
 
 if( logLevel > Info ) { // 3a
-    console.log( 1 ); // 3b
+    console.log( stat3() ); // 3b
 }
 ```
 
@@ -285,25 +285,25 @@ template log( value ) {
     }
 }
 
-log!1; // 1
-log!2; // 2
-log!3; // 3
+log!stat1(); // 1
+log!stat2(); // 2
+log!stat3(); // 3
 ```
 
 ```cpp
 void 0; // 1
 if( logLevel > Info ) { // 1a
-    console.log( 1 ); // 1b
+    console.log( stat1() ); // 1b
 }
 
 void 0; // 2
 if( logLevel > Info ) { // 2a
-    console.log( 1 ); // 2b
+    console.log( stat1() ); // 2b
 }
 
 void 0; // 3
 if( logLevel > Info ) { // 3a
-    console.log( 1 ); // 3b
+    console.log( stat1() ); // 3b
 }
 ```
 
@@ -314,7 +314,16 @@ if( logLevel > Info ) { // 3a
 
 ## Как же сорсмапы хороши! Если бы не evil..
 
-> *пример функции-обёртки для new Function из-за чего маппинги съезжают + хак*
+```javascript
+new Function( '', 'debugger' )
+```
+
+```javascript
+(function anonymous(
+) {
+debugger
+})
+```
 
 ## Как же сорсмапы хороши! Что-то пошло не так..
 
