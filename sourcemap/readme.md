@@ -346,21 +346,21 @@ import { declare } from "@babel/helper-plugin-utils";
 import type NodePath from "@babel/traverse";
 
 export default declare((api, options) => {
-const { spec } = options;
-return {
-    name: "transform-arrow-functions",
-    visitor: {
-    ArrowFunctionExpression(
-        path: NodePath<BabelNodeArrowFunctionExpression>,
-    ) {
-        if (!path.isArrowFunctionExpression()) return
-        path.arrowFunctionToExpression({
-        allowInsertArrow: false,
-        specCompliant: !!spec,
-        })
-    },
-    },
-}
+    const { spec } = options;
+    return {
+        name: "transform-arrow-functions",
+        visitor: {
+            ArrowFunctionExpression(
+                path: NodePath<BabelNodeArrowFunctionExpression>,
+            ) {
+                if (!path.isArrowFunctionExpression()) return
+                path.arrowFunctionToExpression({
+                    allowInsertArrow: false,
+                    specCompliant: !!spec,
+                })
+            },
+        },
+    }
 })
 ```
 
