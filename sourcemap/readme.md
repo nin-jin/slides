@@ -217,6 +217,10 @@ ADJI;
 
 ## Это что за спаны такие?
 
+![](https://habrastorage.org/webt/pm/rb/mn/pmrbmnzdwujys9rdgywjm_o5b10.png)
+
+## Так что в этих числах?
+
 ![](https://habrastorage.org/webt/05/56/qo/0556qo-lxeehub6eic7ypgqk7lc.png)
 
 ## И это всё в 5 байтах? Дифференциальное кодирование!
