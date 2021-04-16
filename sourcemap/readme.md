@@ -253,6 +253,30 @@ ADJI;
 
 ![](https://habrastorage.org/webt/ew/ew/ae/ewewaeps8nxiz3hcmpk6vdm-yp4.png)
 
+## А если надо склеить сорсмапы?
+
+```
+{
+	version: 3,
+	sections: [
+		{
+			offset: {
+				line: 0,
+				column: 0
+			},
+			url: "url_for_part1.map"
+		},
+		{
+			offset: {
+				line: 100,
+				column: 10
+			},
+			map: { ... }
+		}
+	],
+}
+```
+
 ## Как же сорсмапы хороши! А если бы не шаблоны..
 
 ```cpp
