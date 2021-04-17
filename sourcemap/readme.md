@@ -489,7 +489,7 @@ type $mol_tree2 = {
     readonly type: string
     readonly value: string
     readonly kids: $mol_tree2[]
-    readonly span: $mol_span[]
+    readonly span: $mol_span
 }
 ```
 
