@@ -165,12 +165,6 @@ e.appendChild(t)}{const t=document.createTextNode("!");e.appendChild(t)}}
 
 ![](https://i.imgur.com/aWZBEGm.png)
 
-## Как работают сорсмапы?
-
-- Нужен исходник/стектрейс
-- Скачиваем сорсмап
-- Налету подменяем
-
 ## Спецификация? Не, не слышал!
 
 - V1 - Internal Closure Inspector format
