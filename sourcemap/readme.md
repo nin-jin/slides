@@ -572,16 +572,6 @@ script jack
 
 Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string_mapped_js/source=hack%20script%20%7B%3B%7D%20from%0A%0Ahack%20click%20%28%29%0A%09document%0A%09%5B%5D%20%5CgetElementById%0A%09%28%2C%29%20data%20from%0A%09%5B%5D%20%5Cclick%0A%09%28%2C%29%0A%0Ascript%20jack%0A%09click%20%5C%24my_app.Root%280%29.Task%280%29%0A%09click%20%5C%24my_app.Root%280%29.Details%28%29.TrackTime%28%29%0A)
 
-# хотим совсем свой синтаксис
-
-- парсим в аст
-
-## Правила хорошего тона генерации сорсмап
-
-- Укзывать на исходник, а не шаблон
-- Генерить инструкции, а не выражения
-- Прикладывать исходник
-
 ## text.tree
 
 ```tree
