@@ -412,7 +412,7 @@ export default declare((api, options) => {
                 path: NodePath<BabelNodeArrowFunctionExpression>,
             ) {
                 if (!path.isArrowFunctionExpression()) return
-                path.arrowFunctionToExpression({
+                path.arrowFunctionToExpression({ // Babel Helper
                     allowInsertArrow: false,
                     specCompliant: !!spec,
                 })
@@ -433,10 +433,10 @@ import nameFunction from "@babel/helper-function-name";
 // ...
 
 this.replaceWith(
-    callExpression(
-        memberExpression(
-            nameFunction(this, true) || this.node,
-            identifier("bind"),
+    callExpression( // mapped to this
+        memberExpression( // mapped to this
+            nameFunction(this, true) || this.node, // mapped to this
+            identifier("bind"), // mapped to this
         ),
         [checkBinding ? identifier(checkBinding.name) : thisExpression()],
     ),
