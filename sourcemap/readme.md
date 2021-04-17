@@ -348,17 +348,17 @@ log!stat3() // 3
 ```
 
 ```cpp
-void 0; // 1
+void 0 // 1
 if( logLevel > Info ) { // A
     console.log( stat1() ) // B
 }
 
-void 0; // 2
+void 0 // 2
 if( logLevel > Info ) { // A
     console.log( stat2() ) // B
 }
 
-void 0; // 3
+void 0 // 3
 if( logLevel > Info ) { // A
     console.log( stat3() ) // B
 }
