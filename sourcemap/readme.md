@@ -281,27 +281,27 @@ ADJI;
 
 ```cpp
 template log( value ) {
-    if( logLevel > Info ) { // a
-        console.log( value ); // b
+    if( logLevel > Info ) { // A
+        console.log( value ) // B
     }
 }
 
-log!stat1(); // 1
-log!stat2(); // 2
-log!stat3(); // 3
+log!stat1()
+log!stat2()
+log!stat3()
 ```
 
 ```cpp
-if( logLevel > Info ) { // a
-    console.log( stat1() ); // b
+if( logLevel > Info ) { // A
+    console.log( stat1() ) // B
 }
 
-if( logLevel > Info ) { // a
-    console.log( stat2() ); // b
+if( logLevel > Info ) { // A
+    console.log( stat2() ) // B
 }
 
-if( logLevel > Info ) { // a
-    console.log( stat3() ); // b
+if( logLevel > Info ) { // A
+    console.log( stat3() ) // B
 }
 ```
 
@@ -309,27 +309,27 @@ if( logLevel > Info ) { // a
 
 ```cpp
 template log( value ) {
-    if( logLevel > Info ) { // a
-        console.log( value ); // b
+    if( logLevel > Info ) {
+        console.log( value )
     }
 }
 
-log!stat1(); // 1
-log!stat2(); // 2
-log!stat3(); // 3
+log!stat1() // 1
+log!stat2() // 2
+log!stat3() // 3
 ```
 
 ```cpp
 if( logLevel > Info ) { // 1
-    console.log( stat1() ); // 1
+    console.log( stat1() ) // 1
 }
 
 if( logLevel > Info ) { // 2
-    console.log( stat2() ); // 2
+    console.log( stat2() ) // 2
 }
 
 if( logLevel > Info ) { // 3
-    console.log( stat3() ); // 3
+    console.log( stat3() ) // 3
 }
 ```
 
@@ -337,30 +337,30 @@ if( logLevel > Info ) { // 3
 
 ```cpp
 template log( value ) {
-    if( logLevel > Info ) { // a
-        console.log( value ); // b
+    if( logLevel > Info ) { // A
+        console.log( value ) // B
     }
 }
 
-log!stat1(); // 1
-log!stat2(); // 2
-log!stat3(); // 3
+log!stat1() // 1
+log!stat2() // 2
+log!stat3() // 3
 ```
 
 ```cpp
 void 0; // 1
-if( logLevel > Info ) { // a
-    console.log( stat1() ); // b
+if( logLevel > Info ) { // A
+    console.log( stat1() ) // B
 }
 
 void 0; // 2
-if( logLevel > Info ) { // a
-    console.log( stat1() ); // b
+if( logLevel > Info ) { // A
+    console.log( stat2() ) // B
 }
 
 void 0; // 3
-if( logLevel > Info ) { // a
-    console.log( stat1() ); // b
+if( logLevel > Info ) { // A
+    console.log( stat3() ) // B
 }
 ```
 
