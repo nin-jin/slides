@@ -9,7 +9,7 @@
 ![](https://nin-jin.github.io/slides/absurd/fire.jpg)
 
 Вы можете либо [посмотреть видео запись](https://www.youtube.com/watch?v=9kPxFtRefac), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/absurd/), либо [читать как статью](https://github.com/nin-jin/slides/blob/master/absurd/readme.md)...
-<cut/>
+
 ## Классическая логика
 
 Начнём с самых основ. Какие бывают утверждения?
