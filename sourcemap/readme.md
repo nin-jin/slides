@@ -277,7 +277,7 @@ ADJI;
 }
 ```
 
-## Как же сорсмапы хороши! А если бы не шаблоны..
+## А макросы? Мапим на их внутрянку.. 
 
 ```cpp
 template log( value ) {
@@ -292,20 +292,48 @@ log!stat3(); // 3
 ```
 
 ```cpp
-if( logLevel > Info ) { // 1a
-    console.log( stat1() ); // 1b
+if( logLevel > Info ) { // a
+    console.log( stat1() ); // b
 }
 
-if( logLevel > Info ) { // 2a
-    console.log( stat2() ); // 2b
+if( logLevel > Info ) { // a
+    console.log( stat2() ); // b
 }
 
-if( logLevel > Info ) { // 3a
-    console.log( stat3() ); // 3b
+if( logLevel > Info ) { // a
+    console.log( stat3() ); // b
 }
 ```
 
-## Как же сорсмапы хороши! А если бы не шаблоны..
+## А макросы? Мапим на их применение.. 
+
+```cpp
+template log( value ) {
+    if( logLevel > Info ) { // a
+        console.log( value ); // b
+    }
+}
+
+log!stat1(); // 1
+log!stat2(); // 2
+log!stat3(); // 3
+```
+
+```cpp
+if( logLevel > Info ) { // 1
+    console.log( stat1() ); // 1
+}
+
+if( logLevel > Info ) { // 2
+    console.log( stat2() ); // 2
+}
+
+if( logLevel > Info ) { // 3
+    console.log( stat3() ); // 3
+}
+```
+
+## А макросы?
 
 ```cpp
 template log( value ) {
@@ -321,18 +349,18 @@ log!stat3(); // 3
 
 ```cpp
 void 0; // 1
-if( logLevel > Info ) { // 1a
-    console.log( stat1() ); // 1b
+if( logLevel > Info ) { // a
+    console.log( stat1() ); // b
 }
 
 void 0; // 2
-if( logLevel > Info ) { // 2a
-    console.log( stat1() ); // 2b
+if( logLevel > Info ) { // a
+    console.log( stat1() ); // b
 }
 
 void 0; // 3
-if( logLevel > Info ) { // 3a
-    console.log( stat1() ); // 3b
+if( logLevel > Info ) { // a
+    console.log( stat1() ); // b
 }
 ```
 
