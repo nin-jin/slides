@@ -547,22 +547,24 @@ click \$my_app.Root(0).Details().TrackTime()
 ```
 
 ```javascript
-click: ( click, belt )=> {
-    const id = click.kids[0]
-    return [
-        click.struct( '()', [
-            id.struct( 'document' ),
-            id.struct( '[]', [
-                id.data( 'getElementById' ),
-            ] ),
-            id.struct( '(,)', [ id ] ),
-            click.struct( '[]', [
-                click.data( 'click' ),
-            ] ),
-            click.struct( '(,)' ),
-        ] ),
-    ]
-},
+script.hack({
+	click: ( click, belt )=> {
+		const id = click.kids[0]
+		return [
+			click.struct( '()', [
+				id.struct( 'document' ),
+				id.struct( '[]', [
+					id.data( 'getElementById' ),
+				] ),
+				id.struct( '(,)', [ id ] ),
+				click.struct( '[]', [
+					click.data( 'click' ),
+				] ),
+				click.struct( '(,)' ),
+			] ),
+		]
+	},
+})
 ```
 
 Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_js_eval~%24mol_tree2_js_to_text~%24mol_tree2_text_to_sourcemap_vis/source=let%20src%20%3D%20%24mol_tree2_from_string%28%60%0A%09click%20%5C%5C%24my_app.Root%280%29.Task%280%29%0A%09click%20%5C%5C%24my_app.Root%280%29.Details%28%29.TrackTime%28%29%0A%60%29%0A%0Asrc%20%3D%20src.list%28%5B%0A%09src.struct%28%20'%7B%3B%7D'%2C%0A%09%09src.hack%28%7B%0A%0A%09%09%09click%3A%20%28%20click%2C%20belt%20%29%3D%3E%20%7B%0A%09%09%09%09const%20id%20%3D%20click.kids%5B0%5D%0A%09%09%09%09return%20%5B%0A%09%09%09%09%09click.struct%28%20'%28%29'%2C%20%5B%0A%09%09%09%09%09%09id.struct%28%20'document'%20%29%2C%0A%09%09%09%09%09%09id.struct%28%20'%5B%5D'%2C%20%5B%0A%09%09%09%09%09%09%09id.data%28%20'getElementById'%20%29%2C%0A%09%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09%09id.struct%28%20'%28%2C%29'%2C%20%5B%20id%20%5D%20%29%2C%0A%09%09%09%09%09%09click.struct%28%20'%5B%5D'%2C%20%5B%0A%09%09%09%09%09%09%09click.data%28%20'click'%20%29%2C%0A%09%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09%09click.struct%28%20'%28%2C%29'%20%29%2C%0A%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%5D%0A%09%09%09%7D%2C%0A%0A%09%09%09''%3A%20%28%29%3D%3E%20%5B%5D%0A%0A%09%09%7D%29%2C%0A%09%29%2C%0A%5D%29%0A%0Areturn%20src).
