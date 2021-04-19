@@ -389,6 +389,14 @@ debugger
 - Проносить в сообщениея об ошибках.
 - Плюс трейс по шаблонам.
 
+## Пофантазируем? Сорсмапы здорового человека!
+
+| Field         | Bytes Count
+|---------------|------------
+| source_offset | 3
+| source_length | 3
+| target_length | 2
+
 ## Сложно? Возьмём бабель!
 
 Открыть на [гитхабе](https://github.com/babel/babel/blob/master/packages/babel-plugin-transform-arrow-functions/src/index.js).
@@ -578,6 +586,67 @@ script jack
 
 Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string_mapped_js/source=hack%20script%20%7B%3B%7D%20from%0A%0Ahack%20click%20%28%29%0A%09document%0A%09%5B%5D%20%5CgetElementById%0A%09%28%2C%29%20data%20from%0A%09%5B%5D%20%5Cclick%0A%09%28%2C%29%0A%0Ascript%20jack%0A%09click%20%5C%24my_app.Root%280%29.Task%280%29%0A%09click%20%5C%24my_app.Root%280%29.Details%28%29.TrackTime%28%29%0A)
 
+## Трансформируем в JS, вырезая локализацию
+
+```tree
++js
+	print @ hello \Hello, World!
+	print @ bye \Bye, World!
+```
+
+```javascript
+{
+	console.log( localize( "hello" ) );
+	console.log( localize( "bye" ) );
+}
+```
+
+## Вычленяем переводы, игнорируя логику
+
+```tree
++loc
+	print @ hello \Hello, World!
+	print @ bye \Bye, World!
+```
+
+```json
+{
+	"hello": "Hello, World!",
+	"bye": "Bye, World!"
+}
+```
+
+## Меняем трансформации как перчатки
+
+Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string/source=hack%20%2Bjs%0A%09hack%20print%20%28%29%0A%09%09console%0A%09%09%5B%5D%20%5Clog%0A%09%09%28%2C%29%20from%0A%09hack%20%40%20%28%29%0A%09%09localize%0A%09%09%28%2C%29%20type%20from%0A%09%7B%3B%7D%20from%0A%0Ahack%20%2Bloc%0A%09hack%20print%20from%0A%09hack%20%40%20%3A%0A%09%09type%20from%0A%09%09kids%20from%0A%09%7B%2C%7D%20from%0A%0A%2Bjs%0A%09print%20%40%20hello%20%5CHello%2C%20World!%0A%09print%20%40%20bye%20%5CBye%2C%20World!%0A%0A).
+
+```tree
+hack +js
+	hack print ()
+		console
+		[] \log
+		(,) from
+	hack @ ()
+		localize
+		(,) type from
+	{;} from
+```
+
+```tree
+hack +loc
+	hack print from
+	hack @ :
+		type from
+		kids from
+	{,} from
+```
+
+## Что-то пошло не так? Трейс трансформаций!
+
+Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string/source=hack%20%2Bpipe%0A%09hack%20%7C%3E%20var%0A%09%09pipe%0A%09%09from%0A%09hack%20%3C%7C%0A%09%09pipe%0A%09%09test%0A%09%09%09case%20count%20from%0A%09%09%09case%200%0A%09from%0A%0Ahack%20%2Bmath%20%2Bpipe%0A%09hack%20square%20%28**%29%0A%09%09%3C%7C%201%0A%09%092%0A%09from%0A%0A%2Bmath%20%7B%3B%7D%0A%09%7C%3E%203%0A%09%7C%3E%20square%0A).
+
+![](https://habrastorage.org/webt/7k/4r/by/7k4rbyvkgphsh1mkfg81q8rh9zm.png)
+
 ## text.tree
 
 ```tree
@@ -643,75 +712,6 @@ import foo.bar func xxx
 ## Даже WASM с сорсмапингом?!
 
 > [DWARF](http://dwarfstd.org/)
-
-## Пофантазируем? Сорсмапы здорового человека!
-
-| Field         | Bytes Count
-|---------------|------------
-| source_offset | 3
-| source_length | 3
-| target_length | 2
-
-## Трансформируем в JS, вырезая локализацию
-
-```tree
-+js
-	print @ hello \Hello, World!
-	print @ bye \Bye, World!
-```
-
-```javascript
-{
-	console.log( localize( "hello" ) );
-	console.log( localize( "bye" ) );
-}
-```
-
-## Вычленяем переводы, игнорируя логику
-
-```tree
-+loc
-	print @ hello \Hello, World!
-	print @ bye \Bye, World!
-```
-
-```json
-{
-	"hello": "Hello, World!",
-	"bye": "Bye, World!"
-}
-```
-
-## Меняем трансформации как перчатки
-
-Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string/source=hack%20%2Bjs%0A%09hack%20print%20%28%29%0A%09%09console%0A%09%09%5B%5D%20%5Clog%0A%09%09%28%2C%29%20from%0A%09hack%20%40%20%28%29%0A%09%09localize%0A%09%09%28%2C%29%20type%20from%0A%09%7B%3B%7D%20from%0A%0Ahack%20%2Bloc%0A%09hack%20print%20from%0A%09hack%20%40%20%3A%0A%09%09type%20from%0A%09%09kids%20from%0A%09%7B%2C%7D%20from%0A%0A%2Bjs%0A%09print%20%40%20hello%20%5CHello%2C%20World!%0A%09print%20%40%20bye%20%5CBye%2C%20World!%0A%0A).
-
-```tree
-hack +js
-	hack print ()
-		console
-		[] \log
-		(,) from
-	hack @ ()
-		localize
-		(,) type from
-	{;} from
-```
-
-```tree
-hack +loc
-	hack print from
-	hack @ :
-		type from
-		kids from
-	{,} from
-```
-
-## Что-то пошло не так? Трейс трансформаций!
-
-Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string/source=hack%20%2Bpipe%0A%09hack%20%7C%3E%20var%0A%09%09pipe%0A%09%09from%0A%09hack%20%3C%7C%0A%09%09pipe%0A%09%09test%0A%09%09%09case%20count%20from%0A%09%09%09case%200%0A%09from%0A%0Ahack%20%2Bmath%20%2Bpipe%0A%09hack%20square%20%28**%29%0A%09%09%3C%7C%201%0A%09%092%0A%09from%0A%0A%2Bmath%20%7B%3B%7D%0A%09%7C%3E%203%0A%09%7C%3E%20square%0A).
-
-![](https://habrastorage.org/webt/7k/4r/by/7k4rbyvkgphsh1mkfg81q8rh9zm.png)
 
 ## Ничего не забыли?
 
