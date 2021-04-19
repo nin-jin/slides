@@ -715,7 +715,7 @@ import foo.bar func xxx
 
 > [DWARF](http://dwarfstd.org/)
 
-![](https://habrastorage.org/webt/pw/k_/c3/pwk_c3wy2hs_vdylzr0ntt45tgk.png)
+![](https://habrastorage.org/webt/zb/eo/ki/zbeokisfxy7qgdhae4y0ta9tovq.png)
 
 ## Ничего не забыли?
 
