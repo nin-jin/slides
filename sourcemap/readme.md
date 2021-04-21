@@ -1,4 +1,4 @@
-# Что не так с сорсмапами и как с ними не связываться
+# Что не так с сорсмапами и как с ними не связываться?
 
 Здравствуйте, меня зовут Дмитрий Карловский и у меня... посттравматическое стрессовое расстройство после генерации сорсмапов. И сегодня с вашей помощью мы будем это лечить путём максимального погружения в травмирующие события.
 
@@ -7,13 +7,13 @@
 
 Это - слайды с выступления на HolyJS'21. Вы можете [читать их как статью](https://github.com/nin-jin/slides/tree/master/sourcemap), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/sourcemap/).
 
-## Чем я занимаюсь?
+## Как я до этого докатился?
 
 - Формат tree
 - Язык view.tree
 - Фреймворк $mol
 
-## Зачем? Без DSL один бойлерплейт
+## Зачем DSL? Бойлерплейт!
 
 ```tree
 $my_app $my_page
@@ -44,7 +44,7 @@ $my_mem( $my_app.prototype, "agree" )
 $my_mem( $my_app.prototype, "Agree" )
 ```
 
-## Зачем? Пользовательские скрипты
+## Зачем DSL? Пользовательские скрипты!
 
 ```javascript
 @assignee = $me
@@ -59,28 +59,11 @@ $my_mem( $my_app.prototype, "Agree" )
 
 ![sandbox.js.hyoo.ru](https://sandbox.js.hyoo.ru)
 
-## JS? Не для средних умов..
+## JS в песочнице? Не, это не для средних умов..
 
 ![](https://habrastorage.org/webt/ao/yq/5p/aoyq5pthfqsvo7mhyarqrsse3ug.png)
 
-## Зачем? Фатальный недостаток
-
-![](https://habrastorage.org/webt/bf/r_/dx/bfr_dxmy-xwvpql8fxv3x1c2vha.jpeg)
-
-## Зачем? Транспиляция и проверки!
-
-- Babel и прочие транспайлеры
-- Uglify и прочие минификаторы
-- TypeScrit, AssemblyScript и прочие ЯП
-- SCSS, Less, Stylus PostCSS и прочие CSS генераторы
-- SVGO, CSSO и прочие оптимизаторы
-- JSX, Pug, Handlebars и прочие шаблонизаторы
-- MD, TeX и прочие языки разметки
-- TypeScript, FlowJS, Hegel и прочие тайпчекеры
-- ESLint и прочие линтеры
-- Pretier и прочие форматтеры
-
-## Зачем? Разные таргеты
+## Зачем DSL? Разные таргеты!
 
 - JS
 - WASM
@@ -88,7 +71,7 @@ $my_mem( $my_app.prototype, "Agree" )
 - JVM
 - CIL
 
-## Одна модель, чтобы править всеми
+## А разные таргеты зачем? Одна модель, чтобы править всеми!
 
 ```tree
 Task
@@ -113,7 +96,24 @@ CREATE PROPERTY title string;
 CREATE PROPERTY estimate string;
 ```
 
-## Проблемы? Это не то, что я написал!
+## Зачем DSL? Фатальный недостаток же!
+
+![](https://habrastorage.org/webt/bf/r_/dx/bfr_dxmy-xwvpql8fxv3x1c2vha.jpeg)
+
+## Зачем всё это? Транспиляция и проверки!
+
+- Babel и прочие **транспайлеры**.
+- Uglify и прочие **минификаторы**.
+- TypeScript, AssemblyScript и прочие **языки программирования**.
+- TypeScript, FlowJS, Hegel и прочие **тайпчекеры**.
+- SCSS, Less, Stylus PostCSS и прочие **CSS генераторы**.
+- SVGO, CSSO и прочие **оптимизаторы**.
+- JSX, Pug, Handlebars и прочие **шаблонизаторы**.
+- MD, TeX и прочие **языки разметки**.
+- ESLint и прочие **линтеры**.
+- Pretier и прочие **форматтеры**.
+
+## Так какие проблемы? Это не то, что я написал!
 
 ```markdown
 Hello, **World**!
@@ -140,7 +140,7 @@ function make_dom( parent ) {
 }
 ```
 
-## Проблемы? Да тут чёрт ногу сломит!
+## Так какие проблемы? Да тут чёрт ногу сломит!
 
 ```markdown
 Hello, **World**!
@@ -153,19 +153,19 @@ e.appendChild(t)}{const t=document.createElement("strong");
 e.appendChild(t)}{const t=document.createTextNode("!");e.appendChild(t)}}
 ```
 
-## Сорсмапы спешат на помощь! Исходники и отладка
+## Чем помогут сорсмапы? Исходники и отладка!
 
 ![](https://i.imgur.com/05Fg1oy.png)
 
-## Сорсмапы спешат на помощь! Стек трейсы
+## Чем помогут сорсмапы? Стек трейсы!
 
 ![](https://i.imgur.com/R4mbe2U.png)
 
-## Сорсмапы спешат на помощь! Переменные
+## Чем помогут сорсмапы? Значения переменных!
 
 ![](https://i.imgur.com/aWZBEGm.png)
 
-## Спецификация? Не, не слышал!
+## Спецификация? Не, не слышал..
 
 - V1 - Internal Closure Inspector format
 - [Proposal V2 2010](https://docs.google.com/document/d/1xi12LrcqjqIHTtZzrzZKmQ3lbTv9mKrN076UB-j3UZQ/edit) +JSON -20%
@@ -445,7 +445,7 @@ this.replaceWith(
 );
 ```
 
-# Займёмся отладкой? AST курильщика..
+## Займёмся отладкой? AST курильщика..
 
 [`const foo = { "bar": 123 };`](https://astexplorer.net/#/gist/1296170ba2b75ef8f70acb6c478a8215/8c64175041878ae28e750fedafb55193cf839c53)
 
@@ -470,7 +470,7 @@ this.replaceWith(
                             ...
 ```
 
-# Займёмся отладкой? AST здорового человека!
+## Займёмся отладкой? AST здорового человека!
 
 [`const foo = { "bar": 123 };`](https://tree.hyoo.ru/#source=%7B%3B%7D%0A%09const%0A%09%09foo%0A%09%09%7B%2C%7D%0A%09%09%09%3A%0A%09%09%09%09%5Cbar%0A%09%09%09%09123%0A/pipeline=%24mol_tree2_from_string~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string)
 
@@ -539,7 +539,7 @@ interface $mol_tree2 {
 - Всё протрансформировали и прочекали.
 - Сериализовали в скрипты/стили и сорсмапы.
 
-# Ручная трансляция AST
+## Ручная трансляция AST
 
 ```tree
 click \$my_app.Root(0).Task(0)
@@ -740,7 +740,7 @@ import foo.bar func xxx
 - Автоматическое скачивание схемы.
 - Дефолтная эвристика.
 
-# Куда-куда пойти?
+## Куда-куда пойти?
 
 - [nin-jin.github.io/slides/sourcemap](https://nin-jin.github.io/slides/sourcemap/) - эти слайды
 - [tree.hyoo.ru](https://tree.hyoo.ru/) - песочница
