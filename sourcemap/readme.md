@@ -544,18 +544,18 @@ db-root
 
 ```typescript
 config.hack({
-	'@username': slot => slot.data( 'jin' ),
-	'@password': slot => slot.data( 'P@$$w0гd' ),
+	'@username': n => n.data( 'jin' ),
+	'@password': p => p.data( 'пороль' ),
 })
 ```
 
 ```tree
 rest-api
 	login \jin
-	password \P@$$w0гd
+	password \пороль
 db-root
 	user \jin
-	secret \P@$$w0гd
+	secret \пороль
 ```
 
 ## Ручная трансляция AST
