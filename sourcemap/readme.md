@@ -558,7 +558,7 @@ db-root
 	secret \пороль
 ```
 
-[Открыть в песочнице](https://tree.hyoo.ru/#!pipeline=%24mol_js_eval/source=let%20src%20%3D%20%24mol_tree2_from_string%28%60%0A%09rest-api%0A%09%09login%20%40username%0A%09%09password%20%40password%0A%09db-root%0A%09%09user%20%40username%0A%09%09secret%20%40password%0A%60%29%0A%0Asrc%20%3D%20src.list%28%0A%09src.hack%28%7B%0A%09%09'%40username'%3A%20n%20%3D%3E%20n.data%28%20'jin'%20%29%2C%0A%09%09'%40password'%3A%20p%20%3D%3E%20p.data%28%20'%D0%BF%D0%BE%D1%80%D0%BE%D0%BB%D1%8C'%20%29%2C%0A%09%7D%29%0A%29%0A%0Areturn%20src)
+Открыть в [песочнице](https://tree.hyoo.ru/#!pipeline=%24mol_js_eval/source=let%20src%20%3D%20%24mol_tree2_from_string%28%60%0A%09rest-api%0A%09%09login%20%40username%0A%09%09password%20%40password%0A%09db-root%0A%09%09user%20%40username%0A%09%09secret%20%40password%0A%60%29%0A%0Asrc%20%3D%20src.list%28%0A%09src.hack%28%7B%0A%09%09'%40username'%3A%20n%20%3D%3E%20n.data%28%20'jin'%20%29%2C%0A%09%09'%40password'%3A%20p%20%3D%3E%20p.data%28%20'%D0%BF%D0%BE%D1%80%D0%BE%D0%BB%D1%8C'%20%29%2C%0A%09%7D%29%0A%29%0A%0Areturn%20src)
 
 ## А если что-то более сложное? Скрипт автоматизации..
 
