@@ -81,6 +81,4 @@ $my_wiki $mol_page
 			value?val <=> text?val \
 ```
 
-```
-http://localhost:9080/my/wiki/-/test.html
-```
+[localhost:9080/my/wiki/-/test.html](http://localhost:9080/my/wiki/-/test.html)
