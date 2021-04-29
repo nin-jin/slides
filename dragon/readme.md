@@ -53,25 +53,29 @@ npm start my/wiki
 ```
 
 ```
-dir my/wiki/- 
+ls my/wiki/- 
 ```
 
-### Точка входа: **my/wiki/index.html**
+### Точка входа: my/wiki/index.html
 
 ```html
 <!doctype html>
 <html style=" height: 100% ">
 
-<meta charset="utf-8" />
-<meta name="viewport" content=" width=device-width, height=device-height, initial-scale=1 ">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content=" width=device-width, height=device-height, initial-scale=1 ">
+	</head>
 
-<body style=" width: 100%; height: 100%; margin: 0 ">
-	<div mol_view_root="$my_wiki"></div>
-	<script src="web.js"></script>
-</body>
+	<body style=" width: 100%; height: 100%; margin: 0 ">
+		<div mol_view_root="$my_wiki"></div>
+		<script src="web.js"></script>
+	</body>
+
+</html>
 ```
 
-### Компонент приложения: **my/wiki/wiki.view.tree**
+### Компонент приложения: my/wiki/wiki.view.tree
 
 ```
 $my_wiki $mol_page
