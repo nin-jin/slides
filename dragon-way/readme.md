@@ -1,6 +1,6 @@
 # Путь дракона
 
-![](https://habrastorage.org/webt/9a/yu/ko/9ayuko9ggnngituy0k5pcsbclie.png)
+![](https://habrastorage.org/webt/v9/if/u1/v9ifu1re6nmugskw7ehh2ypyawi.png)
 
 Открыть [в виде презентации](https://nin-jin.github.io/slides/dragon-way/).
 
