@@ -1,6 +1,6 @@
 # Путь дракона
 
-Открыть [в виде презентации](https://nin-jin.github.io/slides/dragon/).
+Открыть [в виде презентации](https://nin-jin.github.io/slides/dragon-way/).
 
 ## Первые шаги
 
