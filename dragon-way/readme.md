@@ -172,5 +172,5 @@ git remote add origin git@github.com:hyoo-ru/dragon-way.git
 git push -u origin master
 ```
 
-- [hyoo-ru.github.io/dragon-way](https://hyoo-ru.github.io/dragon-way)
 - [github.com/hyoo-ru/dragon-way](https://github.com/hyoo-ru/dragon-way)
+- [hyoo-ru.github.io/dragon-way](https://hyoo-ru.github.io/dragon-way)
