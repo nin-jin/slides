@@ -142,27 +142,21 @@ include \/mol/offline/install
 
 ```yaml
 name: Deploy
-
 on:
   workflow_dispatch:
   push:
   pull_request:
   schedule:
   - cron: "0 7 * * *"
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    
     steps:
-    
     - name: Build app
       uses: hyoo-ru/mam_build@master2
       with:
         token: ${{ secrets.GH_PAT }}
         package: 'my/wiki'
-    
     - name: Deploy on GitHub Pages
       if: github.ref == 'refs/heads/master'
       uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
