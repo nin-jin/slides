@@ -81,7 +81,7 @@ ls my/wiki/-
 $my_wiki $mol_page
 	title \My Wiki
 	body /
-		<= Text $mol_tetarea
+		<= Text $mol_textarea
 			value?val <=> text?val \
 ```
 
