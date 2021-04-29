@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<meta charset="utf-8" />
+<script src="offline.js"></script>
+<script>
+
+	if( window.parent === window ) document.location = '//slides.hyoo.ru/#slides=' + encodeURIComponent( location.origin + location.pathname ) + location.hash
+
+	async function content( message ) {
+		const response = await fetch( 'readme.md' )
+		done( await response.text() )
+	}
+
+	function done( result ) {
+		if( parent === window ) console.log( result )
+		else parent.postMessage( [ 'done' , result ] , '*' )
+	}
+
+	window.addEventListener( 'message' , function( event ) {
+		window[ event.data[0] ].apply( null , event.data.slice( 1 ) )
+	} )
+	
+</script>
