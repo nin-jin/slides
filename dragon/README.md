@@ -53,3 +53,32 @@ npm start my/wiki
 ```
 dir my/wiki/- 
 ```
+
+### Точка входа: **my/wiki/index.html**
+
+```html
+<!doctype html>
+<html style=" height: 100% ">
+
+<meta charset="utf-8" />
+<meta name="viewport" content=" width=device-width, height=device-height, initial-scale=1 ">
+
+<body style=" width: 100%; height: 100%; margin: 0 ">
+	<div mol_view_root="$my_wiki"></div>
+	<script src="web.js"></script>
+</body>
+```
+
+### Компонент приложения: **my/wiki/wiki.view.tree**
+
+```
+$my_wiki $mol_page
+	title \My Wiki
+	body /
+		<= Text $mol_tetarea
+			value?val <=> text?val \
+```
+
+```
+http://localhost:9080/my/wiki/-/test.html
+```
