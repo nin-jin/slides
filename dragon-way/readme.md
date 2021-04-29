@@ -1,5 +1,7 @@
 # Путь дракона
 
+![](https://habrastorage.org/webt/9a/yu/ko/9ayuko9ggnngituy0k5pcsbclie.png)
+
 Открыть [в виде презентации](https://nin-jin.github.io/slides/dragon-way/).
 
 ## Первые шаги
