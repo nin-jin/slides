@@ -120,6 +120,12 @@ namespace $.$$ {
 }
 ```
 
+### Поддержка оффлайна: my/wiki/wiki.meta.tree
+
+```tree
+include \/mol/offline/install
+```
+
 ### Настройка гита: my/wiki/.gitattributes
 
 ```
