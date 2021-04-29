@@ -14,9 +14,9 @@
 
 ### Необходиый софт
 
-- NodeJS: https://nodejs.org/en/download/
-- VSCode: https://code.visualstudio.com/download
-- GIT: https://git-scm.com/downloads
+- [NodeJS](https://nodejs.org/en/download/)
+- [VSCode](https://code.visualstudio.com/download)
+- [GIT](https://git-scm.com/downloads)
 
 ### Необходимые плагины
 
