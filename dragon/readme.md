@@ -145,9 +145,6 @@ name: Deploy
 on:
   workflow_dispatch:
   push:
-  pull_request:
-  schedule:
-  - cron: "0 7 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
