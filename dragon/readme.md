@@ -149,14 +149,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Build app
-      uses: hyoo-ru/mam_build@master2
+    - uses: hyoo-ru/mam_build@master2
       with:
         token: ${{ secrets.GH_PAT }}
         package: 'my/wiki'
-    - name: Deploy on GitHub Pages
+    - uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
       if: github.ref == 'refs/heads/master'
-      uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
       with:
         repo-token: ${{ secrets.GH_PAT }}
         site-directory: 'my/wiki/-'
@@ -174,4 +172,5 @@ git remote add origin git@github.com:hyoo-ru/dragon-way.git
 git push -u origin master
 ```
 
-[hyoo-ru.github.io/dragon-way](https://hyoo-ru.github.io/dragon-way)
+- [hyoo-ru.github.io/dragon-way](https://hyoo-ru.github.io/dragon-way)
+- [github.com/hyoo-ru/dragon-way](https://github.com/hyoo-ru/dragon-way)
