@@ -15,12 +15,11 @@
 - Дмитрий Карловский
 - [Яндекс](https://yandex.ru/), [1С](https://1c.ru/), [Wrike](https://www.wrike.com/)
 - [Deutche Bank](https://www.db.com/russia/index_ru.htm), [Газпром](https://www.gazprom.ru/contacts/warning/)
-- 15 лет в JS => [$mol](https://mol.hyoo.ru/)
-- [новое веб-приложение каждый месяц](https://apps.hyoo.ru/)
-- [Видеоканал Core Dump](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw)
+- 15 лет в JS ➡ [$mol](https://mol.hyoo.ru/)
+- [Новое веб-приложение каждый месяц](https://apps.hyoo.ru/)
+- [Core Dump о компьютерной науке](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw)
 - [Митапы PiterJS](https://piterjs.org/)
 - [nin_jin](https://t.me/nin_jin)
- 
 
 ## Первые шаги
 
