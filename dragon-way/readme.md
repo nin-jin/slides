@@ -19,6 +19,8 @@
 - [Новое веб-приложение каждый месяц](https://apps.hyoo.ru/)
 - [Core Dump о компьютерной науке](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw)
 - [Митапы PiterJS](https://piterjs.org/)
+- [Выступления](https://slides.hyoo.ru/)
+- [Статьи](https://habhub.hyoo.ru/)
 - [nin_jin](https://t.me/nin_jin)
 
 ## Первые шаги
