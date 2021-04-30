@@ -2,6 +2,8 @@
 
 ![](https://habrastorage.org/webt/v9/if/u1/v9ifu1re6nmugskw7ehh2ypyawi.png)
 
+> Кто на чём пишет?
+
 Открыть [в виде презентации](https://nin-jin.github.io/slides/dragon-way/).
 
 ## Первые шаги
