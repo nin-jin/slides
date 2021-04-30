@@ -110,22 +110,6 @@ $my_wiki $mol_page
 
 [localhost:9080/my/wiki/-/test.html](http://localhost:9080/my/wiki/-/test.html)
 
-### Стилизация: my/wiki/wiki.view.css.ts
-
-```
-namespace $ {
-	
-	$mol_style_define( $my_wiki, {
-		
-		Body: {
-			padding: $mol_gap.block,
-		},
-		
-	} )
-	
-}
-```
-
 ### Поведение: my/wiki/wiki.view.ts
 
 ```typescript
@@ -138,6 +122,22 @@ namespace $.$$ {
 		}
 		
 	}
+	
+}
+```
+
+### Стилизация: my/wiki/wiki.view.css.ts
+
+```
+namespace $ {
+	
+	$mol_style_define( $my_wiki, {
+		
+		Body: {
+			padding: $mol_gap.block,
+		},
+		
+	} )
 	
 }
 ```
