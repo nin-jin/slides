@@ -23,7 +23,6 @@
 - [Более 10 публичных выступлений](https://slides.hyoo.ru/)
 - [Более 30 статей](https://habhub.hyoo.ru/)
 - [Более 30 приложений](https://apps.hyoo.ru/)
-- [mam_mol](https://t.me/mam_mol) [nin_jin](https://t.me/nin_jin)
 
 ## Первые шаги
 
@@ -197,3 +196,8 @@ git push -u origin master
 
 - [github.com/hyoo-ru/dragon-way](https://github.com/hyoo-ru/dragon-way)
 - [hyoo-ru.github.io/dragon-way](https://hyoo-ru.github.io/dragon-way)
+
+## Контакты
+
+- [mam_mol](https://t.me/mam_mol) - вопросы по теме
+- [nin_jin](https://t.me/nin_jin) - связь с автором
