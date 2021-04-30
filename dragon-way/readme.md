@@ -11,7 +11,7 @@
 - Что хотелось бы улучшить?
 
 - Дмитрий Карловский
-- [Яндекс](https://yandex.ru/), [1С](https://1c.ru/), [Wrike](https://www.wrike.com/), [Deutche Bank](https://www.db.com/russia/index_ru.htm), [Газпром](https://www.gazprom.ru/contacts/warning/)
+- [Яндекс](https://yandex.ru/), [1С](https://1c.ru/), [ ](https://www.wrike.com/), [Deutche Bank](https://www.db.com/russia/index_ru.htm), [Газпром](https://www.gazprom.ru/contacts/warning/)
 - 15 лет в JS => [$mol](https://mol.hyoo.ru/)
 - [новое веб-приложение каждый месяц](https://apps.hyoo.ru/)
 - [Видеоканал Core Dump](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw)
