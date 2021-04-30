@@ -6,21 +6,23 @@
 
 ## Знакомимся
 
+Расскажите о себе:
+
 - Кто на чём пишет приложения?
 - Насколько доволен инструментом?
 - Что хотелось бы улучшить?
 
-...
+А пока я о себе:
 
 - Дмитрий Карловский
 - [Яндекс](https://yandex.ru/), [1С](https://1c.ru/), [Wrike](https://www.wrike.com/)
 - [Deutche Bank](https://www.db.com/russia/index_ru.htm), [Газпром](https://www.gazprom.ru/contacts/warning/)
 - 15 лет в JS ➡ [$mol](https://mol.hyoo.ru/)
-- [Новое веб-приложение каждый месяц](https://apps.hyoo.ru/)
 - [Core Dump о компьютерной науке](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw)
-- [Митапы PiterJS](https://piterjs.org/)
-- [Выступления](https://slides.hyoo.ru/)
-- [Статьи](https://habhub.hyoo.ru/)
+- [Организую митапы PiterJS](https://piterjs.org/)
+- [Более 10 публичных выступлений](https://slides.hyoo.ru/)
+- [Более 30 статей](https://habhub.hyoo.ru/)
+- [Более 30 приложений](https://apps.hyoo.ru/)
 - [nin_jin](https://t.me/nin_jin)
 
 ## Первые шаги
