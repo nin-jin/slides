@@ -189,7 +189,6 @@ cd my/wiki
 git init
 git add *
 git commit -a -m "Single page with local storage synchronization"
-git git@github.com:hyoo-ru/dragon-way.git
 git remote add origin git@github.com:hyoo-ru/dragon-way.git
 git push -u origin master
 ```
