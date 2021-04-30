@@ -2,9 +2,22 @@
 
 ![](https://habrastorage.org/webt/v9/if/u1/v9ifu1re6nmugskw7ehh2ypyawi.png)
 
-> Кто на чём пишет?
-
 Открыть [в виде презентации](https://nin-jin.github.io/slides/dragon-way/).
+
+## Знакомимся
+
+- Кто на чём пишет приложения?
+- Насколько доволен инструментом?
+- Что хотелось бы улучшить?
+
+- Дмитрий Карловский
+- [Яндекс](https://yandex.ru/), [1С](https://1c.ru/), [Wrike](https://www.wrike.com/), [Deutche Bank](https://www.db.com/russia/index_ru.htm), [Газпром](https://www.gazprom.ru/contacts/warning/)
+- 15 лет в JS => [$mol](https://mol.hyoo.ru/)
+- [новое веб-приложение каждый месяц](https://apps.hyoo.ru/)
+- [Видеоканал Core Dump](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw)
+- [Митапы PiterJS](https://piterjs.org/)
+- [nin_jin](https://t.me/nin_jin)
+ 
 
 ## Первые шаги
 
