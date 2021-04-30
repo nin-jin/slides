@@ -23,7 +23,7 @@
 - [Более 10 публичных выступлений](https://slides.hyoo.ru/)
 - [Более 30 статей](https://habhub.hyoo.ru/)
 - [Более 30 приложений](https://apps.hyoo.ru/)
-- [nin_jin](https://t.me/nin_jin)
+- [mam_mol](https://t.me/mam_mol) [nin_jin](https://t.me/nin_jin)
 
 ## Первые шаги
 
