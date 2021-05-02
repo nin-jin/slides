@@ -36,6 +36,13 @@
 - Быстрая разработка
 - Минимум телодвижений 
 
+### Базовые знания
+
+- [TypeScript](https://www.typescriptlang.org/docs/handbook/intro.html)
+- [Dev Tools](https://developer.chrome.com/docs/devtools/)
+- [HMTL](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
 ### Необходиый софт
 
 - [NodeJS](https://nodejs.org/en/download/)
