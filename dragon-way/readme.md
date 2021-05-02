@@ -46,7 +46,7 @@
 - [HMTL](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
-### Необходиый софт
+### Необходимый софт
 
 - [NodeJS](https://nodejs.org/en/download/)
 - [VSCode](https://code.visualstudio.com/download)
