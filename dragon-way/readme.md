@@ -206,6 +206,15 @@ git push -u origin master
 - [github.com/hyoo-ru/dragon-way](https://github.com/hyoo-ru/dragon-way)
 - [hyoo-ru.github.io/dragon-way](https://hyoo-ru.github.io/dragon-way)
 
+## Коммуникации
+
+- Мемоизирующие и проксирующие свойства
+- Простые и множественные свойства
+- Асинхронное взаимодействие
+- Индикаторы загрузки и ошибки
+- Работа с REST API
+- Работа с Local First и безконфликтной синхронизацией
+
 ## Контакты
 
 - [mam_mol](https://t.me/mam_mol) - вопросы по теме
