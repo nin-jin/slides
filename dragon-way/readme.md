@@ -296,6 +296,27 @@ Wiki() {
 }
 ```
 
+### Провязываем Model и View
+
+```typescript
+title( next?: string ) {
+	return this.Wiki().title( next ) ?? super.title()
+}
+
+text( next?: string ) {
+	return this.Wiki().text( next ) ?? ''
+}
+```
+
+### Редактируемый заголовок
+
+```tree
+head /
+	<= Title $mol_string
+		hint \Title
+		value?val <=> title?val \My Wiki
+```
+
 ### Проверяем
 
 > [hyoo-ru.github.io/dragon-way/](https://hyoo-ru.github.io/dragon-way/)
