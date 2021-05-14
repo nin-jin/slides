@@ -253,6 +253,49 @@ new Error( "Wrong name" )             // Исключительная ошибк
 new Promise( requestAnimationFrame )  // Исключительное обещание
 ```
 
+### Модель предметной области: my/wiki/note/note.ts
+
+```typescript
+export class $my_wiki_note extends $mol_store<{
+	title: string
+	text: string
+}> {
+	
+	title( next?: string ) {
+		return this.value( 'title', next )
+			?? this.text()?.replace( /\n[\s\S]*/, '' )
+			?? null
+	}
+	
+	text( next?: string ) {
+		return this.value( 'text', next )
+	}
+	
+}
+```
+
+### Синхронизация сторов
+
+```typescript
+@ $mol_mem
+Store() {
+	return new this.$.$mol_store_shared
+}
+
+@ $mol_mem
+Note( id: string ) {
+	return this.Store().sub( id, new $my_wiki_note )
+}
+
+Wiki() {
+	return this.Note( 'wiki' )
+}
+```
+
+### Проверяем
+
+> [hyoo-ru.github.io/dragon-way/](https://hyoo-ru.github.io/dragon-way/)
+
 ## Контакты
 
 - [mam_mol](https://t.me/mam_mol) - вопросы по теме
