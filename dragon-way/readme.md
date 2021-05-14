@@ -32,7 +32,7 @@
 
 ### Визеозаписть урока
 
-[![](https://www.youtube.com/embed/Ow2u3v-BR6E)](https://youtu.be/Ow2u3v-BR6E)
+[![Рабочее окружение MAM и первое небесполезное приложение на $mol](https://www.youtube.com/embed/Ow2u3v-BR6E)](https://youtu.be/Ow2u3v-BR6E)
 
 ### Преимущества
 
