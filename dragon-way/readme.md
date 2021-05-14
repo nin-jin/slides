@@ -223,44 +223,31 @@ git clone -b first-steps https://github.com/hyoo-ru/dragon-way.git my/wiki
 
 ### Взаимодействие с каналами
 
-- Затягивание
-- Проталкивание
-
 ```typescript
-user.name()
-user.name( 'Jin' )
+user.name()         // Затягивание
+user.name( 'Jin' )  // Проталкивание
 ```
 
 ### Типы каналов
 
-- Сольные
-- Мультиплексные
-
 ```typescript
-user.name( 'Jin' )
-user.field( 'name', 'Jin' )
+user.name( 'Jin' )           // Сольное
+user.field( 'name', 'Jin' )  // Мультиплексное
 ```
 
 ### Ключи мультиплексирования
 
-- JSON по значению
-- Объекты по ссылке
-
 ```typescript
-tree.opened( [ 1, 2, 3, 1 ], true )
-render.layout( document.body, new Vertical )
+tree.opened( [ 1, 2, 3, 1 ], true )           // JSON по значению
+render.layout( document.body, new Vertical )  // Объект по ссылке
 ```
 
 ### Виды сообщений
 
-- Данные
-- Ошибки
-- Обещания
-
 ```typescript
-{ "name": "jin" }
-new Error( "Wrong name" )
-new Promise( done => setTieout( done, 1000 ) )
+{ "name": "jin" }                     // Данные
+new Error( "Wrong name" )             // Исключительная ошибка
+new Promise( requestAnimationFrame )  // Исключительное обещание
 ```
 
 ## Контакты
