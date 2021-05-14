@@ -215,6 +215,54 @@ git push -u origin master
 - Работа с REST API
 - Работа с Local First и безконфликтной синхронизацией
 
+### Догоняем
+
+```
+git clone -b first-steps https://github.com/hyoo-ru/dragon-way.git my/wiki
+```
+
+### Взаимодействие с каналами
+
+- Затягивание
+- Проталкивание
+
+```typescript
+user.name()
+user.name( 'Jin' )
+```
+
+### Типы каналов
+
+- Сольные
+- Мультиплексные
+
+```typescript
+user.name( 'Jin' )
+user.field( 'name', 'Jin' )
+```
+
+### Ключи мультиплексирования
+
+- JSON по значению
+- Объекты по ссылке
+
+```typescript
+tree.opened( [ 1, 2, 3, 1 ], true )
+render.layout( document.body, new Vertical )
+```
+
+### Виды сообщений
+
+- Данные
+- Ошибки
+- Обещания
+
+```typescript
+{ "name": "jin" }
+new Error( "Wrong name" )
+new Promise( done => setTieout( done, 1000 ) )
+```
+
 ## Контакты
 
 - [mam_mol](https://t.me/mam_mol) - вопросы по теме
