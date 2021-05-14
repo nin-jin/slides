@@ -32,7 +32,7 @@
 
 ### Визеозаписть урока
 
-![](https://www.youtube.com/embed/Ow2u3v-BR6E)
+[![](https://www.youtube.com/embed/Ow2u3v-BR6E)](https://youtu.be/Ow2u3v-BR6E)
 
 ### Преимущества
 
