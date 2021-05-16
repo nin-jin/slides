@@ -252,14 +252,36 @@ tree.opened( [ 1, 2, 3, 1 ], true )           // JSON по значению
 render.layout( document.body, new Vertical )  // Объект по ссылке
 ```
 
+### Мемоизация свойств
+
+```typescript
+@ $mol_mem
+name( next = 'Anonymous' ) {
+	return next
+}
+
+@ $mol_mem_key
+field( name: string, next = '' ) {
+	return next
+}
+```
+
+### Делегирование свойств
+
+```typescript
+name( next?: string ) {
+	return this.model().field( 'name', next ) ?? 'Anonymous'
+}
+```
+
 ### Виды сообщений
 
 ```typescript
-{ "name": "jin" }                     // Данные
+return { "name": "jin" }                    // Данные
 
-new Error( "Wrong name" )             // Исключительная ошибка
+throw new Error( "Wrong name" )             // Исключительная ошибка
 
-new Promise( requestAnimationFrame )  // Исключительное обещание
+throw new Promise( requestAnimationFrame )  // Исключительное обещание
 ```
 
 ### Модель предметной области: my/wiki/note/note.ts
