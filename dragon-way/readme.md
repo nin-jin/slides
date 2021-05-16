@@ -305,7 +305,7 @@ export class $my_wiki_note extends $mol_store<{
 }
 ```
 
-### Синхронизация сторов
+### Соединение моделей
 
 ```typescript
 @ $mol_mem
@@ -323,7 +323,7 @@ Wiki() {
 }
 ```
 
-### Провязываем Model и View
+### Провязывание Model и View
 
 ```typescript
 title( next?: string ) {
