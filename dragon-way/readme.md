@@ -248,6 +248,7 @@ user.field( 'name', 'Jin' )  // Мультиплексное проталкив�
 
 ```typescript
 tree.opened( [ 1, 2, 3, 1 ], true )           // JSON по значению
+
 render.layout( document.body, new Vertical )  // Объект по ссылке
 ```
 
@@ -255,7 +256,9 @@ render.layout( document.body, new Vertical )  // Объект по ссылке
 
 ```typescript
 { "name": "jin" }                     // Данные
+
 new Error( "Wrong name" )             // Исключительная ошибка
+
 new Promise( requestAnimationFrame )  // Исключительное обещание
 ```
 
