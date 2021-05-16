@@ -221,7 +221,7 @@ git push -u origin master
 
 ### Догоняем
 
-[github.com/hyoo-ru/mam](https://github.com/hyoo-ru/mam)
+> [https://github.com/hyoo-ru/mam](https://github.com/hyoo-ru/mam)
 
 ```
 git clone -b first-steps https://github.com/hyoo-ru/dragon-way.git my/wiki
