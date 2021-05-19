@@ -5,7 +5,7 @@
 
 ![](https://habrastorage.org/webt/40/hj/vn/40hjvn5a3pm-0xlwdxf4kcorrhs.jpeg)
 
-Это - слайды с выступления на HolyJS'21. Вы можете [посмотреть видео записть](https://www.youtube.com/watch?v=rQEqXIo4PVM), [прочитать как статью](https://github.com/nin-jin/slides/tree/master/sourcemap), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/sourcemap/).
+Это - слайды с выступления на [HolyJS'21](https://holyjs-piter.ru/). Вы можете [посмотреть видео записть](https://www.youtube.com/watch?v=rQEqXIo4PVM), [прочитать как статью](https://github.com/nin-jin/slides/tree/master/sourcemap), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/sourcemap/).
 
 ## Как я до этого докатился?
 
