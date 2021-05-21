@@ -284,64 +284,99 @@ throw new Error( "Wrong name" )             // Исключительная ош
 throw new Promise( requestAnimationFrame )  // Исключительное обещание
 ```
 
+### Владение объектами
+
+```typescript
+@ $mol_mem
+Store() {
+	return new this.$.$mol_store_shared()
+}
+
+@ $mol_mem_key
+Note( id: string ) {
+	return new this.$.$my_wiki_note()
+}
+```
+
+```tree
+Store $mol_store_shared
+Note!id $my_wiki_note
+```
+
 ### Модель предметной области: my/wiki/note/note.ts
 
 ```typescript
 export class $my_wiki_note extends $mol_store<{
 	title: string
-	text: string
+	details: string
 }> {
-	
+
 	title( next?: string ) {
 		return this.value( 'title', next )
-			?? this.text()?.replace( /\n[\s\S]*/, '' )
-			?? null
+			?? this.details()?.replace( /\n[\s\S]*/, '' )
+			?? ''
 	}
 	
-	text( next?: string ) {
-		return this.value( 'text', next )
+	details( next?: string ) {
+		return this.value( 'details', next ) ?? ''
+	}
+	
+	details_selection( next?: number[] ) {
+		return this.selection( 'details', next )
 	}
 	
 }
 ```
 
-### Соединение моделей
+### Соединение моделей в my/wiki/wiki.view.ts
 
 ```typescript
-@ $mol_mem
-Store() {
-	return new this.$.$mol_store_shared
-}
-
-@ $mol_mem
+@ $mol_mem_key
 Note( id: string ) {
-	return this.Store().sub( id, new $my_wiki_note )
-}
-
-Wiki() {
-	return this.Note( 'wiki' )
+	return this.Store().sub( 'note=' + id, super.Note( id ) )
 }
 ```
 
-### Провязывание Model и View
+### Привязка к адресу в my/wiki/wiki.view.ts
+
+```typescript
+note_id() {
+	return this.$.$mol_state_arg.value( 'note' ) ?? ''
+}
+
+Note_current() {
+	return this.Note( this.note_id() )
+}
+```
+
+### Провязывание Model и Presenter в my/wiki/wiki.view.ts
 
 ```typescript
 title( next?: string ) {
-	return this.Wiki().title( next ) ?? super.title()
+	return this.Note_current().title( next )
 }
 
-text( next?: string ) {
-	return this.Wiki().text( next ) ?? ''
+details( next?: string ) {
+	return this.Note_current().details( next )
+}
+
+details_selection( next?: number[] ) {
+	return this.Note_current().details_selection( next )
 }
 ```
 
-### Редактируемый заголовок
+### Провязывание Presenter и View в my/wiki/wiki.view.tree
 
 ```tree
-head /
-	<= Title $mol_string
-		hint \Title
-		value?val <=> title?val \My Wiki
+	head /
+		<= Title $mol_string
+			hint @ \Title
+			value?val <=> title?val \
+	body /
+		<= Details $mol_textarea
+			hint @ \Details
+			value?val <=> details?val \
+			selection?val <=> details_selection?val /number
 ```
 
 ### Проверяем
