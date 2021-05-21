@@ -307,22 +307,26 @@ Note!id $my_wiki_note
 
 ```typescript
 export class $my_wiki_note extends $mol_store<{
-	title: string
 	details: string
+	changed_moment: string
 }> {
-
-	title( next?: string ) {
-		return this.value( 'title', next )
-			?? this.details()?.replace( /\n[\s\S]*/, '' )
-			?? ''
-	}
 	
 	details( next?: string ) {
+		
+		if( next !== undefined ) {
+			this.changed_moment( new $mol_time_moment )
+		}
+		
 		return this.value( 'details', next ) ?? ''
 	}
 	
 	details_selection( next?: number[] ) {
 		return this.selection( 'details', next )
+	}
+	
+	changed_moment( next?: $mol_time_moment ) {
+		const str = this.value( 'changed_moment', next && next.toString() )
+		return str ? new $mol_time_moment( str ) : null
 	}
 	
 }
@@ -347,15 +351,15 @@ note_id() {
 Note_current() {
 	return this.Note( this.note_id() )
 }
+
+title() {
+	return this.note_id().replace( /_/g, ' ' ) || super.title()
+}
 ```
 
 ### Провязывание Model и Presenter в my/wiki/wiki.view.ts
 
 ```typescript
-title( next?: string ) {
-	return this.Note_current().title( next )
-}
-
 details( next?: string ) {
 	return this.Note_current().details( next )
 }
@@ -363,20 +367,23 @@ details( next?: string ) {
 details_selection( next?: number[] ) {
 	return this.Note_current().details_selection( next )
 }
+
+changed_moment( next?: $mol_time_moment ) {
+	return this.Note_current().changed_moment( next ) ?? new $mol_time_moment
+}
 ```
 
 ### Провязывание Presenter и View в my/wiki/wiki.view.tree
 
 ```tree
-	head /
-		<= Title $mol_string
-			hint @ \Title
-			value?val <=> title?val \
-	body /
-		<= Details $mol_textarea
-			hint @ \Details
-			value?val <=> details?val \
-			selection?val <=> details_selection?val /number
+tools /
+	<= Changed_moment $mol_date
+		value_moment <= changed_moment $mol_time_moment
+body /
+	<= Details $mol_textarea
+		hint \Details
+		value?val <=> details?val \
+		selection?val <=> details_selection?val /number
 ```
 
 ### Проверяем
