@@ -334,11 +334,7 @@ export class $my_wiki_note extends $mol_store<{
 }> {
 	
 	details( next?: string ) {
-		
-		if( next !== undefined ) {
-			this.changed_moment( new $mol_time_moment )
-		}
-		
+		if( next !== undefined ) this.changed_moment( new $mol_time_moment )
 		return this.value( 'details', next ) ?? ''
 	}
 	
