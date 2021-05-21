@@ -286,8 +286,6 @@ throw new Promise( requestAnimationFrame )  // Исключительное об
 
 ### Асинхронные запросы
 
-[http.hyoo.ru](http://http.hyoo.ru/)
-
 ```typescript
 @ $mol_mem
 text() {
@@ -298,6 +296,8 @@ text() {
 ```
 
 ### Типобезопасная валидация внешних данных
+
+[http.hyoo.ru](http://http.hyoo.ru/)
 
 ```typescript
 const Response = $mol_data_record({
