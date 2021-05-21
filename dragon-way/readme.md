@@ -297,7 +297,7 @@ text() {
 
 ### Типобезопасная валидация внешних данных
 
-[http.hyoo.ru](http://http.hyoo.ru/)
+[http.hyoo.ru](https://http.hyoo.ru/#!uri=https%3A%2F%2Fapi.github.com%2Frepos%2Fnin-jin%2FHabHub%2Fissues%2F7)
 
 ```typescript
 const Response = $mol_data_record({
