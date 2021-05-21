@@ -406,7 +406,8 @@ body /
 
 ### Проверяем
 
-> [hyoo-ru.github.io/dragon-way/](https://hyoo-ru.github.io/dragon-way/)
+- [github.com/hyoo-ru/dragon-way](https://github.com/hyoo-ru/dragon-way)
+- [hyoo-ru.github.io/dragon-way](https://hyoo-ru.github.io/dragon-way)
 
 ## Контакты
 
