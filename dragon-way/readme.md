@@ -284,6 +284,24 @@ throw new Error( "Wrong name" )             // Исключительная ош
 throw new Promise( requestAnimationFrame )  // Исключительное обещание
 ```
 
+### Асинхронные запросы
+
+```typescript
+const Response = $mol_data_record({
+	title: $mol_data_string,
+	body: $mol_data_string,
+})
+```
+
+```typescript
+@ $mol_mem
+text() {
+	const uri = `https://api.github.com/repos/nin-jin/HabHub/issues/7`
+	const resp = this.$.$mol_fetch.json( uri )
+	return Response( resp )
+}
+```
+
 ### Владение объектами
 
 ```typescript
