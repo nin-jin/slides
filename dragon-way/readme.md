@@ -325,6 +325,8 @@ Store $mol_store_shared
 Note!id $my_wiki_note
 ```
 
+[mol.hyoo.ru/#!section=view.tree](https://mol.hyoo.ru/#!section=view.tree)
+
 ### Модель предметной области: my/wiki/note/note.ts
 
 ```typescript
