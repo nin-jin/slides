@@ -1125,7 +1125,7 @@ hyoo_api_person
 
 ![](https://habrastorage.org/webt/dk/ix/rf/dkixrfhqx6rbmtqrhocbwws-hz0.png)
 
-## access.log.tree - структурированные логи
+## log.tree - структурированные логи
 
 А что если логи сразу выводить в двумерном виде, одновременно легко читаемом как машинами, так и человеком?
 
