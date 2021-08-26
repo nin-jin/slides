@@ -1,5 +1,7 @@
 # Распределённый консенсус и пути его достижения
 
+Вы можете [читать это как статью](https://github.com/nin-jin/slides/tree/master/consensus), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/consensus/).
+
 ## Распределённые системы
 
 ## Consistency: Согласованность данных узла
