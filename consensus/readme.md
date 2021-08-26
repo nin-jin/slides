@@ -33,21 +33,21 @@
 
 ## Упорядоченная конвергенция
 
-![](order.svg)
+> OT: Operational Transformation
 
-- OT: Operational Transformation
+![](order.svg)
 
 ## Неупорядоченная конвергенция
 
-![](unorder.svg)
+> CvRDT: Conflict-free Convergent Replicated Data Type
 
-- CvRDT: Conflict-free Convergent Replicated Data Type
+![](unorder.svg)
 
 ## Частично упорядоченная конвергенция
 
-![](semi-order.svg)
+> CmRDT: Conflict-free Commutative Replicated Data Type
 
-- CmRDT: Conflict-free Commutative Replicated Data Type
+![](semi-order.svg)
 
 ## Всё вместе
 
