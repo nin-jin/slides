@@ -14,7 +14,7 @@
 
 ![](consensus.svg)
 
-## Concurrency: Конкуренция за общий ресурс
+## Concurrency: Конкуренция за источник истины
 
 ![](concurrency.svg)
 
