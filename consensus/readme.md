@@ -37,17 +37,17 @@
 
 ![](order.svg)
 
-## Неупорядоченная конвергенция
-
-> CvRDT: Conflict-free Convergent Replicated Data Type
-
-![](unorder.svg)
-
 ## Частично упорядоченная конвергенция
 
 > CmRDT: Conflict-free Commutative Replicated Data Type
 
 ![](semi-order.svg)
+
+## Неупорядоченная конвергенция
+
+> CvRDT: Conflict-free Convergent Replicated Data Type
+
+![](unorder.svg)
 
 ## Согласны?
 
