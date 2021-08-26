@@ -6,10 +6,18 @@
 
 ## Consensus: Согласие между участниками
 
+![](consensus.svg)
+
 ## Concurrency: Конкуренция за общий ресурс
+
+![](concurrency.svg)
 
 ## Convergence: Сходимость к согласию
 
+![](convergence.svg)
+
 ## Всё вместе
+
+![](full.svg)
 
 ## Продолжение следует..
