@@ -154,7 +154,7 @@ Wait-free алгоритмы межпоточного взаимодействи
 
 ## Что ещё почитать?
 
-- [Don't Get Stuck in the CON Game](https://pathelland.substack.com/p/dont-get-stuck-in-the-con-game-v3) / [Pat Helland](https://pathelland.substack.com/people/19935597-pat-helland)
+- [Don't Get Stuck in the CON Game](https://pathelland.substack.com/p/dont-get-stuck-in-the-con-game-v3) / Pat Helland
 
 ## Продолжение следует..
 
