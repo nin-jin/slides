@@ -22,7 +22,13 @@
 
 ![](https://hsto.org/webt/1y/z4/qm/1yz4qmvcly6let9_gs8akzdwu8k.png)
 
-## Многострочный текст
+## Ширина текста
+
+> `60rem` (`960px`)
+
+## Межстрочный интервал
+
+- Больше букв в строке - больше расстояние меж строк
 
 ![](https://hsto.org/webt/hg/54/5f/hg545fxfov8vm7ki6ob2rtja8w0.png)
 
