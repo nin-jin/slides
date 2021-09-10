@@ -88,3 +88,8 @@
 - [Core Dump](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw) - видео о компьютерной науке
 - [habhub.hyoo.ru](https://habhub.hyoo.ru/) - статьи
 - [apps.hyoo.ru](https://apps.hyoo.ru/) - приложения
+- [`_jin_nin_`](https://twitter.com/_jin_nin_) - твиты по делу
+
+# Есть что добавить или поправить?
+
+![](https://avatars.mds.yandex.net/get-zen_doc/1132604/pub_5cbc236c72ca0a00b26c91fc_5cbc697a621b6d00b28af4ff/orig)
