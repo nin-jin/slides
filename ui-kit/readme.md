@@ -2,7 +2,26 @@
 
 # Приручаем размеры
 
+## Базовый размер
+
+- `1rem` (`16px`) - размер шрифта
+- `.5rem` (`8px`) - визуальный ритм
+
 ## Текст
+
+![](https://hsto.org/webt/1y/z4/qm/1yz4qmvcly6let9_gs8akzdwu8k.png)
+
+## Многострочный текст
+
+![](https://hsto.org/webt/hg/54/5f/hg545fxfov8vm7ki6ob2rtja8w0.png)
+
+## Увеличенный текст
+
+![](https://hsto.org/webt/vd/ly/d-/vdlyd-4xwaioo1olxmo9ddjmfj4.png)
+
+## Уменьшенный текст
+
+> **Не надо!**
 
 ## Блок
 
