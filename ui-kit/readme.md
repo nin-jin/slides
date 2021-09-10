@@ -26,9 +26,17 @@
 
 > **Не надо!**
 
+## Текстовый блок
+
+![](https://hsto.org/webt/tm/we/qv/tmweqvc_b0ozqcfhxyksb-gdjvk.png)
+
 ## Блок
 
+![](https://hsto.org/webt/zq/zy/hf/zqzyhfbqcomyomuo0iflow2jboe.png)
+
 ## Блок из блоков
+
+![](https://hsto.org/webt/r1/hx/i4/r1hxi4vbi3b0x6da_yelxv8ja8c.png)
 
 # Приручаем цвета
 
