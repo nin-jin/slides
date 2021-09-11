@@ -37,6 +37,15 @@
 
 > `.5rem` (`8px`)
 
+## Дробные размеры
+
+- Браузер рендерит пиксели
+- Размеры округляются в разные стороны
+
+## Учёт DPI
+
+`devicePixelRatio`
+
 ## Увеличенный текст
 
 ![](https://hsto.org/webt/vd/ly/d-/vdlyd-4xwaioo1olxmo9ddjmfj4.png)
@@ -99,9 +108,22 @@
 
 ## Буклетный дизайн
 
+![](https://4.bp.blogspot.com/-JAYBEXzzVVo/XCcFBh1M5pI/AAAAAAAAAG4/vYOKHtoIkjgjsqNf9v0j3Sy9awpwe_iAgCLcBGAs/s1600/8.%2BBest%2BTrifold%2BBrochure%2BMockup%2BFree%2BDownload%2B2019.jpg)
+
 ## Возвращение горизонтального скролла
 
+![](https://4.bp.blogspot.com/-LWPowjeArAM/XCcEtE1ftpI/AAAAAAAAAGY/qY-aiN7z8sY2-svA9QRWf1i8Hqc_AvQegCLcBGAs/s1600/3.%2BBest%2BTrifold%2BBrochure%2BMockup%2BFree%2BDownload%2B2019.jpg)
+
 ## Распасовка карт
+
+![](https://2.bp.blogspot.com/-52rCts3qZ5E/XCcE4gDdJ7I/AAAAAAAAAGk/kPmTUIeyPZkzV2D3Ypz_26RuuEw4CHLGgCLcBGAs/s1600/5.%2BBest%2BTrifold%2BBrochure%2BMockup%2BFree%2BDownload%2B2019.jpg)
+
+# Итоги
+
+- Шаг сетки в `.5rem` ✅
+- Шрифт в `1rem` ✅
+- Брейк поинты ❌
+- Буклетный дизайн ✅
 
 # Продолжение банкета
 
