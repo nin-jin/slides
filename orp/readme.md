@@ -201,9 +201,9 @@ class $my_toys {
 	@mem
 	toys_filtered() {
 		if( !this.filter() ) return this.toys()
-		
 		return this.toys().filter( this.filter() )
 	}
+	
 }
 ```
 
@@ -222,7 +222,6 @@ sorter( next = ( a , b )=> b.price() - a.price() ) { return next }
 @mem
 toys_sorted() {
 	if( !this.sorter() ) return this.toys_filtered()
-	
 	return this.toys_filtered().slice().sort( this.sorter() )
 }
 ```
