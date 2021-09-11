@@ -59,7 +59,7 @@
 
 ## Учёт DPI
 
-`devicePixelRatio`
+    devicePixelRatio
 
 ## Разрешение картинок
 
@@ -78,7 +78,7 @@
 
 ## Уменьшенный текст
 
-> **Не надо!**
+![](https://habrastorage.org/webt/tj/q6/5l/tjq65l3keao6l0-chvfzp93tdcg.gif)
 
 ## Текстовый блок
 
