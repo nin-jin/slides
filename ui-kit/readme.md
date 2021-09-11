@@ -177,4 +177,4 @@
 
 # Есть что добавить или поправить?
 
-![](https://avatars.mds.yandex.net/get-zen_doc/1132604/pub_5cbc236c72ca0a00b26c91fc_5cbc697a621b6d00b28af4ff/orig)
+![](![](https://habrastorage.org/webt/y3/gb/is/y3gbisydqnoyr5qwwmscn0gwmqq.gif))
