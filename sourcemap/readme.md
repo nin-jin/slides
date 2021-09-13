@@ -1000,7 +1000,7 @@ type xxx
 import foo.bar func xxx
 ```
 
-[Прогоним его через wasm.tree компилятор и получим bin.tree, который тут же преобразуем в бинарник и провалидируем WASM рантаймом..](https://tree.hyoo.ru/#source=custom%20xxx%0A%0Atype%20xxx%0A%09%3D%3E%20i32%0A%09%3D%3E%20i64%0A%09%3D%3E%20f32%0A%09%3C%3D%20f64%0A%0Aimport%20foo.bar%20func%20xxx%0A/pipeline=%24mol_tree2_from_string~%24mol_tree2_wasm_to_bin~%24mol_tree2_bin_to_bytes~%24mol_wasm_module)
+А теперь [прогоним его через wasm.tree компилятор и получим bin.tree, который тут же преобразуем в бинарник и провалидируем WASM рантаймом..](https://tree.hyoo.ru/#source=custom%20xxx%0A%0Atype%20xxx%0A%09%3D%3E%20i32%0A%09%3D%3E%20i64%0A%09%3D%3E%20f32%0A%09%3C%3D%20f64%0A%0Aimport%20foo.bar%20func%20xxx%0A/pipeline=%24mol_tree2_from_string~%24mol_tree2_wasm_to_bin~%24mol_tree2_bin_to_bytes~%24mol_wasm_module)
 
 ```tree
 \00
