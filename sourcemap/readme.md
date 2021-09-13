@@ -751,16 +751,18 @@ db-root
 	secret @password
 ```
 
-Распарсив его в AST, мы можем [похачить наш конфиг](https://tree.hyoo.ru/#!pipeline=%24mol_js_eval/source=let%20src%20%3D%20%24mol_tree2_from_string%28%60%0A%09rest-api%0A%09%09login%20%40username%0A%09%09password%20%40password%0A%09db-root%0A%09%09user%20%40username%0A%09%09secret%20%40password%0A%60%29%0A%0Asrc%20%3D%20src.list%28%0A%09src.hack%28%7B%0A%09%09'%40username'%3A%20n%20%3D%3E%20n.data%28%20'jin'%20%29%2C%0A%09%09'%40password'%3A%20p%20%3D%3E%20p.data%28%20'%D0%BF%D0%BE%D1%80%D0%BE%D0%BB%D1%8C'%20%29%2C%0A%09%7D%29%0A%29%0A%0Areturn%20src) всего четырьмя строчками кода..
+Распарсив его в AST, мы можем [похачить наш конфиг](https://tree.hyoo.ru/#!pipeline=%24mol_js_eval/source=let%20src%20%3D%20%24mol_tree2_from_string%28%60%0A%09rest-api%0A%09%09login%20%40username%0A%09%09password%20%40password%0A%09db-root%0A%09%09user%20%40username%0A%09%09secret%20%40password%0A%60%29%0A%0Asrc%20%3D%20src.list%28%0A%09src.hack%28%7B%0A%09%09'%40username'%3A%20n%20%3D%3E%20n.data%28%20'jin'%20%29%2C%0A%09%09'%40password'%3A%20p%20%3D%3E%20p.data%28%20'%D0%BF%D0%BE%D1%80%D0%BE%D0%BB%D1%8C'%20%29%2C%0A%09%7D%29%0A%29%0A%0Areturn%20src) всего в несколько строчек кода..
 
 ```typescript
-config.hack({
-	'@username': n => [ n.data( 'jin' ) ],
-	'@password': p => [ p.data( 'пороль' ) ],
-})
+consfig.list(
+    config.hack({
+        '@username': n => [ n.data( 'jin' ) ],
+        '@password': p => [ p.data( 'пороль' ) ],
+    })
+)
 ```
 
-В результате получится, что все все плейсхолдеры заменены на нужные нам значения..
+В результате получится, что все плейсхолдеры заменены на нужные нам значения..
 
 ```tree
 rest-api
@@ -773,10 +775,16 @@ db-root
 
 ## А если что-то более сложное? Скрипт автоматизации..
 
+Рассмотрим пример по сложнее - скрипт автоматизации..
+
 ```tree
 click \$my_app.Root(0).Task(0)
 click \$my_app.Root(0).Details().TrackTime()
 ```
+
+Тут у нас есть команда `click` которой передаётся идентификатор элемента, по которому должно быть произведено нажатие.
+
+Что ж, [похачим этот скрипт](https://tree.hyoo.ru/#pipeline=%24mol_js_eval~%24mol_tree2_js_to_text~%24mol_tree2_text_to_sourcemap_vis/source=let%20src%20%3D%20%24mol_tree2_from_string%28%60%0A%09click%20%5C%5C%24my_app.Root%280%29.Task%280%29%0A%09click%20%5C%5C%24my_app.Root%280%29.Details%28%29.TrackTime%28%29%0A%60%29%0A%0Asrc%20%3D%20src.list%28%5B%0A%09src.struct%28%20'%7B%3B%7D'%2C%0A%09%09src.hack%28%7B%0A%0A%09%09%09click%3A%20%28%20click%2C%20belt%20%29%3D%3E%20%7B%0A%09%09%09%09const%20id%20%3D%20click.kids%5B0%5D%0A%09%09%09%09return%20%5B%0A%09%09%09%09%09click.struct%28%20'%28%29'%2C%20%5B%0A%09%09%09%09%09%09id.struct%28%20'document'%20%29%2C%0A%09%09%09%09%09%09id.struct%28%20'%5B%5D'%2C%20%5B%0A%09%09%09%09%09%09%09id.data%28%20'getElementById'%20%29%2C%0A%09%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09%09id.struct%28%20'%28%2C%29'%2C%20%5B%20id%20%5D%20%29%2C%0A%09%09%09%09%09%09click.struct%28%20'%5B%5D'%2C%20%5B%0A%09%09%09%09%09%09%09click.data%28%20'click'%20%29%2C%0A%09%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09%09click.struct%28%20'%28%2C%29'%20%29%2C%0A%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%5D%0A%09%09%09%7D%2C%0A%0A%09%09%09''%3A%20%28%29%3D%3E%20%5B%5D%0A%0A%09%09%7D%29%2C%0A%09%29%2C%0A%5D%29%0A%0Areturn%20src) так, чтобы на выходе получился AST яваскрипта..
 
 ```javascript
 script.hack({
@@ -799,9 +807,11 @@ script.hack({
 })
 ```
 
-Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_js_eval~%24mol_tree2_js_to_text~%24mol_tree2_text_to_sourcemap_vis/source=let%20src%20%3D%20%24mol_tree2_from_string%28%60%0A%09click%20%5C%5C%24my_app.Root%280%29.Task%280%29%0A%09click%20%5C%5C%24my_app.Root%280%29.Details%28%29.TrackTime%28%29%0A%60%29%0A%0Asrc%20%3D%20src.list%28%5B%0A%09src.struct%28%20'%7B%3B%7D'%2C%0A%09%09src.hack%28%7B%0A%0A%09%09%09click%3A%20%28%20click%2C%20belt%20%29%3D%3E%20%7B%0A%09%09%09%09const%20id%20%3D%20click.kids%5B0%5D%0A%09%09%09%09return%20%5B%0A%09%09%09%09%09click.struct%28%20'%28%29'%2C%20%5B%0A%09%09%09%09%09%09id.struct%28%20'document'%20%29%2C%0A%09%09%09%09%09%09id.struct%28%20'%5B%5D'%2C%20%5B%0A%09%09%09%09%09%09%09id.data%28%20'getElementById'%20%29%2C%0A%09%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09%09id.struct%28%20'%28%2C%29'%2C%20%5B%20id%20%5D%20%29%2C%0A%09%09%09%09%09%09click.struct%28%20'%5B%5D'%2C%20%5B%0A%09%09%09%09%09%09%09click.data%28%20'click'%20%29%2C%0A%09%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%09%09click.struct%28%20'%28%2C%29'%20%29%2C%0A%09%09%09%09%09%5D%20%29%2C%0A%09%09%09%09%5D%0A%09%09%09%7D%2C%0A%0A%09%09%09''%3A%20%28%29%3D%3E%20%5B%5D%0A%0A%09%09%7D%29%2C%0A%09%29%2C%0A%5D%29%0A%0Areturn%20src).
+Обратите внимание, что часть узлов создаются из имени команды (`click`), а часть из идентификатора элемената (`id`). То есть отладчик бдет останавливаться и там, и там. А стектрейсы ошибок будут указывать на правильные места исходника.
 
-## А можно ещё проще? jack.tree - макро язык для странсформаций!
+## А можно ещё проще? jack.tree - макро язык для трансформаций!
+
+Но можно погрузиться ещё глубже и сделать DSL для обработки DSL. Например, трансформацию скрипта автоматизации [можно описать следующим образом](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string_mapped_js/source=hack%20script%20%7B%3B%7D%20from%0A%0Ahack%20click%20%28%29%0A%09document%0A%09%5B%5D%20%5CgetElementById%0A%09%28%2C%29%20data%20from%0A%09%5B%5D%20%5Cclick%0A%09%28%2C%29%0A%0Ascript%20jack%0A%09click%20%5C%24my_app.Root%280%29.Task%280%29%0A%09click%20%5C%24my_app.Root%280%29.Details%28%29.TrackTime%28%29%0A) на языке `jack.tree`..
 
 ```tree
 hack script {;} from
@@ -818,20 +828,24 @@ script jack
     click \$my_app.Root(0).Details().TrackTime()
 ```
 
-Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string_mapped_js/source=hack%20script%20%7B%3B%7D%20from%0A%0Ahack%20click%20%28%29%0A%09document%0A%09%5B%5D%20%5CgetElementById%0A%09%28%2C%29%20data%20from%0A%09%5B%5D%20%5Cclick%0A%09%28%2C%29%0A%0Ascript%20jack%0A%09click%20%5C%24my_app.Root%280%29.Task%280%29%0A%09click%20%5C%24my_app.Root%280%29.Details%28%29.TrackTime%28%29%0A)
-
 ## А если разные таргеты? Трансформируем в JS, вырезая локализацию..
+
+Хаки позволяют не просто дословную трансляцию одного языка в другой. С их помощью, можно экстрактировать из кода интересующую нас информацию. Например, у нас есть 
 
 ```tree
 +js
-	print @ hello \Hello, World!
-	print @ bye \Bye, World!
+	print @ begin \Hello, World!
+	function
+		onunload
+		(,)
+		{;}
+			print @ end \Bye, World!
 ```
 
 ```javascript
 {
-	console.log( localize( "hello" ) );
-	console.log( localize( "bye" ) );
+	console.log( localize( "begin" ) );
+	console.log( localize( "end" ) );
 }
 ```
 
@@ -839,20 +853,24 @@ script jack
 
 ```tree
 +loc
-	print @ hello \Hello, World!
-	print @ bye \Bye, World!
+	print @ begin \Hello, World!
+	function
+		onunload
+		(,)
+		{;}
+			print @ end \Bye, World!
 ```
 
 ```json
 {
-	"hello": "Hello, World!",
-	"bye": "Bye, World!"
+	"begin": "Hello, World!",
+	"end": "Bye, World!"
 }
 ```
 
 ## А если разные таргеты? Меняем трансформации как перчатки..
 
-Открыть в [песочнице](https://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string/source=hack%20%2Bjs%0A%09hack%20print%20%28%29%0A%09%09console%0A%09%09%5B%5D%20%5Clog%0A%09%09%28%2C%29%20from%0A%09hack%20%40%20%28%29%0A%09%09localize%0A%09%09%28%2C%29%20type%20from%0A%09%7B%3B%7D%20from%0A%0Ahack%20%2Bloc%0A%09hack%20print%20from%0A%09hack%20%40%20%3A%0A%09%09type%20from%0A%09%09kids%20from%0A%09%7B%2C%7D%20from%0A%0A%2Bjs%0A%09print%20%40%20hello%20%5CHello%2C%20World!%0A%09print%20%40%20bye%20%5CBye%2C%20World!%0A%0A).
+Открыть в [песочнице](https://tree.hyoo.ru/#!pipeline=%24mol_tree2_from_string~%24mol_jack_transform~%24mol_tree2_js_to_text~%24mol_tree2_text_to_string/source=hack%20%2Bjs%0A%09hack%20print%20%28%29%0A%09%09console%0A%09%09%5B%5D%20%5Clog%0A%09%09%28%2C%29%20from%0A%09hack%20%40%20%28%29%0A%09%09localize%0A%09%09%28%2C%29%20type%20from%0A%09%7B%3B%7D%20from%0A%0Ahack%20%2Bloc%0A%09hack%20print%20from%0A%09hack%20%40%20%3A%0A%09%09type%20from%0A%09%09kids%20from%0A%09hack%20function%20kids%20head%20reversed%20from%0A%09%7B%2C%7D%20from%0A%0A%2Bloc%0A%09print%20%40%20begin%20%5CHello%2C%20World!%0A%09function%0A%09%09onunload%0A%09%09%28%2C%29%0A%09%09%7B%3B%7D%0A%09%09%09print%20%40%20end%20%5CBye%2C%20World!%0A%0A).
 
 ```tree
 hack +js
@@ -872,6 +890,7 @@ hack +loc
 	hack @ :
 		type from
 		kids from
+	hack function kids head reversed from
 	{,} from
 ```
 
