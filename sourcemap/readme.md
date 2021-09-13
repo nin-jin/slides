@@ -952,6 +952,11 @@ hack +loc
 
 ## Как избежать разъезжания результата и сорсмапа? text.tree!
 
+Ок, мы потрансформировали AST, осталось его сериализовать. Если это делать для каждого языка отдельно, то это очень сложно, ведь иной язык может насчитывать десятки, а то и сотни типов узлов. И каждый нужно не только правильно сериализовать, но и правильно сформировать для него спан в маппинге.
+
+Чтобы упростить эту задачу, мы со [Стефаном](https://github.com/zerkalica/) разработали язык [text.tree](https://github.com/nin-jin/tree.d/wiki/text.tree), где есть всего 3 типа узлов: строки, отступы и сырой текст. [Простой пример](http://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_tree2_text_to_string_mapped_js/source=line%20%5C%7B%0Aindent%0A%09line%0A%09%09%5Cfoo%0A%09%09%5C%3A%20%0A%09%09%5C123%0Aline%20%5C%7D%0A)..
+
+
 ```tree
 line \{ 
 indent
@@ -977,9 +982,11 @@ t%5Ct%5C%5C123%5Cnline%20%5C%5C%7D%5Cn%22%5D
 %2CAACC%2CCACC%2CGACA%2CEACA%3BAACF%2CAAAK%3B%22%7D
 ```
 
-Открыть в [песочнице](http://tree.hyoo.ru/#pipeline=%24mol_tree2_from_string~%24mol_tree2_text_to_string_mapped_js/source=line%20%5C%7B%0Aindent%0A%09line%0A%09%09%5Cfoo%0A%09%09%5C%3A%20%0A%09%09%5C123%0Aline%20%5C%7D%0A).
+Любой другой язык может быть сравнительно не сложно трансформирован в text.tree без плясок вокруг спанов. А дальнейшая сериализация с формированием сорсмапов - это просто применение стандартных, уже написанных, функций.
 
 ## А если нужен WebAssembly? wasm.tree -> bin.tree
+
+Ну и в дополнение к текстовой сериализации, у нас есть и сериализация бинарная. Тут всё то же самое: трансформируем любой язык в [bin.tree](https://github.com/nin-jin/tree.d/wiki/bin.tree), после чего стандартной функцией получаем из него бинарник. Например, возьмём не хитрый код на языке wasm.tree..
 
 ```tree
 custom xxx
@@ -993,6 +1000,8 @@ type xxx
 import foo.bar func xxx
 ```
 
+[Прогоним его через wasm.tree компилятор и получим bin.tree, который тут же преобразуем в бинарник и провалидируем WASM рантаймом..](https://tree.hyoo.ru/#source=custom%20xxx%0A%0Atype%20xxx%0A%09%3D%3E%20i32%0A%09%3D%3E%20i64%0A%09%3D%3E%20f32%0A%09%3C%3D%20f64%0A%0Aimport%20foo.bar%20func%20xxx%0A/pipeline=%24mol_tree2_from_string~%24mol_tree2_wasm_to_bin~%24mol_tree2_bin_to_bytes~%24mol_wasm_module)
+
 ```tree
 \00
 \61
@@ -1004,13 +1013,17 @@ import foo.bar func xxx
 \00
 ```
 
-Открыть в [песочнице](https://tree.hyoo.ru/#source=custom%20xxx%0A%0Atype%20xxx%0A%09%3D%3E%20i32%0A%09%3D%3E%20i64%0A%09%3D%3E%20f32%0A%09%3C%3D%20f64%0A%0Aimport%20foo.bar%20func%20xxx%0A/pipeline=%24mol_tree2_from_string~%24mol_tree2_wasm_to_bin~%24mol_tree2_bin_to_bytes~%24mol_wasm_module).
+Можно писать код как сразу на `wasm.tree`, так и на каком-либо своём DSL, который трансформировать в wasm.tree. Таким образом вы легко можете писать под WebAssemply не погружаясь в дебри его байт-кода. Ну.. когда я этот компилятор таки допилю, конечно. Если кто-то готов помочь - присоединяйтесь.
 
 ## Даже WASM с сорсмапингом?!
+
+И, конечно, из `bin.tree` мы автоматически получаем и сорсмапы. Только вот работать они не будут. Для WASM нужно генерировать уже более взрослый формат маппинга, который используется для компилируемых языков программирования..
 
 > [DWARF](http://dwarfstd.org/)
 
 ![](https://habrastorage.org/webt/9m/we/fk/9mwefkkbdbhd-_xafbib8bz4hfy.png)
+
+Но в эти дебри мне пока страшно лезть..
 
 ## Ничего не забыли?
 
