@@ -74,6 +74,11 @@ setInterval( ()=> c = b + 1 )
 - Приводят к ошибке
 - Невозможны
 
+# Конфигурация потоков данных
+
+- Ручная
+- Автоматическа
+
 # Реактивные библиотеки
 
 | Lib        | Paradigm | Origin    | Observing       | Energetic    | Order         | Consistency | Error
