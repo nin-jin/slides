@@ -16,8 +16,8 @@
 
 # Paradygm: Парадигма
 
-- 🤓 PP: Процедурная
-- 🧐 OOP: Объектная
+- 🧐 PP: Процедурная
+- 🤓 OOP: Объектная
 - 🤯 FP: Функциональная
 
 # Origin: Кто инициатор обновления?
@@ -59,15 +59,15 @@
 
 # Реактивные библиотеки
 
-| Lib        | Paradygm | Origin    | Observing       | Energetic    | Order        | Consistency    | Error
-|------------|----------|-----------|-----------------|--------------|--------------|----------------|------
-| RxJS       | 🤯 FP   | 📮 Push   | ✅ Observers ❓ | ❌ Instant   | ⭕ Subscribe | ⭕ Eventual   | ❌ Stop
-| MobX       | 🧐 OOP  | 🛎 Pull    | ⭕ Events       | ✅ Lazy      | ✅ Code      | ✅ Strong      | ✅ Store
-| $mol_atom2 | 🧐 OOP  | 🛎 Pull    | ✅ Observers    | ✅ Lazy      | ✅ Code      | ✅ Strong      | ✅ Store
-| Angular    |          | 🔎 Watch  | ❌ Digest       | ⭕ Defer     | ✅ Code ❓   | ❌ Relaxed     | ❌ Unstable
+| Lib        | Paradygm | Origin    | Observing       | Energetic    | Order         | Consistency | Error
+|------------|----------|-----------|-----------------|--------------|---------------|-------------|------
+| RxJS       | 🤯 FP   | 📮 Push   | ✅ Observers ❓ | ❌ Instant   | ⭕ Subscribe | ⭕ Eventual | ❌ Stop
+| MobX       | 🤓 OOP  | 🛎 Pull    | ⭕ Events      | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store
+| $mol_atom2 | 🤓 OOP  | 🛎 Pull    | ✅ Observers   | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store
+| Angular    | 🧐 PP   | 🔎 Watch  | ❌ Digest      | ⭕ Defer     | ✅ Code ❓   | ❌ Relaxed  | ❌ Unstable
 | CellX      | 
-| Reatom     |
-| Effector   |
+| Reatom     |          |           |                 | ✅ Lazy      |              | ✅ Strong   | ✅ Rollback
+| Effector   |          | 📮 Push   |                 | ❌ Instant   |              |             |
 | NGRX       |
 
 # Конфигурации зависимостей
@@ -83,6 +83,8 @@
 ## Переключение зависимых
 
 # Паразитные вычисления
+
+## Нерелевантные вычисления
 
 ## Серия обновлений одного состояния
 
