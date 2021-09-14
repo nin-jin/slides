@@ -14,7 +14,7 @@
 - Реакции
 - Рантайм
 
-# Paradygm: Парадигма
+# Paradigm: Парадигма
 
 - 🧐 PP: Процедурная
 - 🤓 OOP: Объектная
@@ -59,7 +59,7 @@
 
 # Реактивные библиотеки
 
-| Lib        | Paradygm | Origin    | Observing       | Energetic    | Order         | Consistency | Error
+| Lib        | Paradigm | Origin    | Observing       | Energetic    | Order         | Consistency | Error
 |------------|----------|-----------|-----------------|--------------|---------------|-------------|------
 | RxJS       | 🤯 FP   | 📮 Push   | ✅ Observers ❓ | ❌ Instant   | ⭕ Subscribe | ⭕ Eventual | ❌ Stop
 | MobX       | 🤓 OOP  | 🛎 Pull    | ⭕ Events      | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store
