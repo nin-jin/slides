@@ -124,17 +124,17 @@ class State {
 # DataFlow: Конфигурация потоков данных
 
 - 💪 Manual: Ручная
-- 🚕 Automatic: Автоматическа
+- 🚕 Auto: Автоматическа
 
 # Реактивные библиотеки
 
 | Lib        | Paradigm | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
 |------------|----------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
 | RxJS       | 🤯 FP   | 📮 Push   | ✅ Observers ❓ | ❌ Instant   | ⭕ Subscribe | ⭕ Eventual | ❌ Stop     | 💪 Manual
-| MobX       | 🤓 OOP  | 🛎 Pull    | ⭕ Events      | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Automatic
-| $mol_atom2 | 🤓 OOP  | 🛎 Pull    | ✅ Observers   | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Automatic
-| Angular    | 🧐 PP   | 🔎 Watch  | ❌ Digest      | ⭕ Defer     | ✅ Code ❓   | ❌ Relaxed  | ❌ Unstable  | 🚕 Automatic
-| CellX      | 
+| MobX       | 🤓 OOP  | 🛎 Pull    | ⭕ Events      | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Auto
+| $mol_atom2 | 🤓 OOP  | 🛎 Pull    | ✅ Observers   | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Auto
+| Angular    | 🧐 PP   | 🔎 Watch  | ❌ Digest      | ⭕ Defer     | ✅ Code ❓   | ❌ Relaxed  | ❌ Unstable  | 🚕 Auto
+| CellX      | 🤓 OOP  | 🛎 Pull    |                |               |              |              |              | 🚕 Auto
 | Reatom     |          |           |                 | ✅ Lazy      |              | ✅ Strong   | ✅ Rollback | 💪 Manual
 | Effector   |          | 📮 Push   |                 | ❌ Instant   |              |             |              | 💪 Manual
 | NGRX       |
