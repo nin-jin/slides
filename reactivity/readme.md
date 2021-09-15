@@ -88,7 +88,7 @@ class State {
 
 - ✅ Observers: Список подписчиков
 - ⭕ Events: Возникновение события
-- ❌ Digest: Периодическая сверка
+- ❌ Polling: Периодическая сверка
 
 # Energetic: Энергичность реакций
 
@@ -133,10 +133,10 @@ class State {
 | RxJS       | 🤯 FP   | 📮 Push   | ✅ Observers ❓ | ❌ Instant   | ⭕ Subscribe | ⭕ Eventual | ❌ Stop     | 💪 Manual
 | MobX       | 🤓 OOP  | 🛎 Pull    | ⭕ Events      | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Auto
 | $mol_atom2 | 🤓 OOP  | 🛎 Pull    | ✅ Observers   | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Auto
-| Angular    | 🧐 PP   | 🔎 Watch  | ❌ Digest      | ⭕ Defer     | ✅ Code ❓   | ❌ Relaxed  | ❌ Unstable  | 🚕 Auto
-| CellX      | 🤓 OOP  | 🛎 Pull    |                |               |              |              |              | 🚕 Auto
-| Reatom     |          |           |                 | ✅ Lazy      |              | ✅ Strong   | ✅ Rollback | 💪 Manual
-| Effector   |          | 📮 Push   |                 | ❌ Instant   |              |             |              | 💪 Manual
+| Angular    | 🧐 PP   | 🔎 Watch  | ❌ Polling      | ⭕ Defer     | ✅ Code ❓   | ❌ Relaxed  | ❌ Unstable | 🚕 Auto
+| CellX      | 🤓 OOP  | 🛎 Pull    |                 |               |              |             |              | 🚕 Auto
+| Reatom     |          |           |                 | ✅ Lazy      |              | ✅ Strong    | ✅ Rollback  | 💪 Manual
+| Effector   |          | 📮 Push   |                 | ❌ Instant   |              |              |               | 💪 Manual
 | NGRX       |
 
 # Конфигурации зависимостей
