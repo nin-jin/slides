@@ -115,28 +115,28 @@ class State {
 - ✅ Store: Запоминание ошибки и ожидание восстановления
 - ✅ Rollback: Откат к стабильному состоянию
 
-# Циклические зависимости
+# Recursion: Циклические зависимости
 
-- 🔁 Допустимы
-- ⛔ Приводят к ошибке
-- 🚫 Невозможны
+- 🔁 Allow: Допустимы
+- ⛔ Fail: Приводят к ошибке
+- 🚫 Impossible: Невозможны
 
-# Конфигурация потоков данных
+# DataFlow: Конфигурация потоков данных
 
-- 💪 Ручная
-- 🚕 Автоматическа
+- 💪 Manual: Ручная
+- 🚕 Automatic: Автоматическа
 
 # Реактивные библиотеки
 
-| Lib        | Paradigm | Origin    | Observing       | Energetic    | Order         | Consistency | Error
-|------------|----------|-----------|-----------------|--------------|---------------|-------------|------
-| RxJS       | 🤯 FP   | 📮 Push   | ✅ Observers ❓ | ❌ Instant   | ⭕ Subscribe | ⭕ Eventual | ❌ Stop
-| MobX       | 🤓 OOP  | 🛎 Pull    | ⭕ Events      | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store
-| $mol_atom2 | 🤓 OOP  | 🛎 Pull    | ✅ Observers   | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store
-| Angular    | 🧐 PP   | 🔎 Watch  | ❌ Digest      | ⭕ Defer     | ✅ Code ❓   | ❌ Relaxed  | ❌ Unstable
+| Lib        | Paradigm | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
+|------------|----------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
+| RxJS       | 🤯 FP   | 📮 Push   | ✅ Observers ❓ | ❌ Instant   | ⭕ Subscribe | ⭕ Eventual | ❌ Stop     | 💪 Manual
+| MobX       | 🤓 OOP  | 🛎 Pull    | ⭕ Events      | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Automatic
+| $mol_atom2 | 🤓 OOP  | 🛎 Pull    | ✅ Observers   | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Automatic
+| Angular    | 🧐 PP   | 🔎 Watch  | ❌ Digest      | ⭕ Defer     | ✅ Code ❓   | ❌ Relaxed  | ❌ Unstable  | 🚕 Automatic
 | CellX      | 
-| Reatom     |          |           |                 | ✅ Lazy      |              | ✅ Strong   | ✅ Rollback
-| Effector   |          | 📮 Push   |                 | ❌ Instant   |              |             |
+| Reatom     |          |           |                 | ✅ Lazy      |              | ✅ Strong   | ✅ Rollback | 💪 Manual
+| Effector   |          | 📮 Push   |                 | ❌ Instant   |              |             |              | 💪 Manual
 | NGRX       |
 
 # Конфигурации зависимостей
