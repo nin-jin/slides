@@ -184,14 +184,49 @@
 
 ![](https://4.bp.blogspot.com/-LWPowjeArAM/XCcEtE1ftpI/AAAAAAAAAGY/qY-aiN7z8sY2-svA9QRWf1i8Hqc_AvQegCLcBGAs/s1600/3.%2BBest%2BTrifold%2BBrochure%2BMockup%2BFree%2BDownload%2B2019.jpg)
 
+## Фу! Горизонтальный скролл!
+
+- Выпирающий текст
+- Кривое пзиционирование
+
+## Вау! Горизонтальный скролл!
+
+- Свайпы фактически горизонтально скроллят
+- Ширина окна - максимум для страницы
+- Автоматическое выравнивание
+- Максимальная отзывчивость
+- Крайне простая реализация
+
+## Нюансы горизонтального скролла
+
+- Частично выглядывающая страница интригует
+- Промотка нескольких страниц за раз.
+
+## Пример с горизонтальным скроллом
+
+![](https://mol.hyoo.ru/#!section=articles/author=nin-jin/repo=HabHub/article=37)
+
 ## Распасовка карт
 
 ![](https://2.bp.blogspot.com/-52rCts3qZ5E/XCcE4gDdJ7I/AAAAAAAAAGk/kPmTUIeyPZkzV2D3Ypz_26RuuEw4CHLGgCLcBGAs/s1600/5.%2BBest%2BTrifold%2BBrochure%2BMockup%2BFree%2BDownload%2B2019.jpg)
+
+## Пример распасовки карт
+
+![](https://zerkalica.github.io/tss/#report=FD4445D6/login=x/page=reports)
+
+## Особенности распасовки карт
+
+- Реализация сложнее
+- Нужны свайпы
+- Страницы не обрезаются
+- Привычный UX
 
 # Итоги
 
 - Grid step `0.5rem` ✅
 - Font size `1rem` ✅
+- Integral sizes ✅
+- Fractal theming ✅
 - Break points ❌
 - Binominal wrap ✅
 - Tables ❌
