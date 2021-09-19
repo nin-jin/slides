@@ -209,7 +209,7 @@
 
 ## Метафора погружения
 
-![](https://habrastorage.org/webt/i1/9w/nk/i19wnkadu1e64428ga-r3_xkbfu.jpeg)
+![](https://habrastorage.org/webt/xg/lo/xx/xgloxxqlzrvwi7748088ggcyxqk.png)
 
 ## Буклетный дизайн
 
