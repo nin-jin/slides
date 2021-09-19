@@ -209,6 +209,8 @@
 
 ## Метафора погружения
 
+![](https://habrastorage.org/webt/i1/9w/nk/i19wnkadu1e64428ga-r3_xkbfu.jpeg)
+
 ## Буклетный дизайн
 
 ![](https://4.bp.blogspot.com/-JAYBEXzzVVo/XCcFBh1M5pI/AAAAAAAAAG4/vYOKHtoIkjgjsqNf9v0j3Sy9awpwe_iAgCLcBGAs/s1600/8.%2BBest%2BTrifold%2BBrochure%2BMockup%2BFree%2BDownload%2B2019.jpg)
