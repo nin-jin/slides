@@ -524,10 +524,10 @@ new Function( '', 'debugger' )
 
 ```javascript
 eval(`
-(function anonymous(
-) {
-debugger
-})
+    (function anonymous(
+    ) {
+        debugger
+    })
 `)
 ```
 
