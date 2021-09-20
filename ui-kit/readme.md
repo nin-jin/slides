@@ -206,7 +206,7 @@
 
 ## Сначала десктоп
 
-![](![](https://habrastorage.org/webt/vo/d1/ae/vod1aerwc50vzhqkqcdr5eomnhg.png))
+![](https://habrastorage.org/webt/vo/d1/ae/vod1aerwc50vzhqkqcdr5eomnhg.png)
 
 ## Сначала мобилки
 
