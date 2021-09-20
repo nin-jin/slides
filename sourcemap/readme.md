@@ -4,7 +4,7 @@
 
 ![](https://habrastorage.org/webt/oh/a8/fd/oha8fdciyzawz3-rdjxlkjxcase.jpeg)
 
-Это - слайды с выступления на [HolyJS'21](https://holyjs-piter.ru/). Вы можете [посмотреть видео записть](https://www.youtube.com/watch?v=rQEqXIo4PVM), [прочитать как статью](https://github.com/nin-jin/slides/tree/master/sourcemap), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/sourcemap/).
+Это - текстовая расшифровка выступления на [HolyJS'21](https://holyjs-piter.ru/). Вы можете [посмотреть видео записть](https://www.youtube.com/watch?v=rQEqXIo4PVM), [прочитать как статью](https://github.com/nin-jin/slides/tree/master/sourcemap), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/sourcemap/).
 
 ## Как я до этого докатился?
 
