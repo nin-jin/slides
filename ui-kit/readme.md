@@ -212,6 +212,10 @@
 
 ![](https://habrastorage.org/webt/5o/df/ox/5odfoxh56jtfufym2m_sh3lshfo.png)
 
+## Где это я?
+
+![](https://i.imgur.com/YFJvRXK.png)
+
 ## Размеры экранов
 
 - Их не 2
