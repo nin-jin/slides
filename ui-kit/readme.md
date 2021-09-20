@@ -214,7 +214,9 @@
 
 ## Где это я?
 
-![](https://i.imgur.com/YFJvRXK.png)
+lol ![](https://i.imgur.com/YFJvRXK.png)
+
+![](https://habr.com/ru/post/527574/)
 
 ## Размеры экранов
 
