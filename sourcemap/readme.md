@@ -1046,7 +1046,9 @@ import foo.bar func xxx
 
 На $mol-канале есть трёхминутное видео процесса описания нового языка для своего проекта..
 
-![](https://youtu.be/33k5ryVu0Uc)
+[Custom tree-based language syntax highlighting](https://youtu.be/33k5ryVu0Uc)
+
+![](https://www.youtube.com/embed/33k5ryVu0Uc)
 
 Вам не нужно ничего перезапускать, ставить девелоперские сборки среды разработки или специальные расширения к ним. Вы просто пишете код, и он в реальном времени перекрашивает ваш DSL.
 
