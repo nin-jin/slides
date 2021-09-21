@@ -230,14 +230,14 @@
 
 ![](https://4.bp.blogspot.com/-LWPowjeArAM/XCcEtE1ftpI/AAAAAAAAAGY/qY-aiN7z8sY2-svA9QRWf1i8Hqc_AvQegCLcBGAs/s1600/3.%2BBest%2BTrifold%2BBrochure%2BMockup%2BFree%2BDownload%2B2019.jpg)
 
-## Метафора погружения
-
-![](https://habrastorage.org/webt/xg/lo/xx/xgloxxqlzrvwi7748088ggcyxqk.png)
-
 ## Фу! Горизонтальный скролл!
 
 - Выпирающий текст
 - Кривое пзиционирование
+
+## Метафора погружения
+
+![](https://habrastorage.org/webt/xg/lo/xx/xgloxxqlzrvwi7748088ggcyxqk.png)
 
 ## Вау! Горизонтальный скролл!
 
