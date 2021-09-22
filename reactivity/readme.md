@@ -81,16 +81,10 @@ setInterval( ()=> c = b + 1 )
 class State {
   
   @mem
-  get a() {
-    return 1
-  }
-  set a( a ) {
-    this.b = a * 2
-  }
+  get a() { return 1 }
+  set a( a ) { this.b = a * 2 }
   
-  @mem set b( b ) {
-    this.c = b + 1
-  }
+  @mem set b( b ) { this.c = b + 1 }
   
   @mem set c( c ) {}
   
@@ -102,17 +96,11 @@ class State {
 ```
 class State {
   
-  @mem get a() {
-    return 1
-  }
+  @mem get a() { return 1 }
   
-  @mem get b() {
-    return this.a * 2
-  }
+  @mem get b() { return this.a * 2 }
   
-  @mem get c() {
-    return this.b + 1
-  }
+  @mem get c() { return this.b + 1 }
   
 }
 ```
