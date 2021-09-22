@@ -62,7 +62,7 @@
 
 - 🔎 Watch: Наблюдатель
 - 📮 Push: Зависимость
-- 🛎 Pull: Зависимый
+- 🚂 Pull: Зависимый
 
 ## 🔎 Watch: Наблюдатель
 
@@ -91,7 +91,7 @@ class State {
 }
 ```
 
-## 🛎 Pull: Зависимый
+<!-- ## 🚂 Pull: Зависимый -->
 
 ```
 class State {
@@ -152,10 +152,10 @@ class State {
 | Lib        | Paradigm | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
 |------------|----------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
 | RxJS       | 🤯 FP   | 📮 Push   | ✅ Observers ❓ | ❌ Instant   | ⭕ Subscribe | ⭕ Eventual | ❌ Stop     | 💪 Manual
-| MobX       | 🤓 OOP  | 🛎 Pull    | ⭕ Events      | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Auto
-| $mol_atom2 | 🤓 OOP  | 🛎 Pull    | ✅ Observers   | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Auto
+| MobX       | 🤓 OOP  | 🚂 Pull    | ⭕ Events      | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Auto
+| $mol_atom2 | 🤓 OOP  | 🚂 Pull    | ✅ Observers   | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Auto
 | Angular    | 🧐 PP   | 🔎 Watch  | ❌ Polling     | ⭕ Defer     | ✅ Code ❓   | ❌ Relaxed  | ❌ Unstable | 🚕 Auto
-| CellX      | 🤓 OOP  | 🛎 Pull    | ⭕ Events      |               |              |             |              | 🚕 Auto
+| CellX      | 🤓 OOP  | 🚂 Pull    | ⭕ Events      |               |              |             |              | 🚕 Auto
 | Reatom     |          |           |                 | ✅ Lazy      |              | ✅ Strong    | ✅ Rollback  | 💪 Manual
 | Effector   |          | 📮 Push   |                 | ❌ Instant   |              |              |               | 💪 Manual
 | NGRX       |
