@@ -66,41 +66,46 @@
 
 ## 🔎 Watch: Наблюдатель
 
-```
-let a = 1
-let b
-let c
+```javascript
+let Name = 'Jin'
+let Count
+let Short
 
-setInterval( ()=> b = a * 2 )
-setInterval( ()=> c = b + 1 )
+setInterval( ()=> Count = Name.length )
+setInterval( ()=> Short = Count < 5 )
 ```
 
 ## 📮 Push: Зависимость
 
-```
+```javascript
 class State {
   
   @mem
-  get a() { return 1 }
-  set a( a ) { this.b = a * 2 }
+  get Name() { return 'Jin' }
+  set Name( Name ) { this.Count = Name.length }
   
-  @mem set b( b ) { this.c = b + 1 }
+  @mem
+  set Count( Count ) { this.Short = Count < 5 }
   
-  @mem set c( c ) {}
+  @mem
+  set Short( Short ) {}
   
 }
 ```
 
-<!-- ## 🚂 Pull: Зависимый -->
+## 🚂 Pull: Зависимый
 
-```
+```javascript
 class State {
   
-  @mem get a() { return 1 }
+  @mem
+  get Name() { return 'Jin' }
   
-  @mem get b() { return this.a * 2 }
+  @mem
+  get Count() { return this.Name.length }
   
-  @mem get c() { return this.b + 1 }
+  @mem
+  get Short() { return this.Count < 5 }
   
 }
 ```
