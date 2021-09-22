@@ -30,27 +30,27 @@
 
 ## Состояния
 
-![](reactivity-states)
+![](reactivity-states.svg)
 
 ## Акции
 
-![](reactivity-actions)
+![](reactivity-actions.svg)
 
 ## Реакции
 
-![](reactivity-reactions)
+![](reactivity-reactions.svg)
 
 ## Инварианты
 
-![](reactivity-invariants)
+![](reactivity-invariants.svg)
 
 ## Каскад
 
-![](reactivity-cascade)
+![](reactivity-cascade.svg)
 
 ## Рантайм
 
-![](reactivity-runtime)
+![](reactivity-runtime.svg)
 
 # Paradigm: Парадигма
 
