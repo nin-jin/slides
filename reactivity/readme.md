@@ -79,17 +79,17 @@ setInterval( ()=> Short = Count < 5 )
 
 ```javascript
 class State {
-  
-  @mem
-  get Name() { return 'Jin' }
-  set Name( Name ) { this.Count = Name.length }
-  
-  @mem
-  set Count( Count ) { this.Short = Count < 5 }
-  
-  @mem
-  set Short( Short ) {}
-  
+	
+	@mem
+	get Name() { return 'Jin' }
+	set Name( Name ) { this.Count = Name.length }
+	
+	@mem
+	set Count( Count ) { this.Short = Count < 5 }
+	
+	@mem
+	set Short( Short ) {}
+	
 }
 ```
 
@@ -97,16 +97,16 @@ class State {
 
 ```javascript
 class State {
-  
-  @mem
-  get Name() { return 'Jin' }
-  
-  @mem
-  get Count() { return this.Name.length }
-  
-  @mem
-  get Short() { return this.Count < 5 }
-  
+	
+	@mem
+	get Name() { return 'Jin' }
+	
+	@mem
+	get Count() { return this.Name.length }
+	
+	@mem
+	get Short() { return this.Count < 5 }
+	
 }
 ```
 
