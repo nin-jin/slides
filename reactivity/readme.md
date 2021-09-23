@@ -116,11 +116,11 @@ const Short = Count.pipe( map( Count => Count < 5 ) )
 
 ![](reactivity-pull.svg)
 
-# Observing: Наблюдение
+# Observing: Наблюдение за изменениями
 
 - 🔭 Polling: Периодическая сверка
 - 🎆 Events: Возникновение события
-- 🔗 Observers: Список подписчиков
+- ⛓ Observers: Список подписчиков
 
 ## 🔭 Polling: Периодическая сверка
 
@@ -130,7 +130,7 @@ const Short = Count.pipe( map( Count => Count < 5 ) )
 
 Каждое состояние хранит список функций обработчиков изменения. Больше ничего оно про другие состояния не знает.
 
-## 🔗 Observers: Список подписчиков
+## ⛓ Observers: Список подписчиков
 
 Состояния хранят прямые ссылки друг на друга, образуя глобальный граф.
 
@@ -174,9 +174,9 @@ const Short = Count.pipe( map( Count => Count < 5 ) )
 
 | Lib        | Style          | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
 |------------|----------------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
-| RxJS       | 🤯 Functional  | 📮 Push   | 🔗 Observers ❓ | 🍔 Instant   | ⌚ Subscribe | 🙏 Eventual | ⛔ Stop     | 👷‍♂️ Manual
+| RxJS       | 🤯 Functional  | 📮 Push   | ⛓ Observers ❓ | 🍔 Instant   | ⌚ Subscribe | 🙏 Eventual | ⛔ Stop     | 👷‍♂️ Manual
 | MobX       | 🤓 Objectional | 🚂 Pull   | 🎆 Events      | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong   | 🦺 Store    | 🚕 Auto
-| $mol_atom2 | 🤓 Objectional | 🚂 Pull   | 🔗 Observers   | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong   | 🦺 Store    | 🚕 Auto
+| $mol_atom2 | 🤓 Objectional | 🚂 Pull   | ⛓ Observers   | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong   | 🦺 Store    | 🚕 Auto
 | CellX      | 🤓 Objectional | 🚂 Pull   | 🎆 Events      |               |              |              |              | 🚕 Auto
 | Reatom     |                |           |                 | 🦥 Lazy      |              | 💪 Strong    | ⏮ Rollback  | 👷‍♂️ Manual
 | Effector   |                | 📮 Push   |                 | 🍔 Instant   |              |              |               | 👷‍♂️ Manual
@@ -187,7 +187,7 @@ const Short = Count.pipe( map( Count => Count < 5 ) )
 |------------|----------------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
 | React      | 🧐 Procedural  | 📮 Push   | 🔭 Polling      | ⏰ Defer    | 👨‍💻 Code       |             |              | 👷‍♂️ Manual
 | Angular    | 🧐 Procedural  | 📮 Push   | 🔭 Polling      | ⏰ Defer    | 👨‍💻 Code ❓    | 💩 Relaxed  | 🎲 Unstable | 🚕 Auto
-| Vue        | 🤓 Objectional | 🚂 Pull   | 🔗 Observers ❓ | 🦥 Lazy     |               |             |              | 🚕 Auto
+| Vue        | 🤓 Objectional | 🚂 Pull   | ⛓ Observers ❓ | 🦥 Lazy     |               |             |              | 🚕 Auto
 | Svelte     | 🧐 Procedural  | 📮 Push   | 🔭 Polling      | ⏰ Defer    |               |             |              | 🚕 Auto
 
 # Конфигурации зависимостей
