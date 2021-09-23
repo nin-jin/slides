@@ -174,7 +174,6 @@ class State {
 | CellX      | 🤓 OOP  | 🚂 Pull    | ⭕ Events      |               |              |             |              | 🚕 Auto
 | Reatom     |          |           |                 | ✅ Lazy      |              | ✅ Strong    | ✅ Rollback  | 💪 Manual
 | Effector   |          | 📮 Push   |                 | ❌ Instant   |              |              |               | 💪 Manual
-| NGRX       |
 
 # Реактивные фреймворки
 
