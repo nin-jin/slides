@@ -164,20 +164,26 @@ for( const master of this.masters ) {
 
 ```javascript
 value = next
-reactions()
+invariants()
+
+value = next
+invariants()
 ```
 
 ## ⏰ Defer: Отложенные
 
 ```javascript
 value = next
-schedule( reactions )
+if( !scheduled ) schedule( invariants )
+
+value = next
+if( !scheduled ) schedule( invariants )
 ```
 
 ## 🦥 Lazy: Ленивые
 
 ```javascript
-if( dirty ) calculate()
+if( dirty ) invariants()
 return value
 ```
 
