@@ -306,14 +306,14 @@ foo = 'foo'
 
 # Реактивные библиотеки
 
-| Lib        | Style          | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
-|------------|----------------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
-| RxJS       | 🤯 Functional  | 📮 Push   | 🔌 Observers ❓ | 🍔 Instant   | ⌚ Subscribe | 🙏 Eventual | ⛔ Stop     | 👷‍♂️ Manual
-| MobX       | 🤓 Objectional | 🚂 Pull   | 🎆 Events      | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong   | 🦺 Store    | 🚕 Auto
-| $mol_atom2 | 🤓 Objectional | 🚂 Pull   | 🔌 Observers   | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong   | 🦺 Store    | 🚕 Auto
-| CellX      | 🤓 Objectional | 🚂 Pull   | 🎆 Events      |               |              |              |              | 🚕 Auto
-| Reatom     |                |           |                 | 🦥 Lazy      |              | 💪 Strong    | ⏮ Rollback  | 👷‍♂️ Manual
-| Effector   |                | 📮 Push   |                 | 🍔 Instant   |              |              |               | 👷‍♂️ Manual
+| Lib        | Style          | Origin    | Observing    | Energetic    | Order         | Consistency | Error        | DataFlow
+|------------|----------------|-----------|--------------|--------------|---------------|-------------|--------------|----------
+| RxJS       | 🤯 Functional  | 📮 Push  | 🔌 Observers | 🍔 Instant   | ⌚ Subscribe | 🙏 Eventual | ⛔ Stop     | 👷‍♂️ Manual
+| MobX       | 🤓 Objectional | 🚂 Pull  | 🎆 Events    | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong  | 🦺 Store    | 🚕 Auto
+| $mol_atom2 | 🤓 Objectional | 🚂 Pull  | 🔌 Observers | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong  | 🦺 Store    | 🚕 Auto
+| CellX      | 🤓 Objectional | 🚂 Pull  | 🎆 Events    |               |              |             |              | 🚕 Auto
+| Reatom     |                |           |              | 🦥 Lazy      |               | 💪 Strong  | ⏮ Rollback  | 👷‍♂️ Manual
+| Effector   | 🤯 Functional  | 📮 Push  | 🔌 Observers | 🍔 Instant   | ⌚ Subscribe |              |               | 👷‍♂️ Manual
 
 # Реактивные фреймворки
 
