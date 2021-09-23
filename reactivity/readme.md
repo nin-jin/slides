@@ -160,6 +160,27 @@ for( const master of this.masters ) {
 - ⏰ Defer: Отложенные
 - 🦥 Lazy: Ленивые
 
+## 🍔 Instant: Мгновенные
+
+```javascript
+value = next
+reactions()
+```
+
+## ⏰ Defer: Отложенные
+
+```javascript
+value = next
+schedule( reactions )
+```
+
+## 🦥 Lazy: Ленивые
+
+```javascript
+if( dirty ) calculate()
+return value
+```
+
 # Order: Порядок реакций
 
 - ⌚ Subscribe: По времени подписки
