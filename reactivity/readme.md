@@ -207,8 +207,8 @@ return value
 let foo
 let bar
 
-on_change( 'bar', ()=> console.log( 'bar changed' ) ) // 1
-on_change( 'foo', ()=> console.log( 'foo changed' ) ) // 2
+on_change( 'bar', ()=> console.log( 'bar' ) ) // 1
+on_change( 'foo', ()=> console.log( 'foo' ) ) // 2
 
 foo = 'foo'
 bar = 'bar'
@@ -222,8 +222,8 @@ bar = 'bar'
 let foo
 let bar
 
-on_change( 'foo', ()=> console.log( 'foo changed' ) ) // 2
-on_change( 'bar', ()=> console.log( 'bar changed' ) ) // 1
+on_change( 'foo', ()=> console.log( 'foo' ) ) // 2
+on_change( 'bar', ()=> console.log( 'bar' ) ) // 1
 
 bar = 'bar'
 foo = 'foo'
@@ -237,8 +237,8 @@ foo = 'foo'
 let foo
 let bar
 
-on_change( 'bar', ()=> console.log( 'bar changed' ) ) // 2
-on_change( 'foo', ()=> console.log( 'foo changed' ) ) // 1
+on_change( 'bar', ()=> console.log( 'bar' ) ) // 2
+on_change( 'foo', ()=> console.log( 'foo' ) ) // 1
 
 bar = 'bar'
 foo = 'foo'
