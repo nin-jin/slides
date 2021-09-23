@@ -142,9 +142,9 @@ class State {
 
 # Consistency: Согласованность состояния
 
-- ✅ Strong: Гарантированнная
-- ⭕ Eventual: В конечном счёте
-- ❌ Relaxed: Не гарантированна
+- 💪 Strong: Гарантированнная
+- 🙏 Eventual: В конечном счёте
+- 💩 Relaxed: Не гарантированна
 
 # Error: Поведение в исключительных ситуациях
 
@@ -161,26 +161,26 @@ class State {
 
 # DataFlow: Конфигурация потоков данных
 
-- 💪 Manual: Ручная
+- 👷‍♂️ Manual: Ручная
 - 🚕 Auto: Автоматическа
 
 # Реактивные библиотеки
 
 | Lib        | Paradigm | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
 |------------|----------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
-| RxJS       | 🤯 FP   | 📮 Push   | 🔗 Observers ❓ | 🍔 Instant   | ⌚ Subscribe | ⭕ Eventual | ❌ Stop     | 💪 Manual
-| MobX       | 🤓 OOP  | 🚂 Pull   | 🎆 Events      | 🦥 Lazy      | 👨‍💻 Code      | ✅ Strong   | ✅ Store    | 🚕 Auto
-| $mol_atom2 | 🤓 OOP  | 🚂 Pull   | 🔗 Observers   | 🦥 Lazy      | 👨‍💻 Code      | ✅ Strong   | ✅ Store    | 🚕 Auto
+| RxJS       | 🤯 FP   | 📮 Push   | 🔗 Observers ❓ | 🍔 Instant   | ⌚ Subscribe | 🙏 Eventual | ❌ Stop     | 👷‍♂️ Manual
+| MobX       | 🤓 OOP  | 🚂 Pull   | 🎆 Events      | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong   | ✅ Store    | 🚕 Auto
+| $mol_atom2 | 🤓 OOP  | 🚂 Pull   | 🔗 Observers   | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong   | ✅ Store    | 🚕 Auto
 | CellX      | 🤓 OOP  | 🚂 Pull   | 🎆 Events      |               |              |             |              | 🚕 Auto
-| Reatom     |          |           |                 | 🦥 Lazy      |              | ✅ Strong    | ✅ Rollback  | 💪 Manual
-| Effector   |          | 📮 Push   |                 | 🍔 Instant   |              |              |               | 💪 Manual
+| Reatom     |          |           |                 | 🦥 Lazy      |              | 💪 Strong    | ✅ Rollback  | 👷‍♂️ Manual
+| Effector   |          | 📮 Push   |                 | 🍔 Instant   |              |              |               | 👷‍♂️ Manual
 
 # Реактивные фреймворки
 
 | Lib        | Paradigm | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
 |------------|----------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
-| React      | 🧐 PP   | 📮 Push   | 🔭 Polling      | ⏰ Defer    | 👨‍💻 Code       |             |              | 💪 Manual
-| Angular    | 🧐 PP   | 📮 Push   | 🔭 Polling      | ⏰ Defer    | 👨‍💻 Code ❓    | ❌ Relaxed  | ❌ Unstable | 🚕 Auto
+| React      | 🧐 PP   | 📮 Push   | 🔭 Polling      | ⏰ Defer    | 👨‍💻 Code       |             |              | 👷‍♂️ Manual
+| Angular    | 🧐 PP   | 📮 Push   | 🔭 Polling      | ⏰ Defer    | 👨‍💻 Code ❓    | 💩 Relaxed  | ❌ Unstable | 🚕 Auto
 | Vue        | 🤓 OOP  | 🚂 Pull   | 🔗 Observers ❓ | 🦥 Lazy     |               |             |              | 🚕 Auto
 | Svelte     | 🧐 PP   | 📮 Push   | 🔭 Polling      | ⏰ Defer    |               |             |              | 🚕 Auto
 
