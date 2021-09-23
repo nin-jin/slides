@@ -199,6 +199,51 @@ return value
 - 🧨 Event: По времени возникновения события
 - 👨‍💻 Code: По положению в программе
 
+## ⌚ Subscribe: Реагирование по времени подписки
+
+Какая реакция появилась раньше, та и срабатывает раньше.
+
+```javascript
+let foo
+let bar
+
+on_change( 'bar', ()=> console.log( 'bar changed' ) ) // 1
+on_change( 'foo', ()=> console.log( 'foo changed' ) ) // 2
+
+foo = 'foo'
+bar = 'bar'
+```
+
+## 🧨 Event: Реагирование по времени возникновения события
+
+Чем раньше изменилось состояние, тем раньше сработают реакции на его изменение.
+
+```javascript
+let foo
+let bar
+
+on_change( 'foo', ()=> console.log( 'foo changed' ) ) // 2
+on_change( 'bar', ()=> console.log( 'bar changed' ) ) // 1
+
+bar = 'bar'
+foo = 'foo'
+```
+
+## 👨‍💻 Code: Реагирование по положению в программе
+
+Чем раньше в заданном кодом потоке исполнения находится реакция, тем раньше она сработает.
+
+```javascript
+let foo
+let bar
+
+on_change( 'bar', ()=> console.log( 'bar changed' ) ) // 2
+on_change( 'foo', ()=> console.log( 'foo changed' ) ) // 1
+
+bar = 'bar'
+foo = 'foo'
+```
+
 # Consistency: Согласованность состояния
 
 - 💪 Strong: Гарантированнная
@@ -212,16 +257,16 @@ return value
 - 🦺 Store: Запоминание ошибки и ожидание восстановления
 - ⏮ Rollback: Откат к стабильному состоянию
 
-# Recursion: Циклические зависимости
-
-- 🔁 Allow: Допустимы
-- ⛔ Fail: Приводят к ошибке
-- 🚫 Impossible: Невозможны
-
 # DataFlow: Конфигурация потоков данных
 
 - 👷‍♂️ Manual: Ручная
 - 🚕 Auto: Автоматическа
+
+# Recursion: Циклические зависимости
+
+- 🔁 Allow: Допустимы
+- ⛔ Fail: Приводят к ошибкея
+- 🚫 Impossible: Невозможны
 
 # Реактивные библиотеки
 
