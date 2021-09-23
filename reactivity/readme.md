@@ -130,9 +130,9 @@ class State {
 
 # Energetic: Энергичность реакций
 
-- ❌ Instant: Мгновенные
-- ⭕ Defer: Отложенные
-- ✅ Lazy: Ленивые
+- 🍔 Instant: Мгновенные
+- ⏰ Defer: Отложенные
+- 🦥 Lazy: Ленивые
 
 # Order: Порядок реакций
 
@@ -168,21 +168,21 @@ class State {
 
 | Lib        | Paradigm | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
 |------------|----------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
-| RxJS       | 🤯 FP   | 📮 Push   | 🔗 Observers ❓ | ❌ Instant   | ⭕ Subscribe | ⭕ Eventual | ❌ Stop     | 💪 Manual
-| MobX       | 🤓 OOP  | 🚂 Pull    | 🎆 Events      | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Auto
-| $mol_atom2 | 🤓 OOP  | 🚂 Pull    | 🔗 Observers   | ✅ Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Auto
-| CellX      | 🤓 OOP  | 🚂 Pull    | 🎆 Events      |               |              |             |              | 🚕 Auto
-| Reatom     |          |           |                 | ✅ Lazy      |              | ✅ Strong    | ✅ Rollback  | 💪 Manual
-| Effector   |          | 📮 Push   |                 | ❌ Instant   |              |              |               | 💪 Manual
+| RxJS       | 🤯 FP   | 📮 Push   | 🔗 Observers ❓ | 🍔 Instant   | ⭕ Subscribe | ⭕ Eventual | ❌ Stop     | 💪 Manual
+| MobX       | 🤓 OOP  | 🚂 Pull   | 🎆 Events      | 🦥 Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Auto
+| $mol_atom2 | 🤓 OOP  | 🚂 Pull   | 🔗 Observers   | 🦥 Lazy      | ✅ Code      | ✅ Strong   | ✅ Store    | 🚕 Auto
+| CellX      | 🤓 OOP  | 🚂 Pull   | 🎆 Events      |               |              |             |              | 🚕 Auto
+| Reatom     |          |           |                 | 🦥 Lazy      |              | ✅ Strong    | ✅ Rollback  | 💪 Manual
+| Effector   |          | 📮 Push   |                 | 🍔 Instant   |              |              |               | 💪 Manual
 
 # Реактивные фреймворки
 
 | Lib        | Paradigm | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
 |------------|----------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
-| React      | 🧐 PP   | 📮 Push   | 🔭 Polling      | ⭕ Defer    | ✅ Code       |             |              | 💪 Manual
-| Angular    | 🧐 PP   | 📮 Push   | 🔭 Polling      | ⭕ Defer    | ✅ Code ❓    | ❌ Relaxed  | ❌ Unstable | 🚕 Auto
-| Vue        | 🤓 OOP  | 🚂 Pull   | 🔗 Observers ❓ | ✅ Lazy     |               |             |              | 🚕 Auto
-| Svelte     | 🧐 PP   | 📮 Push   | 🔭 Polling      | ⭕ Defer    |               |             |              | 🚕 Auto
+| React      | 🧐 PP   | 📮 Push   | 🔭 Polling      | ⏰ Defer    | ✅ Code       |             |              | 💪 Manual
+| Angular    | 🧐 PP   | 📮 Push   | 🔭 Polling      | ⏰ Defer    | ✅ Code ❓    | ❌ Relaxed  | ❌ Unstable | 🚕 Auto
+| Vue        | 🤓 OOP  | 🚂 Pull   | 🔗 Observers ❓ | 🦥 Lazy     |               |             |              | 🚕 Auto
+| Svelte     | 🧐 PP   | 📮 Push   | 🔭 Polling      | ⏰ Defer    |               |             |              | 🚕 Auto
 
 # Конфигурации зависимостей
 
