@@ -52,13 +52,13 @@
 
 ![](reactivity-runtime.svg)
 
-# Paradigm: Парадигма
+# Style: Стилистика кода
 
-- 🧐 PP: Процедурная
-- 🤓 OOP: Объектная
-- 🤯 FP: Функциональная
+- 🧐 Procedural: Процедурный
+- 🤓 Objectional: Объектный
+- 🤯 Functional: Функциональный
 
-## 🧐 PP: Процедурная парадигма
+## 🧐 Procedural: Процедурный стиль
 
 Эпизодически запускается процедура обновления, которая что-то читает, что-то пишет. Простейшая рализация..
 
@@ -71,10 +71,33 @@ setInterval( ()=> { Count = Name.length } )
 setInterval( ()=> { Short = Count < 5 } )
 ```
 
-Примерно так с рядом оптимизаций работают Angular и Svelte. 
+## 🤓 Objectional: Объектный стиль
 
-## 🤓 OOP: Объектная парадигма
-## 🤯 FP: Функциональная парадигма
+Программа состоит из множества объектов, обладающих состояниями, связанных инвариантами в единый граф.
+
+```javascript
+class State {
+	
+	@mem get Name() { return 'Jin' }
+	
+	@mem get Count() { return this.Name.length }
+	
+	@mem get Short() { return this.Count < 5 }
+	
+}
+```
+
+## 🤯 Functional: Функциональный стиль
+
+Инварианты описываются в виде чистых функций.
+
+```javascript
+const Name = new BehaviorSubject( 'Jin' )
+
+const Count = Name.pipe( map( Name => Name.length ) )
+
+const Short = Count.pipe( map( Count => Count < 5 ) )
+```
 
 # Origin: Кто инициатор обновления?
 
@@ -83,38 +106,11 @@ setInterval( ()=> { Short = Count < 5 } )
 
 ## 📮 Push: Зависимость проталкивает
 
-```javascript
-class State {
-	
-	@mem
-	get Name() { return 'Jin' }
-	set Name( Name ) { this.Count = Name.length }
-	
-	@mem
-	set Count( Count ) { this.Short = Count < 5 }
-	
-	@mem
-	set Short( Short ) {}
-	
-}
-```
+![](reactivity-push.svg)
 
 ## 🚂 Pull: Зависимый затягивает
 
-```javascript
-class State {
-	
-	@mem
-	get Name() { return 'Jin' }
-	
-	@mem
-	get Count() { return this.Name.length }
-	
-	@mem
-	get Short() { return this.Count < 5 }
-	
-}
-```
+![](reactivity-pull.svg)
 
 # Observing: Наблюдение
 
@@ -166,23 +162,23 @@ class State {
 
 # Реактивные библиотеки
 
-| Lib        | Paradigm | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
-|------------|----------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
-| RxJS       | 🤯 FP   | 📮 Push   | 🔗 Observers ❓ | 🍔 Instant   | ⌚ Subscribe | 🙏 Eventual | ⛔ Stop     | 👷‍♂️ Manual
-| MobX       | 🤓 OOP  | 🚂 Pull   | 🎆 Events      | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong   | 🦺 Store    | 🚕 Auto
-| $mol_atom2 | 🤓 OOP  | 🚂 Pull   | 🔗 Observers   | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong   | 🦺 Store    | 🚕 Auto
-| CellX      | 🤓 OOP  | 🚂 Pull   | 🎆 Events      |               |              |              |              | 🚕 Auto
-| Reatom     |          |           |                 | 🦥 Lazy      |              | 💪 Strong    | ⏮ Rollback  | 👷‍♂️ Manual
-| Effector   |          | 📮 Push   |                 | 🍔 Instant   |              |              |               | 👷‍♂️ Manual
+| Lib        | Style          | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
+|------------|----------------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
+| RxJS       | 🤯 Functional  | 📮 Push   | 🔗 Observers ❓ | 🍔 Instant   | ⌚ Subscribe | 🙏 Eventual | ⛔ Stop     | 👷‍♂️ Manual
+| MobX       | 🤓 Objectional | 🚂 Pull   | 🎆 Events      | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong   | 🦺 Store    | 🚕 Auto
+| $mol_atom2 | 🤓 Objectional | 🚂 Pull   | 🔗 Observers   | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong   | 🦺 Store    | 🚕 Auto
+| CellX      | 🤓 Objectional | 🚂 Pull   | 🎆 Events      |               |              |              |              | 🚕 Auto
+| Reatom     |                |           |                 | 🦥 Lazy      |              | 💪 Strong    | ⏮ Rollback  | 👷‍♂️ Manual
+| Effector   |                | 📮 Push   |                 | 🍔 Instant   |              |              |               | 👷‍♂️ Manual
 
 # Реактивные фреймворки
 
-| Lib        | Paradigm | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
-|------------|----------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
-| React      | 🧐 PP   | 📮 Push   | 🔭 Polling      | ⏰ Defer    | 👨‍💻 Code       |             |              | 👷‍♂️ Manual
-| Angular    | 🧐 PP   | 📮 Push   | 🔭 Polling      | ⏰ Defer    | 👨‍💻 Code ❓    | 💩 Relaxed  | 🎲 Unstable | 🚕 Auto
-| Vue        | 🤓 OOP  | 🚂 Pull   | 🔗 Observers ❓ | 🦥 Lazy     |               |             |              | 🚕 Auto
-| Svelte     | 🧐 PP   | 📮 Push   | 🔭 Polling      | ⏰ Defer    |               |             |              | 🚕 Auto
+| Lib        | Style          | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
+|------------|----------------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
+| React      | 🧐 Procedural  | 📮 Push   | 🔭 Polling      | ⏰ Defer    | 👨‍💻 Code       |             |              | 👷‍♂️ Manual
+| Angular    | 🧐 Procedural  | 📮 Push   | 🔭 Polling      | ⏰ Defer    | 👨‍💻 Code ❓    | 💩 Relaxed  | 🎲 Unstable | 🚕 Auto
+| Vue        | 🤓 Objectional | 🚂 Pull   | 🔗 Observers ❓ | 🦥 Lazy     |               |             |              | 🚕 Auto
+| Svelte     | 🧐 Procedural  | 📮 Push   | 🔭 Polling      | ⏰ Defer    |               |             |              | 🚕 Auto
 
 # Конфигурации зависимостей
 
