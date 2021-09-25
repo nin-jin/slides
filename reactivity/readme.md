@@ -118,11 +118,11 @@ const Short = Count.pipe( map( Count => Count < 5 ) )
 
 ![](reactivity-pull.svg)
 
-# Observing: Наблюдение за изменениями
+# Watch: Наблюдение за изменениями
 
 - 🔎Polling: Периодическая сверка
 - 🎇Events: Возникновение события
-- 🤝Observers: Список подписчиков
+- 🤝Watchrs: Список подписчиков
 
 ## 🔎Polling: Периодическая сверка
 
@@ -142,7 +142,7 @@ for( const reaction of this.reactions ) {
 }
 ```
 
-## 🤝Observers: Список подписчиков
+## 🤝Watchrs: Список подписчиков
 
 Состояния хранят прямые ссылки друг на друга, образуя глобальный граф.
 
@@ -156,7 +156,7 @@ for( const master of this.masters ) {
 }
 ```
 
-# Energetic: Энергичность реакций
+# Tonus: Энергичность реакций
 
 - 🍔Instant: Мгновенные
 - ⏰Defer: Отложенные
@@ -235,7 +235,7 @@ for( const master of this.masters ) {
 
 ![](reactivity-error-revert.svg)
 
-# Consistency: Согласованность состояния
+# Conform: Согласованность состояния
 
 - 💪Strong: Гарантированнная
 - 🙏Eventual: В конечном счёте
@@ -276,7 +276,7 @@ for( const master of this.masters ) {
 
 ![](reactivity-auto.svg)
 
-## Recursion: Циклические зависимости
+## Cycle: Циклические зависимости
 
 - 💤Allow: Допускаются
 - ⛔Fail: Приводят к ошибке
@@ -284,15 +284,15 @@ for( const master of this.masters ) {
 
 ## 💤Allow: Допускаются
 
-![](reactivity-recursion-allow.svg)
+![](reactivity-Cycle-allow.svg)
 
 ## ⛔Fail: Приводят к ошибкея
 
-![](reactivity-recursion-fail.svg)
+![](reactivity-Cycle-fail.svg)
 
 ## 🚫Impossible: Невозможны
 
-![](reactivity-recursion-impossible.svg)
+![](reactivity-Cycle-impossible.svg)
 
 # Оценка практичности
 
@@ -300,44 +300,33 @@ for( const master of this.masters ) {
 |--------------|-----------------------------|---------
 | Style        | 🤓Objectional 🧐Procedural | 🤯Functional
 | Origin       | 🚂Pull                     | 📮Push
-| Observing    | 🤝Observers                | 🔎Polling 🎇Events
-| Energetic    | 🦥Lazy                     | 🍔Instant ⏰Defer
+| Watch      | 🤝Watchrs                | 🔎Polling 🎇Events
+| Tonus        | 🦥Lazy                     | 🍔Instant ⏰Defer
 | Order        | 👨‍💻Code                     | ⌚Subscribe 🧨Event
-| Consistency  | 💪Strong                   | 💩Relaxed 🙏Eventual
+| Conform      | 💪Strong                   | 💩Relaxed 🙏Eventual
 | Error        | 🦺Store                    | ⛔Stop ⏮Revert 🎲Unstable
 | Flow         | 🚕Auto                     | 👷‍♂️Manual 
-| Recursion    | ⛔Fail                     | 💤Allow 🚫Impossible
+| Cycle        | ⛔Fail                     | 💤Allow 🚫Impossible
 
 # Реактивные библиотеки
 
-| Lib        | Style          | Origin  | Observing   | Energetic  | Order       | Consistency | Error      | Flow | Recursion
-|------------|----------------|---------|-------------|------------|-------------|-------------|------------|----------|----------
-| RxJS       | 🤯Functional  | 📮Push  | 🤝Observers | 🍔Instant | ⌚Subscribe | 💩Relaxed  | ⛔Stop     | 👷‍♂️Manual | 🚫Impossible
-| MobX       | 🤓Objectional | 🚂Pull  | 🎇Events    | 🦥Lazy    | 👨‍💻Code     | 💪Strong    | 🦺Store    | 🚕Auto  | ⛔Fail
-| $mol_atom2 | 🤓Objectional | 🚂Pull  | 🤝Observers | 🦥Lazy    | 👨‍💻Code     | 💪Strong    | 🦺Store    | 🚕Auto  | ⛔Fail
-| CellX      | 🤓Objectional | 🚂Pull  | 🎇Events    |           |             |             |             | 🚕Auto  |
-| Reatom     |                |         |             | 🦥Lazy    |             | 💪Strong    | ⏮Revert  | 👷‍♂️Manual |
-| Effector   | 🤯Functional  | 📮Push  | 🤝Observers | 🍔Instant | ⌚Subscribe | 💩Relaxed  | 🎲Unstable | 👷‍♂️Manual | 🚫*Impossible*
-
-# Реактивные библиотеки
-
-| Lib        | Style | Origin | Observing | Energetic | Order | Consistency | Error | Flow | Recursion
-|------------|-------|--------|-----------|-----------|-------|-------------|-------|------|----------
-| RxJS       | 🤯❌  | 📮❌  | 🤝✅ | 🍔❌ | ⌚❌ | 💩❌  | ⛔❌     | 👷‍♂️❌ | 🚫❌
-| MobX       | 🤓✅ | 🚂✅  | 🎇❌    | 🦥✅    | 👨‍💻✅     | 💪✅    | 🦺✅    | 🚕✅  | ⛔✅
-| $mol_atom2 | 🤓✅ | 🚂✅  | 🤝✅ | 🦥✅    | 👨‍💻✅     | 💪✅    | 🦺✅    | 🚕✅  | ⛔✅
-| CellX      | 🤓✅ | 🚂✅  | 🎇❌    |           |             |             |             | 🚕✅  | 
-| Reatom     |                |         |             | 🦥✅    |             | 💪✅    | ⏮❌  | 👷‍♂️❌ | 
-| Effector   | 🤯❌  | 📮❌  | 🤝✅ | 🍔❌ | ⌚❌ | 💩❌  | 🎲❌ | 👷‍♂️❌ | 🚫❌
+| Lib        | Style | Origin | Watch | Tonus | Order | Conform | Error | Flow  | Cycle
+|------------|-------|--------|-------|-------|-------|---------|--------|------|----------
+| MobX       | 🤓✅ | 🚂✅  | 🎇❌ | 🦥✅ | 👨‍💻✅ | 💪✅   | 🦺✅ | 🚕✅ | ⛔✅
+| $mol_atom2 | 🤓✅ | 🚂✅  | 🤝✅ | 🦥✅ | 👨‍💻✅ | 💪✅   | 🦺✅ | 🚕✅ | ⛔✅
+| CellX      | 🤓✅ | 🚂✅  | 🎇❌ |       |       |         |       | 🚕✅ | 
+| Reatom     |       |        |       | 🦥✅ |       | 💪✅   | ⏮❌ | 👷❌ | 
+| RxJS       | 🤯❌ | 📮❌  | 🤝✅ | 🍔❌ | ⌚❌ | 💩❌   | ⛔❌ | 👷‍♂️❌  | 🚫❌
+| Effector   | 🤯❌ | 📮❌  | 🤝✅ | 🍔❌ | ⌚❌ | 💩❌   | 🎲❌ | 👷‍♂️❌  | 🚫❌
 
 # Реактивные фреймворки
 
-| Lib     | Style          | Origin | Observing       | Energetic | Order     | Consistency | Error      | Flow
-|---------|----------------|--------|-----------------|-----------|-----------|-------------|------------|----------
-| React   | 🧐Procedural  | 📮Push | 🔎Polling       | ⏰Defer  | 👨‍💻Code    |             |            | 👷‍♂️Manual
-| Angular | 🧐Procedural  | 📮Push | 🔎Polling       | ⏰Defer  | 👨‍💻*Code* | 💩Relaxed  | 🎲Unstable | 🚕Auto
-| Vue     | 🤓Objectional | 🚂Pull | 🤝*Observers*  | 🦥Lazy   |           |             |            | 🚕Auto
-| Svelte  | 🧐Procedural  | 📮Push | 🔎Polling       | ⏰Defer  |           |             |            | 🚕Auto
+| Lib     | Style | Origin | Watch | Tonus | Order | Conform | Error | Flow
+|---------|-------|--------|-------|-------|-------|---------|-------|----------
+| React   | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ | 👨‍💻✅ |         |       | 👷‍♂️❌
+| Angular | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ |       | 💩❌   | 🎲❌  | 🚕✅
+| Vue     | 🤓✅ | 🚂✅  |       | 🦥✅ |       |         |       | 🚕✅
+| Svelte  | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ |       |         |       | 🚕✅
 
 # Конфигурации зависимостей
 
