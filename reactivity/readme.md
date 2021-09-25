@@ -122,7 +122,7 @@ const Short = Count.pipe( map( Count => Count < 5 ) )
 
 - 🔎Polling: Периодическая сверка
 - 🎇Events: Возникновение события
-- 🤝Watchrs: Список подписчиков
+- 🤝Links: Список подписчиков
 
 ## 🔎Polling: Периодическая сверка
 
@@ -142,7 +142,7 @@ for( const reaction of this.reactions ) {
 }
 ```
 
-## 🤝Watchrs: Список подписчиков
+## 🤝Links: Список подписчиков
 
 Состояния хранят прямые ссылки друг на друга, образуя глобальный граф.
 
@@ -300,7 +300,7 @@ for( const master of this.masters ) {
 |--------------|-----------------------------|---------
 | Style        | 🤓Objectional 🧐Procedural | 🤯Functional
 | Origin       | 🚂Pull                     | 📮Push
-| Watch        | 🤝Watchrs                | 🔎Polling 🎇Events
+| Watch        | 🤝Links                | 🔎Polling 🎇Events
 | Tonus        | 🦥Lazy                     | 🍔Instant ⏰Defer
 | Order        | 👨‍💻Code                     | ⌚Subscribe 🧨Event
 | Conform      | 💪Strong                   | 💩Relaxed 🙏Eventual
