@@ -267,27 +267,31 @@ foo = 'foo'
 - 🎲Unstable: Нестабильная работа
 - ⛔Stop: Прекращение работы
 - 🦺Store: Индикация ошибки и ожидание восстановления
-- ⏮Rollback: Откат к стабильному состоянию
+- ⏮Revert: Откат к стабильному состоянию
 
 ## 🎲Unstable: Нестабильная работа при ошибке
 
 Обычно следствие неконсистентного состояния.
 
-![](reactivity-unstable.svg)
+![](reactivity-error-unstable.svg)
 
 ## ⛔Stop: Прекращение работы при ошибке
 
 Требуется перезапуск всего приложения или отдельной его части.
 
-![](reactivity-stop.svg)
+![](reactivity-error-stop.svg)
 
 ## 🦺Store: Индикация ошибки и ожидание восстановления
 
 Приложение частично помечается невалидным. Устранение причины исключительной ситуации восстанавливает нормальную работу.
 
-## ⏮Rollback: Откат к стабильному состоянию при ошибке
+![](reactivity-error-store.svg)
+
+## ⏮Revert: Откат к стабильному состоянию при ошибке
 
 Возможна ситуация, когда из-за ошибки в далёкой реакции невозможно изменить первичное состояние.
+
+![](reactivity-error-revert.svg)
 
 # DataFlow: Конфигурация потоков данных
 
@@ -310,7 +314,7 @@ foo = 'foo'
 | MobX       | 🤓Objectional | 🚂Pull  | 🎇Events    | 🦥Lazy    | 👨‍💻Code     | 💪Strong    | 🦺Store    | 🚕Auto
 | $mol_atom2 | 🤓Objectional | 🚂Pull  | 🤝Observers | 🦥Lazy    | 👨‍💻Code     | 💪Strong    | 🦺Store    | 🚕Auto
 | CellX      | 🤓Objectional | 🚂Pull  | 🎇Events    |           |             |             |             | 🚕Auto
-| Reatom     |                |         |             | 🦥Lazy    |             | 💪Strong    | ⏮Rollback | 👷‍♂️Manual
+| Reatom     |                |         |             | 🦥Lazy    |             | 💪Strong    | ⏮Revert | 👷‍♂️Manual
 | Effector   | 🤯Functional  | 📮Push  | 🤝Observers | 🍔Instant | ⌚Subscribe |             | 🎲Unstable | 👷‍♂️Manual
 
 # Реактивные фреймворки
