@@ -279,41 +279,39 @@ for( const master of this.masters ) {
 ## Recursion: Циклические зависимости
 
 - 💤Allow: Допускаются
+- ⛔Fail: Приводят к ошибке
+- 🚫Impossible: Невозможны
+
+## 💤Allow: Допускаются
 
 ![](reactivity-recursion-allow.svg)
 
-- ⛔Fail: Приводят к ошибке
+## ⛔Fail: Приводят к ошибкея
 
 ![](reactivity-recursion-fail.svg)
 
-- 🚫Impossible: Невозможны
+## 🚫Impossible: Невозможны
 
 ![](reactivity-recursion-impossible.svg)
 
-## 💤Allow: Допускаются
-## ⛔Fail: Приводят к ошибкея
-## 🚫Impossible: Невозможны
-
-![](reactivity-recursion-allow.svg)
-
 # Реактивные библиотеки
 
-| Lib        | Style          | Origin  | Observing   | Energetic  | Order       | Consistency | Error      | DataFlow
-|------------|----------------|---------|-------------|------------|-------------|-------------|------------|----------
-| RxJS       | 🤯Functional  | 📮Push  | 🤝Observers | 🍔Instant | ⌚Subscribe | 💩Relaxed  | ⛔Stop     | 👷‍♂️Manual
-| MobX       | 🤓Objectional | 🚂Pull  | 🎇Events    | 🦥Lazy    | 👨‍💻Code     | 💪Strong    | 🦺Store    | 🚕Auto
-| $mol_atom2 | 🤓Objectional | 🚂Pull  | 🤝Observers | 🦥Lazy    | 👨‍💻Code     | 💪Strong    | 🦺Store    | 🚕Auto
-| CellX      | 🤓Objectional | 🚂Pull  | 🎇Events    |           |             |             |             | 🚕Auto
-| Reatom     |                |         |             | 🦥Lazy    |             | 💪Strong    | ⏮Revert  | 👷‍♂️Manual
-| Effector   | 🤯Functional  | 📮Push  | 🤝Observers | 🍔Instant | ⌚Subscribe | 💩Relaxed  | 🎲Unstable | 👷‍♂️Manual
+| Lib        | Style          | Origin  | Observing   | Energetic  | Order       | Consistency | Error      | DataFlow | Recursion
+|------------|----------------|---------|-------------|------------|-------------|-------------|------------|----------|----------
+| RxJS       | 🤯Functional  | 📮Push  | 🤝Observers | 🍔Instant | ⌚Subscribe | 💩Relaxed  | ⛔Stop     | 👷‍♂️Manual | 🚫Impossible
+| MobX       | 🤓Objectional | 🚂Pull  | 🎇Events    | 🦥Lazy    | 👨‍💻Code     | 💪Strong    | 🦺Store    | 🚕Auto  | ⛔Fail
+| $mol_atom2 | 🤓Objectional | 🚂Pull  | 🤝Observers | 🦥Lazy    | 👨‍💻Code     | 💪Strong    | 🦺Store    | 🚕Auto  | ⛔Fail
+| CellX      | 🤓Objectional | 🚂Pull  | 🎇Events    |           |             |             |             | 🚕Auto  |
+| Reatom     |                |         |             | 🦥Lazy    |             | 💪Strong    | ⏮Revert  | 👷‍♂️Manual |
+| Effector   | 🤯Functional  | 📮Push  | 🤝Observers | 🍔Instant | ⌚Subscribe | 💩Relaxed  | 🎲Unstable | 👷‍♂️Manual | 🚫*Impossible*
 
 # Реактивные фреймворки
 
 | Lib     | Style          | Origin | Observing       | Energetic | Order     | Consistency | Error      | DataFlow
 |---------|----------------|--------|-----------------|-----------|-----------|-------------|------------|----------
 | React   | 🧐Procedural  | 📮Push | 🔎Polling       | ⏰Defer  | 👨‍💻Code    |             |            | 👷‍♂️Manual
-| Angular | 🧐Procedural  | 📮Push | 🔎Polling       | ⏰Defer  | 👨‍💻 *Code* | 💩Relaxed  | 🎲Unstable | 🚕Auto
-| Vue     | 🤓Objectional | 🚂Pull | 🤝 *Observers*  | 🦥Lazy   |           |             |            | 🚕Auto
+| Angular | 🧐Procedural  | 📮Push | 🔎Polling       | ⏰Defer  | 👨‍💻*Code* | 💩Relaxed  | 🎲Unstable | 🚕Auto
+| Vue     | 🤓Objectional | 🚂Pull | 🤝*Observers*  | 🦥Lazy   |           |             |            | 🚕Auto
 | Svelte  | 🧐Procedural  | 📮Push | 🔎Polling       | ⏰Defer  |           |             |            | 🚕Auto
 
 # Конфигурации зависимостей
