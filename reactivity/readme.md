@@ -313,9 +313,9 @@ foo = 'foo'
 
 | Lib        | Style          | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
 |------------|----------------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
-| React      | 🧐 Procedural  | 📮 Push   | 🔎 Polling      | ⏰ Defer    | 👨‍💻 Code       |             |              | 👷‍♂️ Manual
-| Angular    | 🧐 Procedural  | 📮 Push   | 🔎 Polling      | ⏰ Defer    | 👨‍💻 Code ❓    | 💩 Relaxed  | 🎲 Unstable | 🚕 Auto
-| Vue        | 🤓 Objectional | 🚂 Pull   | 🤝 Observers ❓ | 🦥 Lazy     |               |             |              | 🚕 Auto
+| React      | 🧐 Procedural  | 📮 Push   | 🔎 Polling      | ⏰ Defer    | 👨‍💻 Code      |             |              | 👷‍♂️ Manual
+| Angular    | 🧐 Procedural  | 📮 Push   | 🔎 Polling      | ⏰ Defer    | 👨‍💻 *Code*    | 💩 Relaxed  | 🎲 Unstable | 🚕 Auto
+| Vue        | 🤓 Objectional | 🚂 Pull   | 🤝 *Observers* | 🦥 Lazy     |               |             |              | 🚕 Auto
 | Svelte     | 🧐 Procedural  | 📮 Push   | 🔎 Polling      | ⏰ Defer    |               |             |              | 🚕 Auto
 
 # Конфигурации зависимостей
