@@ -118,11 +118,11 @@ const Short = Count.pipe( map( Count => Count < 5 ) )
 
 # Observing: Наблюдение за изменениями
 
-- 🔭 Polling: Периодическая сверка
-- 🎆 Events: Возникновение события
-- 🔌 Observers: Список подписчиков
+- 🔎 Polling: Периодическая сверка
+- 🎇 Events: Возникновение события
+- 🤝 Observers: Список подписчиков
 
-## 🔭 Polling: Периодическая сверка
+## 🔎 Polling: Периодическая сверка
 
 Состяния хранят лишь значения и всё. Рантайм периодически сверяет текущее значение с предыдущим. И если они отличаются - пушит в зависимые состояния новые значения. Так работает Angular.
 
@@ -130,7 +130,7 @@ const Short = Count.pipe( map( Count => Count < 5 ) )
 if( state !== state_prev ) reactions()
 ```
 
-## 🎆 Events: Возникновение события
+## 🎇 Events: Возникновение события
 
 Каждое состояние хранит список функций обработчиков изменения. Больше ничего оно про другие состояния не знает.
 
@@ -140,7 +140,7 @@ for( const reaction of this.reactions ) {
 }
 ```
 
-## 🔌 Observers: Список подписчиков
+## 🤝 Observers: Список подписчиков
 
 Состояния хранят прямые ссылки друг на друга, образуя глобальный граф.
 
@@ -302,21 +302,21 @@ foo = 'foo'
 
 | Lib        | Style          | Origin    | Observing    | Energetic    | Order         | Consistency | Error        | DataFlow
 |------------|----------------|-----------|--------------|--------------|---------------|-------------|--------------|----------
-| RxJS       | 🤯 Functional  | 📮 Push  | 🔌 Observers | 🍔 Instant   | ⌚ Subscribe | 🙏 Eventual | ⛔ Stop     | 👷‍♂️ Manual
-| MobX       | 🤓 Objectional | 🚂 Pull  | 🎆 Events    | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong  | 🦺 Store     | 🚕 Auto
-| $mol_atom2 | 🤓 Objectional | 🚂 Pull  | 🔌 Observers | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong  | 🦺 Store     | 🚕 Auto
-| CellX      | 🤓 Objectional | 🚂 Pull  | 🎆 Events    |              |               |            |               | 🚕 Auto
+| RxJS       | 🤯 Functional  | 📮 Push  | 🤝 Observers | 🍔 Instant   | ⌚ Subscribe | 🙏 Eventual | ⛔ Stop     | 👷‍♂️ Manual
+| MobX       | 🤓 Objectional | 🚂 Pull  | 🎇 Events    | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong  | 🦺 Store     | 🚕 Auto
+| $mol_atom2 | 🤓 Objectional | 🚂 Pull  | 🤝 Observers | 🦥 Lazy      | 👨‍💻 Code      | 💪 Strong  | 🦺 Store     | 🚕 Auto
+| CellX      | 🤓 Objectional | 🚂 Pull  | 🎇 Events    |              |               |            |               | 🚕 Auto
 | Reatom     |                |           |              | 🦥 Lazy      |               | 💪 Strong  | ⏮ Rollback  | 👷‍♂️ Manual
-| Effector   | 🤯 Functional  | 📮 Push  | 🔌 Observers | 🍔 Instant   | ⌚ Subscribe |             | 🎲 Unstable  | 👷‍♂️ Manual
+| Effector   | 🤯 Functional  | 📮 Push  | 🤝 Observers | 🍔 Instant   | ⌚ Subscribe |             | 🎲 Unstable  | 👷‍♂️ Manual
 
 # Реактивные фреймворки
 
 | Lib        | Style          | Origin    | Observing       | Energetic    | Order         | Consistency | Error        | DataFlow
 |------------|----------------|-----------|-----------------|--------------|---------------|-------------|--------------|----------
-| React      | 🧐 Procedural  | 📮 Push   | 🔭 Polling      | ⏰ Defer    | 👨‍💻 Code       |             |              | 👷‍♂️ Manual
-| Angular    | 🧐 Procedural  | 📮 Push   | 🔭 Polling      | ⏰ Defer    | 👨‍💻 Code ❓    | 💩 Relaxed  | 🎲 Unstable | 🚕 Auto
-| Vue        | 🤓 Objectional | 🚂 Pull   | 🔌 Observers ❓ | 🦥 Lazy     |               |             |              | 🚕 Auto
-| Svelte     | 🧐 Procedural  | 📮 Push   | 🔭 Polling      | ⏰ Defer    |               |             |              | 🚕 Auto
+| React      | 🧐 Procedural  | 📮 Push   | 🔎 Polling      | ⏰ Defer    | 👨‍💻 Code       |             |              | 👷‍♂️ Manual
+| Angular    | 🧐 Procedural  | 📮 Push   | 🔎 Polling      | ⏰ Defer    | 👨‍💻 Code ❓    | 💩 Relaxed  | 🎲 Unstable | 🚕 Auto
+| Vue        | 🤓 Objectional | 🚂 Pull   | 🤝 Observers ❓ | 🦥 Lazy     |               |             |              | 🚕 Auto
+| Svelte     | 🧐 Procedural  | 📮 Push   | 🔎 Polling      | ⏰ Defer    |               |             |              | 🚕 Auto
 
 # Конфигурации зависимостей
 
