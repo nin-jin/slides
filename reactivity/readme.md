@@ -259,7 +259,7 @@ for( const master of this.masters ) {
 
 ![](reactivity-error-stop.svg)
 
-# DataFlow: Конфигурация потоков данных
+# Flow: Конфигурация потоков данных
 
 - 👷‍♂️Manual: Ручная
 - 🚕Auto: Автоматическа
@@ -296,7 +296,7 @@ for( const master of this.masters ) {
 
 # Реактивные библиотеки
 
-| Lib        | Style          | Origin  | Observing   | Energetic  | Order       | Consistency | Error      | DataFlow | Recursion
+| Lib        | Style          | Origin  | Observing   | Energetic  | Order       | Consistency | Error      | Flow | Recursion
 |------------|----------------|---------|-------------|------------|-------------|-------------|------------|----------|----------
 | RxJS       | 🤯Functional  | 📮Push  | 🤝Observers | 🍔Instant | ⌚Subscribe | 💩Relaxed  | ⛔Stop     | 👷‍♂️Manual | 🚫Impossible
 | MobX       | 🤓Objectional | 🚂Pull  | 🎇Events    | 🦥Lazy    | 👨‍💻Code     | 💪Strong    | 🦺Store    | 🚕Auto  | ⛔Fail
@@ -307,7 +307,7 @@ for( const master of this.masters ) {
 
 # Реактивные библиотеки
 
-| Lib        | Style          | Origin  | Observing   | Energetic  | Order       | Consistency | Error      | DataFlow | Recursion
+| Lib        | Style          | Origin  | Observing   | Energetic  | Order       | Consistency | Error      | Flow | Recursion
 |------------|----------------|---------|-------------|------------|-------------|-------------|------------|----------|----------
 | RxJS       | 🤯  | 📮  | 🤝 | 🍔 | ⌚ | 💩  | ⛔     | 👷‍♂️ | 🚫
 | MobX       | 🤓 | 🚂  | 🎇    | 🦥    | 👨‍💻     | 💪    | 🦺    | 🚕  | ⛔
@@ -316,30 +316,21 @@ for( const master of this.masters ) {
 | Reatom     |                |         |             | 🦥    |             | 💪    | ⏮  | 👷‍♂️ |
 | Effector   | 🤯  | 📮  | 🤝 | 🍔 | ⌚ | 💩  | 🎲 | 👷‍♂️ | 🚫
 
-- 🤯Functional
-- 🤓Objectional
-- 📮Push
-- 🚂Pull
-- 🤝Observers
-- 🎇Events
-- 🍔Instant
-- 🦥Lazy
-- ⌚Subscribe
-- 👨‍💻Code
-- 💩Relaxed
-- 💪Strong
-- ⛔Stop
-- 🦺Store
-- ⏮Revert
-- 🎲Unstable
-- 👷‍♂️Manual
-- 🚕Auto
-- 🚫Impossible
-- ⛔Fail
+| Aspect | Strategies
+|--------|-----------
+| Style  | 🤯Functional 🤓Objectional
+| Origin | 📮Push 🚂Pull
+| Observing | 🤝Observers 🎇Events
+| Energetic | 🍔Instant 🦥Lazy
+| Order | ⌚Subscribe 👨‍💻Code
+| Consistency | 💩Relaxed 💪Strong
+| Error | ⛔Stop 🦺Store ⏮Revert 🎲Unstable
+| Flow | 👷‍♂️Manual 🚕Auto
+| Recursion | 🚫Impossible ⛔Fail
 
 # Реактивные фреймворки
 
-| Lib     | Style          | Origin | Observing       | Energetic | Order     | Consistency | Error      | DataFlow
+| Lib     | Style          | Origin | Observing       | Energetic | Order     | Consistency | Error      | Flow
 |---------|----------------|--------|-----------------|-----------|-----------|-------------|------------|----------
 | React   | 🧐Procedural  | 📮Push | 🔎Polling       | ⏰Defer  | 👨‍💻Code    |             |            | 👷‍♂️Manual
 | Angular | 🧐Procedural  | 📮Push | 🔎Polling       | ⏰Defer  | 👨‍💻*Code* | 💩Relaxed  | 🎲Unstable | 🚕Auto
