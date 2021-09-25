@@ -170,22 +170,13 @@ for( const master of this.masters ) {
 
 Пересчёт зависимых состояний откладывается на потом, но происходит в любом случае.
 
-```javascript
-value = next
-if( !scheduled ) schedule( invariants )
-
-value = next
-if( !scheduled ) schedule( invariants )
-```
+![](reactivity-defer.svg)
 
 ## 🦥Lazy: Ленивые реакции
 
 Пересчёт зависимого состояния происходит лишь в момент обращения к нему.
 
-```javascript
-if( dirty ) invariants()
-return value
-```
+![](reactivity-lazy.svg)
 
 # Order: Порядок реакций
 
