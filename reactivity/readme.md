@@ -336,13 +336,17 @@ foo = 'foo'
 
 ![](reactivity-multi-master.svg)
 
-## Много зависимых
-
 ## Переключение зависимостей
 
 > ❌ Bad: 👷‍♂️Manual
 
 ![](reactivity-switch-master.svg)
+
+## Много зависимых
+
+> ❌ Bad: ⌚Subscribe, 🧨Event
+
+![](reactivity-multi-slave.svg)
 
 ## Переключение зависимых
 
