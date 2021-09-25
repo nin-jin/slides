@@ -316,17 +316,10 @@ for( const master of this.masters ) {
 | Reatom     |                |         |             | 🦥    |             | 💪    | ⏮  | 👷‍♂️ |
 | Effector   | 🤯  | 📮  | 🤝 | 🍔 | ⌚ | 💩  | 🎲 | 👷‍♂️ | 🚫
 
-| Aspect | Strategies
-|--------|-----------
-| Style  | 🤯Functional 🤓Objectional
-| Origin | 📮Push 🚂Pull
-| Observing | 🤝Observers 🎇Events
-| Energetic | 🍔Instant 🦥Lazy
-| Order | ⌚Subscribe 👨‍💻Code
-| Consistency | 💩Relaxed 💪Strong
-| Error | ⛔Stop 🦺Store ⏮Revert 🎲Unstable
-| Flow | 👷‍♂️Manual 🚕Auto
-| Recursion | 🚫Impossible ⛔Fail
+| Usefull | Style         | Origin  | Observing   | Energetic  | Order       | Consistency | Error      | Flow | Recursion
+|---------|---------------|---------|-------------|------------|-------------|-------------|------------|----------|----------
+| ✅Yes  | 🤓Objectional | 🚂Pull | 🤝Observers | 🦥Lazy     | 👨‍💻Code     | 💪Strong    | 🦺Store   | 🚕Auto   | ⛔Fail
+| ❌No   | 🤯Functional  | 📮Push | 🎇Events    | 🍔Instant  | ⌚Subscribe | 💩Relaxed  | ⛔Stop ⏮Revert 🎲Unstable | 👷‍♂️Manual | 🚫Impossible
 
 # Реактивные фреймворки
 
