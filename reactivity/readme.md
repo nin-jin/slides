@@ -194,31 +194,13 @@ for( const master of this.masters ) {
 
 Чем раньше изменилось состояние, тем раньше сработают реакции на его изменение.
 
-```javascript
-let foo
-let bar
-
-on_change( 'foo', ()=> console.log( 'foo' ) ) // 2
-on_change( 'bar', ()=> console.log( 'bar' ) ) // 1
-
-bar = 'bar'
-foo = 'foo'
-```
+![](reactivity-order-event.svg)
 
 ## 👨‍💻Code: Реагирование по положению в программе
 
 Чем раньше в заданном кодом потоке исполнения находится реакция, тем раньше она сработает.
 
-```javascript
-let foo
-let bar
-
-on_change( 'bar', ()=> console.log( 'bar' ) ) // 2
-on_change( 'foo', ()=> console.log( 'foo' ) ) // 1
-
-bar = 'bar'
-foo = 'foo'
-```
+![](reactivity-order-code.svg)
 
 # Consistency: Согласованность состояния
 
