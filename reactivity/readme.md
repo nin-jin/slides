@@ -305,6 +305,38 @@ for( const master of this.masters ) {
 | Reatom     |                |         |             | 🦥Lazy    |             | 💪Strong    | ⏮Revert  | 👷‍♂️Manual |
 | Effector   | 🤯Functional  | 📮Push  | 🤝Observers | 🍔Instant | ⌚Subscribe | 💩Relaxed  | 🎲Unstable | 👷‍♂️Manual | 🚫*Impossible*
 
+# Реактивные библиотеки
+
+| Lib        | Style          | Origin  | Observing   | Energetic  | Order       | Consistency | Error      | DataFlow | Recursion
+|------------|----------------|---------|-------------|------------|-------------|-------------|------------|----------|----------
+| RxJS       | 🤯  | 📮  | 🤝 | 🍔 | ⌚ | 💩  | ⛔     | 👷‍♂️ | 🚫
+| MobX       | 🤓 | 🚂  | 🎇    | 🦥    | 👨‍💻     | 💪    | 🦺    | 🚕  | ⛔
+| $mol_atom2 | 🤓 | 🚂  | 🤝 | 🦥    | 👨‍💻     | 💪    | 🦺    | 🚕  | ⛔
+| CellX      | 🤓 | 🚂  | 🎇    |           |             |             |             | 🚕  |
+| Reatom     |                |         |             | 🦥    |             | 💪    | ⏮  | 👷‍♂️ |
+| Effector   | 🤯  | 📮  | 🤝 | 🍔 | ⌚ | 💩  | 🎲 | 👷‍♂️ | 🚫
+
+- 🤯Functional
+- 🤓Objectional
+- 📮Push
+- 🚂Pull
+- 🤝Observers
+- 🎇Events
+- 🍔Instant
+- 🦥Lazy
+- ⌚Subscribe
+- 👨‍💻Code
+- 💩Relaxed
+- 💪Strong
+- ⛔Stop
+- 🦺Store
+- ⏮Revert
+- 🎲Unstable
+- 👷‍♂️Manual
+- 🚕Auto
+- 🚫Impossible
+- ⛔Fail
+
 # Реактивные фреймворки
 
 | Lib     | Style          | Origin | Observing       | Energetic | Order     | Consistency | Error      | DataFlow
