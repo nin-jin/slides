@@ -280,7 +280,7 @@ for( const master of this.masters ) {
 
 - 💤Allow: Допускаются
 - ⛔Fail: Приводят к ошибке
-- 🚫Impossible: Невозможны
+- 🚫Unreal: Невозможны
 
 ## 💤Allow: Допускаются
 
@@ -290,9 +290,9 @@ for( const master of this.masters ) {
 
 ![](reactivity-cycle-fail.svg)
 
-## 🚫Impossible: Невозможны
+## 🚫Unreal: Невозможны
 
-![](reactivity-cycle-impossible.svg)
+![](reactivity-cycle-unreal.svg)
 
 # Оценка практичности
 
@@ -306,7 +306,7 @@ for( const master of this.masters ) {
 | Conform      | 💪Strong      | 💩Relaxed 🙏Eventual
 | Error        | 🦺Store       | ⛔Stop ⏮Revert 🎲Unstable
 | Flow         | 🚕Auto        | 👷‍♂️Manual 
-| Cycle        | ⛔Fail        | 💤Allow 🚫Impossible
+| Cycle        | ⛔Fail        | 💤Allow 🚫Unreal
 
 # Реактивные библиотеки
 
