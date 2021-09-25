@@ -300,7 +300,7 @@ for( const master of this.masters ) {
 |--------------|-----------------------------|---------
 | Style        | 🤓Objectional 🧐Procedural | 🤯Functional
 | Origin       | 🚂Pull                     | 📮Push
-| Watch        | 🤝Links                | 🔎Polling 🎇Events
+| Watch        | 🤝Links                    | 🔎Polling 🎇Events
 | Tonus        | 🦥Lazy                     | 🍔Instant ⏰Defer
 | Order        | 👨‍💻Code                     | ⌚Subscribe 🧨Event
 | Conform      | 💪Strong                   | 💩Relaxed 🙏Eventual
