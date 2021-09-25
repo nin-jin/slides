@@ -266,6 +266,8 @@ for( const master of this.masters ) {
 
 Движение информации происходит наиболее оптимальным образом для текущего состояния. При изменений состояния, информационные потоки перестраиваются автоматически.
 
+![](reactivity-auto.svg)
+
 # Реактивные библиотеки
 
 | Lib        | Style          | Origin  | Observing   | Energetic  | Order       | Consistency | Error      | DataFlow
