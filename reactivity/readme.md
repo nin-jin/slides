@@ -288,12 +288,12 @@ foo = 'foo'
 
 | Lib        | Style          | Origin  | Observing   | Energetic  | Order       | Consistency | Error      | DataFlow
 |------------|----------------|---------|-------------|------------|-------------|-------------|------------|----------
-| RxJS       | 🤯Functional  | 📮Push  | 🤝Observers | 🍔Instant | ⌚Subscribe | 🙏Eventual | ⛔Stop     | 👷‍♂️Manual
+| RxJS       | 🤯Functional  | 📮Push  | 🤝Observers | 🍔Instant | ⌚Subscribe | 💩Relaxed  | ⛔Stop     | 👷‍♂️Manual
 | MobX       | 🤓Objectional | 🚂Pull  | 🎇Events    | 🦥Lazy    | 👨‍💻Code     | 💪Strong    | 🦺Store    | 🚕Auto
 | $mol_atom2 | 🤓Objectional | 🚂Pull  | 🤝Observers | 🦥Lazy    | 👨‍💻Code     | 💪Strong    | 🦺Store    | 🚕Auto
 | CellX      | 🤓Objectional | 🚂Pull  | 🎇Events    |           |             |             |             | 🚕Auto
-| Reatom     |                |         |             | 🦥Lazy    |             | 💪Strong    | ⏮Revert | 👷‍♂️Manual
-| Effector   | 🤯Functional  | 📮Push  | 🤝Observers | 🍔Instant | ⌚Subscribe |             | 🎲Unstable | 👷‍♂️Manual
+| Reatom     |                |         |             | 🦥Lazy    |             | 💪Strong    | ⏮Revert  | 👷‍♂️Manual
+| Effector   | 🤯Functional  | 📮Push  | 🤝Observers | 🍔Instant | ⌚Subscribe | 💩Relaxed  | 🎲Unstable | 👷‍♂️Manual
 
 # Реактивные фреймворки
 
