@@ -294,6 +294,20 @@ for( const master of this.masters ) {
 
 ![](reactivity-recursion-impossible.svg)
 
+# Оценка практичности
+
+| Aspect       | ✅Usable                   | ❌Unusable
+|--------------|-----------------------------|---------
+| Style        | 🤓Objectional 🧐Procedural | 🤯Functional
+| Origin       | 🚂Pull                     | 📮Push
+| Observing    | 🤝Observers                | 🔎Polling 🎇Events
+| Energetic    | 🦥Lazy                     | 🍔Instant ⏰Defer
+| Order        | 👨‍💻Code                     | ⌚Subscribe 🧨Event
+| Consistency  | 💪Strong                   | 💩Relaxed 🙏Eventual
+| Error        | 🦺Store                    | ⛔Stop ⏮Revert 🎲Unstable
+| Flow         | 🚕Auto                     | 👷‍♂️Manual 
+| Recursion    | ⛔Fail                     | 💤Allow 🚫Impossible
+
 # Реактивные библиотеки
 
 | Lib        | Style          | Origin  | Observing   | Energetic  | Order       | Consistency | Error      | Flow | Recursion
@@ -307,19 +321,14 @@ for( const master of this.masters ) {
 
 # Реактивные библиотеки
 
-| Lib        | Style          | Origin  | Observing   | Energetic  | Order       | Consistency | Error      | Flow | Recursion
-|------------|----------------|---------|-------------|------------|-------------|-------------|------------|----------|----------
+| Lib        | Style | Origin | Observing | Energetic | Order | Consistency | Error | Flow | Recursion
+|------------|-------|--------|-----------|-----------|-------|-------------|-------|------|----------
 | RxJS       | 🤯  | 📮  | 🤝 | 🍔 | ⌚ | 💩  | ⛔     | 👷‍♂️ | 🚫
 | MobX       | 🤓 | 🚂  | 🎇    | 🦥    | 👨‍💻     | 💪    | 🦺    | 🚕  | ⛔
 | $mol_atom2 | 🤓 | 🚂  | 🤝 | 🦥    | 👨‍💻     | 💪    | 🦺    | 🚕  | ⛔
 | CellX      | 🤓 | 🚂  | 🎇    |           |             |             |             | 🚕  |
 | Reatom     |                |         |             | 🦥    |             | 💪    | ⏮  | 👷‍♂️ |
 | Effector   | 🤯  | 📮  | 🤝 | 🍔 | ⌚ | 💩  | 🎲 | 👷‍♂️ | 🚫
-
-| Usefull | Style         | Origin  | Observing   | Energetic  | Order       | Consistency | Error      | Flow | Recursion
-|---------|---------------|---------|-------------|------------|-------------|-------------|------------|----------|----------
-| ✅Yes  | 🤓Objectional | 🚂Pull | 🤝Observers | 🦥Lazy     | 👨‍💻Code     | 💪Strong    | 🦺Store   | 🚕Auto   | ⛔Fail
-| ❌No   | 🤯Functional  | 📮Push | 🎇Events    | 🍔Instant  | ⌚Subscribe | 💩Relaxed  | ⛔Stop ⏮Revert 🎲Unstable | 👷‍♂️Manual | 🚫Impossible
 
 # Реактивные фреймворки
 
