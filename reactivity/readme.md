@@ -284,15 +284,15 @@ for( const master of this.masters ) {
 
 ## 💤Allow: Допускаются
 
-![](reactivity-Cycle-allow.svg)
+![](reactivity-cycle-allow.svg)
 
-## ⛔Fail: Приводят к ошибкея
+## ⛔Fail: Приводят к ошибке
 
-![](reactivity-Cycle-fail.svg)
+![](reactivity-cycle-fail.svg)
 
 ## 🚫Impossible: Невозможны
 
-![](reactivity-Cycle-impossible.svg)
+![](reactivity-cycle-impossible.svg)
 
 # Оценка практичности
 
@@ -300,7 +300,7 @@ for( const master of this.masters ) {
 |--------------|-----------------------------|---------
 | Style        | 🤓Objectional 🧐Procedural | 🤯Functional
 | Origin       | 🚂Pull                     | 📮Push
-| Watch      | 🤝Watchrs                | 🔎Polling 🎇Events
+| Watch        | 🤝Watchrs                | 🔎Polling 🎇Events
 | Tonus        | 🦥Lazy                     | 🍔Instant ⏰Defer
 | Order        | 👨‍💻Code                     | ⌚Subscribe 🧨Event
 | Conform      | 💪Strong                   | 💩Relaxed 🙏Eventual
