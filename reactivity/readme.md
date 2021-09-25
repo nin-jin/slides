@@ -324,15 +324,15 @@ foo = 'foo'
 
 ## Много зависимостей
 
-![](reactivity-multi-master.svg)
+> ❌ Bad: 🍔 Instant
 
-| ❌ Bad     |
-|------------|
-| 🍔 Instant |
+![](reactivity-multi-master.svg)
 
 ## Много зависимых
 
 ## Переключение зависимостей
+
+> ❌ Bad: 👷‍♂️ Manual
 
 ![](reactivity-switch-master.svg)
 
