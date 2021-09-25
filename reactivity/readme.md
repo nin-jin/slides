@@ -2,6 +2,8 @@
 
 Сравним различные подходы к реактивному программированию. Вытащим на поверхность их подводные камни. И разберём как реактивность решает или наоборот усугубляет проблемы.
 
+![](https://www.meme-arsenal.com/memes/2765df2d709bba020f719b0ea04bc0bb.jpg)
+
 Это - текстовая расшифровка выступления на [SECON.Weekend Frontend](https://secon.ru/projects/seconweekend). Вы можете [прочитать как статью](https://github.com/nin-jin/slides/tree/master/reactivity), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/reactivity/).
 
 # Виды активностей
