@@ -278,9 +278,23 @@ for( const master of this.masters ) {
 
 ## Recursion: Циклические зависимости
 
-- 🔁 Allow: Допустимы
-- ⛔ Fail: Приводят к ошибкея
-- 🚫 Impossible: Невозможны
+- 💤Allow: Допускаются
+
+![](reactivity-recursion-allow.svg)
+
+- ⛔Fail: Приводят к ошибке
+
+![](reactivity-recursion-fail.svg)
+
+- 🚫Impossible: Невозможны
+
+![](reactivity-recursion-impossible.svg)
+
+## 💤Allow: Допускаются
+## ⛔Fail: Приводят к ошибкея
+## 🚫Impossible: Невозможны
+
+![](reactivity-recursion-allow.svg)
 
 # Реактивные библиотеки
 
