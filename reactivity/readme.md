@@ -70,7 +70,7 @@ let Count
 let Short
 
 setInterval( ()=> { Count = Name.length } )
-setInterval( ()=> { Short = Count < 5 } )
+setInterval( ()=> { Short = Count < 4 } )
 ```
 
 ## 🤓Obj: Объектный стиль
@@ -84,7 +84,7 @@ class State {
 	
 	@mem get Count() { return this.Name.length }
 	
-	@mem get Short() { return this.Count < 5 }
+	@mem get Short() { return this.Count < 4 }
 	
 }
 ```
@@ -98,7 +98,7 @@ const Name = new BehaviorSubject( 'Jin' )
 
 const Count = Name.pipe( map( Name => Name.length ) )
 
-const Short = Count.pipe( map( Count => Count < 5 ) )
+const Short = Count.pipe( map( Count => Count < 4 ) )
 ```
 
 # Origin: Кто инициатор обновления?
