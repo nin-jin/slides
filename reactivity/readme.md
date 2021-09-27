@@ -306,17 +306,17 @@ for( const master of this.masters ) {
 
 # Оценка практичности
 
-| Aspect       | ✅Usable      | ❌Unusable
-|--------------|---------------|---------
-| Style        | 🤓Obj 🧐Proc | 🤯Func
-| Origin       | 🚂Pull        | 📮Push
-| Watch        | 🤝Links       | 🔎Polling 🎇Events
-| Tonus        | 🦥Lazy        | 🍔Instant ⏰Defer
-| Order        | 👨‍💻Code        | ⌚Subscribe 🧨Event
-| Conform      | 💪Strong      | 💩Relaxed 🙏Eventual
-| Error        | 🦺Store       | ⛔Stop ⏮Revert 🎲Unstable
-| Flow         | 🚕Auto        | 👷‍♂️Manual 
-| Cycle        | ⛔Fail        | 💤Allow 🚫Unreal
+| Aspect       | ✅Usable | ❌Unusable
+|--------------|----------|---------
+| Style        | 🤓Obj    | 🧐Proc 🤯Func
+| Origin       | 🚂Pull   | 📮Push
+| Watch        | 🤝Links  | 🔎Polling 🎇Events
+| Tonus        | 🦥Lazy   | 🍔Instant ⏰Defer
+| Order        | 👨‍💻Code   | ⌚Subscribe 🧨Event
+| Conform      | 💪Strong | 💩Relaxed 🙏Eventual
+| Error        | 🦺Store  | ⛔Stop ⏮Revert 🎲Unstable
+| Flow         | 🚕Auto   | 👷‍♂️Manual 
+| Cycle        | ⛔Fail   | 💤Allow 🚫Unreal
 
 # Реактивные библиотеки
 
