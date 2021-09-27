@@ -244,7 +244,7 @@ for( const master of this.masters ) {
 
 - 💪Strong: Гарантированнная
 - 🙏Eventual: В конечном счёте
-- 💩Relaxed: Не гарантированна
+- 💩Weak: Не гарантированна
 
 ## 💪Strong: Гарантированнная согласованность
 
@@ -258,7 +258,7 @@ for( const master of this.masters ) {
 
 ![](reactivity-instant.svg)
 
-## 💩Relaxed: Не гарантированная согласованность
+## 💩Weak: Не гарантированная согласованность
 
 В какой-то момент инварианты могут быть нарушены. Например, при возникновении исключительной ситуации.
 
@@ -299,44 +299,52 @@ for( const master of this.masters ) {
 
 ![](reactivity-cycle-unreal.svg)
 
-## Reconcilliation: Игнор эквивалентных изменений
+## Dupes: Игнор эквивалентных изменений
 
-- 🚕Auto: Автоматический
-- 👷Manual: Ручной
+- 👯‍♀️Act: Реакция на каждое действие
+- 🆔Ref: Сравнение по ссылке
+- 🔬Deep: Структурное сравнение
+
+## Async: Асинхронные инварианты
+
+- 🏇Support: Поддерживаются
+- 🏊‍♂️Unsupport: Не поддерживаются
 
 # Оценка практичности
 
-| Aspect       | ✅Usable | ❌Unusable
-|--------------|----------|---------
-| Style        | 🤓Obj    | 🧐Proc 🤯Func
-| Origin       | 🚂Pull   | 📮Push
-| Watch        | 🤝Links  | 🔎Polling 🎇Events
-| Tonus        | 🦥Lazy   | 🍔Instant ⏰Defer
-| Order        | 👨‍💻Code   | ⌚Subscribe 🧨Event
-| Conform      | 💪Strong | 💩Relaxed 🙏Eventual
-| Error        | 🦺Store  | ⛔Stop ⏮Revert 🎲Unstable
-| Flow         | 🚕Auto   | 👷‍♂️Manual 
-| Cycle        | ⛔Fail   | 💤Allow 🚫Unreal
+| Aspect  | ✅Usable  | ❌Unusable
+|---------|-----------|---------
+| Style   | 🤓Obj     | 🧐Proc 🤯Func
+| Origin  | 🚂Pull    | 📮Push
+| Watch   | 🤝Links   | 🔎Polling 🎇Events
+| Tonus   | 🦥Lazy    | 🍔Instant ⏰Defer
+| Order   | 👨‍💻Code    | ⌚Subscribe 🧨Event
+| Conform | 💪Strong  | 💩Weak 🙏Eventual
+| Error   | 🦺Store   | ⛔Stop ⏮Revert 🎲Unstable
+| Flow    | 🚕Auto    | 👷‍♂️Manual 
+| Cycle   | ⛔Fail    | 💤Allow 🚫Unreal
+| Dupes   | 🔬Deep    | 🆔Ref 👯‍♀️Act
+| Async   | 🏇Support | 🏊‍♂️Unsupport
 
 # Реактивные библиотеки
 
-| Lib        | Style | Origin | Watch | Tonus | Order | Conform | Error | Flow  | Cycle
-|------------|-------|--------|-------|-------|-------|---------|-------|------|----------
-| $mol_atom2 | 🤓✅ | 🚂✅  | 🤝✅ | 🦥✅ | 👨‍💻✅ | 💪✅   | 🦺✅ | 🚕✅ | ⛔✅
-| MobX       | 🤓✅ | 🚂✅  | 🤝✅ | 🦥✅ | 👨‍💻✅ | 💪✅   | 🦺✅ | 🚕✅ | ⛔✅
-| CellX      | 🤓✅ | 🚂✅  | 🎇❌ | 🦥✅ |       | 💪✅   | 🎲❌ | 🚕✅ | ⛔✅
-| Reatom     |       |        |       | 🦥✅ |       | 💪✅   | ⏮❌ | 👷❌ | 
-| RxJS       | 🤯❌ | 📮❌  | 🤝✅ | 🍔❌ | ⌚❌ | 💩❌   | ⛔❌ | 👷‍♂️❌  | 🚫❌
-| Effector   | 🤯❌ | 📮❌  | 🤝✅ | 🍔❌ | ⌚❌ | 💩❌   | 🎲❌ | 👷‍♂️❌  | 🚫❌
+| Lib        | Style | Origin | Watch | Tonus | Order | Conform | Error | Flow  | Cycle | Dupes | Async
+|------------|-------|--------|-------|-------|-------|---------|-------|-------|-------|-------|------
+| $mol_atom2 | 🤓✅ | 🚂✅  | 🤝✅ | 🦥✅ | 👨‍💻✅ | 💪✅   | 🦺✅ | 🚕✅ | ⛔✅ | 🔬✅ | 🏇✅
+| MobX       | 🤓✅ | 🚂✅  | 🤝✅ | 🦥✅ | 👨‍💻✅ | 💪✅   | 🦺✅ | 🚕✅ | ⛔✅ | 🆔❌ | 🏊‍♂️❌
+| CellX      | 🤓✅ | 🚂✅  | 🎇❌ | 🦥✅ |       | 💪✅   | 🎲❌ | 🚕✅ | ⛔✅ | 🆔❌ | 🏊‍♂️❌
+| Reatom     |       |        |       | 🦥✅ |       | 💪✅   | ⏮❌ | 👷❌ |       |       | 🏊‍♂️❌
+| RxJS       | 🤯❌ | 📮❌  | 🤝✅ | 🍔❌ | ⌚❌ | 💩❌   | ⛔❌ | 👷‍♂️❌  | 🚫❌ | 👯‍♀️❌ | 🏊‍♂️❌
+| Effector   | 🤯❌ | 📮❌  | 🤝✅ | 🍔❌ | ⌚❌ | 💩❌   | 🎲❌ | 👷‍♂️❌  | 🚫❌ |       | 🏊‍♂️❌
 
 # Реактивные фреймворки
 
-| Lib     | Style | Origin | Watch | Tonus | Order | Conform | Error | Flow
-|---------|-------|--------|-------|-------|-------|---------|-------|----------
-| Vue     | 🤓✅ | 🚂✅  |       | 🦥✅ |       |         |       | 🚕✅
-| Angular | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ |       | 💩❌   | 🎲❌ | 🚕✅
-| Svelte  | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ |       |         |       | 🚕✅
-| React   | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ | 👨‍💻✅ |         |       | 👷‍♂️❌
+| Lib     | Style | Origin | Watch | Tonus | Order | Conform | Error | Flow  | Cycle | Dupes | Async
+|---------|-------|--------|-------|-------|-------|---------|-------|-------|-------|-------|------
+| Vue     | 🤓✅ | 🚂✅  |       | 🦥✅ |       |         |       | 🚕✅ |       | 🆔❌ | 🏊‍♂️❌
+| Angular | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ |       | 💩❌   | 🎲❌ | 🚕✅ |       | 🆔❌ | 🏊‍♂️❌
+| Svelte  | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ |       |         |       | 🚕✅ |       | 🆔❌ | 🏊‍♂️❌
+| React   | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ | 👨‍💻✅ |         |       | 👷‍♂️❌  |       | 🆔❌ | 🏊‍♂️❌
 
 # Что ещё глянуть
 
