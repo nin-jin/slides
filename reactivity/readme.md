@@ -6,6 +6,13 @@
 
 Это - текстовая расшифровка выступления на [SECON.Weekend Frontend](https://secon.ru/projects/seconweekend). Вы можете [прочитать как статью](https://github.com/nin-jin/slides/tree/master/reactivity), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/reactivity/).
 
+# Человек-реактив
+
+- 6 лет в реактивах
+- Пилил на RXJS и MobX
+- Несколько своих либ с уникальными фичами
+- Целый фреймворк на их основе
+
 # Виды активностей
 
 - Интерактивность
