@@ -425,6 +425,9 @@ for( const master of this.masters ) {
 
 # Что ещё глянуть
 
-Проект по классификации стейт-менеджеров с помощью тестов..
+Проект по классификации стейт-менеджеров с помощью тестов от автора reatom.
 
-> https://github.com/artalar/state-management-specification
+- [artalar/state-management-specification](https://github.com/artalar/state-management-specification)
+- [kriskowal/gtor](https://github.com/kriskowal/gtor)
+
+И иной взгляд на вопрос реактивности.
