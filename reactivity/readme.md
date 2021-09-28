@@ -267,6 +267,7 @@ for( const master of this.masters ) {
 # Flow: Конфигурация потоков данных
 
 - 👷‍♂️Manual: Ручная
+- 🚗Half: Полуручная
 - 🚕Auto: Автоматическа
 
 ## 👷‍♂️Manual: Ручная конфигурация потоков данных
@@ -280,6 +281,8 @@ for( const master of this.masters ) {
 Движение информации происходит наиболее оптимальным образом для текущего состояния. При изменений состояния, информационные потоки перестраиваются автоматически.
 
 ![](reactivity-auto.svg)
+
+## 🚗Half: Полуручная конфигуация потоков данных
 
 ## Cycle: Циклические зависимости
 
@@ -326,7 +329,7 @@ for( const master of this.masters ) {
 | Order   | 👨‍💻Code    | ⌚Subscribe 🧨Event
 | Conform | 💪Strong  | 💩Weak 🙏Eventual
 | Error   | 🦺Store   | ⛔Stop ⏮Revert 🎲Unstable
-| Flow    | 🚕Auto    | 👷‍♂️Manual 
+| Flow    | 🚕Auto    | 🚗Half 👷‍♂️Manual 
 | Cycle   | ⛔Fail    | 💤Allow 🚫Unreal
 | Dupes   | 🔬Deep    | 🆔Ref 👯‍♀️Act
 | Async   | 🏇Support | 🏊‍♂️Unsupport
@@ -340,7 +343,7 @@ for( const master of this.masters ) {
 | MobX        | 🤓✅ | 🚂✅  | 🤝✅ | 🦥✅ | 👨‍💻✅ | 💪✅   | 🦺✅ | 🚕✅ | ⛔✅ | 🆔❌ | 🏊‍♂️❌ | 🗻❌
 | CellX       | 🤓✅ | 🚂✅  | 🎇❌ | 🦥✅ |       | 💩❌   | 🎲❌ | 🚕✅ | ⛔✅ | 🆔❌ | 🏊‍♂️❌ | 
 | ChronoGraph | 🧐❌ | 🚂✅  |       |       |       |         |       |       |       |       |       | 🌌✅
-| Reatom      | 🤯❌ | 🚂✅  | 🤝✅ | 🦥✅ |       | 💪✅   | ⏮❌ | 🚕✅ |       |       | 🏊‍♂️❌ | 
+| Reatom      | 🤯❌ | 🚂✅  | 🤝✅ | 🦥✅ | 🧨❌ | 💪✅   | ⏮❌ | 🚗❌ | 🚫❌ | 🆔❌ | 🏊‍♂️❌ | 
 | RxJS        | 🤯❌ | 📮❌  | 🤝✅ | 🍔❌ | ⌚❌ | 💩❌   | ⛔❌ | 👷‍♂️❌  | 🚫❌ | 👯‍♀️❌ | 🏊‍♂️❌ | 
 | Effector    | 🤯❌ | 📮❌  | 🤝✅ | 🍔❌ | ⌚❌ | 💩❌   | 🎲❌ | 👷‍♂️❌  | 🚫❌ |       | 🏊‍♂️❌ | 
 
