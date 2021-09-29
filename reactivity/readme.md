@@ -106,10 +106,15 @@ function make_ints_state( ... state: number[] ) {
 	return { get: ()=> state }
 }
 
-// make_ints_state( 777 )
+// const state = make_ints_state( 777 )
 // 
 // Ref + Obj + Ref + Closure + Ref + Context + Array + Int
 // 4   + 12  + 4   + 28      + 4   + 16      + 24    + 4   = 96
+
+// const state = { state: 777 }
+// 
+// Ref + Obj + Int
+// 4   + 12  + 4   = 20
 ```
 
 # Аспекты реактивности
