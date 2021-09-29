@@ -92,7 +92,7 @@
 
 | Value    | Place   | Cost
 |----------|---------|-----
-| Obj      | Heap    | 12+
+| Obj      | Heap    | 12
 | Array    | Heap    | 24
 | Int      | Inplace | 4
 | Float    | Heap    | 12
@@ -100,7 +100,7 @@
 | ShortRef | Inplace | 4
 | LongRef  | Inplace | 16
 | Closure  | Heap    | 24
-| Context  | Heap    | 16+
+| Context  | Heap    | 16
 
 ```
 function make_ints_state( ... state: number[] ) {
