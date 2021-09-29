@@ -6,10 +6,19 @@
 
 Это - текстовая расшифровка выступления на [SECON.Weekend Frontend](https://secon.ru/projects/seconweekend). Вы можете [прочитать как статью](https://github.com/nin-jin/slides/tree/master/reactivity), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/reactivity/).
 
+# Огнеопасно!
+
+Я постараюсь быть максимально объективен, но.. Возможны помочные эффекты..
+
+- Жжение в нижних отделах спины
+- Зуд на кончиках пальцев
+- Повышение громкости речевого аппарата
+- Напряжённость в области извилин
+
 # Человек-реактив
 
-- 6 лет в реактивах
-- Пилил на RXJS и MobX
+- 6 лет с реактивами
+- Пилил на Angular, RXJS и MobX
 - Несколько своих либ с уникальными фичами
 - Целый фреймворк на их основе
 
@@ -447,11 +456,13 @@ for( const master of this.masters ) {
 
 Не стоит слепо доверять этой табличке, ибо составлена она вручную. Я, конечно, старался точно всё отразить, но мог и накосячить. Поэтому..
 
-# Что ещё глянуть
+# Что ещё глянуть по теме
 
 Проект по классификации стейт-менеджеров с помощью тестов от автора reatom.
 
-- [artalar/state-management-specification](https://github.com/artalar/state-management-specification)
-- [kriskowal/gtor](https://github.com/kriskowal/gtor)
+- [state-management-specification](https://github.com/artalar/state-management-specification) / Артём Арутюнян
+- [A General Theory of Reactivity](https://github.com/kriskowal/gtor) / Kris Kowal
+- [Объектное Реактивное Программирование](https://github.com/nin-jin/slides/tree/master/orp) @ FrontendConf'17
+- [Квантовая механика вычисления на JS](https://github.com/nin-jin/slides/tree/master/fibers)
 
-И иной взгляд на вопрос реактивности.
+# Огнеопа
