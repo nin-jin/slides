@@ -93,20 +93,24 @@
 | Value    | Place   | Cost
 |----------|---------|-----
 | Obj      | Heap    | 12+
+| Array    | Heap    | 24
 | Int      | Inplace | 4
 | Float    | Heap    | 12
 | BigInt   | Heap    | 16+
-| Ref      | Inplace | 4
+| ShortRef | Inplace | 4
+| LongRef  | Inplace | 16
 | Closure  | Heap    | 24
 | Context  | Heap    | 16+
 
 ```
-function makeState( state = 777 ) {
+function make_ints_state( ... state: number[] ) {
 	return { get: ()=> state }
 }
 
-// Ref + Obj + Ref + Closure + Ref + Context + Int
-// 4   + 12  + 4   + 28      + 4   + 16      + 4   = 68
+// make_ints_state( 777 )
+// 
+// Ref + Obj + Ref + Closure + Ref + Context + Array + Int
+// 4   + 12  + 4   + 28      + 4   + 16      + 24    + 4   = 96
 ```
 
 # Аспекты реактивности
