@@ -221,7 +221,7 @@ for( const master of this.masters ) {
 
 ## 🖇Deep: По глубине зависимости
 
-> *Ошибка доступа*
+![](reactivity-order-deep.svg)
 
 ## 👨‍💻Code: Реагирование по положению в программе
 
