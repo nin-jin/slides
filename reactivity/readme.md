@@ -93,18 +93,20 @@
 | Value    | Place   | Cost
 |----------|---------|-----
 | Obj      | Heap    | 12+
-| SmallInt | Inplace | 4
-| Int      | Heap    | 12
+| Int      | Inplace | 4
+| Float    | Heap    | 12
 | BigInt   | Heap    | 16+
 | Ref      | Inplace | 4
 | Closure  | Heap    | 24
 | Context  | Heap    | 16+
 
 ```
-const state = 777
-{ get: ()=> state }
-// Ref + Obj + Ref + Closure + Ref + Context + SmallInt
-// 4   + 12  + 4   + 28      + 4   + 16      + 4        = 68
+function makeState( state = 777 ) {
+	return { get: ()=> state }
+}
+
+// Ref + Obj + Ref + Closure + Ref + Context + Int
+// 4   + 12  + 4   + 28      + 4   + 16      + 4   = 68
 ```
 
 # Style: Стилистика кода
