@@ -94,9 +94,11 @@
 |----------|---------|-----
 | Obj      | Heap    | 12
 | Array    | Heap    | 24
+| Unit     | Inplace | 4
 | Int      | Inplace | 4
 | Float    | Heap    | 12
 | BigInt   | Heap    | 16+
+| String   | Heap    | 12+
 | Ref      | Inplace | 4
 | Closure  | Heap    | 24
 | Context  | Heap    | 16
