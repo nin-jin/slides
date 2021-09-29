@@ -465,4 +465,12 @@ for( const master of this.masters ) {
 - [Объектное Реактивное Программирование](https://github.com/nin-jin/slides/tree/master/orp) @ FrontendConf'17
 - [Квантовая механика вычисления на JS](https://github.com/nin-jin/slides/tree/master/fibers)
 
-# Огнеопа
+# Что ещё глянуть не по теме
+
+- [slides.hyoo.ru](https://slides.hyoo.ru/) - выступления
+- [habhub.hyoo.ru](https://habhub.hyoo.ru/) - статьи
+- [`_jin_nin_`](https://twitter.com/_jin_nin_) - новости
+
+# Пишите письма!
+
+![](https://habrastorage.org/webt/um/jg/hz/umjghz4nc3jqzxx5morka4jm-58.jpeg)
