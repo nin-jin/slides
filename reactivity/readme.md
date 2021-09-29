@@ -97,8 +97,7 @@
 | Int      | Inplace | 4
 | Float    | Heap    | 12
 | BigInt   | Heap    | 16+
-| ShortRef | Inplace | 4
-| LongRef  | Inplace | 16
+| Ref      | Inplace | 4
 | Closure  | Heap    | 24
 | Context  | Heap    | 16
 
