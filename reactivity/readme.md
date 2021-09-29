@@ -6,10 +6,19 @@
 
 Это - текстовая расшифровка выступления на [SECON.Weekend Frontend](https://secon.ru/projects/seconweekend). Вы можете [прочитать как статью](https://github.com/nin-jin/slides/tree/master/reactivity), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/reactivity/).
 
+# Огнеопасно!
+
+Я постараюсь быть максимально объективен, но.. Возможны помочные эффекты..
+
+- Жжение в нижних отделах спины
+- Зуд на кончиках пальцев
+- Повышение громкости речевого аппарата
+- Напряжённость в области извилин
+
 # Человек-реактив
 
-- 6 лет в реактивах
-- Пилил на RXJS и MobX
+- 6 лет с реактивами
+- Пилил на Angular, RXJS и MobX
 - Несколько своих либ с уникальными фичами
 - Целый фреймворк на их основе
 
@@ -251,7 +260,7 @@ for( const master of this.masters ) {
 
 ![](reactivity-error-revert.svg)
 
-# Conform: Согласованность состояния
+# Accord: Согласованность состояния
 
 - 💪Strong: Гарантированнная
 - 🙏Eventual: В конечном счёте
@@ -417,41 +426,51 @@ for( const master of this.masters ) {
 | Cycle   | ⛔Fail     | 💤Allow 🚫Unreal
 | Atomic  | 🦶Base     | 🧍‍♂️Full 👻Alone
 | Depth   | 🌌Heap     | 🗻Stack
-| Conform | 💪Strong   | 💩Weak 🙏Eventual
+| Accord  | 💪Strong   | 💩Weak 🙏Eventual
 | Async   | 🏇Support  | 🏊‍♂️Unsupport
 
 # Реактивные библиотеки
 
 Везде рассматривается поведение по умолчанию, если человек не написал дополнительного кода для изменения поведения. 
 
-| Lib         | Style | Origin | Watch | Tonus | Order | Conform | Error | Flow  | Cycle | Dupes | Async | Depth | Atomic
-|-------------|-------|--------|-------|-------|-------|---------|-------|-------|-------|-------|-------|-------|-------
-| $mol_atom2  | 🤓✅ | 🚂✅  | 🤝✅ | 🦥✅ | 👨‍💻✅ | 💪✅   | 🦺✅ | 🚕✅ | ⛔✅ | 🔬✅ | 🏇✅ | 🗻❌ | 👻❌
-| MobX        | 🤓✅ | 🚂✅  | 🤝✅ | 🦥✅ | 👨‍💻✅ | 💪✅   | 🦺✅ | 🚕✅ | ⛔✅ | 🆔❌ | 🏊‍♂️❌ | 🗻❌ | 👻❌
-| ChronoGraph | 🤓✅ | 🚂✅  | 🤝✅ | ⏰❌ | 👨‍💻✅ | 💩❌   | ⏮❌ | 🚕✅ | ⛔✅ | 🆔❌ | 🏊‍♂️❌ | 🌌✅ | 🧍‍♂️❌
-| CellX       | 🤓✅ | 🚂✅  | 🤝✅ | 🦥✅ |       | 💩❌   | 🎲❌ | 🚕✅ | ⛔✅ | 🆔❌ | 🏇✅ | 🌌✅ | 
-| Reatom      | 🤯❌ | 🚂✅  | 🤝✅ | 🦥✅ | 🧨❌ | 💪✅   | ⏮❌ | 🚕✅ | 🚫❌ | 🆔❌ | 🏊‍♂️❌ | 🗻❌ | 🧍‍♂️❌
-| RxJS        | 🤯❌ | 📮❌  | 🤝✅ | 🍔❌ | ⌚❌ | 💩❌   | ⛔❌ | 👷‍♂️❌  | 🚫❌ | 👯‍♀️❌ | 🏊‍♂️❌ |       | 
-| Effector    | 🤯❌ | 📮❌  | 🤝✅ | 🍔❌ | ⌚❌ | 💩❌   | 🎲❌ | 👷‍♂️❌  | 💤❌ | 🆔❌ | 🏊‍♂️❌ |       | 
+| Lib         | Style | Origin | Watch | Tonus | Order | Accord | Error | Flow  | Cycle | Dupes | Async | Depth | Atomic
+|-------------|-------|--------|-------|-------|-------|--------|-------|-------|-------|-------|-------|-------|-------
+| $mol_atom2  | 🤓✅ | 🚂✅  | 🤝✅ | 🦥✅ | 👨‍💻✅ | 💪✅  | 🦺✅ | 🚕✅ | ⛔✅ | 🔬✅ | 🏇✅ | 🗻❌ | 👻❌
+| MobX        | 🤓✅ | 🚂✅  | 🤝✅ | 🦥✅ | 👨‍💻✅ | 💪✅  | 🦺✅ | 🚕✅ | ⛔✅ | 🆔❌ | 🏊‍♂️❌ | 🗻❌ | 👻❌
+| ChronoGraph | 🤓✅ | 🚂✅  | 🤝✅ | ⏰❌ | 👨‍💻✅ | 💩❌  | ⏮❌ | 🚕✅ | ⛔✅ | 🆔❌ | 🏊‍♂️❌ | 🌌✅ | 🧍‍♂️❌
+| CellX       | 🤓✅ | 🚂✅  | 🤝✅ | 🦥✅ |       | 💩❌  | 🎲❌ | 🚕✅ | ⛔✅ | 🆔❌ | 🏇✅ | 🌌✅ | 
+| Reatom      | 🤯❌ | 🚂✅  | 🤝✅ | 🦥✅ | 🧨❌ | 💪✅  | ⏮❌ | 🚕✅ | 🚫❌ | 🆔❌ | 🏊‍♂️❌ | 🗻❌ | 🧍‍♂️❌
+| RxJS        | 🤯❌ | 📮❌  | 🤝✅ | 🍔❌ | ⌚❌ | 💩❌  | ⛔❌ | 👷‍♂️❌  | 🚫❌ | 👯‍♀️❌ | 🏊‍♂️❌ |       | 
+| Errector    | 🤯❌ | 📮❌  | 🤝✅ | 🍔❌ | ⌚❌ | 💩❌  | 🎲❌ | 👷‍♂️❌  | 💤❌ | 🆔❌ | 🏊‍♂️❌ |       | 
 
 Видно два основных лагеря: Объектное Реактивное Программирование и Функциональное Реактивное Программирование. 
 
 # Реактивные фреймворки
 
-| Lib     | Style | Origin | Watch | Tonus | Order | Conform | Error | Flow  | Cycle | Dupes | Async | Depth | Atomic
-|---------|-------|--------|-------|-------|-------|---------|-------|-------|-------|-------|-------|-------|-------
-| Vue     | 🤓✅ | 🚂✅  |       | 🦥✅ |       |         |       | 🚕✅ |       | 🆔❌ | 🏊‍♂️❌ |       | 👻❌
-| React   | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ | 👨‍💻✅ |         |       | 👷‍♂️❌  |       | 🆔❌ | 🏇✅ |       | 👻❌
-| Angular | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ |       | 💩❌   | 🎲❌ | 🚕✅ |       | 🆔❌ | 🏊‍♂️❌ |        | 👻❌
-| Svelte  | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ |       |         |       | 🚕✅ |       | 🆔❌ | 🏊‍♂️❌ |        | 👻❌
+| Lib     | Style | Origin | Watch | Tonus | Order | Accord | Error | Flow  | Cycle | Dupes | Async | Depth | Atomic
+|---------|-------|--------|-------|-------|-------|--------|-------|-------|-------|-------|-------|-------|-------
+| Vue     | 🤓✅ | 🚂✅  |       | 🦥✅ |       |        |       | 🚕✅ |       | 🆔❌ | 🏊‍♂️❌ |       | 👻❌
+| React   | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ | 👨‍💻✅ |        |       | 👷‍♂️❌  |       | 🆔❌ | 🏇✅ |       | 👻❌
+| Angular | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ |       | 💩❌  | 🎲❌ | 🚕✅ |       | 🆔❌ | 🏊‍♂️❌ |        | 👻❌
+| Svelte  | 🧐✅ | 📮❌  | 🔎❌ | ⏰❌ |       |        |       | 🚕✅ |       | 🆔❌ | 🏊‍♂️❌ |        | 👻❌
 
 Не стоит слепо доверять этой табличке, ибо составлена она вручную. Я, конечно, старался точно всё отразить, но мог и накосячить. Поэтому..
 
-# Что ещё глянуть
+# Что ещё глянуть по теме
 
 Проект по классификации стейт-менеджеров с помощью тестов от автора reatom.
 
-- [artalar/state-management-specification](https://github.com/artalar/state-management-specification)
-- [kriskowal/gtor](https://github.com/kriskowal/gtor)
+- [state-management-specification](https://github.com/artalar/state-management-specification) / Артём Арутюнян
+- [A General Theory of Reactivity](https://github.com/kriskowal/gtor) / Kris Kowal
+- [Объектное Реактивное Программирование](https://github.com/nin-jin/slides/tree/master/orp) @ FrontendConf'17
+- [Квантовая механика вычисления на JS](https://github.com/nin-jin/slides/tree/master/fibers)
 
-И иной взгляд на вопрос реактивности.
+# Что ещё глянуть не по теме
+
+- [slides.hyoo.ru](https://slides.hyoo.ru/) - выступления
+- [habhub.hyoo.ru](https://habhub.hyoo.ru/) - статьи
+- [`_jin_nin_`](https://twitter.com/_jin_nin_) - новости
+
+# Пишите письма!
+
+![](https://habrastorage.org/webt/um/jg/hz/umjghz4nc3jqzxx5morka4jm-58.jpeg)
