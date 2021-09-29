@@ -406,16 +406,19 @@ for( const master of this.masters ) {
 | Style   | 🤓Obj      | 🧐Proc 🤯Func
 | Origin  | 🚂Pull     | 📮Push
 | Watch   | 🤝Links    | 🔎Polling 🎇Events
+| Dupes   | 🔬Equality | 🆔Identity 👯‍♀️Every
 | Tonus   | 🦥Lazy     | 🍔Instant ⏰Defer
 | Order   | 👨‍💻Code     | ⌚Subscribe 🧨Event
-| Conform | 💪Strong   | 💩Weak 🙏Eventual
-| Error   | 🦺Store    | ⛔Stop ⏮Revert 🎲Unstable
 | Flow    | 🚕Auto     | 🚗Half 👷‍♂️Manual 
+
+| Aspect  | ✅Usable   | ❌Unusable
+|---------|------------|---------
+| Error   | 🦺Store    | ⛔Stop ⏮Revert 🎲Unstable
 | Cycle   | ⛔Fail     | 💤Allow 🚫Unreal
-| Dupes   | 🔬Equality | 🆔Identity 👯‍♀️Every
-| Async   | 🏇Support  | 🏊‍♂️Unsupport
-| Depth   | 🌌Heap     | 🗻Stack
 | Atomic  | 🦶Base     | 🧍‍♂️Full 👻Alone
+| Depth   | 🌌Heap     | 🗻Stack
+| Conform | 💪Strong   | 💩Weak 🙏Eventual
+| Async   | 🏇Support  | 🏊‍♂️Unsupport
 
 # Реактивные библиотеки
 
