@@ -497,7 +497,7 @@ for( const master of this.masters ) {
 | Watch   | 🤝Links    | 🔎Polling 🎇Events
 | Dupes   | 🔬Equality | 🆔Identity 👯‍♀️Every
 | Tonus   | 🦥Lazy     | 🍔Instant ⏰Defer
-| Order   | 👨‍💻Code     | ⌚Subscribe 🧨Event
+| Order   | 👨‍💻Code     | ⌚Subscribe 🧨Event 📶Deep
 | Flow    | 🚕Auto     | 🚗Half 👷‍♂️Manual 
 
 | Aspect  | ✅Usable   | ❌Unusable
