@@ -154,8 +154,13 @@ let Name = 'Jin'
 let Count
 let Short
 
-setInterval( ()=> { Count = Name.length } )
-setInterval( ()=> { Short = Count < 4 } )
+setInterval( ()=> {
+	Count = Name.length
+} )
+
+setInterval( ()=> {
+	Short = Count < 4
+} )
 ```
 
 ### 🤓Obj: Объектный стиль
@@ -165,11 +170,17 @@ setInterval( ()=> { Short = Count < 4 } )
 ```javascript
 class State {
 	
-	@mem get Name() { return 'Jin' }
+	@mem Name( next = 'Jin' ) {
+		return next
+	}
 	
-	@mem get Count() { return this.Name.length }
+	@mem Count() {
+		return this.Name().length
+	}
 	
-	@mem get Short() { return this.Count < 4 }
+	@mem Short() {
+		return this.Count() < 4
+	}
 	
 }
 ```
@@ -181,9 +192,13 @@ class State {
 ```javascript
 const Name = new BehaviorSubject( 'Jin' )
 
-const Count = Name.pipe( map( Name => Name.length ) )
+const Count = Name.pipe(
+	map( Name => Name.length )
+)
 
-const Short = Count.pipe( map( Count => Count < 4 ) )
+const Short = Count.pipe(
+	map( Count => Count < 4 )
+)
 ```
 
 ## Origin: Кто инициатор изменения состояния?
