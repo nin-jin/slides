@@ -141,7 +141,7 @@ const state3 = 777
 - **Cycle**: Циклические зависимости 
 - **Atomic**: Атомарность изменений
 - **Depth**: Ограничение глубины 
-- **Async**: Асинхронные инварианты 
+- **Extern**: Внешние взаимодействия
 
 ## Style: Стилистика кода
 
@@ -438,7 +438,7 @@ for( const master of this.masters ) {
 ```ts
 const image = source_element.pipe( map( capture ) )
 const data = image.pipe( map( recognize ) )
-const text = data.mpipe( map( data => data.text ) )
+const text = data.pipe( map( data => data.text ) )
 
 text.subscribe( text => {
 	output.innertext = text
