@@ -108,8 +108,8 @@ function make_ints_state( ... state: number[] ) {
 	return { get: ()=> state }
 }
 const state1 = make_ints_state( 777 )
-// Ref + Obj + Ref + Closure + Ref + Context + Array + Int
-// 4   + 12  + 4   + 28      + 4   + 16      + 24    + 4   = 96
+// Ref + Obj + Ref + Closure + Ref + Context + Ref + Array + Int
+// 4   + 12  + 4   + 24      + 4   + 16      + 4   + 24    + 4   = 96
 
 
 const state2 = { state: 777 }
