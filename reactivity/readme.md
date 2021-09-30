@@ -6,7 +6,7 @@
 
 Это - текстовая расшифровка выступления на [SECON.Weekend Frontend](https://secon.ru/projects/seconweekend). Вы можете [прочитать как статью](https://github.com/nin-jin/slides/tree/master/reactivity), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/reactivity/).
 
-# ⚠ Огнеопасно!
+# Огнеопасно!
 
 Я постараюсь быть максимально объективен, но.. Возможны помочные эффекты..
 
