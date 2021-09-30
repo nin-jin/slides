@@ -251,6 +251,7 @@ for( const slave of this.slaves ) {
 	slave.obsolete()
 }
 
+
 for( const master of this.masters ) {
 	master.finalize()
 }
