@@ -107,6 +107,7 @@
 function make_ints_state( ... state: number[] ) {
 	return { get: ()=> state }
 }
+
 const state1 = make_ints_state( 777 )
 // Ref + Obj + Ref + Closure + Ref + Context + Ref + Array + Int
 // 4   + 12  + 4   + 24      + 4   + 16      + 4   + 24    + 4   = 96
