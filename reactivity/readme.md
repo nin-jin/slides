@@ -408,6 +408,7 @@ for( const master of this.masters ) {
 
 ```
 777 == 777
+
 [ 1, 2, 3 ] != [ 1, 2, 3 ]
 ```
 
@@ -417,7 +418,9 @@ for( const master of this.masters ) {
 
 ```
 777 == 777
+
 [ 1, 2, 3 ] == [ 1, 2, 3 ]
+
 [ 1, 2, 3 ] != [ 3, 2, 1 ]
 ```
 
