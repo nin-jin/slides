@@ -284,7 +284,7 @@ for( const master of this.masters ) {
 
 - ⌚Subscribe: По времени подписки
 - 🧨Event: По времени возникновения события
-- 🖇Deep: По глубине зависимости
+- 📶Deep: По глубине зависимости
 - 👨‍💻Code: По положению в программе
 
 ### ⌚Subscribe: Реагирование по времени подписки
@@ -299,7 +299,7 @@ for( const master of this.masters ) {
 
 ![](reactivity-order-event.svg)
 
-### 🖇Deep: По глубине зависимости
+### 📶Deep: По глубине зависимости
 
 ![](reactivity-order-deep.svg)
 
