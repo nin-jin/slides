@@ -612,6 +612,7 @@ Count = 4
 # Что ещё глянуть не по теме
 
 - [slides.hyoo.ru](https://slides.hyoo.ru/) - выступления
+- [Core Dump](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw) - фундамент
 - [habhub.hyoo.ru](https://habhub.hyoo.ru/) - статьи
 - [`_jin_nin_`](https://twitter.com/_jin_nin_) - новости
 
