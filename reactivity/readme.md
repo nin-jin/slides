@@ -458,7 +458,7 @@ const data = image.pipe( map( recognize ) )
 const text = data.pipe( map( data => data.text ) )
 
 text.subscribe( text => {
-	output.innertext = text
+	output.innerText = text
 } )
 ```
 
