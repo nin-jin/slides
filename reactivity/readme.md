@@ -239,6 +239,7 @@ const Short = Count.pipe(
 Состяния хранят лишь значения и всё. Рантайм периодически сверяет текущее значение с предыдущим. И если они отличаются - пушит в зависимые состояния новые значения. Так работает Angular.
 
 ```javascript
+// sometime
 if( state !== state_prev ) reactions()
 ```
 
@@ -247,6 +248,7 @@ if( state !== state_prev ) reactions()
 Каждое состояние хранит список функций обработчиков изменения. Больше ничего оно про другие состояния не знает.
 
 ```javascript
+// on change
 for( const reaction of this.reactions ) {
 	reaction()
 }
@@ -257,11 +259,12 @@ for( const reaction of this.reactions ) {
 Состояния хранят прямые ссылки друг на друга, образуя глобальный граф.
 
 ```javascript
+// on change
 for( const slave of this.slaves ) {
 	slave.obsolete()
 }
 
-
+// on complete
 for( const master of this.masters ) {
 	master.finalize()
 }
