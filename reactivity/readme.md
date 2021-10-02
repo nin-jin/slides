@@ -571,10 +571,10 @@ Count = 4
 | Watch   | 🤝Links    | 🔎Polling 🎇Events
 | Dupes   | 🎭Equality | 🆔Identity 👯‍♀️Every
 | Order   | 👨‍💻Code     | 📰Subscribe 🧨Event 📶Deep
-| Flow    | 🚕Auto     | 🚗Half 🦽Manual 
+| Flow    | 🚕Auto     | 🦽Manual 
 
 | Aspect  | ✅Usable   | ❌Unusable
-|---------|------------|---------
+|---------|-------------|---------
 | Tonus   | 🦥Lazy     | 🍔Instant ⏰Defer
 | Error   | 🦺Store    | ⛔Stop ⏮Revert 🎲Unstable
 | Cycle   | ⛔Fail     | 💤Infinite 🔮Limbo 🚫Unreal
