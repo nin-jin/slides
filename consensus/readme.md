@@ -6,7 +6,7 @@
 
 ![](https://raw.githubusercontent.com/nin-jin/slides/master/consensus/short.svg)
 
-Вы можете [читать это как статью](https://github.com/nin-jin/slides/tree/master/consensus), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/consensus/).
+Вы можете [смотреть это как видео](https://www.youtube.com/watch?v=0WaqDPzwd48), [читать это как статью](https://github.com/nin-jin/slides/tree/master/consensus), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/consensus/).
 
 ## Согласованность данных
 
