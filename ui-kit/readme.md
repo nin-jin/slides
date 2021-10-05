@@ -6,6 +6,8 @@
 
 # Кто я такой
 
+![](https://habrastorage.org/getpro/habr/avatars/20a/0ad/d8c/20a0add8ce3ddddec0e521f86e694f40.jpg)
+
 - 15 разработки фронтенда
 - В Яндекс, 1С, Wrike, Deutche Bank, Газпром
 - Автор фреймворка $mol
