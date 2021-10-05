@@ -1,7 +1,5 @@
 # Проектирование гиперадаптивной UI-библиотеки
 
-![](https://studio.hyoo.ru/#!source=%24my%20%24mol_row%0A%09sub%20%2F%0A%09%09%3C%3D%20Date%0A%09%09%3C%3D%20Check_icon%0A%09%09%3C%3D%20Check_box%0A%09%09%3C%3D%20Color%0A%09opened%3Fnext%20true%0A%09Date%20%24mol_date%20showed%3Fnext%20%3C%3D%3E%20opened%3Fnext%0A%09Check_icon%20%24mol_check_icon_demo%0A%09cheked%3Fnext%20true%0A%09Check_box%20%24mol_check_box%0A%09%09checked%3Fnext%20%3C%3D%3E%20cheked%3Fnext%0A%09%09title%20%5CPerfect%0A%09Color%20%24mol_select_demo_colors%20color%3Fnext%20%3C%3D%3E%20color%3Fnext%20%5Cyellow%0A/preview)
-
 Это - текстовая расшифровка выступления на [FrontendConf'21](https://frontendconf.ru/moscow/2021/abstracts/7406). Вы можете [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/ui-kit/), либо [читать как статью](https://github.com/nin-jin/slides/blob/master/ui-kit/readme.md)...
 
 # Кто я такой
