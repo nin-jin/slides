@@ -40,7 +40,7 @@
 
 ## Текст
 
-![](https://hsto.org/webt/1y/z4/qm/1yz4qmvcly6let9_gs8akzdwu8k.png)
+![](design-font.svg)
 
 ## Ширина текста
 
@@ -50,7 +50,7 @@
 
 - Больше букв в строке - больше расстояние меж строк
 
-![](https://hsto.org/webt/hg/54/5f/hg545fxfov8vm7ki6ob2rtja8w0.png)
+![](design-line.svg)
 
 ## Визуальный ритм
 
@@ -78,7 +78,7 @@
 
 ## Увеличенный текст
 
-![](https://hsto.org/webt/vd/ly/d-/vdlyd-4xwaioo1olxmo9ddjmfj4.png)
+![](design-header.svg)
 
 ## Уменьшенный текст
 
@@ -86,19 +86,23 @@
 
 ## Текстовый блок
 
-![](https://hsto.org/webt/tm/we/qv/tmweqvc_b0ozqcfhxyksb-gdjvk.png)
+![](design-paragraph.svg)
 
 ## Динамическое расположение блоков
 
 - Отступы со всех сторон одинаковые
 
+## БЭБ отталкивания
+
+![](design-bem.svg)
+
 ## Блок
 
-![](https://hsto.org/webt/zq/zy/hf/zqzyhfbqcomyomuo0iflow2jboe.png)
+![](design-symmetry.svg)
 
 ## Блок из блоков
 
-![](https://hsto.org/webt/r1/hx/i4/r1hxi4vbi3b0x6da_yelxv8ja8c.png)
+![](design-blocks.svg)
 
 # Приручаем цвета
 
