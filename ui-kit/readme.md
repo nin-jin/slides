@@ -30,6 +30,8 @@
 
 # Приручаем размеры
 
+[![Mathematics Driven Design: размеры и отступы](https://habhub.hyoo.ru/#!author=nin-jin/repo=HabHub/article=37)](https://habhub.hyoo.ru/#!author=nin-jin/repo=HabHub/article=37)
+
 ## Базовый размер
 
 > `1rem` (`16px`)
