@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 144.2" style="enable-background:new 0 0 400 144.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFEE00;}
+	.st1{fill:#231F20;}
+	.st2{font-family:'TTTravels-DemiBold';}
+	.st3{font-size:52.0165px;}
+	.st4{letter-spacing:-2;}
+	.st5{fill:#FA4141;}
+	.st6{font-size:35.455px;}
+</style>
+<g>
+	<path class="st0" d="M8.8,0L0,144.2l144.8-8.7V8.7L8.8,0z"/>
+	<text transform="matrix(1 0 0 1 167.2305 67.8591)"><tspan x="0" y="0" class="st1 st2 st3 st4">Frontend</tspan><tspan x="0" y="44.5" class="st1 st2 st3 st4">Conf</tspan></text>
+	<text transform="matrix(1 0 0 1 299.7715 111.6863)" class="st5 st2 st6">2021</text>
+	<g>
+		<path class="st1" d="M71.1,66.1v10.1H46.9v19.9H35.2V45.9h37.3V56H46.9v10.1H71.1z"/>
+		<path class="st1" d="M100.4,44.5c9.7,0,15.4,2.2,20.4,6.4l-5.8,7.9c-3.1-2.1-7.2-4.2-14.6-4.2c-10.5,0-15.2,7.1-15.2,16.4
+			c0,9.2,4.7,16.4,15.2,16.4c7.4,0,11.5-2.1,14.6-4.2l5.8,7.9c-4.9,4.2-10.6,6.4-20.4,6.4C81.4,97.5,73.2,85,73.2,71
+			C73.2,56.9,81.4,44.5,100.4,44.5z"/>
+	</g>
+</g>
+</svg>
