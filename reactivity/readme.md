@@ -636,7 +636,7 @@ Count = 4
 - [state-management-specification](https://github.com/artalar/state-management-specification) / Артём Арутюнян
 - [A General Theory of Reactivity](https://github.com/kriskowal/gtor) / Kris Kowal
 - [Объектное Реактивное Программирование](https://github.com/nin-jin/slides/tree/master/orp) @ FrontendConf'17
-- [Квантовая механика вычисления на JS](https://github.com/nin-jin/slides/tree/master/fibers) @ HolyJS'18
+- [Квантовая механика вычислений на JS](https://github.com/nin-jin/slides/tree/master/fibers) @ HolyJS'18
 
 # Что ещё глянуть не по теме
 
