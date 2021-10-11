@@ -195,7 +195,7 @@ img {
 
 ## Пример биноминальных переносов
 
-![](https://mol.hyoo.ru/#!section=components/demo=mol_gallery_demo)
+![[](https://mol.hyoo.ru/#!section=components/demo=mol_gallery_demo)](https://mol.hyoo.ru/#!section=components/demo=mol_gallery_demo)
 
 ## Маленькие таблицы..
 
@@ -212,6 +212,10 @@ img {
 ## Карточки с выравниванием!
 
 ![](design-table-cards.svg)
+
+## Пример карточек с выравниванием
+
+[![](https://mol.js.org/app/supplies/-/#!supply=75BCD15)](https://mol.js.org/app/supplies/-/#!supply=75BCD15)
 
 # Приручаем экраны
 
