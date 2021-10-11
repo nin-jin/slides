@@ -297,8 +297,8 @@ img {
 
 # Итоги
 
-- Grid step `0.5rem` ✅
 - Font size `1rem` ✅
+- Grid step `0.5rem` ✅
 - Integral sizes ✅
 - Fractal theming ✅
 - Break points ❌
