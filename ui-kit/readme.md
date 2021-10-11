@@ -140,6 +140,20 @@
 - Иконки
 - Карты
 
+## Принудительное освещение
+
+```css
+// Dark theme by default
+:root {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+// Undo for images
+img {
+    filter: invert(1) hue-rotate(180deg);
+}
+```
+
 ## Хранение темы
 
 - Настройки браузера
