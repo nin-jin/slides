@@ -195,7 +195,7 @@ img {
 
 ## Пример биноминальных переносов
 
-[![](https://mol.hyoo.ru/#!section=components/demo=mol_gallery_demo)](https://mol.hyoo.ru/#!section=components/demo=mol_gallery_demo)
+[![$mol_galery_demo](https://mol.hyoo.ru/#!section=components/demo=mol_gallery_demo)](https://mol.hyoo.ru/#!section=components/demo=mol_gallery_demo)
 
 ## Маленькие таблицы..
 
@@ -215,7 +215,7 @@ img {
 
 ## Пример карточек с выравниванием
 
-[![](https://mol.js.org/app/supplies/-/#!supply=75BCD15)](https://mol.js.org/app/supplies/-/#!supply=75BCD15)
+[![Приложение "Закупки"](https://mol.js.org/app/supplies/-/#!supply=75BCD15)](https://mol.js.org/app/supplies/-/#!supply=75BCD15)
 
 # Приручаем экраны
 
@@ -278,7 +278,7 @@ img {
 
 ## Пример с горизонтальным скроллом
 
-![](https://mol.hyoo.ru/#!section=articles/author=nin-jin/repo=HabHub/article=37)
+[![Читалка статей](https://mol.hyoo.ru/#!section=articles/author=nin-jin/repo=HabHub/article=37)](https://mol.hyoo.ru/#!section=articles/author=nin-jin/repo=HabHub/article=37)
 
 ## Распасовка карт
 
