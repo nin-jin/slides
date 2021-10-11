@@ -195,7 +195,7 @@ img {
 
 ## Пример биноминальных переносов
 
-![[](https://mol.hyoo.ru/#!section=components/demo=mol_gallery_demo)](https://mol.hyoo.ru/#!section=components/demo=mol_gallery_demo)
+[![](https://mol.hyoo.ru/#!section=components/demo=mol_gallery_demo)](https://mol.hyoo.ru/#!section=components/demo=mol_gallery_demo)
 
 ## Маленькие таблицы..
 
