@@ -840,18 +840,24 @@ Count = 4
 - [Объектное Реактивное Программирование](https://github.com/nin-jin/slides/tree/master/orp) @ FrontendConf'17
 - [Квантовая механика вычислений на JS](https://github.com/nin-jin/slides/tree/master/fibers) @ HolyJS'18
 
-# Что ещё глянуть не по теме
-
-- [slides.hyoo.ru](https://slides.hyoo.ru/) - выступления
-- [Core Dump](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw) - фундамент
-- [habhub.hyoo.ru](https://habhub.hyoo.ru/) - статьи
-- [`_jin_nin_`](https://twitter.com/_jin_nin_) - новости
-
-# Бонус
+# Хотите добавки?
 
 Для тех, кто добрался до конца, но ещё не устал, могу предложить глянуть так же и дискуссию о менеджерах состояний, которая развернулась после моего выступления..
 
 [![О стейт-менеджерах: Дмитрий Карловский VS Сергей Сова](https://www.youtube.com/embed/NhPjUO6trGY)](https://www.youtube.com/watch?v=NhPjUO6trGY)
+
+# Что ещё глянуть не по теме
+
+- [slides.hyoo.ru](https://slides.hyoo.ru/) - выступления (10+)
+- [Core Dump](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw) - фундамент (4+)
+- [habhub.hyoo.ru](https://habhub.hyoo.ru/) - статьи (40+)
+- [`_jin_nin_`](https://twitter.com/_jin_nin_) - новости (>9000)
+
+# Внести свою лепту
+
+- [yasobe.ru/na/mol](http://yasobe.ru/na/mol) - разовое спасибо
+- [patreon.com/hyoo](https://www.patreon.com/hyoo) - постоянная поддержка
+- [hyoo-ru/hyoo.ru/wiki](https://github.com/hyoo-ru/hyoo.ru/wiki) - наши открытые проекты
 
 # Пишите письма!
 
