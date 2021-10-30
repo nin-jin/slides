@@ -790,7 +790,7 @@ Count = 4
 | Error   | 🦺Store    | ⛔Stop ⏮Revert 🎲Unstable
 | Cycle   | 🌋Fail     | 💤Infinite 🎰Limbo 🚫Unreal
 | Atomic  | 🦶Base     | 🤼‍♂️Full 👻Alone
-| Depth   | 🌌Heap     | 🗻Stack
+| Depth   | 🌌Heap     | 🗻Stack 🚧Limit
 | Extern  | 🏇Async    | 🏊‍♂️Sync
 
 # Поведение по умолчанию
