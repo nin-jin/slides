@@ -884,11 +884,14 @@ text*() {
 # More about Reactivity
 
 - [state-management-specification](https://github.com/artalar/state-management-specification) / Артём Арутюнян
+- [What Makes a Good Reactive System?](https://www.pzuraq.com/what-makes-a-good-reactive-system/) / Chris Garrett
 - [A General Theory of Reactivity](https://github.com/kriskowal/gtor) / Kris Kowal
-- [Объектное Реактивное Программирование](https://github.com/nin-jin/slides/tree/master/orp) @ FrontendConf'17
-- [Квантовая механика вычислений на JS](https://github.com/nin-jin/slides/tree/master/fibers) @ HolyJS'18
+- [Объектное Реактивное Программирование](https://github.com/nin-jin/slides/tree/master/orp) / Me @ FrontendConf'17
+- [Квантовая механика вычислений на JS](https://github.com/nin-jin/slides/tree/master/fibers) / Me @ HolyJS'18
 
 У Артёма (автора Reatom) есть интересный проект по классификации стейт-менеджеров с помощью тестов. Это чуть более широкая тема, так как, например, Redux - это стейт-менеджер, но он не реактивный. Это просто транзакционное изменение дерева состояний и всё, никаких каскадных инвариантов между состояниями. Если вас заинтересовала эта тема, то подключайтесь к написанию тестов - это будет полезно для всего комьюнити.
+
+В серии статей от Криса Гаррета можно ознакомиться с тем, как была переосмыслена еактивная модель во фреймворке Ember. Я оставил ссылку на наиболее релевантную из них.
 
 Обстоятельная статья Криса Ковала рассматривает вопрос реактивности с иных позиций. На мой взгляд он не прав, но для расширения кругозора можно почитать.
 
