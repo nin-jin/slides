@@ -946,3 +946,10 @@ text*() {
 - Информативно и развернуто.
 - Интересно и доходчиво.
 - Сам интересуюсь этой темой много лет как хобби, а тут человек основательно этим занимался и подробно осветил тему.
+
+## Last Feedback
+
+- [Habr](https://habr.com/ru/company/timeweb/blog/586450/comments/)
+- [DEV](https://dev.to/ninjin/main-aspects-of-reactivity-58co)
+- [andrey_sitnik](https://twitter.com/andrey_sitnik/status/1460956157854752768)
+- [_sergeysova](https://twitter.com/_sergeysova/status/1461729153359745032)
