@@ -408,7 +408,7 @@ for( const master of this.masters ) {
 const A = { foo: 1, bar: [] }
 const B = { foo: 2, bar: [] }
 
-reconcile( a, b )
+reconcile( A, B )
 
 assert( B.foo === 2 )
 assert( B.bar === A.bar )
