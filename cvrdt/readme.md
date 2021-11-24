@@ -114,4 +114,4 @@
 
 | Algorithm | 🕒 Time    | 📜 History | 🔢 Order   | 🏠 Place | ⏺ Atom | 🤹‍♂️ Typing | 💀 Dead
 |-----------|------------|-------------|------------|-----------|---------|------------|------------
-| CROWD     | Counter 🚩 | Washed ✔   | Relative ✔ | Strong ✔ | Token ✔ | Dynamic ✔ | Tombstone ✔
+| CROWD     | 🚩 Counter | ✔ Washed   | ✔ Relative | ✔ Strong | ✔ Token | ✔ Dynamic | ✔ Tombstone
