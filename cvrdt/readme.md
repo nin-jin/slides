@@ -14,6 +14,7 @@
 - Without Oracle
 - Signing
 - Encrypting
+- Tolerance to changes
 
 ## Aspects
 
