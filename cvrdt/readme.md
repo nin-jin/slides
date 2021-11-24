@@ -9,8 +9,9 @@
 
 ## Wishes
 
-- Bound Memory
+- Limited Memory
 - Linear complexity
+- Without Oracle
 - Signing
 - Encrypting
 
@@ -109,3 +110,8 @@
 
 Удалённые элементы сохраняются в виде легковесных записей, свидетельствующих об удалении.
 
+## Algorithms
+
+| Algorithm | 🕒 Time    | 📜 History | 🔢 Order   | 🏠 Place | ⏺ Atom | 🤹‍♂️ Typing | 💀 Dead
+|-----------|------------|-------------|------------|-----------|---------|------------|------------
+| CROWD     | Counter 🚩 | Washed ✔   | Relative ✔ | Strong ✔ | Token ✔ | Dynamic ✔ | Tombstone ✔
