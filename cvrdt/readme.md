@@ -112,6 +112,6 @@
 
 ## Algorithms
 
-| Algorithm | 🕒 Time    | 📜 History | 🔢 Order   | 🏠 Place | ⏺ Atom | 🤹‍♂️ Typing | 💀 Dead
-|-----------|------------|-------------|------------|-----------|---------|------------|------------
-| CROWD     | 🚩 Counter | ✔ Washed   | ✔ Relative | ✔ Strong | ✔ Token | ✔ Dynamic | ✔ Tombstone
+| Algorithm | 🕒 Time    | 📜 History | 🔢 Order   | 🏠 Place | ⏺ Atom | 🤹‍♂️ Typing | 💀 Dead     |
+|-----------|------------|-------------|------------|-----------|---------|------------|-------------|
+| CROWD     | 🚩 Counter | ✔ Washed   | ✔ Relative | ✔ Strong | ✔ Token | ✔ Dynamic | ✔ Tombstone |
