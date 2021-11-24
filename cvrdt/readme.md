@@ -50,10 +50,10 @@
 
 ## 🔢 Order
 
-- Global
+- Absolute
 - Relative
 
-### 🔢 Order: Global 🚩
+### 🔢 Order: Absolute 🚩
 
 Параллельное перемещение соседей не влияет на положение элемента в списке. Есть проблема интерливинга (перемешивание параллеьных вставок в одну точку).
 
@@ -112,18 +112,36 @@
 
 ## Algorithms
 
-| Algorithm | 🕒 Time    | 📜 History | 🔢 Order   | 🏠 Place | ⏺ Atom | 🤹‍♂️ Typing | 💀 Dead     |
-|-----------|------------|-------------|------------|-----------|---------|------------|-------------|
-| CROWD     | 🚩 Counter | ✔ Washed   | ✔ Relative | ✔ Strong | ✔ Token | ✔ Dynamic | ✔ Tombstone |
-| LSEQ
+Расписать вкратце суть алгоритмов, чтобы хватило для анализа по аспектам.
+
+- CROWD
+- LSEQ
+- KSeq
+- Logoot
+- LogootSplit
+- WOOT
+- WOOTR
+- TreeDoc
+- RGASplit
+- RON
+- Astrong
+- YJS?
+
+## Algorithms Benchmark
+
+| Algorithm   | 🕒 Time    | 📜 History | 🔢 Order    | 🏠 Place | ⏺ Atom | 🤹‍♂️ Typing | 💀 Dead
+|-------------|------------|-------------|-------------|-----------|---------|------------|------------
+| CROWD       | 🚩 Counter | ✔ Washed   | ✔ Relative  | ✔ Strong | ✔ Token | ✔ Dynamic | ✔ Tombstone
+| LSEQ        |             |            | 🚩 Absolute |          |          |           |
 | KSeq
-| Logoot
+| Logoot      |             |            | 🚩 Absolute |          |          |           |
 | LogootSplit
 | WOOT
 | WOOTR
 | TreeDoc
 | RGASplit
 | RON
+| Astrong
 
 ## More about CRDT
 
