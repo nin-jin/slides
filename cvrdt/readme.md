@@ -129,7 +129,7 @@
 - CasualTrees
 - YATA
 
-## Algorithms Benchmark
+## Algorithms Comparison
 
 | Algorithm   | 🕒 Time    | 📜 History | 🔢 Order    | 🏠 Place | ⏺ Atom | 🤹‍♂️ Typing | 💀 Dead
 |-------------|------------|-------------|-------------|-----------|---------|------------|------------
