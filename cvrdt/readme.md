@@ -1,6 +1,6 @@
 # Main Aspects of CvRDT
 
-Вы можете [читать это как статью](https://github.com/nin-jin/slides/tree/master/crdt), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/crdt/).
+Вы можете [читать это как статью](https://github.com/nin-jin/slides/tree/master/crdt), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/cvrdt/).
 
 
 ## CmRDT
