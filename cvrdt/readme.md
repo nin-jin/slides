@@ -127,7 +127,7 @@
 - RON
 - Astrong
 - CasualTrees
-- YJS?
+- YATA
 
 ## Algorithms Benchmark
 
