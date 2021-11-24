@@ -115,3 +115,18 @@
 | Algorithm | 🕒 Time    | 📜 History | 🔢 Order   | 🏠 Place | ⏺ Atom | 🤹‍♂️ Typing | 💀 Dead     |
 |-----------|------------|-------------|------------|-----------|---------|------------|-------------|
 | CROWD     | 🚩 Counter | ✔ Washed   | ✔ Relative | ✔ Strong | ✔ Token | ✔ Dynamic | ✔ Tombstone |
+| LSEQ
+| KSeq
+| Logoot
+| LogootSplit
+| WOOT
+| WOOTR
+| TreeDoc
+| RGASplit
+| RON
+
+## More about CRDT
+
+- https://crdt.tech/
+- https://github.com/alangibson/awesome-crdt
+- https://github.com/pfrazee/crdt_notes
