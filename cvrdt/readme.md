@@ -148,3 +148,4 @@
 - https://crdt.tech/
 - https://github.com/alangibson/awesome-crdt
 - https://github.com/pfrazee/crdt_notes
+- https://martin.kleppmann.com/2020/07/06/crdt-hard-parts-hydra.html
