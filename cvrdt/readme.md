@@ -129,9 +129,7 @@
 - LSEQ
 - KSeq
 - Logoot
-- LogootSplit
 - WOOT
-- WOOTR
 - TreeDoc
 - RGASplit
 - RON
@@ -147,11 +145,9 @@
 
 ### [Logoot](https://hal.inria.fr/inria-00432368/document)
 
-### LogootSplit
+Похоже на переусложнённый LSEQ. Пока не понятно в чём суть.
 
 ### WOOT
-### WOOTo?
-### WOOTR?
 
 ### TreeDoc
 
@@ -176,7 +172,6 @@
 | CROWD       | 🚩 Counter | ✔ Washed   | ✔ Relative  | ✔ Strong | ✔ Token | ✔ Dynamic | ✔ Tombstone
 | LSEQ        |            |             | 🚩 Absolute |          |          |           |
 | Logoot      |            |             | 🚩 Absolute |          |          |           |
-| LogootSplit
 | WOOT
 | WOOTR
 | TreeDoc
