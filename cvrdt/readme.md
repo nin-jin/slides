@@ -131,9 +131,9 @@
 - TreeDoc
 - WOOT
 - RGASplit
-- RON
 - Astrong
-- CasualTrees
+- CausalTrees
+- Chronofold
 - YATA
 - CROWD
 
@@ -155,11 +155,13 @@
 
 ### RGASplit
 
-### RON
-
 ### Astrong
 
-### CasualTrees
+### [CausalTrees](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.627.5286&rep=rep1&type=pdf)
+
+Каждый узел - это операция вставки/удаления, имеющая свой идентификатор и идентификатор предыдущей операции.
+
+### [Chronofold](https://arxiv.org/pdf/2002.09511.pdf)
 
 ### YATA
 
@@ -172,14 +174,13 @@
 | Algorithm   | 🕒 Clock   | 📜 History | 🔢 Order    | 🏠 Place | ⏺ Atom | 🤹‍♂️ Typing | 💀 Dead
 |-------------|------------|-------------|-------------|-----------|---------|------------|------------
 | CROWD       | 🚩 Counter | ✔ Washed   | ✔ Relative  | ✔ Strong | ✔ Token | ✔ Dynamic | ✔ Tombstone
+| CasualTrees |            |             | ✔ Relative  |          |          |           |
+| WOOT        |            |             | ✔ Relative  |          |          |           |
 | TreeDoc     |            |             | 🚩 Absolute |          |          |           |
 | LSEQ        |            |             | 🚩 Absolute |          |          |           |
 | Logoot      |            |             | 🚩 Absolute |          |          |           |
-| WOOT
 | RGASplit
-| RON
 | Astrong
-| CasualTrees
 
 ## More about CRDT
 
