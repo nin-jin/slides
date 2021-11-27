@@ -170,7 +170,6 @@
 
 | Algorithm   | 🕒 Clock   | 📜 History | 🔢 Order    | 🏠 Place | ⏺ Atom | 🤹‍♂️ Typing | 💀 Dead
 |-------------|------------|-------------|-------------|-----------|---------|------------|------------
-| CROWD       | 🚩 Counter | ✔ Washed   | ✔ Relative  | ✔ Strong | ✔ Token | ✔ Dynamic | ✔ Tombstone
 | LSEQ        |            |             | 🚩 Absolute |          |          |           |
 | Logoot      |            |             | 🚩 Absolute |          |          |           |
 | WOOT
@@ -180,6 +179,7 @@
 | RON
 | Astrong
 | CasualTrees
+| CROWD       | 🚩 Counter | ✔ Washed   | ✔ Relative  | ✔ Strong | ✔ Token | ✔ Dynamic | ✔ Tombstone
 
 ## More about CRDT
 
