@@ -130,8 +130,7 @@
 - Logoot
 - TreeDoc
 - WOOT
-- RGASplit
-- Astrong
+- RGA
 - CausalTrees
 - YATA
 - CROWD
