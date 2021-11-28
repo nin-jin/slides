@@ -175,7 +175,7 @@
 
 | Algorithm   | 🕒 Clock   | 📜 History | 🔢 Order    | 🏠 Place  | ⏺ Atom     | 🤹‍♂️ Typing  | 💀 Dead
 |-------------|------------|-------------|-------------|------------|-------------|-------------|------------
-| CROWD       | 🚩 Counter | ✅ Washed  | ✅ Relative | ✅ Strong | ✅ Token    | ✅ Dynamic | ✅ Tombstone
+| CROWD       | ✅ Real    | ✅ Washed  | ✅ Relative | ✅ Strong | ✅ Token    | ✅ Dynamic | ✅ Tombstone
 | CasualTrees |            |             | ✅ Relative |           |              |            |
 | RGA         |            |             | ✅ Relative |           |              |            |
 | WOOT        |            |             | ✅ Relative |           |              |            |
