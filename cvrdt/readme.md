@@ -1,8 +1,8 @@
-# Main Aspects of CvRDT
+# Main Aspects of Convergent Data Types
 
 Вы можете [читать это как статью](https://github.com/nin-jin/slides/tree/master/cvrdt), либо [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/cvrdt/).
 
-## CmRDT
+## Commutative Data Types
 
 Этот рассказ не про них, но упомянуть стоит.
 
