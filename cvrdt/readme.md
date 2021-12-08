@@ -199,48 +199,48 @@
 
 Расписать вкратце суть алгоритмов, чтобы хватило для анализа по аспектам.
 
-- LSEQ
-- Logoot
-- TreeDoc
-- RGA
-- CausalTrees
-- WOOT
-- YATA
-- CROWD
+- [LSEQ](https://hal.archives-ouvertes.fr/hal-00921633/document)
+- [Logoot](https://hal.inria.fr/inria-00432368/document)
+- [TreeDoc](https://hal.inria.fr/inria-00445975/document)
+- [RGA](http://csl.skku.edu/papers/jpdc11.pdf)
+- [CausalTrees](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.627.5286&rep=rep1&type=pdf)
+- [WOOT](https://hal.inria.fr/inria-00071240/document)
+- [YATA](https://files.gitter.im/y-js/yjs/yCYx/GROUP2016-_6_.pdf)
+- [CROWD](https://github.com/hyoo-ru/crowd.hyoo.ru)
 
-### [LSEQ](https://hal.archives-ouvertes.fr/hal-00921633/document)
+### LSEQ
 
 Каждый элемент списка идентифицируется кортежем абсолютных координат.
 
-### [Logoot](https://hal.inria.fr/inria-00432368/document)
+### Logoot
 
 Похоже на переусложнённый LSEQ. Пока не понятно в чём суть.
 
-### [TreeDoc](https://hal.inria.fr/inria-00445975/document)
+### TreeDoc
 
 Похоже на хранение списка в виде бинарного дерева. Каждая позиция идентифицируется последовательностью бит.
 
-### [RGA](http://csl.skku.edu/papers/jpdc11.pdf)
+### RGA
 
 Связный список из элементов. Каждый элемент указывает на следующий элемент. Удаление происходит очисткой узла без его удаления.
 
-### [CausalTrees](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.627.5286&rep=rep1&type=pdf)
+### CausalTrees
 
 Каждый узел - это операция вставки/удаления, имеющая свой идентификатор и идентификатор предыдущей операции. Операция удаления, добавленная после операции вставки, скрывает вставленные данные.
 
-### [WOOT](https://hal.inria.fr/inria-00071240/document)
+### WOOT
 
 Для каждой вставки передаётся идентификатор следующего и предыдущего элемента. При удалении остаётся надгробие. Переносы через удаление и вставку.
 
 ![](crdt-woot.svg)
 
-### [YATA](https://files.gitter.im/y-js/yjs/yCYx/GROUP2016-_6_.pdf)
+### YATA
 
 Двусвязный список элементов, идентифицируемых логическими часами, которые растут пропорционально размеру вставляемого контента. Это позволяет последовательные вставки объединять в один узел и потом разъединять в любой момент. Иерархия обеспечивается открывающими и закрыывающими тегами.
 
 ![](crdt-yata.svg)
 
-### [CROWD](https://github.com/hyoo-ru/crowd.hyoo.ru)
+### CROWD
 
 Каждый узел имеет ссылку на родителя, лидера внутри родителя, а так же предпочтительный номер позиции в родителе.
 
