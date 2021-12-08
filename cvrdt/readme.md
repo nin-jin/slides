@@ -67,8 +67,8 @@
 - ⏺ Atom
 - 🤹‍♂️ Typing
 - 💀 Dead
-- Move (change/remake)
-- Chunk (mutable/immutable)
+- 🚙 Move
+- 🎭 Chunk
 
 ## 🕒 Clock
 
@@ -171,6 +171,30 @@
 
 Каждое удаление может быть подписано цифровой подписью. Размер дельт не зависит от размера списка - только от числа изменений в нём.
 
+## 🚙 Move
+
+Как реализуется изменение порядка узлов.
+
+### 🚙 Move: Remake 🚩
+
+Старый узел удаляется - добавляется новый.
+
+### 🚙 Move: Change ✅
+
+Существующий узел обновляется, чтобы занимать новую позицию.
+
+## 🎭 Chunk
+
+Как идёт работа с кусочками данных.
+
+### 🎭 Chunk: Mutable 🚩
+
+Чанки меняются в процессе обработки. Это не позволяет криптографически подписывать их. Для слияния необходима дешифровка.
+
+### 🎭 Chunk: Constant ✅
+
+Чанки не меняются, только заменяются на новые. Каждый чанк можно криптографически зашифровать и подписать. Для слияния дешифровка не требуется.
+
 ## Algorithms
 
 Расписать вкратце суть алгоритмов, чтобы хватило для анализа по аспектам.
@@ -224,13 +248,13 @@
 
 ## Algorithms Comparison
 
-| Algorithm   | 🕒 Clock   | 📜 History | 🔢 Order    | 🏠 Place  | ⏺ Atom     | 🤹‍♂️ Typing  | 💀 Dead
-|-------------|------------|-------------|-------------|------------|-------------|-------------|------------
-| CROWD       | ✅ Real    | ✅ Washed  | ✅ Relative | ✅ Strong | ✅ Token    | ✅ Dynamic | ✅ Tombstone
+| Algorithm   | 🕒 Clock   | 📜 History | 🔢 Order    | 🏠 Place  | ⏺ Atom     | 🤹‍♂️ Typing  | 💀 Dead      | 🚙 Move   | 🎭 Chunk
+|-------------|------------|-------------|-------------|------------|-------------|-------------|--------------|------------|---------
+| CROWD       | ✅ Real    | ✅ Washed  | ✅ Relative | ✅ Strong | ✅ Token    | ✅ Dynamic | ✅ Tombstone | ✅ Change | ✅ Constant
 | CasualTrees |            |             | ✅ Relative |           |              |            |
 | RGA         |            |             | ✅ Relative |           |              |            |
-| WOOT        | ✅ Any     | 🚩 Stored  | ✅ Relative | ✅ Strong | 🚩 Letter   | 🚩 Static  | ✅ Tombstone
-| YATA        | 🚩 Counter | ✅ Washed  | ✅ Relative | ✅ Strong | 🚩 Sequence | 🚩 Static  | ✅ Tombstone
+| WOOT        | ✅ Any     | 🚩 Stored  | ✅ Relative | ✅ Strong | 🚩 Letter   | 🚩 Static  | ✅ Tombstone | 🚩 Remake | ✅ Constant
+| YATA        | 🚩 Counter | ✅ Washed  | ✅ Relative | ✅ Strong | 🚩 Sequence | 🚩 Static  | ✅ Tombstone | 🚩 Remake | 🚩 Mutable
 | TreeDoc     |            |             | 🚩 Absolute |           |              |            |
 | LSEQ        |            |             | 🚩 Absolute |           |              |            |
 | Logoot      |            |             | 🚩 Absolute |           |              |            |
