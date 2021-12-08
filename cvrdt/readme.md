@@ -227,8 +227,8 @@
 | CROWD       | ✅ Real    | ✅ Washed  | ✅ Relative | ✅ Strong | ✅ Token    | ✅ Dynamic | ✅ Tombstone
 | CasualTrees |            |             | ✅ Relative |           |              |            |
 | RGA         |            |             | ✅ Relative |           |              |            |
-| WOOT        |            |             | ✅ Relative |           |              |            |
-| YATA        | 🚩 Counter | ✅ Washed  | ✅ Relative | ✅ Strong | 🚩 Sequence  | 🚩 Static | ✅ Tombstone
+| WOOT        | ✅ Any     | 🚩 Stored  | ✅ Relative | ✅ Strong | 🚩 Letter   | 🚩 Static  | ✅ Tombstone
+| YATA        | 🚩 Counter | ✅ Washed  | ✅ Relative | ✅ Strong | 🚩 Sequence | 🚩 Static  | ✅ Tombstone
 | TreeDoc     |            |             | 🚩 Absolute |           |              |            |
 | LSEQ        |            |             | 🚩 Absolute |           |              |            |
 | Logoot      |            |             | 🚩 Absolute |           |              |            |
