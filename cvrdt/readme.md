@@ -199,14 +199,14 @@
 
 Расписать вкратце суть алгоритмов, чтобы хватило для анализа по аспектам.
 
-- [LSEQ](https://hal.archives-ouvertes.fr/hal-00921633/document)
-- [Logoot](https://hal.inria.fr/inria-00432368/document)
-- [TreeDoc](https://hal.inria.fr/inria-00445975/document)
-- [RGA](http://csl.skku.edu/papers/jpdc11.pdf)
-- [CausalTrees](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.627.5286&rep=rep1&type=pdf)
-- [WOOT](https://hal.inria.fr/inria-00071240/document)
-- [YATA](https://files.gitter.im/y-js/yjs/yCYx/GROUP2016-_6_.pdf)
-- [CROWD](https://github.com/hyoo-ru/crowd.hyoo.ru)
+[LSEQ](https://hal.archives-ouvertes.fr/hal-00921633/document)
+[Logoot](https://hal.inria.fr/inria-00432368/document)
+[TreeDoc](https://hal.inria.fr/inria-00445975/document)
+[RGA](http://csl.skku.edu/papers/jpdc11.pdf)
+[CausalTrees](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.627.5286&rep=rep1&type=pdf)
+[WOOT](https://hal.inria.fr/inria-00071240/document)
+[YATA](https://files.gitter.im/y-js/yjs/yCYx/GROUP2016-_6_.pdf)
+[CROWD](https://github.com/hyoo-ru/crowd.hyoo.ru)
 
 ### LSEQ
 
