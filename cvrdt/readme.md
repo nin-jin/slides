@@ -257,7 +257,7 @@
 | RGA         |            |             | ✅ Relative |           |              |            |
 | WOOT        | ✅ Any     | 🚩 Stored  | ✅ Relative | ✅ Strong | 🚩 Letter   | 🚩 Static  | ✅ Tombstone | 🚩 Remake | ✅ Constant
 | YATA        | 🚩 Counter | ✅ Washed  | ✅ Relative | ✅ Strong | 🚩 Sequence | 🚩 Static  | ✅ Tombstone | 🚩 Remake | 🚩 Mutable
-| TreeDoc     |            |             | 🚩 Absolute |           |              |            |
+| TreeDoc     | ➖         | ✅ Washed  | 🚩 Absolute | ✅ Strong | 🚩 Letter   | 🚩 Static  | ✅ Tombstone | 🚩 Remake | ✅ Constant
 | LSEQ        |            |             | 🚩 Absolute |           |              |            |
 | Logoot      |            |             | 🚩 Absolute |           |              |            |
 
