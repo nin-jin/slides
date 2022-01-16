@@ -200,10 +200,11 @@
 
 Расписать вкратце суть алгоритмов, чтобы хватило для анализа по аспектам.
 
-- MV-Register
-- G-Set
-- G-Counter
 - LWW-Register
+- MV-Register
+- Counter
+- Map
+- Set
 
 - [LSEQ](https://hal.archives-ouvertes.fr/hal-00921633/document)
 - [Logoot](https://hal.inria.fr/inria-00432368/document)
@@ -214,21 +215,25 @@
 - [YATA](https://files.gitter.im/y-js/yjs/yCYx/GROUP2016-_6_.pdf)
 - [CROWD](https://github.com/hyoo-ru/crowd.hyoo.ru)
 
+### LWW-Register
+
+Регистр, где побеждает последний записавшший.
+
 ### MV-Register
 
 Регистр со множеством значений.
 
-### G-Set
+### Counter
 
-Монотонно растущее множество.
+Распределённый счётчик.
 
-### G-Counter
+### Map
 
-Монотонно растущий счётчик.
+Распределённый словарь.
 
-### LWW-Register
+### Set
 
-Регистр, где побеждает последний записавшший.
+Распределённое множество.
 
 ### LSEQ
 
