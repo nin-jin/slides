@@ -213,6 +213,7 @@
 - [CausalTrees](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.627.5286&rep=rep1&type=pdf)
 - [WOOT](https://hal.inria.fr/inria-00071240/document)
 - [YATA](https://files.gitter.im/y-js/yjs/yCYx/GROUP2016-_6_.pdf)
+- [DiffTree](https://www.microsoft.com/en-us/research/wp-content/uploads/2015/02/paper-full.pdf)
 - [CROWD](https://github.com/hyoo-ru/crowd.hyoo.ru)
 
 ### LWW-Register
@@ -273,6 +274,8 @@ TreeDoc Похоже на хранение списка в виде бинарн
 Двусвязный список элементов, идентифицируемых логическими часами, которые растут пропорционально размеру вставляемого контента. Это позволяет последовательные вставки объединять в один узел и потом разъединять в любой момент. Иерархия обеспечивается открывающими и закрывающими тегами.
 
 ![](crdt-yata.svg)
+
+### DiffTree
 
 ### CROWD
 
