@@ -206,9 +206,7 @@
 - Map
 - Set
 
-- [LSEQ](https://hal.archives-ouvertes.fr/hal-00921633/document)
-- [Logoot](https://hal.inria.fr/inria-00432368/document)
-- [TreeDoc](https://hal.inria.fr/inria-00445975/document)
+- [LSEQ](https://hal.archives-ouvertes.fr/hal-00921633/document) / [Logoot](https://hal.inria.fr/inria-00432368/document) / [TreeDoc](https://hal.inria.fr/inria-00445975/document)
 - [RGA](http://csl.skku.edu/papers/jpdc11.pdf)
 - [CausalTrees](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.627.5286&rep=rep1&type=pdf)
 - [WOOT](https://hal.inria.fr/inria-00071240/document)
