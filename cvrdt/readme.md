@@ -286,10 +286,11 @@ TreeDoc Похоже на хранение списка в виде бинарн
 | Algorithm   | 🕒 Clock   | 📜 History | 🔢 Order    | 🏠 Placing | ⏺ Atom     | 🤹‍♂️ Typing  | 💀 Dead      | 🚙 Move   | 🎭 Chunk
 |-------------|------------|-------------|-------------|-------------|-------------|-------------|--------------|------------|---------
 | CROWD       | ✅ Real    | ✅ Washed  | ✅ Relative | ✅ Item    | ✅ Any      | ✅ Dynamic | ✅ Tombstone | ✅ Change | ✅ Constant
-| LSEQ        | ➖         | ✅ Washed  | 🚩 Absolute | ✅ Item    | ✅ Any      | 🚩 Static  | ✅ Tombstone | 🚩 Remake | ✅ Constant
 | CasualTrees |            |             | ✅ Relative |            |              |            |
 | RGA         |            |             | ✅ Relative |            |              |            |
 | WOOT        | ✅ Any     | 🚩 Stored  | ✅ Relative | ✅ Item    | ✅ Any      | 🚩 Static  | ✅ Tombstone | 🚩 Remake | ✅ Constant
+| LSEQ        | ➖ Unused  | ✅ Washed  | 🚩 Absolute | ✅ Item    | ✅ Any      | 🚩 Static  | ✅ Tombstone | 🚩 Remake | ✅ Constant
+| DiffTree    | ➖ Unused  | 🚩 Stored  | ✅ Relative | ✅ Item    | ✅ Any      | 🚩 Static  | 🚩 Forget    | ✅ Change | ✅ Constant
 | YATA        | 🚩 Counter | ✅ Washed  | ✅ Relative | ✅ Item    | 🚩 Sequence | 🚩 Static  | ✅ Tombstone | 🚩 Remake | 🚩 Mutable
 
 ## More about CRDT
