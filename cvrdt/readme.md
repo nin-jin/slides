@@ -211,7 +211,6 @@
 - [CausalTrees](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.627.5286&rep=rep1&type=pdf)
 - [WOOT](https://hal.inria.fr/inria-00071240/document)
 - [YATA](https://files.gitter.im/y-js/yjs/yCYx/GROUP2016-_6_.pdf)
-- [DiffTree](https://www.microsoft.com/en-us/research/wp-content/uploads/2015/02/paper-full.pdf)
 - [CROWD](https://github.com/hyoo-ru/crowd.hyoo.ru)
 
 ### LWW-Register
@@ -273,12 +272,6 @@ TreeDoc Похоже на хранение списка в виде бинарн
 
 ![](crdt-yata.svg)
 
-### DiffTree
-
-Берутся два конфликтующих дерева, сравниваются с общим предком, и все изменения объединяются на сколько это возможно.
-
-![](crdt-diff-tree.svg)
-
 ### CROWD
 
 Каждый узел имеет ссылку на родителя, лидера внутри родителя, а так же предпочтительный номер позиции в родителе.
@@ -294,7 +287,6 @@ TreeDoc Похоже на хранение списка в виде бинарн
 | RGA         |            |             | ✅ Relative |            |              |            |
 | WOOT        | ✅ Any     | 🚩 Stored  | ✅ Relative | ✅ Item    | ✅ Any      | 🚩 Static  | ✅ Tombstone | 🚩 Remake | ✅ Constant
 | LSEQ        | ➖ Unused  | ✅ Washed  | 🚩 Absolute | ✅ Item    | ✅ Any      | 🚩 Static  | ✅ Tombstone | 🚩 Remake | ✅ Constant
-| DiffTree    | ➖ Unused  | 🚩 Stored  | ✅ Relative | ✅ Item    | ✅ Any      | 🚩 Static  | 🚩 Forget    | ✅ Change | ✅ Constant
 | YATA        | 🚩 Counter | ✅ Washed  | ✅ Relative | ✅ Item    | 🚩 Sequence | 🚩 Static  | ✅ Tombstone | 🚩 Remake | 🚩 Mutable
 
 ## More about CRDT
