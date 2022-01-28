@@ -296,3 +296,4 @@ TreeDoc Похоже на хранение списка в виде бинарн
 - https://github.com/pfrazee/crdt_notes
 - https://martin.kleppmann.com/2020/07/06/crdt-hard-parts-hydra.html
 - https://hal.inria.fr/hal-01351512/document
+- https://www.inkandswitch.com/peritext/
