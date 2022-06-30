@@ -449,11 +449,11 @@ $my_heroes $mol_view
 ```tree
 $my_heroes $mol_view
 	- ...
-	Row!id $mol_row
-		sub <= item_content!id /
-			<= Badge!id $my_badge
-				title <= hero_id!id \
-			<= hero_name!id \
+	Row* $mol_row
+		sub <= item_content* /
+			<= Badge* $my_badge
+				title <= hero_id* \
+			<= hero_name* \
 ```
 
 В данном случае ключом для строк героев и всего, что в них находится у нас будет их порядковый индекс.
@@ -476,11 +476,11 @@ $my_top_heroes $my_heroes
 ```tree
 $my_new_heroes $my_heroes
 	sub /
-		<= Title -
-		<= Title_sub -
+		<= Title
+		<= Title_sub
 		<= Description $mol_text
 			text <= description \
-		<= Rows -
+		<= Rows
 ```
 
 Тут мы объявляем компонент который является точь в точь компонентом $my_heroes, но после заголовков имеет дополнительный тут же объявленный блок с описанием.
@@ -491,9 +491,9 @@ $my_new_heroes $my_heroes
 
 ```tree
 $my_reflect_heroes $my_heroes
-	item_content!id /
-		<= hero_name!id -
-		<= Badge!id -
+	item_content* /
+		<= hero_name*
+		<= Badge*
 ```
 
 Язык view.tree настолько удобен для описания компонент, что его так и тянет использовать для описания вообще любых классов. И это на самом деле возможно, но только осторожно.
@@ -513,7 +513,7 @@ export class $my_heroes extends $.$my_heroes {
 		return Object.keys( this.heroes() ).map( id => this.Row( id ) )
 	}
 
-	hero_name( id : string ) {
+	hero_name( id: string ) {
 		return this.heroes()[ id ].name
 	}
 
