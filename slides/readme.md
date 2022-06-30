@@ -207,10 +207,10 @@ const hello = ()=>
 
 Подробнее о фреймворке можно узнать на отдельной презентации. Копнуть глубже можно в презентации посвящённой ОРП. А приподнять завесу грядущего можно в презентации о квантовании вычислений.
 
-[$mol - лучшее средство от геморроя](https://github.com/nin-jin/slides/tree/master/mol)
-[Объектное Реактивное Программирование](https://github.com/nin-jin/slides/tree/master/orp)
-[Quantum Mechanics of Calculations](https://github.com/nin-jin/slides/tree/master/fibers)
-[slides.hyoo.ru](https://github.com/nin-jin/slides/tree/master/slides)
+- [$mol - лучшее средство от геморроя](https://github.com/nin-jin/slides/tree/master/mol)
+- [Объектное Реактивное Программирование](https://github.com/nin-jin/slides/tree/master/orp)
+- [Quantum Mechanics of Calculations](https://github.com/nin-jin/slides/tree/master/fibers)
+- [slides.hyoo.ru](https://github.com/nin-jin/slides/tree/master/slides)
 
 Все они используют $hyoo_slides для отображения. Надеюсь вскоре таких презентаций станет больше.
 
