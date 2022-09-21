@@ -153,7 +153,12 @@
 
 # Мы же видим эти проблемы?
 
-*Байка про анонсирование с помпой "оптимизаций" от Tinkoff, Habr, VK.*
+- [Как мы ускоряли комментарии Хабра](https://habr.com/ru/company/habr/blog/590111/#comment_23750689)
+- [Как мы разрабатываем новый фронтенд Tinkoff.ru](https://habr.com/ru/company/tinkoff/blog/303580/#comment_9672022)
+- [Бенчмарки VKUI и других ребят из UI-библиотек](https://habr.com/ru/company/vk/blog/558996/#comment_23084902)
+- [Как мы отказались от JPEG, JSON, TCP и ускорили ВКонтакте в два раза](https://habr.com/ru/company/vk/blog/594633/#comment_23965313)
+
+*Байка про анонсирование с помпой "оптимизаций"*
 
 # Что с этим делать?
 
