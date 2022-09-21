@@ -22,7 +22,7 @@
 
 Есть тут Сиьоры? А Мидлы? А Джуны?
 
-![](https://habrastorage.org/webt/i5/4s/dk/i54sdkje0p8gkfmkm3kcabi9ydy.png)
+![](https://habrastorage.org/webt/iv/am/qh/ivamqhwomqa1x5bkdaqhqqac23w.png)
 
 # Что любят программисты?
 
