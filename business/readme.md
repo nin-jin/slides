@@ -6,17 +6,35 @@
 
 Вы можете читать это как статью или [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/business/).
 
-# Познакомимся?
-
-- Какая компания?
-- Какой фреймворк?
-- Какой левел?
+# Какая компания?
 
 Кто из Яндекса? А Тинькова? А 1С? А Wrike?
 
+- Яндекс
+- Wrike
+- SAPRUN
+- ГазПром
+- Deutsche Bank
+- 1C
+
+# Какой фреймворк?
+
 Кто использует $mol? А Svelte? А Vue? А Angular? А React?
 
+- VanillaJS
+- BemJS
+- ExtJS
+- SAPUI5
+- AngularJS
+- Angular
+- React
+- $mol
+
+# Какой левел?
+
 Есть тут Сиьоры? А Мидлы? А Джуны?
+
+![](https://habrastorage.org/webt/i5/4s/dk/i54sdkje0p8gkfmkm3kcabi9ydy.png)
 
 # Что любят программисты?
 
