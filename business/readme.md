@@ -62,9 +62,10 @@
 
 # Хорошая поддержка от большой компании?
 
-![Forcing RouterLinkActive To Update Using An Inputs Hack In Angular 5.0.2](//player.vimeo.com/video/243447259)
+- [Forcing RouterLinkActive To Update Using An Inputs Hack In Angular 5.0.2](https://www.bennadel.com/blog/3375-forcing-routerlinkactive-to-update-using-an-inputs-hack-in-angular-5-0-2.htm)
+- [routerLinkActive not updating when routerLink changed](https://github.com/angular/angular/issues/18469)
 
-[routerLinkActive not updating when routerLink changed](https://github.com/angular/angular/issues/18469)
+    [routerLinkActiveOptions]="{ __change_detection_hack__: [ id, mode ] }"
 
 Для бесплатных инструментов? Серьёзно? *Байка про поддержку Angular, где до 10 версии чинили баг, которого не должно было быть*.
 
