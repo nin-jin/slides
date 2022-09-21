@@ -10,13 +10,25 @@
 
 Кто из Яндекса? А Тинькова? А 1С? А Wrike?
 
-> [Яндекс](https://yandex.ru/) | [Wrike](https://www.wrike.com/) | [SAPRUN](https://www.saprun.com/) | [ГазПром](https://www.gazprom.ru/) | [Deutsche Bank](https://www.db.com/) | [1C](https://1c.ru/)
+> [Яндекс](https://yandex.ru/)
+> [Wrike](https://www.wrike.com/)
+> [SAPRUN](https://www.saprun.com/)
+> [ГазПром](https://www.gazprom.ru/)
+> [Deutsche Bank](https://www.db.com/)
+> [1C](https://1c.ru/)
 
 # Какой фреймворк?
 
 Кто использует $mol? А Svelte? А Vue? А Angular? А React?
 
-> [VanillaJS](http://vanilla-js.com/) | [BemJS](https://ru.bem.info/) | [ExtJS](https://www.sencha.com/products/extjs/) | [SAPUI5](https://sapui5.hana.ondemand.com/) | [AngularJS](https://angularjs.org/) | [Angular](https://angular.io/) | [React](https://reactjs.org/) | [$mol](https://mol.hyoo.ru/)
+> [VanillaJS](http://vanilla-js.com/)
+> [BemJS](https://ru.bem.info/)
+> [ExtJS](https://www.sencha.com/products/extjs/)
+> [SAPUI5](https://sapui5.hana.ondemand.com/)
+> [AngularJS](https://angularjs.org/)
+> [Angular](https://angular.io/)
+> [React](https://reactjs.org/)
+> [$mol](https://mol.hyoo.ru/)
 
 # Какой левел?
 
