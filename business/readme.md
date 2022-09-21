@@ -62,7 +62,7 @@
 
 # Хорошая поддержка от большой компании?
 
-![Forcing RouterLinkActive To Update Using An Inputs Hack In Angular 5.0.2](https://vimeo.com/243447259?embedded=true&source=video_title&owner=27762735)
+![Forcing RouterLinkActive To Update Using An Inputs Hack In Angular 5.0.2](//player.vimeo.com/video/243447259)
 
 [routerLinkActive not updating when routerLink changed](https://github.com/angular/angular/issues/18469)
 
