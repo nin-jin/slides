@@ -62,29 +62,31 @@
 
 # Хорошая поддержка от большой компании?
 
-- [Forcing RouterLinkActive To Update Using An Inputs Hack In Angular 5.0.2](https://www.bennadel.com/blog/3375-forcing-routerlinkactive-to-update-using-an-inputs-hack-in-angular-5-0-2.htm)
+- [Forcing RouterLinkActive To Update Using An Inputs Hack In Angular](https://www.bennadel.com/blog/3375-forcing-routerlinkactive-to-update-using-an-inputs-hack-in-angular-5-0-2.htm)
 - [routerLinkActive not updating when routerLink changed](https://github.com/angular/angular/issues/18469)
 
     [routerLinkActiveOptions]="{ __Hack__: [ id, mode ] }"
 
-Для бесплатных инструментов? Серьёзно? *Байка про поддержку Angular, где до 10 версии чинили баг, которого не должно было быть*.
+Для бесплатных инструментов? Серьёзно? *Байка про поддержку Angular, где до 10 версии чинили баг, которого не должно было быть, пользователи писали статьи с воркэраундами*.
 
 # Платная поддержка от большой компании?
 
-![10K Table](https://mol.hyoo.ru/#!demo=mol_list_demo_table/section=demos)
+![10K Table](https://sync.hyoo.ru/watch/#!section=log)
 
 Вы уже заплатили. Следующий. *Байка про платную поддержку SAPUI5*.
 
 ## Большая компания же не убьёт завтра свой проект?
 
-- Не основной бизнес - первый кандидат на оптимизацию.
-- Даже если разрабы горят проектом - у них нет прав.
+- **Не основной** бизнес - первый кандидат на оптимизацию.
+- Даже если разрабы горят проектом - у них **нет прав**.
 
 *Байки про убитый AngularJS, $hyoo_wysiwyg*.
 
-## Большая компания всё быстро починит?
+## Большое комьюнити вас спасёт?
 
-*Байка про багу в базовой функциональности Angular, которую чинили годами, а пользователи писали статьи про костыли.*
+- У специалистов на вас **нет времени**.
+- Остальные ничем вам **не помогут**.
+- Зато страдать будешь **не в одиночестве**.
 
 # Что там с рынком труда?
 
