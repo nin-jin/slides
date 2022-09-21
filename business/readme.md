@@ -21,7 +21,6 @@
 
 Кто использует $mol? А Svelte? А Vue? А Angular? А React?
 
-> [VanillaJS](http://vanilla-js.com/)
 > [BemJS](https://ru.bem.info/)
 > [ExtJS](https://www.sencha.com/products/extjs/)
 > [SAPUI5](https://sapui5.hana.ondemand.com/)
