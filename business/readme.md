@@ -27,7 +27,7 @@
 > [AngularJS](https://angularjs.org/)
 > [Angular](https://angular.io/)
 > [React](https://reactjs.org/)
-> [$mol](https://mol.hyoo.ru/)
+> [mol](https://mol.hyoo.ru/)
 
 # Какой левел?
 
