@@ -192,10 +192,10 @@
 
 # Что ещё интересного расскажешь?
 
+![](https://habrastorage.org/webt/e_/9i/ei/e_9ieivcl0azcimt4pwlgv0tbqi.png)
+
 > [habhub.hyoo.ru](https://habhub.hyoo.ru/)
 > [nin-jin/slides](https://github.com/nin-jin/slides/)
 > [Core Dump](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw)
 > [$mol](https://www.youtube.com/channel/UCwRUyzIG4mC8uGhGQsn5FBQ)
 > [mol_news](https://t.me/mol_news)
-
-![](https://habrastorage.org/webt/e_/9i/ei/e_9ieivcl0azcimt4pwlgv0tbqi.png)
