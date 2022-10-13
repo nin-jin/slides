@@ -198,4 +198,4 @@
 > [$mol](https://www.youtube.com/channel/UCwRUyzIG4mC8uGhGQsn5FBQ)
 > [mol_news](https://t.me/mol_news)
 
-![](http://qrcoder.ru/code/?https%3A%2F%2Fconf.ontico.ru%2Fonline%2Ffc2022%2Fdetails%2F4476633&10&0)
+![](https://habrastorage.org/webt/e_/9i/ei/e_9ieivcl0azcimt4pwlgv0tbqi.png)
