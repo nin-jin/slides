@@ -18,7 +18,7 @@
 > [ГазПром](https://www.gazprom.ru/)
 > [Deutsche Bank](https://www.db.com/)
 > [1C](https://1c.ru/)
-> [$hyoo](https://hyoo.ru/)
+> [HyOO](https://hyoo.ru/)
 
 # Какой фреймворк?
 
