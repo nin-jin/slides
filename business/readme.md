@@ -36,7 +36,7 @@
 
 Есть тут Сиьоры? А Мидлы? А Джуны?
 
-![](https://habrastorage.org/webt/ye/cg/bc/yecgbcts3_mhj502-qjwfepprga.png)
+![](https://habrastorage.org/webt/v1/d4/kw/v1d4kwaiil0blkri0gsvrz85msw.png)
 
 # Что любят программисты?
 
