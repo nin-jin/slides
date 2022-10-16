@@ -70,7 +70,7 @@
 
 # Зачем нужны высокоуровневые решения?
 
-![](https://notes.hyoo.ru/#!tag=%D0%A1%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/note=4971372C)
+![](https://notes.hyoo.ru/#!tag=%D0%A1%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F)
 
 Байка про **личные заметки** на React, $mol и 1C.
 
