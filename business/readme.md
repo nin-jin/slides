@@ -22,12 +22,12 @@
 
 # Какой фронтенд фреймворк?
 
-| Уровень        | Решение
-|----------------|--------
-| Языки          | [XSLT](https://www.w3.org/TR/xslt-10/)
-| Библиотеки     | [jQuery](https://jquery.com/), [React](https://reactjs.org/)
-| Фреймворки     | [BemJS](https://ru.bem.info/), [AngularJS](https://angularjs.org/), [Angular](https://angular.io/)
-| Конструкторы   | [ExtJS](https://www.sencha.com/products/extjs/), [SAPUI5](https://sapui5.hana.ondemand.com/), [mol](https://mol.hyoo.ru/)
+| ~~Уровень~~  | ~~Решение~~
+|--------------|------------
+| Языки        | [XHTML](http://www.w3.org/TR/xhtml1), [XSLT](https://www.w3.org/TR/xslt/)
+| Библиотеки   | [jQuery](https://jquery.com/), [React](https://reactjs.org/)
+| Фреймворки   | [BemJS](https://ru.bem.info/), [AngularJS](https://angularjs.org/), [Angular](https://angular.io/)
+| Конструкторы | [ExtJS](https://www.sencha.com/products/extjs/), [SAPUI5](https://sapui5.hana.ondemand.com/), [mol](https://mol.hyoo.ru/)
 
 Кто не узнал себя в этом списке?
 
