@@ -24,6 +24,8 @@
 
 Кто использует $mol? А Svelte? А Vue? А Angular? А React?
 
+> [XSLT](https://www.w3.org/TR/xslt-10/)
+> [jQuery](https://jquery.com/)
 > [BemJS](https://ru.bem.info/)
 > [ExtJS](https://www.sencha.com/products/extjs/)
 > [SAPUI5](https://sapui5.hana.ondemand.com/)
