@@ -10,8 +10,6 @@
 
 # Какая компания?
 
-Кто из Яндекса? А Тинькова? А 1С? А Wrike?
-
 > [Яндекс](https://yandex.ru/)
 > [Wrike](https://www.wrike.com/)
 > [SAPRUN](https://www.saprun.com/)
@@ -20,19 +18,18 @@
 > [1C](https://1c.ru/)
 > [HyOO](https://hyoo.ru/)
 
-# Какой фреймворк?
+Кто узнал себя в этом списке?
 
-Кто использует $mol? А Svelte? А Vue? А Angular? А React?
+# Какой фронтенд фреймворк?
 
-> [XSLT](https://www.w3.org/TR/xslt-10/)
-> [jQuery](https://jquery.com/)
-> [BemJS](https://ru.bem.info/)
-> [ExtJS](https://www.sencha.com/products/extjs/)
-> [SAPUI5](https://sapui5.hana.ondemand.com/)
-> [AngularJS](https://angularjs.org/)
-> [Angular](https://angular.io/)
-> [React](https://reactjs.org/)
-> [mol](https://mol.hyoo.ru/)
+| Уровень        | Решение
+|----------------|--------
+| Языки          | [XSLT](https://www.w3.org/TR/xslt-10/)
+| Библиотеки     | [jQuery](https://jquery.com/), [React](https://reactjs.org/)
+| Фреймворки     | [BemJS](https://ru.bem.info/), [AngularJS](https://angularjs.org/), [Angular](https://angular.io/)
+| Конструкторы   | [ExtJS](https://www.sencha.com/products/extjs/), [SAPUI5](https://sapui5.hana.ondemand.com/), [mol](https://mol.hyoo.ru/)
+
+Кто не узнал себя в этом списке?
 
 # Какой левел?
 
