@@ -82,7 +82,7 @@
 Байка про **личные заметки** на React (2+ дня), $mol (2 часа) и 1C (пол часа).
 
 ![](https://notes.hyoo.ru/#!tag=%D0%A1%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F)
-![](https://notes.hyoo.ru/#!tag=%D0%A1%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F)
+![](https://notes.hyoo.ru/#!tag=%D0%A1%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/note=676EACEC)
 
 # Большие компании плохого не посоветуют?
 
@@ -115,8 +115,6 @@
 Байка про поддержку Angular, где **до 10 версии чинили баг**, которого не должно было быть в принципе. А пользователи тем временем писали статьи про воркэраунды.
 
 # Хороша ли платная поддержка?
-
-> Foo bar
 
 ![10K Table](https://mol.hyoo.ru/#!demo=mol_list_demo_table/section=demos)
 
