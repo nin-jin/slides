@@ -24,7 +24,7 @@
 
 | ~~Уровень~~  | ~~Решение~~
 |--------------|------------
-| Языки        | [XHTML](http://www.w3.org/TR/xhtml1), [XSLT](https://www.w3.org/TR/xslt/)
+| Языки        | [XHTML](http://www.w3.org/TR/xhtml1), [XSLT](https://www.w3.org/TR/xslt/), [ECMAScript](https://tc39.es/ecma262/), [TypeScript](https://typescriptlang.org/)
 | Библиотеки   | [jQuery](https://jquery.com/), [React](https://reactjs.org/)
 | Фреймворки   | [BemJS](https://ru.bem.info/), [AngularJS](https://angularjs.org/), [Angular](https://angular.io/)
 | Конструкторы | [ExtJS](https://www.sencha.com/products/extjs/), [SAPUI5](https://sapui5.hana.ondemand.com/), [mol](https://mol.hyoo.ru/)
