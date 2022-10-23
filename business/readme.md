@@ -90,6 +90,8 @@
 
 ![](https://habrastorage.org/webt/yl/_f/vf/yl_fvfx0mdidm7aumnd6xr2tywy.jpeg)
 
+[React & БЭМ – официальная коллаборация. Часть историческая](https://habr.com/ru/company/yandex/blog/438598/)
+
 # Большая компания же не убьёт свой проект?
 
 - **Не основной** бизнес - первый кандидат на оптимизацию.
