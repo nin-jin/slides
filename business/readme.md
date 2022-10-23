@@ -88,9 +88,9 @@
 Байка про **FaceBook, тестирующий React** на кошках.
 Байка про маленький **FaceBook диктующий огромному Яндексу**, как писать код, вместо исползования его собственного bemjs.
 
-![](https://habrastorage.org/webt/yl/_f/vf/yl_fvfx0mdidm7aumnd6xr2tywy.jpeg)
-
 [React & БЭМ – официальная коллаборация. Часть историческая](https://habr.com/ru/company/yandex/blog/438598/)
+
+![](https://habrastorage.org/webt/yl/_f/vf/yl_fvfx0mdidm7aumnd6xr2tywy.jpeg)
 
 # Большая компания же не убьёт свой проект?
 
