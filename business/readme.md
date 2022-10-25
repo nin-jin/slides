@@ -208,5 +208,5 @@
 > [habhub.hyoo.ru](https://habhub.hyoo.ru/)
 > [nin-jin/slides](https://github.com/nin-jin/slides/)
 > [Core Dump](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw)
-> [$mol](https://www.youtube.com/channel/UCwRUyzIG4mC8uGhGQsn5FBQ)
 > [mol_news](https://t.me/mol_news)
+> [nin_jin](https://t.me/nin_jin)
