@@ -203,8 +203,6 @@
 
 # Что ещё интересного расскажешь?
 
-![](https://habrastorage.org/webt/e_/9i/ei/e_9ieivcl0azcimt4pwlgv0tbqi.png)
-
 > [habhub.hyoo.ru](https://habhub.hyoo.ru/)
 > [nin-jin/slides](https://github.com/nin-jin/slides/)
 > [Core Dump](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw)
