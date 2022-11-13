@@ -10,13 +10,13 @@
 
 Я 30 почти лет в программировании, из них 20 занимаюсь этим профессионально. Вот наиболее известные компании, где я работал..
 
-> [Яндекс](https://yandex.ru/)
-> [Wrike](https://www.wrike.com/)
-> [SAPRUN](https://www.saprun.com/)
-> [Газпром](https://www.gazprom.ru/)
-> [Deutsche Bank](https://www.db.com/)
-> [1C](https://1c.ru/)
-> [HyOO](https://hyoo.ru/)
+- [Яндекс](https://yandex.ru/)
+- [Wrike](https://www.wrike.com/)
+- [SAPRUN](https://www.saprun.com/)
+- [Газпром](https://www.gazprom.ru/)
+- [Deutsche Bank](https://www.db.com/)
+- [1C](https://1c.ru/)
+- [HyOO](https://hyoo.ru/)
 
 Кто узнал себя в этом списке? Надеюсь, вы меня не побьёте, так как я сегодня буду нас сильно ругать.
 
@@ -165,10 +165,10 @@
 Мы обманываем не только бизнесс, но и своих коллег, и даже самих себя.
 Пресс-релизы от больших команий, где они хвастаются, как хорошо поработали..
 
-> [Как мы ускоряли комментарии Хабра](https://habr.com/ru/company/habr/blog/590111/#comment_23750689)
-> [Как мы разрабатываем новый фронтенд Tinkoff.ru](https://habr.com/ru/company/tinkoff/blog/303580/#comment_9672022)
-> [Бенчмарки VKUI и других ребят из UI-библиотек](https://habr.com/ru/company/vk/blog/558996/#comment_23084902)
-> [Как мы отказались от JPEG, JSON, TCP и ускорили ВКонтакте в два раза](https://habr.com/ru/company/vk/blog/594633/#comment_23965313)
+- [Как мы ускоряли комментарии Хабра](https://habr.com/ru/company/habr/blog/590111/#comment_23750689)
+- [Как мы разрабатываем новый фронтенд Tinkoff.ru](https://habr.com/ru/company/tinkoff/blog/303580/#comment_9672022)
+- [Бенчмарки VKUI и других ребят из UI-библиотек](https://habr.com/ru/company/vk/blog/558996/#comment_23084902)
+- [Как мы отказались от JPEG, JSON, TCP и ускорили ВКонтакте в два раза](https://habr.com/ru/company/vk/blog/594633/#comment_23965313)
 
 Типичный комментарий: стало медленнее, меньше функциональности, больше багов. Зато кто-то получил зарплату и даже премию.
 
@@ -203,11 +203,11 @@
 
 # Что ещё интересного расскажешь?
 
-> [habhub.hyoo.ru](https://habhub.hyoo.ru/)
-> [nin-jin/slides](https://github.com/nin-jin/slides/)
-> [Core Dump](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw)
-> [mol_news](https://t.me/mol_news)
-> [nin_jin](https://t.me/nin_jin)
+- [habhub.hyoo.ru](https://habhub.hyoo.ru/)
+- [nin-jin/slides](https://github.com/nin-jin/slides/)
+- [Core Dump](https://www.youtube.com/channel/UC-qEImMrqSLZ9KLee1JTcuw)
+- [mol_news](https://t.me/mol_news)
+- [nin_jin](https://t.me/nin_jin)
 
 # Ответочка
 
