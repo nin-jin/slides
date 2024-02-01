@@ -1,10 +1,12 @@
+https://page.hyoo.ru/#!=xthcpx_wqmiba
+
 # Проектирование гиперадаптивной UI-библиотеки
 
 > Дмитрий Карловский [nin_jin](https://t.me/nin_jin)
 
 ![](fc.svg)
 
-Это - текстовая расшифровка выступления на [FrontendConf'21](https://frontendconf.ru/moscow/2021/abstracts/7406). Вы можете [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/ui-kit/), либо [читать как статью](https://github.com/nin-jin/slides/blob/master/ui-kit/readme.md)...
+Это - текстовая расшифровка выступления на [FrontendConf'21](https://frontendconf.ru/moscow/2021/abstracts/7406). Вы можете [посмотреть видеозапись](https://youtu.be/JuBv44HHzOc?list=PLXyFFhv8ucKSC96WOd7Ju2HmEWTA3jPa5),  [открыть в интерфейсе проведения презентаций](https://nin-jin.github.io/slides/ui-kit/), либо [читать как статью](https://github.com/nin-jin/slides/blob/master/ui-kit/readme.md)...
 
 # Кто я такой
 
